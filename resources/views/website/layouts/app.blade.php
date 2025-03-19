@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anvogue - Home Cosmetic 1</title>
+    <title>@yield('title') |{{ config('app.name') }}</title>
     <link rel="shortcut icon" href="{{ asset('website/assets/images/fav.png')}}" type="image/x-icon" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/swiper-bundle.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/style.css')}}" />
@@ -14,10 +14,11 @@
 </head>
 
 <body>
- 
+    <div id="header" class="relative w-full">
 
-   @include('website.layouts.header')
-  @yield('content')
+        @include('website.layouts.header')
+    </div>
+    @yield('content')
 
     {{-- Footer --}}
     @include('website.layouts.footer')
@@ -852,8 +853,8 @@
             </div>
         </div>
     </div>
-@stack('scripts')
- <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
+    @stack('scripts')
+    <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
     <script src="{{ asset('website/assets/js/main.js')}}"></script>
 </body>

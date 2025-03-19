@@ -61,4 +61,20 @@ class HomeController extends Controller
     {
         //
     }
+    public function about(Request $request)
+    {
+        // $aboutuses = $this->aboutusService->getAllAbouts();
+        // $settings = $this->settingsService->getAllSettings();
+        return view('website.about_us');
+    }
+    public function shop(Request $request)
+    {
+       
+        return view('website.shop');
+    }
+    public function contactUs(Request $request)
+    {
+       
+        return view('website.contact_us');
+    }
 }
