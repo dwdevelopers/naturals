@@ -1,0 +1,27 @@
+.main-header-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .main-header-desktop {
+    display: none;
+  }
+}
+
+.menu-main ul li a::before, .menu-main ul li .link::before {
+  bottom: -3px;
+  height: 2.5px;
+}
+
+.logo .heading4 img {
+  height: 50px;
+}
+
+.bg-green {
+  background-color: rgba(131, 83, 203, 0.19);
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=custom.css.map */
