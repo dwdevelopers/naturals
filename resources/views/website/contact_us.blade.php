@@ -1,6 +1,6 @@
 @extends('website.layouts.app')
 
-@section('title', 'About Us')
+@section('title', 'Contact Us')
 
 @section('content')
 <div class="breadcrumb-block style-shared">

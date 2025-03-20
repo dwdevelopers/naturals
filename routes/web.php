@@ -1,11 +1,28 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\HomeController as AdminHome;
+use App\Http\Controllers\Admin\TestimonialController;
+use App\Http\Controllers\Admin\ContactUsController;
+
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\LoginController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
+
+Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])->group(function () {
+
+    Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');   
+    Route::resource('contactuses', ContactUsController::class);
+    Route::resource('categories', CategoryController::class);
+    
+
+
+});
 Route::name('website.')->group(function(){
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about-us', [HomeController::class, 'about'])->name('about');
@@ -13,3 +30,6 @@ Route::name('website.')->group(function(){
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
     // Route::get('/service/{slug}', [HomeController::class, 'services'])->name('service');
 });
+Auth::routes();
+
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');

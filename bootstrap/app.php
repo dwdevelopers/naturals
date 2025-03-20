@@ -11,7 +11,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        $middleware->alias([
+            'user-access' => \App\Http\Middleware\UserAccess::class,
+            'prevent-back-history'=>\App\Http\Middleware\PreventBackHistory::class,
+
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
