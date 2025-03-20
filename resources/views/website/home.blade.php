@@ -12,7 +12,7 @@
                     <div class="slider-item h-full w-full relative overflow-hidden">
                         <div class="container w-full h-full flex items-center">
                             <div class="text-content sm:w-1/2 w-2/3">
-                                <div class="text-sub-display">Sale! Up To 50% Off!</div>
+                                <div class="text-sub-display">Sale! Up To 80% Off!</div>
                                 <div class="text-display md:mt-5 mt-2">Discover Your Beauty Potential</div>
                                 <div class="body1 mt-4">Check out our latest collection of chic and trendy
                                     outfits that will keep you looking stylish all year round.</div>
