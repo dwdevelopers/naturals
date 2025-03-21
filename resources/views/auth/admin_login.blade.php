@@ -45,7 +45,7 @@
                                     </p>
 
                                     <!-- form -->
-                                    <form method="POST" action="{{ route('login') }}">
+                                    <form method="POST" action="{{ route('admin.login') }}">
                                         @csrf
                                         <div class="mb-3">
                                             <label for="emailaddress" class="form-label">Email address</label>

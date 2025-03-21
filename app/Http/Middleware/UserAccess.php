@@ -19,6 +19,6 @@ class UserAccess
             return $next($request);
         }
           
-        return response()->json(['You do not have permission to access for this page.']);
+        return redirect()->back()->with('error', 'You do not have permission to access this page.');
     }
 }

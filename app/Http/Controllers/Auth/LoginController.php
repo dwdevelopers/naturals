@@ -20,48 +20,90 @@ class LoginController extends Controller
         $this->middleware('auth')->only('logout');
     }
 
-    public function login(Request $request): RedirectResponse
-    {   
+    public function showUserLoginForm()
+    {
+        return view('auth.login'); // Regular login view
+    }
+
+    // Show the admin login form
+    public function showAdminLoginForm()
+    {
+        return view('auth.admin_login'); // Admin login view
+    }
+
+    // Process the user login
+    public function userLogin(Request $request): RedirectResponse
+    {
         $credentials = $request->validate([
-            'email' => 'required|email',
+            'email'    => 'required|email',
+            'password' => 'required',
+        ]);
+
+        // Attempt login
+        if (Auth::attempt($credentials)) {
+            // Optionally, if you want to restrict admin users from logging in via user login,
+            // check here and log them out:
+            if (Auth::user()->type === 'Admin') {
+                Auth::logout();
+                return redirect()->back()->with('error', 'Admins must login via the admin login page.');
+            }
+            return redirect()->intended(route('website.home'));
+        }
+
+        return redirect()->back()->withInput()->with('error', 'Email and Password are incorrect.');
+    }
+
+    // Process the admin login
+    public function adminLogin(Request $request): RedirectResponse
+    {
+        $credentials = $request->validate([
+            'email'    => 'required|email',
             'password' => 'required',
         ]);
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended($this->redirectTo()); // Calls redirectTo() function
+            // Ensure the logged-in user is an admin
+            if (Auth::user()->type !== 'Admin') {
+                Auth::logout();
+                return redirect()->back()->withInput()->with('error', 'You are not authorized to access the admin panel.');
+            }
+            return redirect()->intended(route('admin.home'));
         }
 
-        return redirect()->route('login')->with('error', 'Email-Address And Password Are Wrong.');
-    }
-
-    protected function redirectTo()
-    {
-        if (Auth::user()->type == 'Admin') {
-            return route('admin.home');
-        }
-        return route('home');
+        return redirect()->back()->withInput()->with('error', 'Email and Password are incorrect.');
     }
 
     public function logout(Request $request): RedirectResponse
     {
+        // Capture the user type before logging out
+        $userType = Auth::user()?->type;
+      
         Auth::logout();
-
+    
         $request->session()->invalidate();
         $request->session()->regenerateToken();
     
-        return redirect()->route('login')->with('success', 'You have been logged out successfully.')
+        // Use the captured user type for redirection
+        $redirectRoute = $userType === 'Admin' ? route('admin.login') : route('website.home');
+        // dd($redirectRoute);
+        return redirect($redirectRoute)
+            ->with('success', 'You have been logged out successfully.')
             ->withHeaders([
                 'Cache-Control' => 'no-store, no-cache, must-revalidate, max-age=0',
                 'Pragma' => 'no-cache',
                 'Expires' => 'Thu, 01 Jan 1970 00:00:00 GMT'
             ]);
     }
+    
+    
 
-    public function showLoginForm(Request $request)
-    {
-        if ($request->is('admin') || $request->is('admin/*')) {
-            return view('auth.admin_login'); // Admin login page
-        }
-        return view('auth.login'); // User login page
-    }
+    // public function showLoginForm(Request $request)
+    // {
+        
+    //     if ($request->is('admin') || $request->is('admin/*')) {
+    //         return view('auth.admin_login'); // Admin login page
+    //     }
+        
+    //     return view('auth.login'); // User login page
+    // }
 }

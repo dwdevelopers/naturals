@@ -13,19 +13,26 @@ use App\Models\Category;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
+Route::get('login', [\App\Http\Controllers\Auth\LoginController::class, 'showUserLoginForm'])
+    ->name('login');
+Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'userLogin'])->name('login');
 
-Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])->group(function () {
-
-    Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');   
-    Route::resource('contactuses', ContactUsController::class);
-    Route::resource('categories', CategoryController::class)->parameter('categories', 'category');
-    Route::resource('products', ProductController::class)->parameter('products', 'product');
-    Route::resource('testimonials', TestimonialController::class);
-
+// Admin login
+Route::get('admin/login', [\App\Http\Controllers\Auth\LoginController::class, 'showAdminLoginForm'])
+    ->name('admin.login');
+Route::post('admin/login', [\App\Http\Controllers\Auth\LoginController::class, 'adminLogin'])->name('admin.login');
 
 
-});
+Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
+    ->group(function () {
+        Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');   
+        Route::resource('contactuses', ContactUsController::class);
+        Route::resource('categories', CategoryController::class)->parameter('categories', 'category');
+        Route::resource('products', ProductController::class)->parameter('products', 'product');
+        Route::resource('testimonials', TestimonialController::class);
+    });
+
+
 Route::name('website.')->group(function(){
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about-us', [HomeController::class, 'about'])->name('about');
