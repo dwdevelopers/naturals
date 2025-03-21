@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title', 'Category')
+@section('title', 'Product')
 @section('content')
 <div class="content">
 
@@ -7,28 +7,30 @@
     <div class="container-fluid">
 
         <!-- start page title -->
-        @include('admin.layouts.partials.top', ['pageTitle' => 'Category'])
+        @include('admin.layouts.partials.top', ['pageTitle' => 'Product'])
         <!-- end page title -->
 
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="header-title">Category</h4>
+                        <h4 class="header-title">Product</h4>
                     </div>
 
                     <div class="d-flex justify-content-end m-2">
-                        <a href="{{route('categories.create')}}" class="btn btn-primary">Add Category</a>
+                        <a href="{{route('products.create')}}" class="btn btn-primary">Add Product</a>
                     </div>
 
                     <div class="card-body">
-                        <table id="datatables-categories" class="table table-striped dt-responsive nowrap w-100" data-url="{{ route('categories.index') }}">
+                        <table id="datatables-products" class="table table-striped dt-responsive nowrap w-100" data-url="{{ route('products.index') }}">
                             <thead>
                                 <tr>
                                     <th>#</th>
                                     <th>Image</th>
                                     <th>Category</th>
+                                    <th>Product</th>
                                     <th>Description</th>
+                                    <th>Price</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -53,6 +55,6 @@
 @push('scripts')
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-<script src="{{ asset('js/category.js') }}"></script>
+<script src="{{ asset('js/product.js') }}"></script>
 
 @endpush

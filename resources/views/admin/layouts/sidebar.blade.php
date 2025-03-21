@@ -44,10 +44,10 @@
                 <div class="collapse" id="sidebarForms">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="">Category List</a>
+                            <a href="{{route('categories.index')}}">Category List</a>
                         </li>
                         <li>
-                            <a href="">Product List</a>
+                            <a href="{{route('products.index')}}">Product List</a>
                         </li>
 
                     </ul>
@@ -81,10 +81,10 @@
                 <div class="collapse" id="sidebarLayouts">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="">List</a>
+                            <a href="{{route('testimonials.index')}}">List</a>
                         </li>
                         <li>
-                            <a href="">Add</a>
+                            <a href="{{route('testimonials.create')}}">Add</a>
                         </li>
 
                     </ul>

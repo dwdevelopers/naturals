@@ -6,9 +6,10 @@ use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\ContactUsController;
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
-
+use App\Models\Category;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -18,8 +19,10 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])->group(
 
     Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');   
     Route::resource('contactuses', ContactUsController::class);
-    Route::resource('categories', CategoryController::class);
-    
+    Route::resource('categories', CategoryController::class)->parameter('categories', 'category');
+    Route::resource('products', ProductController::class)->parameter('products', 'product');
+    Route::resource('testimonials', TestimonialController::class);
+
 
 
 });

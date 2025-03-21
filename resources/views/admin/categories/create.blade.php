@@ -1,17 +1,17 @@
 @extends('admin.layouts.app')
-@section('title', 'Service Category')
+@section('title', 'Category')
 
 @section('content')
 <div class="content">
     <div class="container-fluid">
 
-        @include('admin.layouts.partials.top', ['pageTitle' => 'Create Service Category'])
+        @include('admin.layouts.partials.top', ['pageTitle' => 'Create Category'])
 
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="header-title">Create Service Category</h4>
+                        <h4 class="header-title">Create Category</h4>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -31,13 +31,23 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="description" class="form-label">Description</label>
-                                        <textarea id="description" name="description" class="form-control" rows="3"></textarea>
+                                        <label for="details" class="form-label">Description</label>
+                                        <textarea id="details" name="details" class="form-control" rows="3"></textarea>
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="image" class="form-label">Category Image</label>
                                         <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                                    </div>
+
+                                    <div class="mb-3 error-placeholder">
+                                        <label class="form-label">Status</label>
+                                        <label class="form-check">
+                                            <input type="radio" class="form-check-input" name="status" value="1" checked> Active
+                                        </label>
+                                        <label class="form-check">
+                                            <input type="radio" class="form-check-input" name="status" value="0"> Inactive
+                                        </label>
                                     </div>
 
                                     <button type="submit" class="btn btn-primary">Create Category</button>
