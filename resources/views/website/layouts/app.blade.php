@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ asset('website/dist/output-scss.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/dist/output-tailwind.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/custom.css')}}" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -857,6 +859,10 @@
     <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
     <script src="{{ asset('website/assets/js/main.js')}}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 
 </html>
