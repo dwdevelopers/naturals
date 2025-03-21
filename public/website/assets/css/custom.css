@@ -24,4 +24,56 @@
 
 .d-none {
   display: none;
+}
+
+.pt-40 {
+  padding-bottom: 40px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.grid-three-sec-inner .grid-three-sec-common .grid-three-sec-block {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.grid-three-sec-inner .grid-three-sec-common .grid-three-sec-block .loader span {
+  font-size: 150px;
+  font-weight: 900;
+  background-clip: text;
+  background-image: linear-gradient(121.84deg, #ff7fba 13.8%, #fad6b4 69.15%);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.grid-three-sec-inner .grid-three-sec-common .grid-three-sec-block h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.product_sec .product-infor {
+  text-align: center;
+}
+.product_sec .product-infor .product-price-block {
+  justify-content: center;
+  padding: 3px 0px;
+}
+.product_sec .product-infor .product-name {
+  padding: 10px 0px;
+  font-size: 22px;
+}
+.product_sec .tax-details {
+  font-size: 14px;
+  padding-top: 10px;
+}
+.product_sec .cart_btn_wrapper {
+  padding-top: 20px;
+}
+.product_sec .cart_btn_wrapper .cart_btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 9px 20px;
+  width: 100%;
 }/*# sourceMappingURL=custom.css.map */
