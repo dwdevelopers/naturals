@@ -14,6 +14,9 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'user-access' => \App\Http\Middleware\UserAccess::class,
             'prevent-back-history'=>\App\Http\Middleware\PreventBackHistory::class,
+            'auth' => \App\Http\Middleware\Authenticate::class, // ✅ Use our custom middleware
+
+
 
 
         ]);

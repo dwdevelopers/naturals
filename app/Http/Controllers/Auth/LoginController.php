@@ -38,18 +38,18 @@ class LoginController extends Controller
             'email'    => 'required|email',
             'password' => 'required',
         ]);
-
+    
         // Attempt login
         if (Auth::attempt($credentials)) {
-            // Optionally, if you want to restrict admin users from logging in via user login,
-            // check here and log them out:
+            // Prevent admins from logging in as normal users
             if (Auth::user()->type === 'Admin') {
                 Auth::logout();
-                return redirect()->back()->with('error', 'Admins must login via the admin login page.');
+                return redirect()->back()->with('error', 'Admins must log in via the admin login page.');
             }
+    
             return redirect()->intended(route('website.home'));
         }
-
+    
         return redirect()->back()->withInput()->with('error', 'Email and Password are incorrect.');
     }
 
@@ -72,7 +72,11 @@ class LoginController extends Controller
 
         return redirect()->back()->withInput()->with('error', 'Email and Password are incorrect.');
     }
-
+    protected function authenticated(Request $request, $user)
+    {
+        return redirect()->intended($user->type === 'Admin' ? route('admin.home') : route('website.home'));
+    }
+    
     public function logout(Request $request): RedirectResponse
     {
         // Capture the user type before logging out

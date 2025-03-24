@@ -7,23 +7,19 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
 
-
-class UserAccess
+class Authenticate
 {
     /**
      * Handle an incoming request.
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next,$userType): Response
+    public function handle(Request $request, Closure $next): Response
     {
         if (!Auth::check()) {
+            // Properly return a RedirectResponse
             return redirect()->route($request->is('website/*') ? 'login' : 'admin.login');
         }
-        if(auth()->user()->type == $userType){
-            return $next($request);
-        }
-          
-        return redirect()->back()->with('error', 'You do not have permission to access this page.');
+        return $next($request);
     }
 }
