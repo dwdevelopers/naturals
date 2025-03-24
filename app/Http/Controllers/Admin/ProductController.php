@@ -42,17 +42,8 @@ class ProductController extends Controller
 
             return DataTables::of($products)
                 ->addIndexColumn()
-                ->addColumn('category', function ($row) {
-                    return $row->category ? $row->category->name : 'N/A';
-                })
-                ->addColumn('image', function ($row) {
-                    $firstImage = $row->images->first(); // Get the first image
-                    if ($firstImage) {
-                        $imageUrl = asset('storage/' . $firstImage->image);
-                        return '<img src="' . $imageUrl . '" alt="Product Image" width="50" height="50" />';
-                    }
-                    return '';
-                })
+               
+               
                 ->addColumn('status', function ($row) {
                     return $row->status 
                         ? '<span class="badge bg-success">Active</span>' 

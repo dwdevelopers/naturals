@@ -9,23 +9,11 @@ class Product extends Model
 {
    
     protected $fillable = [
-        'category_id',
         'name',
         'slug',
         'description',
-        'price',
         'status',
     ];
-
-    public function images()
-    {
-        return $this->hasMany(ProductImage::class);
-    }
-
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
     public static function generateUniqueSlug($name)
     {
         $slug = Str::slug($name);
@@ -39,5 +27,9 @@ class Product extends Model
         }
 
         return $slug;
+    }
+    public function productDetails()
+    {
+        return $this->hasMany(ProductDetail::class, 'product_id');
     }
 }

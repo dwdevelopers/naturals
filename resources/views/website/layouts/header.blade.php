@@ -1,174 +1,113 @@
-     <div class="header-menu style-one relative bg-white w-full md:h-[74px] h-[56px]">
-         <div class="container mx-auto h-full">
-             <div class="header-main flex items-center justify-between h-full">
-                 <div class="menu-mobile-icon lg:hidden flex items-center">
-                     <i class="icon-category text-2xl"></i>
-                 </div>
-                 <a href="index.html" class="flex items-center lg:hidden">
-                     <div class="heading4"><img src="{{ asset('website/assets/images/logo.png')}}" alt="" style="height: 30px;"></div>
-                 </a>
+ <!-- HEADER -->
+    <div class="header header-1">
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-md-7">
+                        <div class="info">
+                            <div class="info-item">
+                                <span class="fa fa-phone"></span> +62 7144 3300
+                            </div>
+                            <div class="info-item">
+                                <span class="fa fa-clock-o"></span> Mon-Sat: 9.00-18.00
+                            </div>
+                            <div class="info-item">
+                                <span class="fa fa-envelope-o"></span> <a href="mailto:info@finanzi.com" title="">info@finanzi.com</a>
+                            </div>
 
-                 <div class="menu-main h-full w-screen xl:absolute xl:left-1/2 xl:-translate-x-1/2 max-lg:hidden flex items-center">
-                     <div class="container">
-                         <div class="row">
-                             <div class="col-12">
-                                 <div class="main-header-desktop">
-                                     <div class="h-full flex items-center justify-center logo">
-                                         <a href="{{route('website.home')}}" class="heading4"> <img src="{{ asset('website/assets/images/logo.png')}}" alt=""> </a>
-                                     </div>
-                                     <ul class="flex items-center justify-center gap-8 h-full">
-                                         <li class="h-full relative">
-                                             <a href="{{route('website.home')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 active">
-                                                 Home </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-5">
+                        <div class="request-quote pull-right">
+                            <a href="#" title="">GET A QUOTE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                         </li>
-                                         <li class="h-full relative">
-                                             <a href="{{route('website.about')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
-                                                 About Us </a>
+        <!-- NAVBAR SECTION -->
+        <div class="navbar navbar-main">
 
-                                         </li>
-                                         <li class="h-full">
-                                             <a href="{{route('website.shop')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
-                                                 Shop </a>
+            <div class="container container-nav">
+                <div class="row">
 
-                                         </li>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" alt="" />
+                        </a>
+                    </div>
 
-                                         <li class="h-full relative">
-                                             <a href="{{route('website.contact')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
-                                                 Contact Us </a>
+                    <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html">Homepage 1</a></li>
+                                    <li><a href="index-2.html">Homepage 2</a></li>
+                                    <li><a href="index-3.html">Homepage 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about-company.html">Our Company</a></li>
+                                    <li><a href="about-history.html">Company History</a></li>
+                                    <li><a href="about-team.html">Our Team</a></li>
+                                    <li><a href="about-partners.html">Our Partners</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="services.html">Financial Analysis</a></li>
+                                    <li><a href="services-2.html">Business Solutions</a></li>
+                                    <li><a href="services-3.html">Client Management</a></li>
+                                    <li><a href="services-3.html">Online Consulting</a></li>
+                                    <li><a href="services-3.html">Business Opportunities</a></li>
+                                    <li><a href="services-3.html">IT Consulting</a></li>
+                                    <li><a href="services-detail.html">Services Detail</a></li>
+                                </ul>
+                            </li>
 
-                                         </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROJECTS <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="project.html">Grid Layout</a></li>
+                                    <li><a href="project-detail.html">Single Project</a></li>
+                                </ul>
+                            </li>
 
-                                     </ul>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NEWS <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="news-grid.html">Grid Bar</a></li>
+                                    <li><a href="news-sidebar.html">Sidebar</a></li>
+                                    <li><a href="news-detail.html">News Detail</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAGES <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="faq.html">Faq</a></li>
+                                    <li><a href="pricing-table.html">Pricing Table</a></li>
+                                    <li><a href="404page.html">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">CONTACT</a></li>
 
+                        </ul>
 
-                 </div>
-                 <div class="right flex gap-12 z-[1]">
-                     <div class="list-action flex items-center gap-4">
+                    </nav>
 
-                         <div class="max-md:hidden wishlist-icon flex items-center relative cursor-pointer d-none">
+                </div>
+            </div>
+        </div>
 
-                             <span class="quantity wishlist-quantity absolute -right-1.5 -top-1.5 text-xs text-white  w-4 h-4 flex items-center justify-center rounded-full"></span>
-                         </div>
-                         <div class="max-md:hidden cart-icon flex items-center relative cursor-pointer d-none">
-
-                             <span class="quantity cart-quantity absolute -right-1.5 -top-1.5 text-xs text-white  w-4 h-4 flex items-center justify-center rounded-full"></span>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-     <!-- Menu Mobile -->
-     <div id="menu-mobile" class="">
-         <div class="menu-container bg-white h-full">
-             <div class="container h-full">
-                 <div class="menu-main h-full overflow-hidden">
-                     <div class="heading py-2 relative flex items-center justify-center">
-                         <div class="close-menu-mobile-btn absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface flex items-center justify-center">
-                             <i class="ph ph-x text-sm"></i>
-                         </div>
-                         <a href="index.html" class="logo text-3xl font-semibold text-center"><img src="{{ asset('website/assets/images/logo.png')}}" alt="" style="height: 50px;"></a>
-                     </div>
-
-                     <div class="list-nav mt-6">
-                         <ul>
-                             <li>
-                                 <a href="index.html" class="text-xl font-semibold flex items-center justify-between">Home </a>
-                             </li>
-
-                             <li>
-                                 <a href="about.html" class="text-xl font-semibold flex items-center justify-between mt-5">About Us
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="shop.html" class="text-xl font-semibold flex items-center justify-between mt-5">Shop </a>
-                             </li>
-                             <li>
-                                 <a href="contact.html" class="text-xl font-semibold flex items-center justify-between mt-5">Contact Us
-                                 </a>
-                             </li>
-
-
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-     <!-- Menu bar -->
-     <div class="menu_bar fixed bg-white bottom-0 left-0 w-full h-[70px] sm:hidden z-[101]">
-         <div class="menu_bar-inner grid grid-cols-4 items-center h-full">
-             <a href="index.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <span class="ph-bold ph-house text-2xl block"></span>
-                 <span class="menu_bar-title caption2 font-semibold">Home</span>
-             </a>
-             <a href="shop-filter-canvas.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <span class="ph-bold ph-list text-2xl block"></span>
-                 <span class="menu_bar-title caption2 font-semibold">Category</span>
-             </a>
-             <a href="search-result.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <span class="ph-bold ph-magnifying-glass text-2xl block"></span>
-                 <span class="menu_bar-title caption2 font-semibold">Search</span>
-             </a>
-             <a href="cart.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <div class="cart-icon relative">
-                     <span class="ph-bold ph-handbag text-2xl block"></span>
-                     <span class="quantity cart-quantity absolute -right-1.5 -top-1.5 text-xs text-white bg-black w-4 h-4 flex items-center justify-center rounded-full"></span>
-                 </div>
-                 <span class="menu_bar-title caption2 font-semibold">Cart</span>
-             </a>
-         </div>
-     </div>
-
-     <!-- Marquee -->
-     <div class="banner-top bg-green py-3">
-         <div class="marquee-block swiper-container flex items-center whitespace-nowrap">
-             <div class="swiper-wrapper">
-                 <div class="swiper-slide">
-                     <div class="text-button-uppercase px-8">Get 10% off on selected items</div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="line w-8 h-px bg-black"></div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="text-button-uppercase px-8">10% off swim suits</div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="line w-8 h-px bg-black"></div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="text-button-uppercase px-8">Free shipping on all orders over $50</div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="line w-8 h-px bg-black"></div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="text-button-uppercase px-8">10% off on all summer essentials!</div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="line w-8 h-px bg-black"></div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="text-button-uppercase px-8">Get summer-ready: 10% off swim suits</div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="line w-8 h-px bg-black"></div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="text-button-uppercase px-8">10% off on all product</div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="line w-8 h-px bg-black"></div>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-     <!-- Slider -->
+    </div>

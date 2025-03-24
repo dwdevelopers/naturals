@@ -34,7 +34,24 @@
                 </a>
             </li>
 
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarForms" aria-expanded="false" aria-controls="sidebarForms" class="side-nav-link">
+                    <i class="ri-survey-line"></i>
+                    <span> Project </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarForms">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('projects.index')}}">Project List</a>
+                        </li>
+                        <li>
+                            <a href="{{route('projects.index')}}">Activities List</a>
+                        </li>
 
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarForms" aria-expanded="false" aria-controls="sidebarForms" class="side-nav-link">
                     <i class="ri-survey-line"></i>
@@ -44,7 +61,7 @@
                 <div class="collapse" id="sidebarForms">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('categories.index')}}">Category List</a>
+                            {{-- <a href="{{route('categories.index')}}">Category List</a> --}}
                         </li>
                         <li>
                             <a href="{{route('products.index')}}">Product List</a>
