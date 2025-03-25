@@ -8,7 +8,7 @@ class ContactUsRepository implements ContactUsRepositoryInterface
 {
     public function all()
     {
-        return ContactUs::all();
+        return ContactUs::orderByDesc('id')->get();
     }
 
     public function find($id)

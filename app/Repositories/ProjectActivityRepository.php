@@ -2,24 +2,25 @@
 
 namespace App\Repositories;
 
-use App\Models\Project;
+use App\Models\ProjectActivity;
 
-class ProjectRepository implements ProjectRepositoryInterface
+class ProjectActivityRepository implements ProjectActivityRepositoryInterface
 {
     public function all()
     {
-        return Project::orderByDesc('id')->get();
+        
+        return ProjectActivity::with('project')->orderByDesc('id')->get();
     }
 
     public function find($id)
     {
-        return Project::find($id);
+        return ProjectActivity::find($id);
     }
 
     public function create(array $data)
     {
         try {
-            return Project::create($data);
+            return ProjectActivity::create($data);
         } catch (\Exception $e) {
             dd($e->getMessage());
         }
@@ -28,10 +29,10 @@ class ProjectRepository implements ProjectRepositoryInterface
     public function update($id, array $data)
     {
         try {
-            $project = Project::find($id);
-            if ($project) {
-                $project->update($data);
-                return $project;
+            $activity = ProjectActivity::find($id);
+            if ($activity) {
+                $activity->update($data);
+                return $activity;
             }
         } catch (\Exception $e) {
             dd($e->getMessage());
@@ -41,6 +42,6 @@ class ProjectRepository implements ProjectRepositoryInterface
 
     public function delete($id)
     {
-        return Project::destroy($id);
+        return ProjectActivity::destroy($id);
     }
 }

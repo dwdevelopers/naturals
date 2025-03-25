@@ -46,7 +46,7 @@
                             <a href="{{route('projects.index')}}">Project List</a>
                         </li>
                         <li>
-                            <a href="{{route('projects.index')}}">Activities List</a>
+                            <a href="{{route('activities.index')}}">Activities List</a>
                         </li>
 
                     </ul>

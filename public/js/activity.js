@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var tableElement = $('#datatables-projects');
+    var tableElement = $('#datatables-project-activity');
     if (tableElement.length) {
-        var projectsDataUrl = tableElement.data('url'); 
+        var activitiesDataUrl = tableElement.data('url'); 
         var table = tableElement.DataTable({
             pageLength: 6,
             lengthChange: false,
@@ -10,30 +10,29 @@ $(document).ready(function() {
             scrollX: true,
             processing: true, 
             serverSide: true, 
-            ajax: projectsDataUrl, 
+            ajax: activitiesDataUrl, 
             columns: [
                 { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },             
- 
-                { data: 'name', name: 'name' },  // Updated from 'name' to 'project_name'
-                { data: 'description', name: 'description' },  // Updated from 'details' to 'description'
-                { data: 'additional_info', name: 'additional_info' }, // Added 'additional_info' column
-                { data: 'status', name: 'status' }, // Added 'additional_info' column
+                { data: 'activity_name', name: 'activity_name' },  
+                { data: 'description', name: 'description' },  
+                { data: 'project_name', name: 'project_name' }, 
+                { data: 'status', name: 'status' }, 
                 { data: 'action', name: 'action', orderable: false, searchable: false },
             ],
             initComplete: function() {
                 setTimeout(function() {
-                    $('#datatables-projects tbody tr:first').trigger('click');
+                    $('#datatables-project-activity tbody tr:first').trigger('click');
                 }, 500);
             }
         });
 
         // Handle row click event (if needed)
-        $('#datatables-projects tbody').on('click', 'tr', function() {
+        $('#datatables-project-activity tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
             console.log('Clicked row data:', data);
         });
 
     } else {
-        console.error("Table with ID 'datatables-projects' not found.");
+        console.error("Table with ID 'datatables-project-activity' not found.");
     }
 });

@@ -13,7 +13,8 @@ $(document).ready(function() {
             serverSide: true,
             ajax: testimonialDataUrl,
             columns: [
-                { data: 'id', name: 'id' },
+                { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },             
+
                 { data: 'image', name: 'image' },
                 { data: 'name', name: 'name' },
                 { data: 'email', name: 'email'},

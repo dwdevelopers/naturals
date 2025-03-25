@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('activity_name', 255);
             $table->string('slug', 255)->nullable();
             $table->text('description')->nullable();
+            $table->enum('status', ['active', 'inactive'])->default('active');
+
             $table->timestamps(); // created_at & updated_at
 
             // Foreign key constraint (Reference to projects table)

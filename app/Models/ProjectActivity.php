@@ -11,6 +11,7 @@ class ProjectActivity extends Model
         'activity_name',
         'slug',
         'description',
+        'status',
     ];
 
     /**
@@ -20,5 +21,5 @@ class ProjectActivity extends Model
     {
         return $this->belongsTo(Project::class, 'project_id');
     }
-
+    public $timestamps = true;
 }

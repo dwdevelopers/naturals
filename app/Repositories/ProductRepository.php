@@ -8,7 +8,7 @@ class ProductRepository implements ProductRepositoryInterface
 {
     public function all()
     {
-        return Product::all();
+        return Product::orderByDesc('id')->get();
     }
 
     public function find($id)
