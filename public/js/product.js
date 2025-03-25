@@ -11,7 +11,7 @@ $(document).ready(function() {
             serverSide: true, 
             ajax: productsDataUrl, 
             columns: [
-                { data: 'id', name: 'id' },
+                { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },             
                 { data: 'image', name: 'image' },            
                 { data: 'category', name: 'category'},
                 { data: 'name', name: 'name'},

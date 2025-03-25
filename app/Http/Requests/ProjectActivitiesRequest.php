@@ -11,18 +11,21 @@ class ProjectActivitiesRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     * @return array<string, mixed>
      */
     public function rules(): array
     {
         return [
-            //
+            'activity_name' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'project_id' => 'required|exists:projects,id',
+            'status' => 'required|in:active,inactive',
         ];
     }
 }

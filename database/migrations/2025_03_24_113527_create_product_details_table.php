@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('slug', 255)->nullable();
             $table->text('description')->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
-            $table->timestamps(); // created_at & updated_at
 
             // Foreign key constraint (Reference to products table)
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');

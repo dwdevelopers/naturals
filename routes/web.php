@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\ContactUsController;
 
 use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\ProjectActivitiesController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
@@ -30,6 +31,7 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('products', ProductController::class)->parameter('products', 'product');
         Route::resource('testimonials', TestimonialController::class);
         Route::resource('projects', ProjectController::class);
+        Route::resource('activities', ProjectActivitiesController::class);
     });
 
 
