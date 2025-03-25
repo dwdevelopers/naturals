@@ -19,7 +19,6 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
 
-            $table->timestamps(); // created_at & updated_at
 
             // Foreign key constraint (Reference to projects table)
             $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
