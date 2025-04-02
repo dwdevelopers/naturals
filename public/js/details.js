@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var tableElement = $('#datatables-products');
+    var tableElement = $('#datatables-details');
     if (tableElement.length) {
-        var productsDataUrl = tableElement.data('url');
+        var detailsDataUrl = tableElement.data('url');
         var table = tableElement.DataTable({
             pageLength: 6,
             lengthChange: false,
@@ -9,9 +9,10 @@ $(document).ready(function() {
             autoWidth: false,
             processing: true,
             serverSide: true,
-            ajax: productsDataUrl,
+            ajax: detailsDataUrl,
             columns: [
                 { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },
+                { data: 'product', name: 'produt'},
                 { data: 'name', name: 'name'},
                 { data: 'description', name: 'description'},
                 { data: 'status', name: 'status'},
@@ -19,7 +20,7 @@ $(document).ready(function() {
             ],
             initComplete: function() {
                 setTimeout(function() {
-                    $('#datatables-products tbody tr:first').trigger('click');
+                    $('#datatables-details tbody tr:first').trigger('click');
                 }, 500);
             }
         });

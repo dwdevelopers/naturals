@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ProjectActivitiesController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ProductDetailsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Models\Category;
@@ -26,9 +27,10 @@ Route::post('admin/login', [\App\Http\Controllers\Auth\LoginController::class, '
 
 Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
     ->group(function () {
-        Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');   
+        Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');
         Route::resource('contactuses', ContactUsController::class);
         Route::resource('products', ProductController::class)->parameter('products', 'product');
+        Route::resource('product-details', ProductDetailsController::class);
         Route::resource('testimonials', TestimonialController::class);
         Route::resource('projects', ProjectController::class);
         Route::resource('activities', ProjectActivitiesController::class);

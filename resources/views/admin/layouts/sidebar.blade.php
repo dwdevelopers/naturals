@@ -53,12 +53,12 @@
                 </div>
             </li>
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarForms" aria-expanded="false" aria-controls="sidebarForms" class="side-nav-link">
+                <a data-bs-toggle="collapse" href="#productForms" aria-expanded="false" aria-controls="productForms" class="side-nav-link">
                     <i class="ri-survey-line"></i>
                     <span> Product </span>
                     <span class="menu-arrow"></span>
                 </a>
-                <div class="collapse" id="sidebarForms">
+                <div class="collapse" id="productForms">
                     <ul class="side-nav-second-level">
                         <li>
                             {{-- <a href="{{route('categories.index')}}">Category List</a> --}}
@@ -66,6 +66,10 @@
                         <li>
                             <a href="{{route('products.index')}}">Product List</a>
                         </li>
+                         <li>
+                            <a href="{{route('product-details.index')}}">Details List</a>
+                        </li>
+
 
                     </ul>
                 </div>

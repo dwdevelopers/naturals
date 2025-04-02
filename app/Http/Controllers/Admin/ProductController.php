@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Services\ProductService;
-use App\Services\CategoryService;
 use App\Http\Requests\ProductRequest;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\DB;
@@ -18,14 +17,13 @@ class ProductController extends Controller
     use ImageUploadTrait;
 
     protected $productService;
-    protected $categoryService;
 
-    public function __construct(ProductService $productService, CategoryService $categoryService)
+    public function __construct(ProductService $productService)
     {
         $this->middleware('auth');
 
         $this->productService = $productService;
-        $this->categoryService = $categoryService;
+
     }
 
     public function index(Request $request)
@@ -42,11 +40,11 @@ class ProductController extends Controller
 
             return DataTables::of($products)
                 ->addIndexColumn()
-               
-               
+
+
                 ->addColumn('status', function ($row) {
-                    return $row->status 
-                        ? '<span class="badge bg-success">Active</span>' 
+                    return $row->status
+                        ? '<span class="badge bg-success">Active</span>'
                         : '<span class="badge bg-danger">Inactive</span>';
                 })
                 ->addColumn('action', function ($row) {
@@ -72,31 +70,18 @@ class ProductController extends Controller
             ['name' => 'Products', 'url' => route('products.index')],
             ['name' => 'Create', 'url' => null] // Current page
         ];
-        $categories = $this->categoryService->getAllCategories();
-        return view('admin.products.create', compact('categories', 'breadcrumbs'));
+        return view('admin.products.create', compact('breadcrumbs'));
     }
 
     public function store(ProductRequest $request)
     {
+
         $data = $request->validated();
         DB::beginTransaction();
         try {
             $data = $request->validated();
             $data['slug'] = Product::generateUniqueSlug($data['name']);
             $product = $this->productService->createProduct($data);
-
-            // Handle multiple image uploads
-            if ($request->hasFile('image')) {
-                foreach ($request->file('image') as $image) {
-                    $path = $this->uploadImage($image, 'products');
-
-                    ProductImage::create([
-                        'product_id' => $product->id,
-                        'image' => $path
-                    ]);
-                }
-            }
-
             DB::commit();
             return redirect()->route('products.index')->with('success', 'Product created successfully!');
         } catch (\Exception $e) {
@@ -113,8 +98,8 @@ class ProductController extends Controller
             ['name' => 'Products', 'url' => route('products.index')],
             ['name' => 'Edit', 'url' => null] // Current page
         ];
-        $categories = $this->categoryService->getAllCategories();
-        return view('admin.products.edit', compact('product', 'categories', 'breadcrumbs'));
+
+        return view('admin.products.edit', compact('product','breadcrumbs'));
     }
 
     public function update(ProductRequest $request, Product $product)
@@ -127,24 +112,7 @@ class ProductController extends Controller
             // Update Product
             $this->productService->updateProduct($product->id, $data);
 
-            // Handle image updates
-            if ($request->hasFile('image')) {
-                // Delete old images
-                foreach ($product->images as $image) {
-                    Storage::disk('public')->delete($image->image);
-                    $image->delete();
-                }
 
-                // Upload new images
-                foreach ($request->file('image') as $image) {
-                    $path = $this->uploadImage($image, 'products');
-
-                    ProductImage::create([
-                        'product_id' => $product->id,
-                        'image' => $path
-                    ]);
-                }
-            }
 
             DB::commit();
             return redirect()->route('products.index')->with('success', 'Product updated successfully!');
@@ -158,13 +126,7 @@ class ProductController extends Controller
     {
         DB::beginTransaction();
         try {
-            // Delete associated images
-            foreach ($product->images as $image) {
-                Storage::disk('public')->delete($image->image);
-                $image->delete();
-            }
 
-            // Delete Product
             $this->productService->deleteProduct($product->id);
 
             DB::commit();
