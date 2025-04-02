@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+//=============HEADER START========================
+.topbar {
+    background-color: #ffffff !important;
+    .topbar-row {
+        margin-right: -15px;
+        margin-left: 650px;
+        @media only screen and (max-width: 1200px){
+            width:55%; 
+            margin-left: 450px;
+        }
+        @media only screen and (max-width: 992px){
+            width:70%; 
+            margin-left: 100px;
+        }
+        .col-lg-12{
+            margin-left: 20px;
+        }
+        .col-md-8 {
+            @media only screen and (max-width: 1198px){
+                width: 100%; 
+            }
+        }
+        .info-item{
+            margin-right: 10px;
+            .topbar-info{
+                color: grey;
+                font-size: 10pt;
+            }
+            .topbar-info-2{
+                margin-left: 10px;
+            }
+            .fa{
+                color: black;
+                font-size: 18px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.navbar-main{
+    background-color: #ffffff;
+    border-top: 0.5px solid rgba(169, 164, 164, 0.342);
+    border-bottom: 3px solid #f6f7f8;
+    .navbar-brand{
+        max-width: 200px;
+        width:200px;
+    }
+    .container{
+        .row{
+            nav{
+                .navbar-right{
+                    @media (max-width: 992px){
+                     display: none;
+                    }
+                    li{
+                        margin-right: -1px;
+                        font-size: 19px;
+                        font-family: "Barlow Condensed", sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        @media (max-width: 1200px){
+                            font-size: 15px;
+                        }
+                        a{
+                            color:#5C9520;
+                            transition: transform 0.3s ease, color 0.3s ease;
+                            &:hover{
+                                color:#1BAE70;
+                                transform: scale(1.10);
+                            }
+                        }
+                        .active{
+                            color:#1BAE70;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+@media (max-width: 992px){
+    .navbar-toggle {
+        display: block;
+        float: right;
+        margin-top: 20px;
+        margin-left: 500px;
+    }
+}
+//=============HEADER END==========================
+    
+//=============BANNER START========================
+.banner{
+    .slides-container{
+        .container{
+            width: 46.958%;
+            margin-left: 10px;
+            @media (max-width: 1181px){
+                width: 60%;
+            }
+            @media (max-width: 769px){
+                width: 70%;
+            }
+            @media (max-width: 426px){
+                width: 100%;
+            }
+            .wrap-caption{
+                margin-top: 70px; 
+                width:100%;
+                @media (max-width: 1181px){
+                    margin-top: 0;
+                }
+                p{
+                    font-size: 25px;
+                    font-family: "Barlow Condensed", sans-serif;
+                }
+                h4{
+                    font-size: 2.857em;
+                    font-family: "Bai Jamjuree", Sans-serif;
+                    color: #5CA904;
+                    line-height: 1.4em;
+                    @media (max-width: 769px){
+                        font-size: 2em;
+                    }
+                }
+                .banner-text{
+                    font-size: 16px;
+                    font-family: "Bai Jamjuree", Sans-serif;
+                    padding: 0;
+                    color:#222222;
+                    background: none!important;
+                    width:90%;
+                    @media (max-width: 769px){
+                        font-size: 13px;
+                    }
+                }
+             }
+        }
+    }
+}
+//=============BANNER END========================
+
+//=============OPPORTUNITIES START==================
+.opportunities{
+    background-color: #29AB87;
+    text-align: center;
+    padding: 40px 20px;
+        h2 {
+        color: white;
+        font-size: 28px;
+        font-family: "Bai Jamjuree", Sans-serif;
+        margin-bottom: 20px;
+    }
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .card{
+        background: #ffffff;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        --e-column-margin-right: 10px;
+        --e-column-margin-left: 10px;
+        padding: 40px 40px 40px 40px;
+        width: calc(33.333% - 20px);
+        text-align: left;
+        transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        &:hover {
+            box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.8);
+        }
+        h3 {
+            font-size: 25px;
+            font-family: "Barlow Condensed", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 17px;
+            margin: 10px 0;
+            font-family: "Bai Jamjuree", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #4E5652;
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 1.5;
+        }
+        button {
+            background: #1BAE70;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            padding: 11px 35px 11px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+
+            &:hover {
+                background: darken(#16983f, 10%);
+            }
+        }
+        .card2{
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .card {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            width: 100%;
+        }
+    }
+}
+//=============OPPORTUNITIES END==================
+
+//=============SERVICE START==================
+.section-border{
+    border-top: 20px solid #03D89D;
+    .container{
+        padding-top: 40px;
+        padding-bottom: 0px;
+        h3{
+            font-size: 35px;
+            font-family: "Bai Jamjuree", sans-serif;
+            margin-bottom: 0px;
+        }
+        .body-content{
+            transition: transform 0.3s ease, color 0.3s ease;
+                &:hover{
+                    transform: scale(1.10);
+                }
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Bai Jamjuree", sans-serif;
+            color: #4E5652;
+            &::after{
+                display: none;
+            }
+        }
+        img{
+            padding-top: 40px;
+        }
+
+    }
+}
+//=============SERVICE END========================
+
+//=============CONTRIBUTION START==================
+.contribution{
+    border-top: 20px solid #03D89D;
+    .grid-container {
+        gap: 40px;
+        flex-wrap: wrap;
+        @media (max-width: 769px){
+            display: block;
+            justify-content: center;
+        }
+
+    }
+    .contribution1{
+        position: relative;
+        background-image: url('/website/images/contribution1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 11px 11px 11px 11px;
+        background-color: #3A3A3A;
+        opacity:0.8;
+        width: calc(47.333% - 20px);
+        height:46vh;
+        transition: none;
+        overflow: hidden;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); // Dark overlay
+        }
+
+        &:hover {
+            box-shadow: none;
+            transform: none;
+        }
+
+        @media (max-width: 769px){
+            width: 100%;
+        }
+    }
+    .card-2{
+        background-image: url('/website/images/contribution2.png');
+        @media (max-width: 769px){
+            margin-top: 40px;
+        }
+    }
+    .box{
+        position: relative;
+        z-index: 2;
+        background: transparent;
+        text-align: center;
+        padding: 20px;
+        h3 {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: "Bai Jamjuree", sans-serif;
+            opacity: 1px;
+            margin-top: 30%;
+            @media (max-width: 769px){
+                margin-top: 40px;
+            }
+        }
+        button {
+            background-color: #1BAE70;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+    
+            &:hover {
+                background-color: #15965E;
+            }
+        }    
+    }   
+}
+//=============CONTRIBUTION END==================
+
+//=============SECTION-CHAIRMAN START=============
+.section-chairman{
+    border-top: 20px solid #03D89D;
+    .container{
+        margin-bottom: 30px;
+        .row{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            @media (max-width: 992px){
+                flex-wrap: wrap;
+            }
+            .img{
+                padding-left: 35%;
+                .body-content{
+                    width:45%;
+                    @media (max-width: 992px){
+                        width:70%;
+                    }
+                    img{
+                        border: 3px solid #3A3A3A;
+                        margin-bottom: 10px;
+                    }
+                }
+                h4{
+                    text-align: center;
+                    font-family: "Bai Jamjuree", sans-serif;
+                    font-size: 18px;
+                    margin-bottom: 0px;
+                }
+                p{
+                    text-align: center;
+                    font-family: "Bai Jamjuree", sans-serif;
+                    font-size: 15px;
+                    
+                }
+            }
+            .text{
+                font-family: "Bai Jamjuree", sans-serif;
+                font-size: 15px;
+                color: #4E5652;
+                text-align: justify;
+                text-justify: inter-word;
+                .btn-click{
+                    color:#125e2a;
+                }
+            }
+        }
+    }
+}
+//=============SECTION-CHAIRMAN END=============
+
+//=============FEATURES START===================
+.feature{
+    border-top: 20px solid #03D89D;
+    background: #29AB87; 
+    .container{
+        margin-top: -50px;
+        padding-bottom: 0px;
+        .section-heading{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background: none;
+            font-family: "Bai Jamjuree", sans-serif;
+            font-size: 28px;
+            @media (max-width: 621px){
+                display: block;
+            }
+            a{
+                color: #ffffff !important;
+                text-transform: capitalize;
+            }
+        }
+        .text{
+            .subheading{
+                background:#29AB87;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(10px);
+                text-align: justify;
+                text-justify: inter-word;
+                padding: 40px 60px 40px 60px;
+                font-family: "Bai Jamjuree", sans-serif;
+                font-size: 16px;
+                color: #ffffff;
+                @media (max-width: 621px){
+                    padding: 10px 20px 10px 20px;
+                    margin:0;
+                    width:100%;
+                }
+                .text2{
+                    margin-top: 30px;
+                    background-color: brown;
+                }
+            }
+        }
+    }
+}
+//=============FEATURES END===================
+
+
+//=============ESTIMONIAL START==============
+.testimonial{
+    .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .section-heading{
+            background: none;
+            font-family: "Bai Jamjuree", sans-serif;
+            font-size: 28px;
+            text-transform: capitalize;
+        }
+        .subheading{
+            font-family: "Bai Jamjuree", sans-serif;
+            font-size: 18px;
+        }
+        .img{
+            text-align: center;
+            img{
+                width:100px;
+                height:90px;
+                border-radius: 80px;
+            }
+            h4{
+                font-family: "Bai Jamjuree", sans-serif;
+                font-size: 15px;
+                margin-bottom: 0px;
+            }
+            p{
+                font-family: "Bai Jamjuree", sans-serif;
+                font-size: 13px; 
+            }
+        }
+    }
+}
+//=============TESTIMONIAL END==============
+
+//=============NEWS START===================
+.news{
+    background-color: #1BAE70;
+    .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .section-heading{
+            color:#ffffff;
+        }
+    }
+}
