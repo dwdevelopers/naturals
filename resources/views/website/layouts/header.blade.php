@@ -26,8 +26,8 @@
         <div class="navbar navbar-main">
 
             <div class="container container-nav">
-                <div class="row">
-
+                <div class="row ">
+<div class="df-center" style="    justify-content: space-between;">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -44,13 +44,13 @@
                         <li><a href="contact.html" class="active">Home</a></li>
                         <li><a href="contact.html">About</a></li>
                         <li><a href="contact.html">Services</a></li>
-                        <li><a href="contact.html">Carbon Credit Project</a></li>
+                        <li><a href="contact.html">Product</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="news-grid.html">Grid Bar</a></li>
-                                <li><a href="news-sidebar.html">Sidebar</a></li>
-                                <li><a href="news-detail.html">News Detail</a></li>
+                                <li><a href="news-grid.html">Agro Tourism Project </a></li>
+                                <li><a href="news-sidebar.html">Karshaka Mithra</a></li>
+                                <li><a href="news-detail.html">Sakthiroopa Yojana</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -81,7 +81,7 @@
                         </ul>
 
                     </nav>
-
+                    </div>
                 </div>
             </div>
         </div>

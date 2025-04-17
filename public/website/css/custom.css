@@ -71,7 +71,7 @@
   }
 }
 .navbar-main .container .row nav .navbar-right li a {
-  color: #5C9520;
+  color: #27b24b;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .navbar-main .container .row nav .navbar-right li a:hover {
@@ -79,7 +79,7 @@
   transform: scale(1.1);
 }
 .navbar-main .container .row nav .navbar-right li .active {
-  color: #1BAE70;
+  color: #0d8d47;
 }
 
 @media (max-width: 992px) {
@@ -90,65 +90,8 @@
     margin-left: 500px;
   }
 }
-.banner .slides-container .container {
-  width: 46.958%;
-  margin-left: 10px;
-}
-@media (max-width: 1181px) {
-  .banner .slides-container .container {
-    width: 60%;
-  }
-}
-@media (max-width: 769px) {
-  .banner .slides-container .container {
-    width: 70%;
-  }
-}
-@media (max-width: 426px) {
-  .banner .slides-container .container {
-    width: 100%;
-  }
-}
-.banner .slides-container .container .wrap-caption {
-  margin-top: 70px;
-  width: 100%;
-}
-@media (max-width: 1181px) {
-  .banner .slides-container .container .wrap-caption {
-    margin-top: 0;
-  }
-}
-.banner .slides-container .container .wrap-caption p {
-  font-size: 25px;
-  font-family: "Barlow Condensed", sans-serif;
-}
-.banner .slides-container .container .wrap-caption h4 {
-  font-size: 2.857em;
-  font-family: "Bai Jamjuree", Sans-serif;
-  color: #5CA904;
-  line-height: 1.4em;
-}
-@media (max-width: 769px) {
-  .banner .slides-container .container .wrap-caption h4 {
-    font-size: 2em;
-  }
-}
-.banner .slides-container .container .wrap-caption .banner-text {
-  font-size: 16px;
-  font-family: "Bai Jamjuree", Sans-serif;
-  padding: 0;
-  color: #ffffff;
-  background: none !important;
-  width: 90%;
-}
-@media (max-width: 769px) {
-  .banner .slides-container .container .wrap-caption .banner-text {
-    font-size: 13px;
-  }
-}
-
 .opportunities {
-  background-color: #29AB87;
+  background-color: #81c55d;
   text-align: center;
   padding: 40px 20px;
 }
@@ -224,40 +167,6 @@
   }
 }
 
-.section-border {
-  border-top: 20px solid #03D89D;
-}
-.section-border .container {
-  padding-top: 40px;
-  padding-bottom: 0px;
-}
-.section-border .container h3 {
-  font-size: 35px;
-  font-family: "Bai Jamjuree", sans-serif;
-  margin-bottom: 0px;
-}
-.section-border .container .body-content {
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.section-border .container .body-content:hover {
-  transform: scale(1.1);
-}
-.section-border .container .title {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Bai Jamjuree", sans-serif;
-  color: #4E5652;
-}
-.section-border .container .title::after {
-  display: none;
-}
-.section-border .container img {
-  padding-top: 40px;
-}
-
-.contribution {
-  border-top: 20px solid #03D89D;
-}
 .contribution .grid-container {
   gap: 40px;
   flex-wrap: wrap;
@@ -342,9 +251,6 @@
   background-color: #15965E;
 }
 
-.section-chairman {
-  border-top: 20px solid #03D89D;
-}
 .section-chairman .container {
   margin-bottom: 30px;
 }
@@ -393,55 +299,6 @@
 }
 .section-chairman .container .row .text .btn-click {
   color: #125e2a;
-}
-
-.feature {
-  border-top: 20px solid #03D89D;
-  background: #29AB87;
-}
-.feature .container {
-  margin-top: -50px;
-  padding-bottom: 0px;
-}
-.feature .container .section-heading {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background: none;
-  font-family: "Bai Jamjuree", sans-serif;
-  font-size: 28px;
-}
-@media (max-width: 621px) {
-  .feature .container .section-heading {
-    display: block;
-  }
-}
-.feature .container .section-heading a {
-  color: #ffffff !important;
-  text-transform: capitalize;
-}
-.feature .container .text .subheading {
-  background: #29AB87;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  text-align: justify;
-  text-justify: inter-word;
-  padding: 40px 60px 40px 60px;
-  font-family: "Bai Jamjuree", sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-}
-@media (max-width: 621px) {
-  .feature .container .text .subheading {
-    padding: 10px 20px 10px 20px;
-    margin: 0;
-    width: 100%;
-  }
-}
-.feature .container .text .subheading .text2 {
-  margin-top: 30px;
-  background-color: brown;
 }
 
 .testimonial .container {

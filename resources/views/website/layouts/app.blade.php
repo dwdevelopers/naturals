@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('website/css/style.css')}}" />
 
     <link rel="stylesheet" type="text/css" href="{{ asset('website/css/custom.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('website/css/ss-custom.css')}}"/>
 
     <script type="text/javascript" src="{{ asset('website/js/vendor/modernizr.min.js')}}"></script>
 

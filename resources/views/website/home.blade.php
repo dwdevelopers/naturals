@@ -3,457 +3,559 @@
 @section('title', 'Home Page')
 
 @section('content')
-  <!-- BANNER -->
-    <div id="slides" class="section banner">
-        <ul class="slides-container">
-            <li>
-                <img src="{{ asset('website/images/b3.jpg') }}" alt="">
-                <div class="overlay-bg"></div>
-                <div class="container">
-                    <div class="wrap-caption">
-                        <h2 class="caption-heading">
-                            <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
-                            <h4>Sow growth,
-                                   <br> Reap success<h4>
-                        </h2>
-                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
-                            Ltd, registered under the Ministry of Co-operation, Government of
-                            India, is committed to transforming the agricultural sector through
-                            innovation, sustainability, and farmer empowerment.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="{{ asset('website/images/b2.jpg') }}" alt="">
-                <div class="overlay-bg"></div>
-                <div class="container">
-                <div class="wrap-caption">
-                        <h2 class="caption-heading">
-                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
-                            <h4>Sow growth,
-                                <br> Reap success<h4>
-                        </h2>
-                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
-                            Ltd, registered under the Ministry of Co-operation, Government of
-                            India, is committed to transforming the agricultural sector through
-                            innovation, sustainability, and farmer empowerment.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="{{ asset('website/images/b1.jpg') }}" alt="">
-                <div class="overlay-bg"></div>
-                <div class="container">
-                <div class="wrap-caption">
-                        <h2 class="caption-heading">
-                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
-                            <h4>Sow growth,
-                                <br> Reap success<h4>
-                        </h2>
-                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
-                            Ltd, registered under the Ministry of Co-operation, Government of
-                            India, is committed to transforming the agricultural sector through
-                            innovation, sustainability, and farmer empowerment.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="{{ asset('website/images/Banner4.png') }}" alt="">
-                <div class="overlay-bg"></div>
-                <div class="container">
-                <div class="wrap-caption">
-                        <h2 class="caption-heading">
-                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
-                            <h4>Sow growth,
-                                <br> Reap success<h4>
-                        </h2>
-                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
-                            Ltd, registered under the Ministry of Co-operation, Government of
-                            India, is committed to transforming the agricultural sector through
-                            innovation, sustainability, and farmer empowerment.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="{{ asset('website/images/Banner5.png') }}" alt="">
-                <div class="overlay-bg"></div>
-                <div class="container">
-                <div class="wrap-caption">
-                        <h2 class="caption-heading">
-                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
-                            <h4>Sow growth,
-                                <br> Reap success<h4>
-                        </h2>
-                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
-                            Ltd, registered under the Ministry of Co-operation, Government of
-                            India, is committed to transforming the agricultural sector through
-                            innovation, sustainability, and farmer empowerment.</p>
-                    </div>
-                </div>
-            </li>
 
-        </ul>
-
-        <!-- <nav class="slides-navigation">
+<!-- BANNER -->
+<div id="slides" class="section banner">
+    <ul class="slides-container">
+        <li>
+            <img src="{{ asset('website/images/b3.jpg') }} ">
+            <div class="overlay-bg"></div>
             <div class="container">
-                <a href="#" class="next">
-                    <i class="fa fa-chevron-right"></i>
-                </a>
-                <a href="#" class="prev">
-                    <i class="fa fa-chevron-left"></i>
-                </a>
-            </div>
-        </nav> -->
-
-    </div>
-
-    <!--OPPORTUNITIES START-->
-    <section class="opportunities">
-        <h2>Our Services
-            <br>Agri Dhan Vikas
-        </h2>
-        <div class="grid-container">
-            <div class="card">
-                <h3>Gold Loan </h3>
-                <p>We offer secure and hassle-free gold loan services, exclusively 
-                    for our registered members. Designed to provide quick financial 
-                    assistance, our gold loans come with low-interest rates, high 
-                    loan value, and flexible repayment options, ensuring members get
-                     the best value for their pledged gold.</p>
-                <button>KNOW MORE</button>
-            </div>
-            <div class="card">
-                <h3> Group Loan</h3>
-                <p>Our group loan facility, exclusively for members, provides accessible
-                     credit to individuals engaged in similar economic activities. With 
-                     shared responsibility and mutual support, members act as guarantors, 
-                     ensuring seamless repayment. This initiative fosters entrepreneurship,
-                      financial inclusion, and economic stability, empowering self-help groups,
-                       farmers, and small businesses.</p>
-                <button class="card2">KNOW MORE</button>
-            </div>
-            <div class="card">
-                <h3>Merchant loan</h3>
-                <p>We introduce Merchant Loan, a flexible financing solution designed exclusively
-                     for members to support small businesses and startups. This short-term loan
-                      provides quick access to capital, helping businesses manage cash flow, expand
-                       operations, and meet urgent financial needs. With easy eligibility and hassle-free
-                        repayment, our Merchant Loan empowers entrepreneurs with the funds they need to grow,
-                         ensuring financial stability and long-term success.</p>
-                <button>KNOW MORE</button>
-            </div>
-            <div class="card">
-                <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
-                <p>We offer Recurring Contribution & Fixed Contribution (RC & FC) schemes to provide secure and 
-                    growth-oriented financial solutions for our members.</p>
-                <button>KNOW MORE</button>
-            </div>
-            <div class="card">
-                <h3>Membership</h3>
-                <p>Membership is an affiliation granted to members who are well involved in agricultural activities 
-                    within a particular society or community. The membership recognizes one’s significant commitment,
-                     dedication, and contribution to the agricultural society.</p>
-                <button>KNOW MORE</button>
-            </div>
-            <div class="card">
-                <h3>Green Pad</h3>
-                <p>Elevate your feminine care routine with our herbal sanitary
-                     napkins, thoughtfully formulated to prioritize your comfort, 
-                     health, and well-being, naturally.</p>
-                <button>KNOW MORE</button>
-            </div>
-        </div>
-    </section>
-    <!--OPPORTUNITIES END-->
-
-
-
-    <!-- SERVICES -->
-    <div class="section section-border">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <div class="row">
-                        <!-- Item 1 -->
-                        <div class="col-sm-3 col-md-3">
-                            <div class="box-icon-1 layout-2">
-                                <div class="body-content">
-                                    <h3>20,000+</h3>
-                                    <h4 class="title">Shareholders</h4>
-                                </div>
-                                <img src="{{ asset('website/images/icon1.png') }}" alt="" />
-                            </div>
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="col-sm-3 col-md-3">
-                            <div class="box-icon-1 layout-2">
-                                <div class="body-content">
-                                <h3>38+</h3>
-                                <h4 class="title">Branches</h4>
-                                </div>
-                                <img src="{{ asset('website/images/icon2.png') }}" width="50px" alt="" />
-                            </div>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="col-sm-3 col-md-3">
-                            <div class="box-icon-1 layout-2">
-                                <div class="body-content">
-                                <h3>200+</h3>
-                                <h4 class="title">Employees</h4>
-                                </div>
-                                <img src="{{ asset('website/images/icon3.png') }}" alt="" />
-                            </div>
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="col-sm-3 col-md-3 ">
-                            <div class="box-icon-1 layout-2"> 
-                                <div class="body-content">
-                                <h3>2</h3>
-                                <h4 class="title">States</h4>
-                                </div>
-                                <img src="{{ asset('website/images/icon4.png') }}" width="45px" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--Contributions-->
-    <section class="opportunities contribution">
-        <h2>Contributions</h2>
-        <div class="grid-container">
-            <div class="card contribution1">
-                <div class="box">
-                    <h3>Recurring Contributions</h3>
-                    <button>CLICK HERE</button>
-                </div>
-                
-            </div>
-            <div class="card contribution1 card-2">
-                <div class="box">
-                <h3>Fixed Contributions</h3>
-                <button>CLICK HERE</button>
-                </div>
-            </div>  
-        </div>
-    </section>
-
-    <!--CHAIRMAN-->
-    <div class="section-chairman">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12"> 
-                    <div class="img">
-                        <div class="body-content">
-                            <img src="{{ asset('website/images/Chairman.png') }}" alt="" />
-                            <h4>Sri. Asokan K. V</h4>
-                            <p>Chairman</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-12">
-                    <div class="text">
-                        <p class="text-1">
-                            Natural Agro & Tourism Marketing Multi-State Cooperative Society Ltd, registered under the Ministry
-                             of Cooperation, Government of India, is committed to transforming the agricultural sector through 
-                             innovation, sustainability, and farmer empowerment. We provide farmers with essential training, financial
-                              assistance, and access to modern agricultural resources while promoting eco-friendly farming practices 
-                              that enhance productivity and long-term food security. Our initiatives also focus on women empowerment by 
-                              supporting female farmers and entrepreneurs through skill development, financial aid, and leadership opportunities, 
-                              fostering their active participation in agriculture and agribusiness. By facilitating market access, financial aid,
-                               and profitable opportunities, we support economic stability and inclusive rural development. Our mission is to integrate 
-                               traditional agricultural wisdom with modern advancements, creating a resilient, self-sustaining ecosystem that drives
-                               national growth while ensuring environmental sustainability.</p>
-                        <!-- <p class="text-2">At Kairali Agriculture MSCS Ltd., we have dedicated ourselves to providing essential 
-                            services and unwavering support to our farming communities. Our mission is simple yet profound: to 
-                            empower our farmers and collaborate with them to create a brighter and more prosperous future.</p> -->
-                        <a href="#" class="btn-click">Click here to read more.</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Features-->
-    <div class="section blog bg-grey feature">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-
-                    <h2 class="section-heading center">
-                        <div class="title"><a href="blog-single.html" title="">Integrity</a></div> 
-                        <div class="title"><a href="blog-single.html" title="">Quality</a></div>
-                        <div class="title"><a href="blog-single.html" title="">Commitment</a></div>
+                <div class="wrap-caption center">
+                    <h2 class="caption-heading">
+                        <span>Balance Your Best Interests</span>
                     </h2>
-
-                    <div class="text">
-                         <div class="subheading text-center">
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Kairali Agriculture Multi State Co-operative
-                                Society Ltd. provides services for farmer members acts as a catalyst for their 
-                                collective growth and prosperity. By facilitating access to inputs, markets, 
-                                finance, knowledge, and infrastructure, the society empowers farmers to overcome 
-                                challenges, improve their livelihoods, and build a sustainable agricultural sector.</p>
-
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discover how Kairali Agriculture Multi State Co-operative Society Ltd.,
-                                dedicated to serving farmer members, provides a wide range of services aimed at enhancing their well-being
-                                and prosperity. From agricultural resources to financial assistance, Kairali Agriculture Multi State
-                                Co-operative Society Ltd. is committed to supporting farmers every step of the way. At Kairali Agriculture 
-                                Multi State Co-operative Society Ltd., our mission is to empower and uplift our farmer members by providing 
-                                them with comprehensive services designed to enhance their well-being and prosperity. We understand the challenges
-                                faced by farmers and strive to offer a wide range of resources, assistance, and guidance to help them succeed. 
-                                We conduct in-depth market research and analysis to identify lucrative opportunities for our farmer members, 
-                                enabling them to make informed decisions. 
-                            </p>
-                        </div>         
-                    </div>
-
+                    <p class="excerpt">Ipsum dolor sit amet consectetur adipisicing</p>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-    <!-- Testimonials -->
-    <div class="section testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <h2 class="section-heading center">
-                        Testimonials
+        </li>
+        <li>
+            <img src="{{ asset('website/images/b2.jpg') }}" alt="">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption right">
+                    <h2 class="caption-heading">
+                        <span>Helping You Make Smart Financial Choices</span>
                     </h2>
-                    <p class="subheading text-center">"Kairali Agriculture Multi State Co-operative Society
-                         is not just an organization; it's a trusted partner dedicated to the well-being and 
-                         prosperity of farmers. I highly recommend joining their community."</p>
-                    <div class="img">
-                        <img src="{{ asset('website/images/testimonial.jpg') }}" alt="" />
-                        <h4>Mukundan</h4>
-                        <p>FARMER</p>
-                    </div>
-                         
+                    <p class="excerpt">remipsum dolor sit amet consectetur adipisicing</p>
                 </div>
-
-                <!-- slider -->
-                <!-- <div class="col-sm-12 col-md-12">
-                    <div id="caro-3">
-
-                        <div class="item">
-                            <div class="feature-box-7">
-                                <div class="media">
-                                    <img src="images/900x600.jpg" alt="rud" class="img-responsive">
-                                </div>
-                                <div class="body">
-                                    <div class="icon-holder">
-                                        <span class="fa fa-line-chart"></span>
-                                    </div>
-                                    <a href="services-detail.html" class="title">Business Growth</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="feature-box-7">
-                                <div class="media">
-                                    <img src="images/900x600.jpg" alt="rud" class="img-responsive">
-                                </div>
-                                <div class="body">
-                                    <div class="icon-holder">
-                                        <span class="fa fa-line-chart"></span>
-                                    </div>
-                                    <a href="services-detail.html" class="title">Sustainability</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="feature-box-7">
-                                <div class="media">
-                                    <img src="images/900x600.jpg" alt="rud" class="img-responsive">
-                                </div>
-                                <div class="body">
-                                    <div class="icon-holder">
-                                        <span class="fa fa-thumbs-o-up"></span>
-                                    </div>
-                                    <a href="services-detail.html" class="title">Performance</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="feature-box-7">
-                                <div class="media">
-                                    <img src="images/900x600.jpg" alt="rud" class="img-responsive">
-                                </div>
-                                <div class="body">
-                                    <div class="icon-holder">
-                                        <span class="fa fa-tachometer"></span>
-                                    </div>
-                                    <a href="services-detail.html" class="title">Performance</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="feature-box-7">
-                                <div class="media">
-                                    <img src="images/900x600.jpg" alt="rud" class="img-responsive">
-                                </div>
-                                <div class="body">
-                                    <div class="icon-holder">
-                                        <span class="fa fa-line-chart"></span>
-                                    </div>
-                                    <a href="services-detail.html" class="title">Business Growth</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="feature-box-7">
-                                <div class="media">
-                                    <img src="images/900x600.jpg" alt="rud" class="img-responsive">
-                                </div>
-                                <div class="body">
-                                    <div class="icon-holder">
-                                        <span class="fa fa-line-chart"></span>
-                                    </div>
-                                    <a href="services-detail.html" class="title">Sustainability</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div> -->
-
             </div>
-        </div>
-    </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/b1.jpg') }}" alt="">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption center">
 
-    <!-- Latest News & Events -->
-    <div class="section testimonial news">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <h2 class="section-heading center">
-                        Latest News & Events
+                    <h2 class="caption-heading">
+                        <span>Let’s Grow Together</span>
                     </h2>
+                    <p class="excerpt">orem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+    <nav class="slides-navigation">
+        <div class="container">
+            <a href="#" class="next">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+            <a href="#" class="prev">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+        </div>
+    </nav>
+
+</div>
+
+<!-- WHY CHOOSE US -->
+<div class="section feature bg-why">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12">
+                <div class="row col-0 overlap">
+                    <div class="col-sm-4 col-md-4 border-right">
+                        <!-- BOX 1 -->
+                        <div class="feature-box-8 style-2">
+                            <div class="icon"><i class="fa fa-line-chart"></i></div>
+                            <div class="body">
+                                <a href="services-detail.html" class="title">Agro Tourism Project  </a>
+                                <p>Bridging Tradition with
+                                Sustainable Growth</p>
+                                <a href="services-detail.html" class="more"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 border-right">
+                        <!-- BOX 2 -->
+                        <div class="feature-box-8 style-2">
+                            <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
+                            <div class="body">
+                                <a href="services-detail.html" class="title">Karshaka Mithra</a>
+                                <p>Empowering Farmers,
+                                Enriching Communities</p>
+                                <a href="services-detail.html" class="more"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <!-- BOX 3 -->
+                        <div class="feature-box-8 style-2">
+                            <div class="icon"><i class="fa fa-tachometer"></i></div>
+                            <div class="body">
+                                <a href="services-detail.html" class="title">Sakthiroopa Yojana</a>
+                                <p>For
+                                Sustainable Growth</p>
+                                <a href="services-detail.html" class="more"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ABOUT -->
+<div class="section section-border bg-grey">
+
+    <div class="overview-shape">
+        <img src="{{ asset('website/images/shape-1.png') }}" alt="image">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+
+                <h2 class="section-heading">
+                    ABOUT US
+                </h2>
+
+                <h1 class="jumbolead reset-section-heading">Sow growth,Reap success</h1>
+                <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society
+Ltd, registered under the Ministry of Co-operation, Government of
+India, is committed to transforming the agricultural sector through
+innovation, sustainability, and farmer empowerment. We provide
+farmers with essential training, financial assistance, and access to
+modern agricultural resources while promoting eco-friendly farming
+practices that enhance productivity and long-term food security. </p>
+<a href="" class="view-more">Read More</a>
+
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="vidimg">
+                    <div class="play-vid">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=JGYuCRYFxew"><span class="fa fa-play fa-2x playvid"></span></a>
+                    </div>
+                    <img src="{{ asset('website/images/b3.jpg') }} " alt="" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<!-- Start Global Transfers Area -->
+<div class="global-transfers-area pt-100 pb-75">
+    <div class="container">
+        <div class="section-title">
+            <span>Our Services</span>
+            <h2>Agri Dhan Vikas</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-sm-6">
+                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
+                    <div class="icon">
+                        <img src="{{ asset('website/images/service1.png') }}" alt="">
+                    </div>
+                    <h3>Gold Loan</h3>
+                    <p>We offer secure and hassle-free gold loan services, exclusively for our
+                        registered members. Designed to provide quick financial assistance,
+                        our gold loans come with low-interest rates, high loan value, and
+                        flexible repayment options, ensuring members get the best value for
+                        their pledged gold.</p>
+                    <!-- <a href="protecting-your-money.html" class="global-btn">View More</a> -->
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600" data-aos-once="true">
+                    <div class="icon">
+                        <img src="{{ asset('website/images/service2.png') }}" alt="">
+                    </div>
+                    <h3>Merchant loan</h3>
+                    <p>Introducing Merchant Loan – a flexible, short-term financing solution
+                        designed for our members. Get quick access to capital to manage
+                        cash flow, expand operations, or meet urgent needs. With simple
+                        eligibility and easy repayment, Merchant Loan empowers small
+                        businesses and startups to grow with confidence.</p>
+                    <!-- <a href="getting-started.html" class="global-btn">View More</a> -->
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
+                    <div class="icon">
+                        <img src="{{ asset('website/images/service3.png') }}" alt="">
+                    </div>
+                    <h3>Group Loan</h3>
+                    <p>Our group loan facility, exclusively for members, provides accessible
+                        credit to individuals engaged in similar economic activities. With
+                        shared responsibility and mutual support, members act as guarantors,
+                        ensuring seamless repayment. This initiative fosters entrepreneurship,
+                        financial inclusion, and economic stability, empowering self-help
+                        groups, farmers, and small businesses.</p>
+                    <!-- <a href="help-center.html" class="global-btn">View More</a> -->
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
+                    <div class="icon">
+                        <img src="{{ asset('website/images/service4.png') }}" alt="">
+                    </div>
+                    <h3>Membership</h3>
+                    <p>Membership is an affiliation granted to members who are well
+                        involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.</p>
+                    <!-- <a href="help-center.html" class="global-btn">View More</a> -->
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!-- End Global Transfers Area -->
 
-    <!-- ABOUT -->
-    <!-- <div class="section bg-overlay-4">
+
+<!-- CTA -->
+<!-- <div class="section cta bg-overlay-1" style="background: url('{{ asset('website/images/b1.jpg') }}')">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="cta-info">
+						<h3>All of Our Customers Trust Their Success To Us</h3>
+						<p>Our professional team works to increase productivity and cost effectiveness on the market</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+<!-- STATS -->
+<div class="section statistic bg-overlay-2 counter_sec" style="background: url('{{ asset('website/images/b1.jpg') }}') bottom center no-repeat; background-attachment: fixed" ;
+    background-size: cover;>
+
+    <div class="container">
+        <div class="col-sm-4 col-md-4">
+            <h2 class="jumbolead font__color-2">We Have Great Achivment To Show!!</h2>
+        </div>
+        <div class="col-sm-8 col-md-8">
+            <div class="row">
+
+                <div class="col-sm-4 col-md-4">
+                    <div class="counter-1">
+                        <div class="counter-number">
+                            20,000+
+                        </div>
+
+                        <div class="counter-title">Shareholders</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="counter-1">
+                        <div class="counter-number">
+                            38+
+                        </div>
+                        <div class="counter-title">Branches</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="counter-1">
+                        <div class="counter-number">
+                            200+
+                        </div>
+                        <div class="counter-title">Employees</div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <div class="counter-1">
+                        <div class="counter-number">
+                            2
+                        </div>
+                        <div class="counter-title">States</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- WHY CHOOSE US -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h2 class="section-heading center">
+                    Your Finanial Choices
+                </h2>
+                <p class="subheading text-center">With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next renovation, driveway sett or home repair. We provide a professional service for private and commercial customers.</p>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <div id="caro-3">
+
+                    <div class="item">
+                        <div class="feature-box-7">
+                            <div class="media">
+                                <img src="{{ asset('website/images/b3.jpg') }}" alt="rud" class="img-responsive">
+                            </div>
+                            <div class="body">
+                                <div class="icon-holder">
+                                    <span class="fa fa-line-chart"></span>
+                                </div>
+                                <a href="services-detail.html" class="title">Business Growth</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="feature-box-7">
+                            <div class="media">
+                                <img src="{{ asset('website/images/b1.jpg') }}" alt="rud" class="img-responsive">
+                            </div>
+                            <div class="body">
+                                <div class="icon-holder">
+                                    <span class="fa fa-line-chart"></span>
+                                </div>
+                                <a href="services-detail.html" class="title">Sustainability</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="feature-box-7">
+                            <div class="media">
+                                <img src="{{ asset('website/images/b2.jpg') }}" alt="rud" class="img-responsive">
+                            </div>
+                            <div class="body">
+                                <div class="icon-holder">
+                                    <span class="fa fa-thumbs-o-up"></span>
+                                </div>
+                                <a href="services-detail.html" class="title">Performance</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="feature-box-7">
+                            <div class="media">
+                                <img src="{{ asset('website/images/b3.jpg') }}" alt="rud" class="img-responsive">
+                            </div>
+                            <div class="body">
+                                <div class="icon-holder">
+                                    <span class="fa fa-tachometer"></span>
+                                </div>
+                                <a href="services-detail.html" class="title">Performance</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="feature-box-7">
+                            <div class="media">
+                                <img src="{{ asset('website/images/b1.jpg') }}" alt="rud" class="img-responsive">
+                            </div>
+                            <div class="body">
+                                <div class="icon-holder">
+                                    <span class="fa fa-line-chart"></span>
+                                </div>
+                                <a href="services-detail.html" class="title">Business Growth</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="feature-box-7">
+                            <div class="media">
+                                <img src="{{ asset('website/images/b2.jpg') }}" alt="rud" class="img-responsive">
+                            </div>
+                            <div class="body">
+                                <div class="icon-holder">
+                                    <span class="fa fa-line-chart"></span>
+                                </div>
+                                <a href="services-detail.html" class="title">Sustainability</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- TESTIMONY -->
+<div class="section testimony" style="padding-top: 0;">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+
+                <div id="owl-testimony">
+                    <div class="item">
+                        <div class="testimonial-1">
+                            <div class="media">
+                                <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+                            </div>
+                            <div class="body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+                                <div class="title">Gael story</div>
+                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-1">
+                            <div class="media">
+                            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+                            </div>
+                            <div class="body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+                                <div class="title">Dedo</div>
+                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-1">
+                            <div class="media">
+                            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+                            </div>
+                            <div class="body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+                                <div class="title">Maggy</div>
+                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-1">
+                            <div class="media">
+                            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+                            </div>
+                            <div class="body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+                                <div class="company">Gaspol ltd</div>
+                                <div class="title">Robert Lav</div>
+                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- BLOG -->
+<div class="section blog bg-grey">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12">
+                <h2 class="section-heading center">
+                    RECENT NEWS
+                </h2>
+                <p class="subheading text-center">With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next renovation, driveway sett or home repair. We provide a professional service for private and commercial customers.</p>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <!-- BOX 1 -->
+                <div class="box-news-1">
+                    <div class="media gbr">
+                        <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-responsive">
+                    </div>
+                    <div class="body">
+                        <div class="title"><a href="blog-single.html" title="">The Best in dolor sit amet consectetur adipisicing elit sed</a></div>
+                        <div class="meta">
+                            <span class="date"><i class="fa fa-clock-o"></i> Aug 24, 2017</span>
+                            <span class="comments"><i class="fa fa-comment-o"></i> 0 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <!-- BOX 1 -->
+                <div class="box-news-1">
+                    <div class="media gbr">
+                        <img src="{{ asset('website/images/b1.jpg') }}" alt="" class="img-responsive">
+                    </div>
+                    <div class="body">
+                        <div class="title"><a href="blog-single.html" title="">The Best in dolor sit amet consectetur adipisicing elit sed</a></div>
+                        <div class="meta">
+                            <span class="date"><i class="fa fa-clock-o"></i> Aug 24, 2017</span>
+                            <span class="comments"><i class="fa fa-comment-o"></i> 0 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <!-- BOX 1 -->
+                <div class="box-news-1">
+                    <div class="media gbr">
+                        <img src="{{ asset('website/images/b2.jpg') }}" alt="" class="img-responsive">
+                    </div>
+                    <div class="body">
+                        <div class="title"><a href="blog-single.html" title="">The Best in dolor sit amet consectetur adipisicing elit sed</a></div>
+                        <div class="meta">
+                            <span class="date"><i class="fa fa-clock-o"></i> Aug 24, 2017</span>
+                            <span class="comments"><i class="fa fa-comment-o"></i> 0 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <!-- BOX 1 -->
+                <div class="box-news-1">
+                    <div class="media gbr">
+                        <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-responsive">
+                    </div>
+                    <div class="body">
+                        <div class="title"><a href="blog-single.html" title="">The Best in dolor sit amet consectetur adipisicing elit sed</a></div>
+                        <div class="meta">
+                            <span class="date"><i class="fa fa-clock-o"></i> Aug 24, 2017</span>
+                            <span class="comments"><i class="fa fa-comment-o"></i> 0 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ABOUT -->
+<!-- <div class="section bg-overlay-4">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
@@ -474,8 +576,8 @@
         </div>
     </div> -->
 
-    <!-- STATS -->
-    <!-- <div class="section statistic bg-1">
+<!-- STATS -->
+<!-- <div class="section statistic bg-1">
         <div class="container">
             <div class="col-sm-4 col-md-4">
                 <h2 class="jumbolead font__color-2">We Have Great Achivment To Show!!</h2>
@@ -521,8 +623,8 @@
         </div>
     </div> -->
 
-    <!-- PROJECTS -->
-    <!-- <div class="section project">
+<!-- PROJECTS -->
+<!-- <div class="section project">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12">
@@ -533,45 +635,45 @@
                 </div>
             </div> -->
 
-            <!-- <div class="row">
+<!-- <div class="row">
                 <div class="col-sm-12 col-md-12">
                     <div class="grid">
                         <div class="grid-sizer"></div>
                         <div class="gutter-sizer"></div> -->
-                        <!-- item 1 -->
-                        <!-- <div class="grid-item grid-item--width2x">
+<!-- item 1 -->
+<!-- <div class="grid-item grid-item--width2x">
                             <div class="info-box">
                                 <h4 class="title">Posandu</h4>
                                 <p> Business Services Consulting</p>
                             </div>
                             <a href="project-detail.html" title="Portfolio 1"><img src="images/600x600.jpg" alt=""></a>
                         </div> -->
-                        <!-- item 2 -->
-                        <!-- <div class="grid-item">
+<!-- item 2 -->
+<!-- <div class="grid-item">
                             <div class="info-box">
                                 <h4 class="title">Posandu</h4>
                                 <p> Business Services Consulting</p>
                             </div>
                             <a href="project-detail.html" title="Portfolio 2"><img src="images/600x600.jpg" alt=""></a>
                         </div> -->
-                        <!-- item 3 -->
-                        <!-- <div class="grid-item">
+<!-- item 3 -->
+<!-- <div class="grid-item">
                             <div class="info-box">
                                 <h4 class="title">Posandu</h4>
                                 <p> Business Services Consulting</p>
                             </div>
                             <a href="project-detail.html" title="Portfolio 3"><img src="images/600x600.jpg" alt=""></a>
                         </div> -->
-                        <!-- item 4 -->
-                        <!-- <div class="grid-item">
+<!-- item 4 -->
+<!-- <div class="grid-item">
                             <div class="info-box">
                                 <h4 class="title">Posandu</h4>
                                 <p> Business Services Consulting</p>
                             </div>
                             <a href="project-detail.html" title="Portfolio 5"><img src="images/600x600.jpg" alt=""></a>
                         </div> -->
-                        <!-- item 5 -->
-                        <!-- <div class="grid-item">
+<!-- item 5 -->
+<!-- <div class="grid-item">
                             <div class="info-box">
                                 <h4 class="title">Posandu</h4>
                                 <p> Business Services Consulting</p>
@@ -596,8 +698,8 @@
     </div> -->
 
 
-    <!-- APPOINTMENT -->
-    <!-- <div class="section bg-2">
+<!-- APPOINTMENT -->
+<!-- <div class="section bg-2">
         <div class="container">
 
             <div class="row">
@@ -640,8 +742,8 @@
         </div>
     </div> -->
 
-    <!-- TESTIMONY -->
-    <!-- <div class="section testimony">
+<!-- TESTIMONY -->
+<!-- <div class="section testimony">
         <div class="container">
 
             <div class="row">
@@ -699,8 +801,8 @@
         </div>
     </div> -->
 
-    <!-- PARTNER -->
-    <!-- <div class="section stat-client section-border">
+<!-- PARTNER -->
+<!-- <div class="section stat-client section-border">
         <div class="container">
             <div class="row">
                 <div class="col-sm-2 col-md-2">
@@ -746,8 +848,8 @@
         </div>
     </div> -->
 
-    <!-- BLOG -->
-    <!-- <div class="section blog bg-grey">
+<!-- BLOG -->
+<!-- <div class="section blog bg-grey">
         <div class="container">
             <div class="row">
 
@@ -759,8 +861,8 @@
                 </div>
 
                 <div class="col-sm-6 col-md-3"> -->
-                    <!-- BOX 1 -->
-                    <!-- <div class="box-news-1">
+<!-- BOX 1 -->
+<!-- <div class="box-news-1">
                         <div class="media gbr">
                             <img src="images/600x600.jpg" alt="" class="img-responsive">
                         </div>
@@ -774,9 +876,9 @@
                     </div>
                 </div> -->
 
-                <!-- <div class="col-sm-6 col-md-3"> -->
-                    <!-- BOX 1 -->
-                    <!-- <div class="box-news-1">
+<!-- <div class="col-sm-6 col-md-3"> -->
+<!-- BOX 1 -->
+<!-- <div class="box-news-1">
                         <div class="media gbr">
                             <img src="images/600x600.jpg" alt="" class="img-responsive">
                         </div>
@@ -791,8 +893,8 @@
                 </div>
 
                 <div class="col-sm-6 col-md-3"> -->
-                    <!-- BOX 1 -->
-                    <!-- <div class="box-news-1">
+<!-- BOX 1 -->
+<!-- <div class="box-news-1">
                         <div class="media gbr">
                             <img src="images/600x600.jpg" alt="" class="img-responsive">
                         </div>
@@ -807,8 +909,8 @@
                 </div>
 
                 <div class="col-sm-6 col-md-3"> -->
-                    <!-- BOX 1 -->
-                    <!-- <div class="box-news-1">
+<!-- BOX 1 -->
+<!-- <div class="box-news-1">
                         <div class="media gbr">
                             <img src="images/600x600.jpg" alt="" class="img-responsive">
                         </div>
@@ -829,8 +931,8 @@
     </div> -->
 
 
-    <!-- CTA -->
-    <!-- <div class="section cta section-no-padding">
+<!-- CTA -->
+<!-- <div class="section cta section-no-padding">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12">
@@ -849,5 +951,5 @@
 
 @endsection
 @push('scripts')
-    
+
 @endpush

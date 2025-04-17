@@ -1,0 +1,234 @@
+.df-center {
+  display: flex;
+  align-items: center;
+}
+
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --main-color: #0d8d47;
+  --transition: .6s;
+  --white-color: #ffffff;
+}
+
+.topbar .topbar-row {
+  padding: 6px 0px;
+}
+
+.navbar-main {
+  padding: 10px 0px !important;
+}
+
+.navbar-brand {
+  height: unset !important;
+}
+.navbar-brand img {
+  width: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.topbar {
+  height: unset !important;
+}
+
+.navbar-main.stiky {
+  padding-top: 40px !important;
+}
+
+.banner .overlay-bg {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+.wrap-caption .excerpt {
+  background-color: #81c55d !important;
+}
+
+.slides-navigation a:hover {
+  background: #81c55d;
+}
+
+.feature-box-8.style-2:hover {
+  background-color: #0d8d47;
+}
+
+.feature-box-8.style-2:hover .more {
+  background-color: #81c55d;
+  color: #009144;
+  border-color: #81c55d;
+}
+
+.vidimg .play-vid:hover, .section-heading, .box-icon-1:hover .icon .fa {
+  background-color: #81c55d;
+}
+
+.font__color-2, .counter-1 .counter-title {
+  color: #ddf6d0;
+}
+
+.counter_sec .counter-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.counter_sec .counter-1 .counter-number {
+  font-size: 40px;
+  width: 100%;
+  padding-right: unset;
+}
+
+.bg-overlay-2:before, .footer {
+  background-color: #0d8d47 !important;
+}
+
+.feature-box-7:hover .icon-holder, .feature-box-7:hover {
+  background-color: #81c55d;
+}
+
+.feature-box-7 .body .title {
+  color: #fff;
+}
+
+#owl-testimony .owl-controls .owl-nav [class*=owl-] {
+  background: #81c55d;
+  border-color: #81c55d;
+}
+
+#caro-project .owl-controls .owl-nav [class*=owl-]:hover, #caro-project-2 .owl-controls .owl-nav [class*=owl-]:hover, #owl-testimony .owl-controls .owl-nav [class*=owl-]:hover {
+  background: #0d8d47;
+  color: #ffffff;
+  border-color: #0d8d47;
+}
+
+/*================================================
+Global Transfers Area CSS
+=================================================*/
+.global-transfers-area {
+  background-color: #FAFAFB;
+  padding: 60px 0px;
+}
+.global-transfers-area .section-title h2 {
+  font-size: 35px;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+.global-transfers-area .section-title {
+  text-align: center;
+  max-width: 585px;
+  margin: 0 auto 40px;
+}
+.global-transfers-area .icon img {
+  height: 75px;
+}
+
+.single-global-transfers-card {
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 0;
+  transition: var(--transition) !important;
+  border: 1px solid #E5E5E5;
+  transition: 0.3s;
+  min-height: 355px;
+}
+
+.single-global-transfers-card .icon {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.single-global-transfers-card .icon i {
+  color: var(--main-color);
+  font-size: 65px;
+  line-height: 0;
+}
+
+.single-global-transfers-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.single-global-transfers-card .global-btn {
+  font-size: var(--font-size);
+  font-weight: 500;
+  color: var(--main-color);
+  transition: var(--transition);
+}
+
+.single-global-transfers-card:hover {
+  background-color: var(--white-color);
+  box-shadow: 2px 4px 30px rgba(1, 123, 113, 0.06);
+  border-radius: 5px;
+  border: 1px solid var(--white-color);
+}
+
+.single-global-transfers-card:hover .global-btn {
+  letter-spacing: 1px;
+}
+
+.footer {
+  background-color: #096f37 !important;
+}
+.footer .box-info {
+  border-bottom: 3px solid #81c55d;
+}
+.footer .box-info .box-info-icon {
+  color: #81c55d;
+}
+.footer .box-info:hover {
+  background-color: transparent !important;
+}
+.footer .footer .box-info .box-info-body {
+  border-left: 1px solid #81c55d;
+}
+.footer .footer-item .footer-sosmed a .item {
+  background-color: #81c55d !important;
+}
+.footer .footer-item .list li a {
+  color: #ffffff;
+}
+.footer .fcopy {
+  background-color: #81c55d;
+  color: #000;
+  text-align: center;
+}
+.footer .footer-item .logo-bottom {
+  width: 140px;
+}
+.footer .footer-item h6 {
+  color: #c3efab;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+.footer .footer-item .footer-sosmed {
+  margin-top: 30px;
+}
+
+.bg-grey {
+  position: relative;
+}
+.bg-grey .overview-shape {
+  position: absolute;
+  left: -270px;
+  top: -220px;
+  opacity: 25%;
+  animation: moveleftbounce 5s linear infinite;
+}
+
+@keyframes moveleftbounce {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.view-more {
+  padding-top: 10px;
+  transition: 0.3s;
+}/*# sourceMappingURL=ss-custom.css.map */
