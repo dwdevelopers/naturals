@@ -35,7 +35,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html">
-                            <img src="{{ asset('website/images/kairali-Logo.png') }}" alt="" />
+                            <img src="{{ asset('website/images/naturals-logo.png') }}" alt="" />
                         </a>
                     </div>
 

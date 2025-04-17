@@ -7,53 +7,53 @@
     <div id="slides" class="section banner">
         <ul class="slides-container">
             <li>
-                <img src="{{ asset('website/images/Banner1.png') }}" alt="">
+                <img src="{{ asset('website/images/b3.jpg') }}" alt="">
                 <div class="overlay-bg"></div>
                 <div class="container">
                     <div class="wrap-caption">
                         <h2 class="caption-heading">
-                            <p>Promoting the growth and sustainability of agriculture across multiple states.</p>
-                            <h4>Kairali Agriculture
-                                   <br> Multi State
-                                    <br>Co Operative Society Ltd.<h4>
+                            <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
+                            <h4>Sow growth,
+                                   <br> Reap success<h4>
                         </h2>
-                        <p class="excerpt banner-text">The Kairali Agriculture Multi State Co-Operative Society Ltd. 
-                            give financial aid to our floundering laborer’s in the agriculture sector and 
-                            to become a part of our Country’s growth in the sector by voluntarily working towards our goal.</p>
+                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
+                            Ltd, registered under the Ministry of Co-operation, Government of
+                            India, is committed to transforming the agricultural sector through
+                            innovation, sustainability, and farmer empowerment.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <img src="{{ asset('website/images/Banner2.png') }}" alt="">
+                <img src="{{ asset('website/images/b2.jpg') }}" alt="">
                 <div class="overlay-bg"></div>
                 <div class="container">
                 <div class="wrap-caption">
                         <h2 class="caption-heading">
-                            <p>Promoting the growth and sustainability of agriculture across multiple states.</p>
-                            <h4>Kairali Agriculture
-                                   <br> Multi State
-                                    <br>Co Operative Society Ltd.<h4>
+                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
+                            <h4>Sow growth,
+                                <br> Reap success<h4>
                         </h2>
-                        <p class="excerpt banner-text">The Kairali Agriculture Multi State Co-Operative Society Ltd. 
-                            give financial aid to our floundering laborer’s in the agriculture sector and 
-                            to become a part of our Country’s growth in the sector by voluntarily working towards our goal.</p>
+                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
+                            Ltd, registered under the Ministry of Co-operation, Government of
+                            India, is committed to transforming the agricultural sector through
+                            innovation, sustainability, and farmer empowerment.</p>
                     </div>
                 </div>
             </li>
             <li>
-                <img src="{{ asset('website/images/Banner3.png') }}" alt="">
+                <img src="{{ asset('website/images/b1.jpg') }}" alt="">
                 <div class="overlay-bg"></div>
                 <div class="container">
                 <div class="wrap-caption">
                         <h2 class="caption-heading">
-                            <p>Promoting the growth and sustainability of agriculture across multiple states.</p>
-                            <h4>Kairali Agriculture
-                                   <br> Multi State
-                                    <br>Co Operative Society Ltd.<h4>
+                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
+                            <h4>Sow growth,
+                                <br> Reap success<h4>
                         </h2>
-                        <p class="excerpt banner-text">The Kairali Agriculture Multi State Co-Operative Society Ltd. 
-                            give financial aid to our floundering laborer’s in the agriculture sector and 
-                            to become a part of our Country’s growth in the sector by voluntarily working towards our goal.</p>
+                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
+                            Ltd, registered under the Ministry of Co-operation, Government of
+                            India, is committed to transforming the agricultural sector through
+                            innovation, sustainability, and farmer empowerment.</p>
                     </div>
                 </div>
             </li>
@@ -63,14 +63,14 @@
                 <div class="container">
                 <div class="wrap-caption">
                         <h2 class="caption-heading">
-                            <p>Promoting the growth and sustainability of agriculture across multiple states.</p>
-                            <h4>Kairali Agriculture
-                                   <br> Multi State
-                                    <br>Co Operative Society Ltd.<h4>
+                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
+                            <h4>Sow growth,
+                                <br> Reap success<h4>
                         </h2>
-                        <p class="excerpt banner-text">The Kairali Agriculture Multi State Co-Operative Society Ltd. 
-                            give financial aid to our floundering laborer’s in the agriculture sector and 
-                            to become a part of our Country’s growth in the sector by voluntarily working towards our goal.</p>
+                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
+                            Ltd, registered under the Ministry of Co-operation, Government of
+                            India, is committed to transforming the agricultural sector through
+                            innovation, sustainability, and farmer empowerment.</p>
                     </div>
                 </div>
             </li>
@@ -80,14 +80,14 @@
                 <div class="container">
                 <div class="wrap-caption">
                         <h2 class="caption-heading">
-                            <p>Promoting the growth and sustainability of agriculture across multiple states.</p>
-                            <h4>Kairali Agriculture
-                                   <br> Multi State
-                                    <br>Co Operative Society Ltd.<h4>
+                        <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd.</p>
+                            <h4>Sow growth,
+                                <br> Reap success<h4>
                         </h2>
-                        <p class="excerpt banner-text">The Kairali Agriculture Multi State Co-Operative Society Ltd. 
-                            give financial aid to our floundering laborer’s in the agriculture sector and 
-                            to become a part of our Country’s growth in the sector by voluntarily working towards our goal.</p>
+                        <p class="excerpt banner-text">Natural Agro & Tourism Marketing Multi-State Co-operative Society
+                            Ltd, registered under the Ministry of Co-operation, Government of
+                            India, is committed to transforming the agricultural sector through
+                            innovation, sustainability, and farmer empowerment.</p>
                     </div>
                 </div>
             </li>
@@ -109,41 +109,50 @@
 
     <!--OPPORTUNITIES START-->
     <section class="opportunities">
-        <h2>We Aspire to Create Opportunities in the Agriculture Sector</h2>
+        <h2>Our Services
+            <br>Agri Dhan Vikas
+        </h2>
         <div class="grid-container">
             <div class="card">
-                <h3>Carbon Credit Project</h3>
-                <p>Transforming agriculture into a sustainable powerhouse:
-                     cutting carbon emissions, cultivating greener lands, and 
-                     generating valuable carbon credits for a brighter future.</p>
+                <h3>Gold Loan </h3>
+                <p>We offer secure and hassle-free gold loan services, exclusively 
+                    for our registered members. Designed to provide quick financial 
+                    assistance, our gold loans come with low-interest rates, high 
+                    loan value, and flexible repayment options, ensuring members get
+                     the best value for their pledged gold.</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="card">
-                <h3>Eco Tourism</h3>
-                <p>Embark on a sustainable journey to discover the wonders of nature 
-                    with our eco-tourism adventures, where every step leaves a positive 
-                    footprint.</p>
+                <h3> Group Loan</h3>
+                <p>Our group loan facility, exclusively for members, provides accessible
+                     credit to individuals engaged in similar economic activities. With 
+                     shared responsibility and mutual support, members act as guarantors, 
+                     ensuring seamless repayment. This initiative fosters entrepreneurship,
+                      financial inclusion, and economic stability, empowering self-help groups,
+                       farmers, and small businesses.</p>
                 <button class="card2">KNOW MORE</button>
             </div>
             <div class="card">
-                <h3>Coconut Products</h3>
-                <p>Discover the versatile and sustainable goodness of coconut with our 
-                    range of value-added products, crafted to elevate your health and 
-                    lifestyle naturally.</p>
+                <h3>Merchant loan</h3>
+                <p>We introduce Merchant Loan, a flexible financing solution designed exclusively
+                     for members to support small businesses and startups. This short-term loan
+                      provides quick access to capital, helping businesses manage cash flow, expand
+                       operations, and meet urgent financial needs. With easy eligibility and hassle-free
+                        repayment, our Merchant Loan empowers entrepreneurs with the funds they need to grow,
+                         ensuring financial stability and long-term success.</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="card">
-                <h3>Ecoharvest</h3>
-                <p>Experience the power of nature in every drop with our plant-based, 
-                    organic home care products, crafted to nurture your home and family
-                     while safeguarding the planet's health.</p>
+                <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
+                <p>We offer Recurring Contribution & Fixed Contribution (RC & FC) schemes to provide secure and 
+                    growth-oriented financial solutions for our members.</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="card">
-                <h3>Organic Products</h3>
-                <p>Indulge in the pure sweetness of nature with our range of
-                     natural honey and organic products, meticulously sourced 
-                     and crafted to bring you the finest flavors.</p>
+                <h3>Membership</h3>
+                <p>Membership is an affiliation granted to members who are well involved in agricultural activities 
+                    within a particular society or community. The membership recognizes one’s significant commitment,
+                     dedication, and contribution to the agricultural society.</p>
                 <button>KNOW MORE</button>
             </div>
             <div class="card">
@@ -248,12 +257,20 @@
 
                 <div class="col-sm-12 col-md-12">
                     <div class="text">
-                        <p class="text-1">I am delighted to extend a warm welcome to you on behalf of Kairali Agriculture Multi 
-                            State Co-operative Society Ltd., an organization deeply committed to the welfare of farmers 
-                            and the sustainable growth of agriculture.</p>
-                        <p class="text-2">At Kairali Agriculture MSCS Ltd., we have dedicated ourselves to providing essential 
+                        <p class="text-1">
+                            Natural Agro & Tourism Marketing Multi-State Cooperative Society Ltd, registered under the Ministry
+                             of Cooperation, Government of India, is committed to transforming the agricultural sector through 
+                             innovation, sustainability, and farmer empowerment. We provide farmers with essential training, financial
+                              assistance, and access to modern agricultural resources while promoting eco-friendly farming practices 
+                              that enhance productivity and long-term food security. Our initiatives also focus on women empowerment by 
+                              supporting female farmers and entrepreneurs through skill development, financial aid, and leadership opportunities, 
+                              fostering their active participation in agriculture and agribusiness. By facilitating market access, financial aid,
+                               and profitable opportunities, we support economic stability and inclusive rural development. Our mission is to integrate 
+                               traditional agricultural wisdom with modern advancements, creating a resilient, self-sustaining ecosystem that drives
+                               national growth while ensuring environmental sustainability.</p>
+                        <!-- <p class="text-2">At Kairali Agriculture MSCS Ltd., we have dedicated ourselves to providing essential 
                             services and unwavering support to our farming communities. Our mission is simple yet profound: to 
-                            empower our farmers and collaborate with them to create a brighter and more prosperous future.</p>
+                            empower our farmers and collaborate with them to create a brighter and more prosperous future.</p> -->
                         <a href="#" class="btn-click">Click here to read more.</a>
                     </div>
                 </div>
