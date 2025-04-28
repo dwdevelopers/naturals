@@ -19,7 +19,7 @@
                 </div>
             </div>
         </li>
-        <li>
+        <!-- <li>
             <img src="{{ asset('website/images/b2.jpg') }}" alt="">
             <div class="overlay-bg"></div>
             <div class="container">
@@ -30,8 +30,8 @@
                     <p class="excerpt">remipsum dolor sit amet consectetur adipisicing</p>
                 </div>
             </div>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <img src="{{ asset('website/images/b1.jpg') }}" alt="">
             <div class="overlay-bg"></div>
             <div class="container">
@@ -43,7 +43,7 @@
                     <p class="excerpt">orem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
                 </div>
             </div>
-        </li>
+        </li> -->
 
     </ul>
 
@@ -124,7 +124,7 @@
                     ABOUT US
                 </h2>
 
-                <h1 class="jumbolead reset-section-heading">Sow growth,Reap success</h1>
+                <h1 class="jumbolead reset-section-heading">Sow growth,Reap successF</h1>
                 <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society
 Ltd, registered under the Ministry of Co-operation, Government of
 India, is committed to transforming the agricultural sector through
