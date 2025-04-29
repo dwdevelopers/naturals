@@ -1,495 +1,512 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-//=============HEADER START========================
-.topbar {
-    background-color: #ffffff !important;
-    .topbar-row {
-        margin-right: -15px;
-        margin-left: 650px;
-        @media only screen and (max-width: 1200px){
-            width:55%; 
-            margin-left: 450px;
-        }
-        @media only screen and (max-width: 992px){
-            width:70%; 
-            margin-left: 100px;
-        }
-        .col-lg-12{
-            margin-left: 20px;
-        }
-        .col-md-8 {
-            @media only screen and (max-width: 1198px){
-                width: 100%; 
-            }
-        }
-        .info-item{
-            margin-right: 10px;
-            .topbar-info{
-                color: grey;
-                font-size: 10pt;
-            }
-            .topbar-info-2{
-                margin-left: 10px;
-            }
-            .fa{
-                color: black;
-                font-size: 18px;
-                padding-left: 10px;
-            }
-        }
-    }
+//============================== VARIABLES ===================================
+:root{
+    --black:#000;
+    --white:#fff;
+    --whitesmoke:#f9f9f9;
+    --green: #26b24b;
+    --primary-green: #27bd4f;
+    --lightgreen:#68b02b;
+    --darkgreen:#208a3c;
+    --gray:gray;
+    --lightgray:#e8e8e8;
+    --jetgray:#333;
+    --teagreen:#E4F0CF;
+    --yellow: #f6e13a;
 }
 
-.navbar-main{
-    background-color: #ffffff;
-    border-top: 0.5px solid rgba(169, 164, 164, 0.342);
-    border-bottom: 3px solid #f6f7f8;
-    .navbar-brand{
-        max-width: 200px;
-        width:200px;
-    }
-    .container{
-        .row{
-            nav{
-                .navbar-right{
-                    @media (max-width: 992px){
-                     display: none;
-                    }
-                    li{
-                        margin-right: -1px;
-                        font-size: 19px;
-                        font-family: "Barlow Condensed", sans-serif;
-                        font-weight: 500;
-                        font-style: normal;
-                        @media (max-width: 1200px){
-                            font-size: 15px;
-                        }
-                        a{
-                            color:#27b24b;
-                            transition: transform 0.3s ease, color 0.3s ease;
-                            &:hover{
-                                color:#1BAE70;
-                                transform: scale(1.10);
-                            }
-                        }
-                        .active{
-                            color:#0d8d47;
-                        }
-                    }
+//========================= HEADER START ====================================
+.header{
+    padding-bottom: 0;
+    // margin-top: 30px;
+    background-color: var(--teagreen);
+    .topbar {
+        background-color: var(--teagreen);
+        max-width: 90%;
+        margin: 0 auto;
+        left: 40px;
+        right: 40px;
+        .info{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            margin-top: 0;
+            p{
+                color: var(--darkgreen);
+                font-size: 10px;
+                font-weight: 600;
+            }
+            .info-item{
+                .fa{
+                    color: var(--black);
+                    border: 1px solid var(--black);
+                    border-radius: 20px;
+                    width: 15px;
+                    height:15px;
+                    padding-left: 4px;
+                }
+                .topbar-info{
+                    color: var(--black);
+                    font-size: 15px;
                 }
             }
         }
     }
-   
-}
-
-@media (max-width: 992px){
-    .navbar-toggle {
-        display: block;
-        float: right;
-        margin-top: 20px;
-        margin-left: 500px;
-    }
-}
-//=============HEADER END==========================
-    
-//=============BANNER START========================
-// .banner{
-//     .slides-container{
-//         .container{
-//             width: 46.958%;
-//             margin-left: 10px;
-//             @media (max-width: 1181px){
-//                 width: 60%;
-//             }
-//             @media (max-width: 769px){
-//                 width: 70%;
-//             }
-//             @media (max-width: 426px){
-//                 width: 100%;
-//             }
-//             .wrap-caption{
-//                 margin-top: 70px; 
-//                 width:100%;
-//                 @media (max-width: 1181px){
-//                     margin-top: 0;
-//                 }
-//                 p{
-//                     font-size: 25px;
-//                     font-family: "Barlow Condensed", sans-serif;
-//                 }
-//                 h4{
-//                     font-size: 2.857em;
-//                     font-family: "Bai Jamjuree", Sans-serif;
-//                     color: #5CA904;
-//                     line-height: 1.4em;
-//                     @media (max-width: 769px){
-//                         font-size: 2em;
-//                     }
-//                 }
-//                 .banner-text{
-//                     font-size: 16px;
-//                     font-family: "Bai Jamjuree", Sans-serif;
-//                     padding: 0;
-//                     color:#ffffff;
-//                     background: none!important;
-//                     width:90%;
-//                     @media (max-width: 769px){
-//                         font-size: 13px;
-//                     }
-//                 }
-//              }
-//         }
-//     }
-// }
-//=============BANNER END========================
-
-//=============OPPORTUNITIES START==================
-.opportunities{
-    background-color: #81c55d;
-    text-align: center;
-    padding: 40px 20px;
-        h2 {
-        color: white;
-        font-size: 28px;
-        font-family: "Bai Jamjuree", Sans-serif;
-        margin-bottom: 20px;
-    }
-    .grid-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-    .card{
-        background: #ffffff;
-        border-radius: 25px 25px 25px 25px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        --e-column-margin-right: 10px;
-        --e-column-margin-left: 10px;
-        padding: 40px 40px 40px 40px;
-        width: calc(33.333% - 20px);
-        text-align: left;
-        transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        &:hover {
-            box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.8);
-        }
-        h3 {
-            font-size: 25px;
-            font-family: "Barlow Condensed", sans-serif;
-            letter-spacing: 1px;
-        }
-
-        p {
-            font-size: 17px;
-            margin: 10px 0;
-            font-family: "Bai Jamjuree", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: #4E5652;
-            text-align: justify;
-            text-justify: inter-word;
-            line-height: 1.5;
-        }
-        button {
-            background: #1BAE70;
-            color: white;
-            border: none;
-            margin-top: 10px;
-            padding: 11px 35px 11px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 15px;
-
-            &:hover {
-                background: darken(#16983f, 10%);
+    .navbar{
+        background-color: var(--white);
+        .container {
+            width: 90% !important;
+            .navbar-toggle{
+                @media (max-width: 1200px){
+                    display: inline-block;
+                }
             }
-        }
-        .card2{
-            margin-top: 40px;
-        }
-    }
-    @media (max-width: 1024px) {
-        .card {
-            width: calc(50% - 20px);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .card {
-            width: 100%;
-        }
-    }
-}
-//=============OPPORTUNITIES END==================
-
-//=============SERVICE START==================
-// .section-border{
-//     border-top: 20px solid #03D89D;
-//     .container{
-//         padding-top: 40px;
-//         padding-bottom: 0px;
-//         h3{
-//             font-size: 35px;
-//             font-family: "Bai Jamjuree", sans-serif;
-//             margin-bottom: 0px;
-//         }
-//         .body-content{
-//             transition: transform 0.3s ease, color 0.3s ease;
-//                 &:hover{
-//                     transform: scale(1.10);
-//                 }
-//         }
-//         .title{
-//             font-size: 20px;
-//             font-weight: 400;
-//             font-family: "Bai Jamjuree", sans-serif;
-//             color: #4E5652;
-//             &::after{
-//                 display: none;
-//             }
-//         }
-//         img{
-//             padding-top: 40px;
-//         }
-
-//     }
-// }
-//=============SERVICE END========================
-
-//=============CONTRIBUTION START==================
-.contribution{
-    .grid-container {
-        gap: 40px;
-        flex-wrap: wrap;
-        @media (max-width: 769px){
-            display: block;
-            justify-content: center;
-        }
-
-    }
-    .contribution1{
-        position: relative;
-        background-image: url('/website/images/contribution1.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 11px 11px 11px 11px;
-        background-color: #3A3A3A;
-        opacity:0.8;
-        width: calc(47.333% - 20px);
-        height:46vh;
-        transition: none;
-        overflow: hidden;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); // Dark overlay
-        }
-
-        &:hover {
-            box-shadow: none;
-            transform: none;
-        }
-
-        @media (max-width: 769px){
-            width: 100%;
-        }
-    }
-    .card-2{
-        background-image: url('/website/images/contribution2.png');
-        @media (max-width: 769px){
-            margin-top: 40px;
-        }
-    }
-    .box{
-        position: relative;
-        z-index: 2;
-        background: transparent;
-        text-align: center;
-        padding: 20px;
-        h3 {
-            color: #ffffff;
-            font-size: 28px;
-            font-weight: bold;
-            font-family: "Bai Jamjuree", sans-serif;
-            opacity: 1px;
-            margin-top: 30%;
-            @media (max-width: 769px){
-                margin-top: 40px;
+            .navbar-brand{
+                img{
+                    @media (max-width: 770px){
+                       margin-left: 100px;
+                       width:130px;
+                    }
+                }
             }
-        }
-        button {
-            background-color: #1BAE70;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-    
-            &:hover {
-                background-color: #15965E;
+            .navbar-collapse{
+                padding-left: 0;
+                padding-right: 0;
+                .navbar-right, li{
+                    margin-right:0;
+                    @media (max-width: 1200px){
+                        display: none;
+                    }
+                    a{
+                        color: var(--gray) !important;
+                    }
+                }
             }
         }    
-    }   
+    }
 }
-//=============CONTRIBUTION END==================
+//========================== HEADER END ====================================
+    
+//========================== BANNER START ===================================
+.banner{
+    max-width: 90%;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    .slides-container{
+        .bg-video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto; 
+            height: auto; 
+            transform: translate(-50%, -50%); 
+            z-index: 0; 
+            object-fit: cover;
+        }
+        .container{
+            .wrap-caption{
+                width: 100%;
+                .caption-heading{
+                    span{
+                        background-color: transparent;
+                        font-weight: 100;
+                        font-size: 8rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.bg-why{
+    background-color: var(--whitesmoke);
+}
+//========================== BANNER END =====================================
 
-//=============SECTION-CHAIRMAN START=============
-.section-chairman{
+//====================== WHY CHOOSE US START =================================
+.bg-why{
     .container{
-        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        top:-50px;
         .row{
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            @media (max-width: 992px){
-                flex-wrap: wrap;
-            }
-            .img{
-                padding-left: 35%;
-                .body-content{
-                    width:45%;
-                    @media (max-width: 992px){
-                        width:70%;
-                    }
+            .body{
+                display: flex !important;
+                justify-content: space-evenly;
+                gap: 20px;
+                padding-right: 0;
+                .icon1{
                     img{
-                        border: 3px solid #3A3A3A;
-                        margin-bottom: 10px;
+                        width:90%;
+                        margin-top: 30px;
                     }
                 }
-                h4{
-                    text-align: center;
-                    font-family: "Bai Jamjuree", sans-serif;
-                    font-size: 18px;
-                    margin-bottom: 0px;
-                }
-                p{
-                    text-align: center;
-                    font-family: "Bai Jamjuree", sans-serif;
-                    font-size: 15px;
-                    
-                }
-            }
-            .text{
-                font-family: "Bai Jamjuree", sans-serif;
-                font-size: 15px;
-                color: #4E5652;
-                text-align: justify;
-                text-justify: inter-word;
-                .btn-click{
-                    color:#125e2a;
+                .content{
+                    p{
+                        font-size: 12px;
+                    }
+                    .read-more {
+                        color: var(--lightgreen);
+                        text-decoration: none;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                        font-weight: 400;
+                        margin-top: auto;
+              
+                        span {
+                          display: inline-flex;
+                          align-items: center;
+                          justify-content: center;
+                          width: 26px;
+                          height: 26px;
+                          border: 1px solid var(--lightgreen);
+                          border-radius: 50%;
+                          transition: transform 0.3s ease;
+                        }
+              
+                        &:hover span {
+                          transform: translateX(5px);
+                        }
+                    }
+                    .rm-1{
+                        margin-top: 22px;
+                    }
                 }
             }
         }
     }
 }
-//=============SECTION-CHAIRMAN END=============
+//====================== WHY CHOOSE US END ===================================
 
-//=============FEATURES START===================
-// .feature{
-//     border-top: 20px solid #03D89D;
-//     background: #29AB87; 
-//     .container{
-//         margin-top: -50px;
-//         padding-bottom: 0px;
-//         .section-heading{
-//             display: flex;
-//             flex-wrap: wrap;
-//             justify-content: space-evenly;
-//             background: none;
-//             font-family: "Bai Jamjuree", sans-serif;
-//             font-size: 28px;
-//             @media (max-width: 621px){
-//                 display: block;
-//             }
-//             a{
-//                 color: #ffffff !important;
-//                 text-transform: capitalize;
-//             }
-//         }
-//         .text{
-//             .subheading{
-//                 background:#29AB87;
-//                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-//                 backdrop-filter: blur(10px);
-//                 text-align: justify;
-//                 text-justify: inter-word;
-//                 padding: 40px 60px 40px 60px;
-//                 font-family: "Bai Jamjuree", sans-serif;
-//                 font-size: 16px;
-//                 color: #ffffff;
-//                 @media (max-width: 621px){
-//                     padding: 10px 20px 10px 20px;
-//                     margin:0;
-//                     width:100%;
-//                 }
-//                 .text2{
-//                     margin-top: 30px;
-//                     background-color: brown;
-//                 }
-//             }
-//         }
-//     }
-// }
-//=============FEATURES END===================
+//======================= AGRI DHAN VIKAS START =============================
+.agri-dhan-vikas {
+    padding: 0 60px 60px 20px;
+    background-color: var(--whitesmoke);
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 48px;
+      color: var(--lightgreen);
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+  
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+  
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+  
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        padding: 30px 25px;
+        min-height: 570px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+  
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          flex: 0.43;
+  
+          h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--jetgray);
+            margin-bottom: 15px;
+          }
+  
+          p {
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 0;
+          }
+  
+          .read-more {
+            color: var(--black);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 400;
+            margin-top: auto;
+  
+            span {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 26px;
+              height: 26px;
+              border: 1px solid var(--black);
+              border-radius: 50%;
+              transition: transform 0.3s ease;
+            }
+  
+            &:hover span {
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+    }
+  } 
+//======================= AGRI DHAN VIKAS END ===============================
 
+//========================= MEMBERSHIP START ================================
+  .membership-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 60px 20px;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    @media (max-width: 1025px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap:0px;
+    }
 
-//=============ESTIMONIAL START==============
-.testimonial{
+    .membership-left {
+      flex: 1 1 400px;
+      max-width: 650px;
+      display: flex;
+      gap: 40px;
+      @media (max-width: 1025px) {
+        max-width: 100%;
+    }
+    @media (max-width: 600px){
+        display: block;
+    }
+  
+      img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 100px;
+        @media (max-width: 1025px) {
+            margin: 0 auto 20px;
+        }
+      }
+  
+      .membership-text {
+        margin-top: 150px;
+        @media (max-width: 1025px) {
+            margin-top: 50px;
+        }
+        h2 {
+          font-size: 28px;
+          font-weight: 600;
+          margin-bottom: 0;
+        } 
+       p {
+          font-size: 13px;
+          line-height: 1.6;
+        }
+      }
+    }
+  
+    .membership-right {
+      flex: 1 1 400px;
+      max-width: 450px;
+      @media (max-width: 1025px) {
+        width: 100%;
+    }
+  
+      h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+        font-weight: 200;
+      }
+  
+      h2 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+  
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        input,
+        textarea {
+          padding: 12px 16px;
+          border: none;
+          font-size: 14px;
+          background-color: var(--white);
+          color: var(--jetgray);
+        }
+  
+        textarea {
+          min-height: 120px;
+          resize: vertical;
+        }
+  
+        button {
+          width: fit-content;
+          padding: 0px 10px;
+          font-size: 16px;
+          background-color: var(--yellow);
+          color: var(--green);
+          border: none;
+          cursor: pointer;
+          &:hover {
+            background-color: #e5c931;
+          }
+        }
+      }
+    }
+  }
+
+  .overview-shape{
+    display: none;
+  }  
+//=========================== MEMBERSHIP END ================================
+
+//=========================== PRODUCT START =================================
+.product-section {
+    text-align: center;
+    padding: 60px 20px; 
     .container{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        .section-heading{
-            background: none;
-            font-family: "Bai Jamjuree", sans-serif;
-            font-size: 28px;
-            text-transform: capitalize;
-        }
-        .subheading{
-            font-family: "Bai Jamjuree", sans-serif;
-            font-size: 18px;
-        }
-        .img{
-            text-align: center;
-            img{
-                width:100px;
-                height:90px;
-                border-radius: 80px;
-            }
-            h4{
-                font-family: "Bai Jamjuree", sans-serif;
-                font-size: 15px;
-                margin-bottom: 0px;
-            }
-            p{
-                font-family: "Bai Jamjuree", sans-serif;
-                font-size: 13px; 
-            }
-        }
+        max-width: 1200px;
+        
+    h2 {
+        font-size: 48px;
+        color: var(--lightgreen);
+        font-weight: 300;
+        margin-bottom: 40px;
     }
-}
-//=============TESTIMONIAL END==============
 
-//=============NEWS START===================
-.news{
-    background-color: #1BAE70;
-    .container{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        .section-heading{
-            color:#ffffff;
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .product-card {
+        background: var(--whitesmoke);
+        padding: 20px;
+        width: 100%;
+        max-width: 250px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        text-align: left;
+
+        img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        margin-bottom: 10px;
+        }
+
+        h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        }
+
+        .price {
+        font-size: 16px;
+        color: var(--jetgray);
+
+        strong {
+            font-weight: bold;
+        }
+
+        span {
+            font-size: 14px;
+            color: var(--gray);
+            margin-left: 4px;
+        }
+        }
+
+        button {
+        background: var(--yellow);
+        color: var(--green);
+        font-weight: bold;
+        border: none;
+        padding: 0px 16px;
+        cursor: pointer;
+        font-size: 14px;
         }
     }
+
+    .read-more {
+        margin-top: 40px;
+        text-align: right;
+        @media (max-width: 550px) {
+            text-align:center !important;
+          }
+      
+
+        a {
+        color: var(--lightgreen);
+        font-weight: 500;
+        font-size: 16px;
+
+        span {
+            display: inline-block;
+            margin-left: 1px;
+            padding-right: 7px;
+            transition: transform 0.3s ease;
+            width: 26px;
+            height: 26px;
+            border: 1px solid var(--lightgreen);
+            border-radius: 50%;
+        }
+        &:hover span {
+            transform: translateX(5px);
+        }
+        }
+    }
+    }
 }
+//=========================== PRODUCT END ===================================
+
+//========================= TESTIMONIAL START ================================
+.testimony{
+    background-color: var(--whitesmoke);
+}
+//========================= TESTIMONIAL END ==================================
+
+//========================= FOOTER LOGO START=================================
+.footer{
+    .footer-item{
+        .logo-bottom {
+            width: 200px !important;
+        }
+    } 
+}
+//========================= FOOTER LOGO END=================================

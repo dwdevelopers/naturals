@@ -4,47 +4,20 @@
 
 @section('content')
 
-<!-- BANNER -->
+<!--===================================== BANNER START =============================================-->
 <div id="slides" class="section banner">
     <ul class="slides-container">
-        <li>
-            <img src="{{ asset('website/images/b3.jpg') }} ">
-            <div class="overlay-bg"></div>
-            <div class="container">
+        <li style="position: relative; overflow: hidden;">
+            <video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop playsinline class="bg-video"></video>
+            <div class="overlay-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+            <div class="container" style="position: relative; z-index: 2;">
                 <div class="wrap-caption center">
                     <h2 class="caption-heading">
-                        <span>Balance Your Best Interests</span>
+                        <span>Sow growth,Reap success</span>
                     </h2>
-                    <p class="excerpt">Ipsum dolor sit amet consectetur adipisicing</p>
                 </div>
             </div>
         </li>
-        <!-- <li>
-            <img src="{{ asset('website/images/b2.jpg') }}" alt="">
-            <div class="overlay-bg"></div>
-            <div class="container">
-                <div class="wrap-caption right">
-                    <h2 class="caption-heading">
-                        <span>Helping You Make Smart Financial Choices</span>
-                    </h2>
-                    <p class="excerpt">remipsum dolor sit amet consectetur adipisicing</p>
-                </div>
-            </div>
-        </li> -->
-        <!-- <li>
-            <img src="{{ asset('website/images/b1.jpg') }}" alt="">
-            <div class="overlay-bg"></div>
-            <div class="container">
-                <div class="wrap-caption center">
-
-                    <h2 class="caption-heading">
-                        <span>Let’s Grow Together</span>
-                    </h2>
-                    <p class="excerpt">orem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
-                </div>
-            </div>
-        </li> -->
-
     </ul>
 
     <nav class="slides-navigation">
@@ -57,15 +30,13 @@
             </a>
         </div>
     </nav>
-
 </div>
+<!--===================================== BANNER END =============================================-->
 
-<!-- WHY CHOOSE US -->
+<!--===================================== WHY CHOOSE US START =====================================-->
 <div class="section feature bg-why">
     <div class="container">
-
         <div class="row">
-
             <div class="col-sm-12 col-md-12">
                 <div class="row col-0 overlap">
                     <div class="col-sm-4 col-md-4 border-right">
@@ -73,10 +44,16 @@
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-line-chart"></i></div>
                             <div class="body">
-                                <a href="services-detail.html" class="title">Agro Tourism Project  </a>
-                                <p>Bridging Tradition with
-                                Sustainable Growth</p>
-                                <a href="services-detail.html" class="more"><i class="fa fa-angle-right"></i></a>
+                                <div class="icon1">
+                                <img src="{{ asset('website/images/icons-02.svg') }}" alt="Icon">
+                                </div>
+                                <div class="content">
+                                    <a href="services-detail.html" class="title">Gold Loan  </a>
+                                    <p>We offer secure and hassle-free
+                                        gold loan services, exclusively for
+                                        our registered members. </p>
+                                    <a href="#" class="read-more rm-1">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,10 +62,15 @@
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
                             <div class="body">
-                                <a href="services-detail.html" class="title">Karshaka Mithra</a>
-                                <p>Empowering Farmers,
-                                Enriching Communities</p>
-                                <a href="services-detail.html" class="more"><i class="fa fa-angle-right"></i></a>
+                                <div class="icon1">
+                                <img src="{{ asset('website/images/icons-03.svg') }}" alt="Icon">
+                                </div>
+                                <div class="content">
+                                    <a href="services-detail.html" class="title">Merchant loan</a>
+                                    <p>Introducing Merchant Loan – a
+                                    flexible, short-term financing solution designed for our members. </p>
+                                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,320 +79,161 @@
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-tachometer"></i></div>
                             <div class="body">
-                                <a href="services-detail.html" class="title">Sakthiroopa Yojana</a>
-                                <p>For
-                                Sustainable Growth</p>
-                                <a href="services-detail.html" class="more"><i class="fa fa-angle-right"></i></a>
+                                <div class="icon1">
+                                <img src="{{ asset('website/images/icons-04.svg') }}" alt="Icon">
+                                </div>
+                                <div class="content">
+                                    <a href="services-detail.html" class="title">Group Loan</a>
+                                    <p>Our group loan facility, exclusively
+                                        for members, provides accessible
+                                        credit to individuals engaged in
+                                        similar economic activities. </p>
+                                        <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-<!-- ABOUT -->
-<div class="section section-border bg-grey">
+<!--===================================== WHY CHOOSE US END =====================================-->
 
-    <div class="overview-shape">
-        <img src="{{ asset('website/images/shape-1.png') }}" alt="image">
-    </div>
+<!--===================================== AGRI DHAN VIKAS START ==================================-->
+<section class="agri-dhan-vikas">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-6">
-
-                <h2 class="section-heading">
-                    ABOUT US
-                </h2>
-
-                <h1 class="jumbolead reset-section-heading">Sow growth,Reap successF</h1>
-                <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society
-Ltd, registered under the Ministry of Co-operation, Government of
-India, is committed to transforming the agricultural sector through
-innovation, sustainability, and farmer empowerment. We provide
-farmers with essential training, financial assistance, and access to
-modern agricultural resources while promoting eco-friendly farming
-practices that enhance productivity and long-term food security. </p>
-<a href="" class="view-more">Read More</a>
-
-            </div>
-            <div class="col-sm-6 col-md-6">
-                <div class="vidimg">
-                    <div class="play-vid">
-                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=JGYuCRYFxew"><span class="fa fa-play fa-2x playvid"></span></a>
-                    </div>
-                    <img src="{{ asset('website/images/b3.jpg') }} " alt="" class="img-responsive">
+    <h2 class="section-title">Agri Dhan Vikas</h2>
+        <div class="cards-grid">
+            <!-- CARD 1 -->
+            <div class="card" style="background-image: url('/website/images/img-01.jpg');">
+                <div class="card-content">
+                    <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
+                    <p>Recurring Contribution & Fixed Contribution (RC & FC) schemes to provide secure
+                         and growth-oriented financial solutions for our members.</p>
+                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
             </div>
-
+            <!-- CARD 2 -->
+            <div class="card" style="background-image: url('/website/images/img-02.jpg');">
+                <div class="card-content">
+                    <h3>Gold Loan, Merchant loan and Group Loan</h3>
+                    <p>We offer secure and hassle-free loan services, exclusively for our registered members.</p>
+                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="card" style="background-image: url('/website/images/img-03.jpg');">
+                <div class="card-content">
+                    <h3>Agro Tourism Project – Bridging Tradition with Sustainable Growth</h3>
+                    <p>The Agro Tourism Project integrates traditional farming with sustainable tourism, empowering 
+                        farmers and boosting rural economies.</p>
+                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="card" style="background-image: url('/website/images/img-04.jpg');">
+                <div class="card-content">
+                    <h3>Karshaka Mithra – Empowering Farmers, Enriching Communities</h3>
+                    <p>Karshaka Mithra ensures a seamless farm-to-market supply chain, directly collecting organic 
+                        produce from farmers and delivering it to consumers at fair prices.</p>
+                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                </div>
+            </div>
+            <!-- CARD 5 -->
+            <div class="card" style="background-image: url('/website/images/img-05.jpg');">
+                <div class="card-content">
+                    <h3>Sakthiroopa Yojana - for Sustainable Growth</h3>
+                    <p>The society empowers women through financial support, skill development, and direct market 
+                        access, enabling them to build successful ventures in food production, agriculture, and 
+                        eco-friendly products.</p>
+                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                </div>
+            </div>
+            <!-- CARD 6 -->
+            <div class="card" style="background-image: url('/website/images/img-06.jpg');">
+                <div class="card-content">
+                    <h3>FMCG Range - Pure, Natural, and Sustainable</h3>
+                    <p>Our range, which includes a wide variety of fast-moving consumer goods, reflects our 
+                        commitment to sustainability, community empowerment, and the promotion of natural 
+                        and organic products.</p>
+                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
+<!--===================================== AGRI DHAN VIKAS END ====================================-->
 
-<!-- SERVICES -->
-<!-- Start Global Transfers Area -->
-<div class="global-transfers-area pt-100 pb-75">
+<!--===================================== MEMBERSHIP START ======================================-->
+<section class="membership-section">
+    <div class="membership-left">
+        <img src="{{ asset('website/images/icons-01.svg') }}" alt="Icon">
+        <div class="membership-text">
+            <h2>Membership</h2>
+            <p>
+            Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
+            </p>
+        </div>
+    </div>
+    <div class="membership-right">
+      <h4>Get in Touch</h4>
+      <h2>Contact with us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+<!--===================================== MEMBERSHIP END ======================================-->  
+
+<!--===================================== PRODUCT START =======================================-->
+<section class="product-section">
     <div class="container">
-        <div class="section-title">
-            <span>Our Services</span>
-            <h2>Agri Dhan Vikas</h2>
+    <h2>Our Products</h2>
+    <div class="product-grid">
+        <div class="product-card">
+        <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <button>Add to cart</button>
         </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-sm-6">
-                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
-                    <div class="icon">
-                        <img src="{{ asset('website/images/service1.png') }}" alt="">
-                    </div>
-                    <h3>Gold Loan</h3>
-                    <p>We offer secure and hassle-free gold loan services, exclusively for our
-                        registered members. Designed to provide quick financial assistance,
-                        our gold loans come with low-interest rates, high loan value, and
-                        flexible repayment options, ensuring members get the best value for
-                        their pledged gold.</p>
-                    <!-- <a href="protecting-your-money.html" class="global-btn">View More</a> -->
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600" data-aos-once="true">
-                    <div class="icon">
-                        <img src="{{ asset('website/images/service2.png') }}" alt="">
-                    </div>
-                    <h3>Merchant loan</h3>
-                    <p>Introducing Merchant Loan – a flexible, short-term financing solution
-                        designed for our members. Get quick access to capital to manage
-                        cash flow, expand operations, or meet urgent needs. With simple
-                        eligibility and easy repayment, Merchant Loan empowers small
-                        businesses and startups to grow with confidence.</p>
-                    <!-- <a href="getting-started.html" class="global-btn">View More</a> -->
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
-                    <div class="icon">
-                        <img src="{{ asset('website/images/service3.png') }}" alt="">
-                    </div>
-                    <h3>Group Loan</h3>
-                    <p>Our group loan facility, exclusively for members, provides accessible
-                        credit to individuals engaged in similar economic activities. With
-                        shared responsibility and mutual support, members act as guarantors,
-                        ensuring seamless repayment. This initiative fosters entrepreneurship,
-                        financial inclusion, and economic stability, empowering self-help
-                        groups, farmers, and small businesses.</p>
-                    <!-- <a href="help-center.html" class="global-btn">View More</a> -->
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="single-global-transfers-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
-                    <div class="icon">
-                        <img src="{{ asset('website/images/service4.png') }}" alt="">
-                    </div>
-                    <h3>Membership</h3>
-                    <p>Membership is an affiliation granted to members who are well
-                        involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.</p>
-                    <!-- <a href="help-center.html" class="global-btn">View More</a> -->
-                </div>
-            </div>
+      <!-- Repeat this card for each product -->
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <button>Add to cart</button>
         </div>
     </div>
-</div>
-<!-- End Global Transfers Area -->
-
-
-<!-- CTA -->
-<!-- <div class="section cta bg-overlay-1" style="background: url('{{ asset('website/images/b1.jpg') }}')">
-		<div class="container">
-			
-			<div class="row">
-				<div class="col-sm-12 col-md-12">
-					<div class="cta-info">
-						<h3>All of Our Customers Trust Their Success To Us</h3>
-						<p>Our professional team works to increase productivity and cost effectiveness on the market</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-<!-- STATS -->
-<div class="section statistic bg-overlay-2 counter_sec" style="background: url('{{ asset('website/images/b1.jpg') }}') bottom center no-repeat; background-attachment: fixed" ;
-    background-size: cover;>
-
-    <div class="container">
-        <div class="col-sm-4 col-md-4">
-            <h2 class="jumbolead font__color-2">We Have Great Achivment To Show!!</h2>
-        </div>
-        <div class="col-sm-8 col-md-8">
-            <div class="row">
-
-                <div class="col-sm-4 col-md-4">
-                    <div class="counter-1">
-                        <div class="counter-number">
-                            20,000+
-                        </div>
-
-                        <div class="counter-title">Shareholders</div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3">
-                    <div class="counter-1">
-                        <div class="counter-number">
-                            38+
-                        </div>
-                        <div class="counter-title">Branches</div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3">
-                    <div class="counter-1">
-                        <div class="counter-number">
-                            200+
-                        </div>
-                        <div class="counter-title">Employees</div>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-md-2">
-                    <div class="counter-1">
-                        <div class="counter-number">
-                            2
-                        </div>
-                        <div class="counter-title">States</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <div class="read-more">
+    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
     </div>
-</div>
-
-
-
-
-<!-- WHY CHOOSE US -->
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <h2 class="section-heading center">
-                    Your Finanial Choices
-                </h2>
-                <p class="subheading text-center">With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next renovation, driveway sett or home repair. We provide a professional service for private and commercial customers.</p>
-            </div>
-            <div class="col-sm-12 col-md-12">
-                <div id="caro-3">
-
-                    <div class="item">
-                        <div class="feature-box-7">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b3.jpg') }}" alt="rud" class="img-responsive">
-                            </div>
-                            <div class="body">
-                                <div class="icon-holder">
-                                    <span class="fa fa-line-chart"></span>
-                                </div>
-                                <a href="services-detail.html" class="title">Business Growth</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="feature-box-7">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b1.jpg') }}" alt="rud" class="img-responsive">
-                            </div>
-                            <div class="body">
-                                <div class="icon-holder">
-                                    <span class="fa fa-line-chart"></span>
-                                </div>
-                                <a href="services-detail.html" class="title">Sustainability</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="feature-box-7">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b2.jpg') }}" alt="rud" class="img-responsive">
-                            </div>
-                            <div class="body">
-                                <div class="icon-holder">
-                                    <span class="fa fa-thumbs-o-up"></span>
-                                </div>
-                                <a href="services-detail.html" class="title">Performance</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="feature-box-7">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b3.jpg') }}" alt="rud" class="img-responsive">
-                            </div>
-                            <div class="body">
-                                <div class="icon-holder">
-                                    <span class="fa fa-tachometer"></span>
-                                </div>
-                                <a href="services-detail.html" class="title">Performance</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="feature-box-7">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b1.jpg') }}" alt="rud" class="img-responsive">
-                            </div>
-                            <div class="body">
-                                <div class="icon-holder">
-                                    <span class="fa fa-line-chart"></span>
-                                </div>
-                                <a href="services-detail.html" class="title">Business Growth</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="feature-box-7">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b2.jpg') }}" alt="rud" class="img-responsive">
-                            </div>
-                            <div class="body">
-                                <div class="icon-holder">
-                                    <span class="fa fa-line-chart"></span>
-                                </div>
-                                <a href="services-detail.html" class="title">Sustainability</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
     </div>
-</div>
+</section>
+<!--===================================== PRODUCT END =======================================-->  
 
-
-
-<!-- TESTIMONY -->
+<!--===================================== TESTIMONIAL START ==================================--> 
 <div class="section testimony" style="padding-top: 0;">
     <div class="container">
-
         <div class="row">
-
             <div class="col-sm-12 col-md-8 col-md-offset-2">
-
-                <div id="owl-testimony">
+              <div id="owl-testimony">
                     <div class="item">
                         <div class="testimonial-1">
                             <div class="media">
@@ -460,15 +283,12 @@ practices that enhance productivity and long-term food security. </p>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-
         </div>
     </div>
 </div>
+<!--===================================== TESTIMONIAL END ==================================--> 
 
 <!-- BLOG -->
 <div class="section blog bg-grey">

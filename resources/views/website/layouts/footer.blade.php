@@ -1,5 +1,4 @@
  <div class="footer">
-
      <div class="f-info">
          <div class="container">
              <div class="row">
@@ -46,7 +45,7 @@
          <div class="row">
              <div class="col-sm-4 col-md-4">
                  <div class="footer-item">
-                     <img src="{{ asset('website/images/naturals-logo.png') }}" alt="logo bottom" class="logo-bottom" />
+                     <img src="{{ asset('website/images/footer-logo.png') }}" alt="logo bottom" class="logo-bottom" />
                      <div class="spacer-30"></div>
                      <h6>Registered Office</h6>
                      <p>11/744-745 Meenakshi Complex,<br>
@@ -119,10 +118,9 @@
          <div class="container">
              <div class="row">
                  <div class="col-sm-12 col-md-12">
-                     <p class="ftex">&copy; 2017 Finanzi by Rudhi Sasmito - All Rights Reserved</p>
+                     <p class="ftex">&copy; 2025 NATURAL - All Rights Reserved</p>
                  </div>
              </div>
          </div>
      </div>
-
  </div>
