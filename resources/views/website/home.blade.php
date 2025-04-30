@@ -6,19 +6,14 @@
 
 <!--===================================== BANNER START =============================================-->
 <div id="slides" class="section banner">
-    <ul class="slides-container">
-        <li style="position: relative; overflow: hidden;">
-            <video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop playsinline class="bg-video"></video>
-            <div class="overlay-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
-            <div class="container" style="position: relative; z-index: 2;">
-                <div class="wrap-caption center">
-                    <h2 class="caption-heading">
-                        <span>Sow growth,Reap success</span>
-                    </h2>
-                </div>
-            </div>
-        </li>
-    </ul>
+    <section class="hero-banner">
+    <video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop playsinline class="bg-video"></video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Sow growth, Reap success</h2>
+        </div>
+    </section>
+
 
     <nav class="slides-navigation">
         <div class="container">
