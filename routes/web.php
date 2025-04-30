@@ -10,11 +10,15 @@ use App\Http\Controllers\Admin\ProjectActivitiesController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductDetailsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\ContactUsController as WebsiteContactUs;
+use App\Http\Controllers\ProductController as WebsiteProduct;
 use App\Http\Controllers\Auth\LoginController;
 use App\Models\Category;
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 Route::get('login', [\App\Http\Controllers\Auth\LoginController::class, 'showUserLoginForm'])
     ->name('login');
 Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'userLogin'])->name('login');
@@ -23,7 +27,6 @@ Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'userLo
 Route::get('admin/login', [\App\Http\Controllers\Auth\LoginController::class, 'showAdminLoginForm'])
     ->name('admin.login');
 Route::post('admin/login', [\App\Http\Controllers\Auth\LoginController::class, 'adminLogin'])->name('admin.login');
-
 
 Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
     ->group(function () {
@@ -39,10 +42,18 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
 
 Route::name('website.')->group(function(){
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::get('/about-us', [HomeController::class, 'about'])->name('about');
+
     Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
-    // Route::get('/service/{slug}', [HomeController::class, 'services'])->name('service');
+    Route::get('/about-us', [AboutUsController::class, 'index'])->name('aboutus');
+    Route::get('/service', [ServicesController::class, 'index'])->name('service');
+    Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+    Route::get('/downlaod', [DownloadController::class, 'index'])->name('downloads');
+    Route::get('/contact-us', [WebsiteContactUs::class, 'index'])->name('contactUs');
+    Route::get('/product', [WebsiteProduct::class, 'index'])->name('product');
+    Route::get('/service/slug', [ServicesController::class, 'show'])->name('service.detail');
+    Route::get('/product/slug', [WebsiteProduct::class, 'show'])->name('product.detail');
+
 });
 Auth::routes();
 

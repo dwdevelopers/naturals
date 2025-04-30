@@ -31,27 +31,27 @@
 
                     <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="contact.html" class="active">Home</a></li>
-                            <li><a href="contact.html">About</a></li>
+                            <li><a href="{{route('website.home')}}" class="active">Home</a></li>
+                            <li><a href="{{route('website.aboutus')}}">About</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
+                                <a href="{{route('website.service')}}"  role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                                {{-- <ul class="dropdown-menu">
                                     <li><a href="news-grid.html">Agro Tourism Project </a></li>
                                     <li><a href="news-sidebar.html">Karshaka Mithra</a></li>
                                     <li><a href="news-detail.html">Sakthiroopa Yojana</a></li>
-                                </ul>
+                                </ul> --}}
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
+                                <a href="{{route('website.product')}}"  role="button" aria-haspopup="true" aria-expanded="false">Product</a>
+                                {{-- <ul class="dropdown-menu">
                                     <li><a href="faq.html">Faq</a></li>
                                     <li><a href="pricing-table.html">Pricing Table</a></li>
                                     <li><a href="404page.html">404 Page</a></li>
-                                </ul>
+                                </ul> --}}
                             </li>
-                            <li><a href="contact.html">Gallery</a></li>
-                            <li><a href="contact.html">Downloads</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{route('website.gallery')}}">Gallery</a></li>
+                            <li><a href="{{route('website.downloads')}}">Downloads</a></li>
+                            <li><a href="{{route('website.contactUs')}}">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
