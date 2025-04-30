@@ -1,95 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-p, li, a, h1, h2, h3{
+
+p,
+li,
+a,
+h1,
+h2,
+h3 {
   font-family: 'Lato', sans-serif !important;
 }
+
 //============================== VARIABLES ===================================
-:root{
-    --black:#000;
-    --white:#fff;
-    --whitesmoke:#f9f9f9;
-    --green: #26b24b;
-    --primary-green: #27bd4f;
-    --lightgreen:#68b02b;
-    --darkgreen:#208a3c;
-    --gray:gray;
-    --lightgray:#e8e8e8;
-    --jetgray:#333;
-    --teagreen:#E4F0CF;
-    --yellow: #f6e13a;
+:root {
+  --black: #000;
+  --white: #fff;
+  --whitesmoke: #f9f9f9;
+  --green: #26b24b;
+  --primary-green: #27bd4f;
+  --lightgreen: #68b02b;
+  --darkgreen: #208a3c;
+  --gray: gray;
+  --lightgray: #e8e8e8;
+  --jetgray: #333;
+  --teagreen: #E4F0CF;
+  --yellow: #f6e13a;
 }
 
+
+//---------------------------------------------------------------- HEADER PAGE --------------------------------------------------------------------
 //========================= HEADER START ====================================
-.header{
-    padding-bottom: 0;
-    // margin-top: 30px;
+.header {
+  padding-bottom: 0;
+  // margin-top: 30px;
+  background-color: var(--teagreen);
+
+  .topbar {
     background-color: var(--teagreen);
-    .topbar {
-        background-color: var(--teagreen);
-        max-width: 90%;
-        margin: 0 auto;
-        left: 40px;
-        right: 40px;
-        .info{
-            display: flex;
-            justify-content: space-between;
-            padding-top: 20px;
-            margin-top: 0;
-            p{
-                color: var(--darkgreen);
-                font-size: 10px;
-                font-weight: 600;
-            }
-            .info-item{
-                .fa{
-                    color: var(--black);
-                    border: 1px solid var(--black);
-                    border-radius: 20px;
-                    width: 15px;
-                    height:15px;
-                    padding-left: 4px;
-                }
-                .topbar-info{
-                    color: var(--black);
-                    font-size: 15px;
-                }
-            }
+    max-width: 90%;
+    margin: 0 auto;
+    left: 40px;
+    right: 40px;
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      margin-top: 0;
+
+      p {
+        color: var(--darkgreen);
+        font-size: 10px;
+        font-weight: 600;
+      }
+
+      .info-item {
+        .fa {
+          color: var(--black);
+          border: 1px solid var(--black);
+          border-radius: 20px;
+          width: 15px;
+          height: 15px;
+          padding-left: 4px;
         }
+
+        .topbar-info {
+          color: var(--black);
+          font-size: 15px;
+        }
+      }
     }
-    .navbar{
-        background-color: var(--white);
-        .container {
-            width: 90% !important;
-            .navbar-toggle{
-                @media (max-width: 1200px){
-                    display: inline-block;
-                }
-            }
-            .navbar-brand{
-                img{
-                    @media (max-width: 770px){
-                       margin-left: 100px;
-                       width:130px;
-                    }
-                }
-            }
-            .navbar-collapse{
-                padding-left: 0;
-                padding-right: 0;
-                .navbar-right, li{
-                    margin-right:0;
-                    @media (max-width: 1200px){
-                        display: none;
-                    }
-                    a{
-                        color: var(--gray) !important;
-                    }
-                }
-            }
-        }    
+  }
+
+  .navbar {
+    background-color: var(--white);
+
+    .container {
+      width: 90% !important;
+
+      .navbar-toggle {
+        @media (max-width: 1200px) {
+          display: inline-block;
+        }
+      }
+
+      .navbar-brand {
+        img {
+          @media (max-width: 770px) {
+            margin-left: 100px;
+            width: 130px;
+          }
+        }
+      }
+
+      .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+
+        .navbar-right,
+        li {
+          margin-right: 0;
+
+          @media (max-width: 1200px) {
+            display: none;
+          }
+
+          a {
+            color: var(--gray) !important;
+          }
+        }
+      }
     }
+  }
 }
+
 //========================== HEADER END ====================================
-    
+
+
+
+//---------------------------------------------------------------- HOME PAGE ----------------------------------------------------------------------
 //========================== BANNER START ===================================
 .hero-banner {
   position: relative;
@@ -136,7 +163,8 @@ p, li, a, h1, h2, h3{
       font-weight: 300;
       padding: 0 1rem;
       max-width: 90%;
-      @media (max-width: 768px){
+
+      @media (max-width: 768px) {
         font-size: 50px;
       }
     }
@@ -146,412 +174,733 @@ p, li, a, h1, h2, h3{
 .slides-navigation {
   display: none;
 }
+
 //========================== BANNER END =====================================
 
 //====================== WHY CHOOSE US START =================================
-.bg-why{
+.bg-why {
   background-color: var(--whitesmoke);
-    .container{
-        position: relative;
-        z-index: 1;
-        top:-50px;
-        .row{
-            .body{
-                display: flex !important;
-                justify-content: space-evenly;
-                gap: 20px;
-                padding-right: 0;
-                .icon1{
-                    img{
-                        width:90%;
-                        margin-top: 30px;
-                    }
-                }
-                .content{
-                  font-family: "Lato", sans-serif;
-                  .title{
-                    text-transform: capitalize;
-                  }
-                    p{
-                        font-size: 12px;
-                    }
-                    .read-more {
-                        color: var(--lightgreen);
-                        text-decoration: none;
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 8px;
-                        font-weight: 400;
-                        margin-top: auto;
-              
-                        span {
-                          display: inline-flex;
-                          align-items: center;
-                          justify-content: center;
-                          width: 26px;
-                          height: 26px;
-                          border: 1px solid var(--lightgreen);
-                          border-radius: 50%;
-                          transition: transform 0.3s ease;
-                        }
-              
-                        &:hover span {
-                          transform: translateX(5px);
-                        }
-                    }
-                    .rm-1{
-                        margin-top: 22px;
-                    }
-                }
-            }
-        }
-    }
-}
-//====================== WHY CHOOSE US END ===================================
 
-//======================= AGRI DHAN VIKAS START =============================
-.agri-dhan-vikas {
-    padding: 0 60px 60px 20px;
-    background-color: var(--whitesmoke);
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 60px;
-      color: var(--lightgreen);
-      font-family: "Lato", sans-serif;
-      font-weight: 500;
-      margin-bottom: 50px;
-    }
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      @media (max-width: 992px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @media (max-width: 600px) {
-        grid-template-columns: 1fr;
-      }
-      .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-        padding: 30px 25px;
-        min-height: 570px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  .container {
+    position: relative;
+    z-index: 1;
+    top: -50px;
+
+    .row {
+      .body {
+        display: flex !important;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding-right: 0;
+
+        .icon1 {
+          img {
+            width: 90%;
+            margin-top: 30px;
+          }
         }
-  
-        .card-content {
-          width:90%;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          flex: 0.43;
-          h3 {
-            font-family: "Lato", sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--jetgray);
-            margin-bottom: 15px;
+
+        .content {
+          font-family: "Lato", sans-serif;
+
+          .title {
+            text-transform: capitalize;
           }
+
           p {
-            font-family: "Lato", sans-serif;
-            font-size: 14px;
-            color: var(--jetgray);
-            line-height: 1.6;
-            margin-bottom: 20px;
-            flex-grow: 0;
+            font-size: 12px;
           }
-  
+
           .read-more {
-            color: var(--black);
+            color: var(--lightgreen);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
             font-weight: 400;
             margin-top: auto;
-  
+
             span {
               display: inline-flex;
               align-items: center;
               justify-content: center;
               width: 26px;
               height: 26px;
-              border: 1px solid var(--black);
+              border: 1px solid var(--lightgreen);
               border-radius: 50%;
               transition: transform 0.3s ease;
             }
-  
+
             &:hover span {
               transform: translateX(5px);
             }
           }
-        }
-      }
-    }
-  } 
-//======================= AGRI DHAN VIKAS END ===============================
 
-//========================= MEMBERSHIP START ================================
-  .membership-section {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--green);
-    color: var(--white);
-    padding: 60px 20px;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    @media (max-width: 1025px) {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap:0px;
-    }
-
-    .membership-left {
-      flex: 1 1 400px;
-      max-width: 650px;
-      display: flex;
-      gap: 40px;
-      @media (max-width: 1025px) {
-        max-width: 100%;
-    }
-    @media (max-width: 600px){
-        display: block;
-    }
-  
-      img {
-        width: 100%;
-        max-width: 300px;
-        margin-top: 100px;
-        @media (max-width: 1025px) {
-            margin: 0 auto 20px;
-        }
-      }
-  
-      .membership-text {
-        margin-top: 150px;
-        @media (max-width: 1025px) {
-            margin-top: 50px;
-        }
-        h2 {
-          font-family: "Lato", sans-serif;
-          font-size: 28px;
-          font-weight: 600;
-          margin-bottom: 5px;
-        } 
-       p {
-        font-family: "Lato", sans-serif;
-          font-size: 13px;
-          line-height: 1.6;
-        }
-      }
-    }
-  
-    .membership-right {
-      flex: 1 1 400px;
-      max-width: 450px;
-      @media (max-width: 1025px) {
-        width: 100%;
-    }
-  
-      h4 {
-        font-family: "Lato", sans-serif;
-        font-size: 14px;
-        margin-bottom: 5px;
-        font-weight: 200;
-      }
-  
-      h2 {
-        font-family: "Lato", sans-serif;
-        font-size: 22px;
-        font-weight: 500;
-        margin-bottom: 20px;
-      }
-  
-      .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-  
-        input,
-        textarea {
-          padding: 12px 16px;
-          border: none;
-          font-size: 14px;
-          background-color: var(--white);
-          color: var(--jetgray);
-        }
-  
-        textarea {
-          min-height: 120px;
-          resize: vertical;
-        }
-  
-        button {
-          width: fit-content;
-          padding: 0px 10px;
-          font-size: 16px;
-          background-color: var(--yellow);
-          color: var(--green);
-          border: none;
-          cursor: pointer;
-          &:hover {
-            background-color: #e5c931;
+          .rm-1 {
+            margin-top: 22px;
           }
         }
       }
     }
   }
+}
 
-  .overview-shape{
-    display: none;
-  }  
+//====================== WHY CHOOSE US END ===================================
+
+//======================= AGRI DHAN VIKAS START =============================
+.agri-dhan-vikas {
+  padding: 0 60px 60px 20px;
+  background-color: var(--whitesmoke);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 60px;
+    color: var(--lightgreen);
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom center;
+      padding: 30px 25px;
+      min-height: 570px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .card-content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 0.43;
+
+        h3 {
+          font-family: "Lato", sans-serif;
+          font-size: 15px;
+          font-weight: 600;
+          color: var(--jetgray);
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-family: "Lato", sans-serif;
+          font-size: 14px;
+          color: var(--jetgray);
+          line-height: 1.6;
+          margin-bottom: 20px;
+          flex-grow: 0;
+        }
+
+        .read-more {
+          color: var(--black);
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-weight: 400;
+          margin-top: auto;
+
+          span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border: 1px solid var(--black);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover span {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+//======================= AGRI DHAN VIKAS END ===============================
+
+//========================= MEMBERSHIP START ================================
+.membership-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 60px 20px;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 1025px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .membership-left {
+    flex: 1 1 400px;
+    max-width: 650px;
+    display: flex;
+    gap: 40px;
+
+    @media (max-width: 1025px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 100px;
+
+      @media (max-width: 1025px) {
+        margin: 0 auto 20px;
+      }
+    }
+
+    .membership-text {
+      margin-top: 150px;
+
+      @media (max-width: 1025px) {
+        margin-top: 50px;
+      }
+
+      h2 {
+        font-family: "Lato", sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .membership-right {
+    flex: 1 1 400px;
+    max-width: 450px;
+
+    @media (max-width: 1025px) {
+      width: 100%;
+    }
+
+    h4 {
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-weight: 200;
+    }
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input,
+      textarea {
+        padding: 12px 16px;
+        border: none;
+        font-size: 14px;
+        background-color: var(--white);
+        color: var(--jetgray);
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      button {
+        width: fit-content;
+        padding: 0px 10px;
+        font-size: 16px;
+        background-color: var(--yellow);
+        color: var(--green);
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e5c931;
+        }
+      }
+    }
+  }
+}
+
+.overview-shape {
+  display: none;
+}
+
 //=========================== MEMBERSHIP END ================================
 
 //=========================== PRODUCT START =================================
 .product-section {
-    text-align: center;
-    padding: 40px 20px; 
-    .container{
-        max-width: 1200px;
-        
+  text-align: center;
+  padding: 40px 20px;
+
+  .container {
+    max-width: 1200px;
+
     h2 {
-       font-family: "Lato", sans-serif;
-        font-size: 60px;
-        color: var(--lightgreen);
-        font-weight: 500;
-        margin-bottom: 40px;
+      font-family: "Lato", sans-serif;
+      font-size: 60px;
+      color: var(--lightgreen);
+      font-weight: 500;
+      margin-bottom: 40px;
     }
 
     .product-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 40px;
-        justify-items: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      justify-items: center;
     }
 
     .product-card {
-        background: var(--whitesmoke);
-        padding: 20px;
+      background: var(--whitesmoke);
+      padding: 20px;
+      width: 100%;
+      max-width: 250px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      text-align: left;
+
+      img {
         width: 100%;
-        max-width: 250px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        border-radius: 6px;
-        text-align: left;
+        max-height: 300px;
+        object-fit: contain;
+        margin-bottom: 10px;
+      }
 
-        img {
-          width: 100%;
-          max-height: 300px;
-          object-fit: contain;
-          margin-bottom: 10px;
-        }
+      h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
 
-        h3 {
-          font-family: "Lato", sans-serif;
-          font-size: 18px;
-          font-weight: 600;
-          margin-bottom: 10px;
-          line-height: 1.4;
-        }
-
-        .price {
-          font-family: "Lato", sans-serif;
-          font-size: 16px;
-          color: var(--jetgray);
+      .price {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        color: var(--jetgray);
 
         strong {
-            font-weight: bold;
+          font-weight: bold;
         }
 
         span {
-            font-size: 14px;
-            color: var(--gray);
-            margin-left: 4px;
-        }
-        }
-
-        button {
-          font-family: "Lato", sans-serif;
-          background: var(--yellow);
-          color: var(--green);
-          font-weight: bold;
-          border: none;
-          padding: 0px 16px;
-          cursor: pointer;
           font-size: 14px;
+          color: var(--gray);
+          margin-left: 4px;
         }
+      }
+
+      button {
+        font-family: "Lato", sans-serif;
+        background: var(--yellow);
+        color: var(--green);
+        font-weight: bold;
+        border: none;
+        padding: 0px 16px;
+        cursor: pointer;
+        font-size: 14px;
+      }
     }
 
     .read-more {
-        margin-top: 40px;
-        text-align: right;
-        @media (max-width: 550px) {
-            text-align:center !important;
-          }
-      
+      margin-top: 40px;
+      text-align: right;
 
-        a {
+      @media (max-width: 550px) {
+        text-align: center !important;
+      }
+
+
+      a {
         color: var(--lightgreen);
         font-weight: 500;
         font-size: 16px;
 
         span {
-            display: inline-block;
-            margin-left: 1px;
-            padding-right: 7px;
-            transition: transform 0.3s ease;
-            width: 26px;
-            height: 26px;
-            border: 1px solid var(--lightgreen);
-            border-radius: 50%;
+          display: inline-block;
+          margin-left: 1px;
+          padding-right: 7px;
+          transition: transform 0.3s ease;
+          width: 26px;
+          height: 26px;
+          border: 1px solid var(--lightgreen);
+          border-radius: 50%;
         }
+
         &:hover span {
-            transform: translateX(5px);
+          transform: translateX(5px);
         }
-        }
+      }
     }
-    }
+  }
 }
+
 //=========================== PRODUCT END ===================================
 
 //========================= TESTIMONIAL START ================================
-.testimony{
-    background-color: var(--whitesmoke);
-    p{
-      font-family: "Lato", sans-serif;
-    }
+.testimony {
+  background-color: var(--whitesmoke);
+
+  p {
+    font-family: "Lato", sans-serif;
+  }
 }
+
 //========================= TESTIMONIAL END ==================================
 
-.blog{
+//============================= BLOG START====================================
+.blog {
   .subheading {
     font-family: 'Lato', sans-serif;
   }
-  .body{
-      font-family: "Lato", sans-serif;
+
+  .body {
+    font-family: "Lato", sans-serif;
   }
 }
 
+//============================== BLOG END ====================================
+
+
+
+//---------------------------------------------------------------- FOOTER PAGE --------------------------------------------------------------------
 //========================= FOOTER LOGO START=================================
-.footer{
-    .footer-item{
-        .logo-bottom {
-            width: 200px !important;
-        }
-    } 
+.footer {
+  .footer-item {
+    .logo-bottom {
+      width: 200px !important;
+    }
+  }
 }
+
 //========================= FOOTER LOGO END=================================
+
+
+
+//---------------------------------------------------------------- GALLERY PAGE --------------------------------------------------------------------
+.gallery {
+  background-color: var(--teagreen);
+
+  .container {
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    padding-bottom: 50px;
+
+    h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 50px;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      color: var(--jetgray);
+      font-size: 18x;
+      margin-bottom: 30px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 40px;
+
+      .tab {
+        padding: 0.6rem 1.4rem;
+        background: var(--white);
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+
+        &.active {
+          background: var(--darkgreen);
+          color: var(--white);
+          transform: scale(1.05);
+        }
+
+        &:hover {
+          background: var(--darkgreen);
+          color: var(--white);
+        }
+      }
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 350px;
+      gap: 1rem;
+
+      @media (max-width: 724px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 490px) {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 1rem;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1rem;
+      }
+
+      .media-item {
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        @media (max-width: 490px) {
+          flex: 0 0 auto;
+          width: 80%;
+          scroll-snap-align: start;
+        }
+
+        img,
+        video {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        &:hover {
+          transform: scale(1.02);
+        }
+
+        &.span-2 {
+          grid-column: span 2;
+        }
+      }
+    }
+  }
+}
+
+//For Modal Pop Up
+.media-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  &.active {
+    display: flex;
+  }
+
+  .modal-content {
+    position: relative;
+    max-width: 80vw;
+    max-height: 80vh;
+
+    img,
+    video {
+      max-height: 60vh;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .media-modal .modal-content {
+    max-width: 95vw;
+    max-height: 80vh;
+
+    img,
+    video {
+      max-height: 50vh;
+    }
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transition: opacity 0.3s ease;
+
+  &.active {
+    display: flex;
+  }
+
+  .modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 90%;
+    background: transparent;
+
+    img {
+      max-height: 90vh;
+      width: auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      border: none;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .modal .modal-content img {
+    max-height: 60vh;
+  }
+}
+
+
+
+//---------------------------------------------------------------- DOWNLOAD PAGE --------------------------------------------------------------------
+.download {
+  .tab {
+    color: var(--jetgray);
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    background: transparent !important;
+    border-radius: 0 !important;
+
+    &.active {
+      border-bottom: 1.5px solid var(--darkgreen) !important;
+      color: var(--green) !important;
+    }
+
+    &:hover {
+      color: var(--green) !important;
+    }
+  }
+
+
+  .media-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-auto-rows: 450px !important;
+
+    @media (max-width: 995px) {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    @media (max-width: 768px) {
+      display: flex !important;
+      flex-direction: row !important;
+      overflow-x: auto !important;
+      gap: 1rem !important;
+      scroll-snap-type: x mandatory !important;
+      padding-bottom: 1rem !important;
+    }
+
+    .media-item {
+      @media (max-width: 768px) {
+        flex: 0 0 auto !important;
+        width: 80% !important;
+        scroll-snap-align: start !important;
+      }
+    }
+  }
+}
+
+
+
+//---------------------------------------------------------------- PRELOADER --------------------------------------------------------------------
+.loader {
+  background-image: url(../images/Preloader.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
