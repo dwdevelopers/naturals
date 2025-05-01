@@ -66,5 +66,34 @@
         </div>
     </div>
 </section>
+
+
+<!--===================================== SERVICE DETAIL PAGE START =====================================-->
+<section class="agro-projects">
+  <div class="content-container">
+    <div class="text-left">
+      <h3>Agro Tourism Project – Bridging Tradition with Sustainable Growth</h3>
+      <p>
+        The Agro Tourism Project integrates traditional farming with sustainable tourism, empowering farmers and boosting rural economies. Visitors experience farm stays, organic workshops, cultural activities, and eco-friendly tourism, fostering appreciation for rural life.
+      </p>
+      <p>
+        The initiative creates jobs, provides farmer training, enhances market access, and promotes conservation. Through the Bharat Darshan Program, curated tours showcase India’s cultural, spiritual, and historical heritage, linking rural tourism to broader travel circuits.
+      </p>
+    </div>
+    <div class="text-right">
+      <h3>Key Activities:</h3>
+      <p class="l-p">Farm Tours & Workshops – Hands-on agricultural experiences.</p>
+      <ul>
+        <li><span class="span-1">Cultural & Eco-Tourism – Village life, folk traditions, and nature-based activities.</span></li>
+        <li><span class="span-1">Farmer Empowerment – Training, marketing support, and trade show participation.</span></li>
+        <li><span class="span-1">Diverse Tourism & Bharat Darshan – Custom travel packages across India.</span></li>
+      </ul>
+      <p class="l-p">By merging agriculture with tourism, this initiative drives economic sustainability, cultural preservation, and immersive rural experiences.</p>
+    </div>
+  </div>
+  <div class="tourist-image"></div>
+</section>
+<!--===================================== SERVICE DETAIL PAGE END =====================================-->
+
 <!--===================================== SERVICE END =====================================-->
 @endsection
