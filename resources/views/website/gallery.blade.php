@@ -3,8 +3,7 @@
 @section('title', 'Gallery')
 
 @section('content')
-
-
+<!--===================================== GALLERY START ===============================-->
 <section class="gallery">
 	<div class="container">
 		<h2>The top photos, chosen by you</h2>
@@ -95,9 +94,7 @@
 		}
 	});
 </script>
-
-
-
+<!--===================================== GALLERY START ===============================-->
 
 <!-- <div class="section section-border">
 		<div class="container">

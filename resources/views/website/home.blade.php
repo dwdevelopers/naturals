@@ -217,7 +217,7 @@
         </div>
     </div>
     <div class="read-more">
-    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+    <a href="product" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
     </div>
     </div>
 </section>

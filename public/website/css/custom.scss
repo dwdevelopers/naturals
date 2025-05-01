@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+//---------------------------------------------------------------- COMMON --------------------------------------------------------------------
 p,
 li,
 a,
@@ -9,7 +10,48 @@ h3 {
   font-family: 'Lato', sans-serif !important;
 }
 
-//============================== VARIABLES ===================================
+
+@mixin tab-style {
+  padding: 0.6rem 1.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+
+  &.active {
+    background: var(--darkgreen);
+    color: var(--white);
+    transform: scale(1.05);
+  }
+
+  &:hover {
+    background: var(--darkgreen);
+    color: var(--white);
+  }
+}
+
+@mixin heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+}
+
+@mixin para {
+  font-family: 'Lato', sans-serif;
+  color: var(--jetgray);
+  font-size: 18x;
+  margin-bottom: 30px;
+}
+
+
+//---------------------------------------------------------------- VARIABLES --------------------------------------------------------------------
 :root {
   --black: #000;
   --white: #fff;
@@ -641,45 +683,15 @@ h3 {
     padding-bottom: 50px;
 
     h2 {
-      font-family: 'Lato', sans-serif;
-      font-size: 50px;
-      color: var(--green);
-      margin-bottom: 0.5rem;
-      font-weight: 500;
+      @include heading;
     }
 
     p {
-      font-family: 'Lato', sans-serif;
-      color: var(--jetgray);
-      font-size: 18x;
-      margin-bottom: 30px;
+      @include para;
     }
 
-    .tabs {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 40px;
-
-      .tab {
-        padding: 0.6rem 1.4rem;
-        background: var(--white);
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
-        transition: all 0.3s ease;
-
-        &.active {
-          background: var(--darkgreen);
-          color: var(--white);
-          transform: scale(1.05);
-        }
-
-        &:hover {
-          background: var(--darkgreen);
-          color: var(--white);
-        }
-      }
+    .tab {
+      @include tab-style;
     }
 
     .media-grid {
@@ -790,6 +802,7 @@ h3 {
     }
   }
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -849,47 +862,61 @@ h3 {
 
 //---------------------------------------------------------------- DOWNLOAD PAGE --------------------------------------------------------------------
 .download {
+  text-align: center;
+  background-color: var(--teagreen);
+  padding: 2rem 1rem;
+  
+  h2 {
+    @include heading;
+  }
+  p {
+    @include para;
+  }
   .tab {
-    color: var(--jetgray);
-    font-size: 17px;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    background: transparent !important;
-    border-radius: 0 !important;
-
-    &.active {
-      border-bottom: 1.5px solid var(--darkgreen) !important;
-      color: var(--green) !important;
-    }
-
-    &:hover {
-      color: var(--green) !important;
-    }
+    @include tab-style;
+    margin-top: 30px;
   }
 
+  .brochure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 80px;
 
-  .media-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    grid-auto-rows: 450px !important;
 
-    @media (max-width: 995px) {
-      grid-template-columns: repeat(2, 1fr) !important;
-    }
+    .brochure-card {
+      background: var(--whitesmoke);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s;
 
-    @media (max-width: 768px) {
-      display: flex !important;
-      flex-direction: row !important;
-      overflow-x: auto !important;
-      gap: 1rem !important;
-      scroll-snap-type: x mandatory !important;
-      padding-bottom: 1rem !important;
-    }
+      h3 {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        margin-bottom: 2rem;
+        color: var(--jetgray);
+      }
 
-    .media-item {
-      @media (max-width: 768px) {
-        flex: 0 0 auto !important;
-        width: 80% !important;
-        scroll-snap-align: start !important;
+      .btn {
+        background: var(--darkgreen);
+        color: var(--white);
+        padding: 0.6rem 1.2rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+
+        &:hover {
+          background: #218838;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-4px);
       }
     }
   }
@@ -903,4 +930,33 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+//---------------------------------------------------------------- SERVICE PAGE --------------------------------------------------------------------
+.service{
+  .container{
+    padding-top: 40px;
+  }
+}
+
+
+//---------------------------------------------------------------- CONTACT PAGE --------------------------------------------------------------------
+.contact{
+  .container{
+    padding-top: 40px;
+    #cd-zoom-in, #cd-zoom-out{
+      display: none;
+    }
+    .maps{
+      height: 450px !important;
+    }
+    .contact-add{
+      color: var(--darkgreen);
+      font-weight: 600;
+    }
+    .span-2{
+      margin-top: 10px !important;
+    }
+  }
 }

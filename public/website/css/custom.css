@@ -541,32 +541,32 @@ h3 {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
+@media (max-width: 600px) {
+  .gallery .container h2 {
+    font-size: 30px;
+  }
+}
 .gallery .container p {
   font-family: "Lato", sans-serif;
   color: var(--jetgray);
   font-size: 18x;
   margin-bottom: 30px;
 }
-.gallery .container .tabs {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 40px;
-}
-.gallery .container .tabs .tab {
+.gallery .container .tab {
   padding: 0.6rem 1.4rem;
-  background: var(--white);
+  background: none;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   transition: all 0.3s ease;
+  margin-bottom: 40px;
 }
-.gallery .container .tabs .tab.active {
+.gallery .container .tab.active {
   background: var(--darkgreen);
   color: var(--white);
   transform: scale(1.05);
 }
-.gallery .container .tabs .tab:hover {
+.gallery .container .tab:hover {
   background: var(--darkgreen);
   color: var(--white);
 }
@@ -720,46 +720,84 @@ h3 {
     max-height: 60vh;
   }
 }
-.download .tab {
-  color: var(--jetgray);
-  font-size: 17px;
+.download {
+  text-align: center;
+  background-color: var(--teagreen);
+  padding: 2rem 1rem;
+}
+.download h2 {
   font-family: "Lato", sans-serif;
-  font-weight: 600;
-  background: transparent !important;
-  border-radius: 0 !important;
+  font-size: 50px;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .download h2 {
+    font-size: 30px;
+  }
+}
+.download p {
+  font-family: "Lato", sans-serif;
+  color: var(--jetgray);
+  font-size: 18x;
+  margin-bottom: 30px;
+}
+.download .tab {
+  padding: 0.6rem 1.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 .download .tab.active {
-  border-bottom: 1.5px solid var(--darkgreen) !important;
-  color: var(--green) !important;
+  background: var(--darkgreen);
+  color: var(--white);
+  transform: scale(1.05);
 }
 .download .tab:hover {
-  color: var(--green) !important;
+  background: var(--darkgreen);
+  color: var(--white);
 }
-.download .media-grid {
-  grid-template-columns: repeat(3, 1fr) !important;
-  grid-auto-rows: 450px !important;
+.download .brochure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
-@media (max-width: 995px) {
-  .download .media-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
+.download .brochure-grid .brochure-card {
+  background: var(--whitesmoke);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
 }
-@media (max-width: 768px) {
-  .download .media-grid {
-    display: flex !important;
-    flex-direction: row !important;
-    overflow-x: auto !important;
-    gap: 1rem !important;
-    scroll-snap-type: x mandatory !important;
-    padding-bottom: 1rem !important;
-  }
+.download .brochure-grid .brochure-card h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: var(--jetgray);
 }
-@media (max-width: 768px) {
-  .download .media-grid .media-item {
-    flex: 0 0 auto !important;
-    width: 80% !important;
-    scroll-snap-align: start !important;
-  }
+.download .brochure-grid .brochure-card .btn {
+  background: var(--darkgreen);
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+.download .brochure-grid .brochure-card .btn:hover {
+  background: #218838;
+}
+.download .brochure-grid .brochure-card:hover {
+  transform: translateY(-4px);
 }
 
 .loader {
@@ -767,4 +805,25 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.service .container {
+  padding-top: 40px;
+}
+
+.contact .container {
+  padding-top: 40px;
+}
+.contact .container #cd-zoom-in, .contact .container #cd-zoom-out {
+  display: none;
+}
+.contact .container .maps {
+  height: 450px !important;
+}
+.contact .container .contact-add {
+  color: var(--darkgreen);
+  font-weight: 600;
+}
+.contact .container .span-2 {
+  margin-top: 10px !important;
 }/*# sourceMappingURL=custom.css.map */
