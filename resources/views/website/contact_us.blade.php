@@ -3,23 +3,16 @@
 @section('title', 'Contact Us')
 
 @section('content')
+<div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
+	<div class="overlay"></div>
+	<h3>Contact Us</h3>
+</div>
 <div class="section contact">
 	<div class="container">
 		<div class="row">
 
-			<div class="col-sm-12 col-md-12">
-				<!-- MAPS -->
-				<div class="maps-wraper">
-    <div id="cd-zoom-in"></div>
-    <div id="cd-zoom-out"></div>
-    <div class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.4201206479597!2d76.25551807480029!3d10.467509389663116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f06fca9aad21%3A0x946e1f0857657e86!2sPMJ%20TOWER!5e0!3m2!1sen!2sin!4v1746085394549!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</div>
-
-				<div class="spacer-90"></div>
-			</div>
 			<div class="clearfix"></div>
+			<div class="spacer-40"></div>
 			<div class="col-sm-6 col-md-6">
 
 				<div class="row">
@@ -104,7 +97,19 @@
 					<p><em>Note: Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p>
 				</div>
 			</div>
+			<div class="col-sm-12 col-md-12">
+				<div class="spacer-90"></div>
+				<!-- MAPS -->
+				<div class="maps-wraper">
+					<div id="cd-zoom-in"></div>
+					<div id="cd-zoom-out"></div>
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.4201206479597!2d76.25551807480029!3d10.467509389663116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f06fca9aad21%3A0x946e1f0857657e86!2sPMJ%20TOWER!5e0!3m2!1sen!2sin!4v1746085394549!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
 
+				
+			</div>
 		</div>
 
 	</div>

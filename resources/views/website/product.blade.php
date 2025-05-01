@@ -4,9 +4,12 @@
 
 @section('content')
 <!--===================================== PRODUCT START =======================================-->
+<div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
+    <div class="overlay"></div>
+    <h3>Our products</h3>
+</div>
 <section class="product-section">
 	<div class="container">
-		<h2>Our Products</h2>
 		<div class="product-grid">
 			<div class="product-card">
 				<img src="{{ asset('website/images/product-img.png') }}" alt="product-image">

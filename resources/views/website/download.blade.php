@@ -4,9 +4,13 @@
 
 @section('content')
 <!--===================================== DOWNLOAD START ===============================-->
+<div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
+    <div class="overlay"></div>
+    <h3>Downloads</h3>
+</div>
 <section class="download">
   <div class="container">
-    <h2>Agriculture Resources & Downloads</h2>
+    <h2></h2>
 
     <div class="tabs">
       <button class="tab active" data-filter="all">All</button>

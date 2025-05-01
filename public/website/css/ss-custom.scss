@@ -336,15 +336,30 @@ Global Transfers Area CSS
         }
 }
 .gallery {
-    background-color: #f8faf4 !important;
+    padding: 40px 80px;
+    background-color: #fff !important;
     h2{
         padding-bottom: 20px;
     }
     p{
         font-size: 18px;
     }
-   .container .tabs .tab {
+    .tabs{
+        display: flex  ;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0px;
+            @media(max-width:575px){
+                flex-direction: column;
+            }
+    }
+   .container .tabs .tab   {
         padding: 5px 50px !important;
+        min-width: 140px;
+        border: 1px solid #208a3c;
+        @media(max-width:575px){
+            margin: 0 !important;
+        }
     }
  .container .media-grid {
         gap: 3rem !important;
@@ -358,7 +373,7 @@ Global Transfers Area CSS
         &:hover{
             transform: none !important;
             transition: transform 0.3s ease;
-            img, video{
+            img{
                 transform: scale(1.1);
                 transition: transform 0.3s ease;
             }
@@ -414,6 +429,12 @@ Global Transfers Area CSS
         }
         .title:after{
         margin: 3% 0 !important;
+        @media (max-width: 768px) {
+            left: 50%;
+            position: absolute;
+            margin-left: -15px !important;
+            margin: 1% 0 !important;
+        }
     }
 }
 }
@@ -421,4 +442,83 @@ Global Transfers Area CSS
     margin-top: -120px !important;
 }
 
+}
+
+.download {
+    .tabs{
+        display: flex  ;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0px;
+            @media(max-width:575px){
+                flex-direction: column;
+            }
+    }
+    .tab {
+        padding: 5px 50px !important;
+        border: 1px solid #208a3c;
+        @media(max-width:575px){
+            margin: 0 !important;
+        }
+    
+    }
+    .brochure-grid{
+        padding-top: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        @media(min-width:575px) and (max-width:991px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width:575px){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.spacer-40{
+    padding-top: 40px;
+}
+
+.download, .agri-dhan-vikas {
+    background-color: #fff !important;
+}
+
+.agri-dhan-vikas {
+    padding: 0px 0px 100px 0px;
+}
+.product-section {
+    padding: 90px 20px;
+}
+
+@media (max-width: 768px) {
+    .box-icon-1 .icon {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .fa{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.agri-dhan-vikas .cards-grid .card .card-content h3 {
+    font-size: 18px !important;
+    line-height: 24px;
+}
+
+.service{
+     .section-title{
+        text-align: left !important;
+        margin-bottom: 0 !important;
+    }
+    .pro_description{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        @media(min-width: 992px){
+        max-width: 70%;
+        }
+    }
 }

@@ -4,6 +4,10 @@
 
 @section('content')
 <!--===================================== GALLERY START ===============================-->
+<div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
+    <div class="overlay"></div>
+    <h3>Gallery</h3>
+</div>
 <section class="gallery">
 	<div class="container">
 		<h2>The top photos, chosen by you</h2>
