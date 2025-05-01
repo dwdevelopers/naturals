@@ -74,5 +74,20 @@
         </div>
     </div>
 </section>
+
+
+
+
+<!-- ================================service details page start=================== -->
+
+<section class="service-details"></section>
+
+<!-- ================================service details page end=================== -->
+
+
+
+
+
+
 <!--===================================== SERVICE END =====================================-->
 @endsection
