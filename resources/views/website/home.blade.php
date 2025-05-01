@@ -74,7 +74,7 @@
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-tachometer"></i></div>
                             <div class="body">
-                                <div class="icon1">
+                                <div class="icon1 icon3">
                                 <img src="{{ asset('website/images/icons-04.svg') }}" alt="Icon">
                                 </div>
                                 <div class="content">
