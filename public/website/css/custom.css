@@ -526,6 +526,7 @@ h3 {
 
 .gallery {
   background-color: var(--teagreen);
+  padding: 0 !important;
 }
 .gallery .container {
   text-align: center;
@@ -552,7 +553,12 @@ h3 {
   font-size: 18x;
   margin-bottom: 30px;
 }
-.gallery .container .tab {
+@media (max-width: 574px) {
+  .gallery .container .tabs {
+    display: inline;
+  }
+}
+.gallery .container .tabs .tab {
   padding: 0.6rem 1.4rem;
   background: none;
   border: none;
@@ -561,12 +567,12 @@ h3 {
   transition: all 0.3s ease;
   margin-bottom: 40px;
 }
-.gallery .container .tab.active {
+.gallery .container .tabs .tab.active {
   background: var(--darkgreen);
   color: var(--white);
   transform: scale(1.05);
 }
-.gallery .container .tab:hover {
+.gallery .container .tabs .tab:hover {
   background: var(--darkgreen);
   color: var(--white);
 }

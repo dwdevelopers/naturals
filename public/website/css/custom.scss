@@ -675,7 +675,7 @@ h3 {
 //---------------------------------------------------------------- GALLERY PAGE --------------------------------------------------------------------
 .gallery {
   background-color: var(--teagreen);
-
+  padding: 0 !important;
   .container {
     text-align: center;
     max-width: 1300px;
@@ -691,8 +691,13 @@ h3 {
       @include para;
     }
 
-    .tab {
-      @include tab-style;
+    .tabs{
+      @media (max-width: 574px) {
+        display: inline;
+      }
+      .tab {
+        @include tab-style;
+      }
     }
 
     .media-grid {
@@ -740,6 +745,8 @@ h3 {
     }
   }
 }
+
+
 
 //For Modal Pop Up
 .media-modal {

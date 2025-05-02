@@ -367,6 +367,8 @@ Global Transfers Area CSS
 @media (max-width: 575px) {
   .gallery .container .tabs .tab {
     margin: 0 !important;
+    padding: 0px !important;
+    min-width: 70px !important;
   }
 }
 .gallery .container .media-grid {
