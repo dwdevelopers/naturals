@@ -724,9 +724,9 @@ h3 {
           height: 100%;
           object-fit: cover;
           display: block;
-          @media (max-width: 490px) {
-            height: auto !important;
-          }
+          // @media (max-width: 490px) {
+          //   height: auto !important;
+          // }
         }
 
         &:hover {

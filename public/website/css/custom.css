@@ -603,12 +603,6 @@ h3 {
      object-fit: cover;
   display: block;
 }
-@media (max-width: 490px) {
-  .gallery .container .media-grid .media-item img,
-  .gallery .container .media-grid .media-item video {
-    height: auto !important;
-  }
-}
 .gallery .container .media-grid .media-item:hover {
   transform: scale(1.02);
 }

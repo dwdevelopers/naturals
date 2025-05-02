@@ -338,6 +338,9 @@ Global Transfers Area CSS
 .gallery {
     padding: 40px 80px;
     background-color: #fff !important;
+    @media (max-width:575px){
+        padding: 40px 20px;
+    }
     h2{
         padding-bottom: 20px;
     }
@@ -376,6 +379,11 @@ Global Transfers Area CSS
             img{
                 transform: scale(1.1);
                 transition: transform 0.3s ease;
+            }
+        }
+        img{
+            @media (max-width:575px){
+                height: 300px !important;
             }
         }
     }
