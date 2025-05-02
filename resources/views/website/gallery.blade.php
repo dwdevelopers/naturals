@@ -65,6 +65,8 @@
 
 	document.querySelectorAll(".media-item").forEach(item => {
 		item.addEventListener("click", () => {
+			if (window.innerWidth <= 990) return; 
+			
 			const isVideo = item.classList.contains("video");
 			const media = item.querySelector(isVideo ? "video" : "img");
 			const src = media.getAttribute("src");

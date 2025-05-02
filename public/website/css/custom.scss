@@ -701,16 +701,14 @@ h3 {
       grid-auto-rows: 350px;
       gap: 1rem;
 
-      @media (max-width: 724px) {
+      @media (max-width: 990px) {
         grid-template-columns: repeat(2, 1fr);
       }
 
       @media (max-width: 490px) {
         display: flex;
-        flex-direction: row;
-        overflow-x: auto;
+        flex-direction: column;
         gap: 1rem;
-        scroll-snap-type: x mandatory;
         padding-bottom: 1rem;
       }
 
@@ -719,12 +717,6 @@ h3 {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
 
-        @media (max-width: 490px) {
-          flex: 0 0 auto;
-          width: 80%;
-          scroll-snap-align: start;
-        }
-
         img,
         video {
           cursor: pointer;
@@ -732,6 +724,9 @@ h3 {
           height: 100%;
           object-fit: cover;
           display: block;
+          @media (max-width: 490px) {
+            height: auto !important;
+          }
         }
 
         &:hover {
@@ -792,18 +787,6 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-  .media-modal .modal-content {
-    max-width: 95vw;
-    max-height: 80vh;
-
-    img,
-    video {
-      max-height: 50vh;
-    }
-  }
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -853,11 +836,6 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-  .modal .modal-content img {
-    max-height: 60vh;
-  }
-}
 
 
 
