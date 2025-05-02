@@ -362,6 +362,8 @@ Global Transfers Area CSS
         border: 1px solid #208a3c;
         @media(max-width:575px){
             margin: 0 !important;
+            padding: 0px !important;
+            min-width: 70px !important;
         }
     }
  .container .media-grid {
