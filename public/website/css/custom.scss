@@ -38,6 +38,7 @@ h3 {
   color: var(--green);
   margin-bottom: 0.5rem;
   font-weight: 500;
+
   @media (max-width: 600px) {
     font-size: 30px;
   }
@@ -700,16 +701,14 @@ h3 {
       grid-auto-rows: 350px;
       gap: 1rem;
 
-      @media (max-width: 724px) {
+      @media (max-width: 990px) {
         grid-template-columns: repeat(2, 1fr);
       }
 
       @media (max-width: 490px) {
         display: flex;
-        flex-direction: row;
-        overflow-x: auto;
+        flex-direction: column;
         gap: 1rem;
-        scroll-snap-type: x mandatory;
         padding-bottom: 1rem;
       }
 
@@ -718,12 +717,6 @@ h3 {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
 
-        @media (max-width: 490px) {
-          flex: 0 0 auto;
-          width: 80%;
-          scroll-snap-align: start;
-        }
-
         img,
         video {
           cursor: pointer;
@@ -731,6 +724,9 @@ h3 {
           height: 100%;
           object-fit: cover;
           display: block;
+          @media (max-width: 490px) {
+            height: auto !important;
+          }
         }
 
         &:hover {
@@ -791,18 +787,6 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-  .media-modal .modal-content {
-    max-width: 95vw;
-    max-height: 80vh;
-
-    img,
-    video {
-      max-height: 50vh;
-    }
-  }
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -852,11 +836,6 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-  .modal .modal-content img {
-    max-height: 60vh;
-  }
-}
 
 
 
@@ -865,13 +844,15 @@ h3 {
   text-align: center;
   background-color: var(--teagreen);
   padding: 2rem 1rem;
-  
+
   h2 {
     @include heading;
   }
+
   p {
     @include para;
   }
+
   .tab {
     @include tab-style;
     margin-top: 30px;
@@ -934,29 +915,124 @@ h3 {
 
 
 //---------------------------------------------------------------- SERVICE PAGE --------------------------------------------------------------------
-.service{
-  .container{
+.service {
+  .container {
     padding-top: 40px;
   }
 }
 
 
 //---------------------------------------------------------------- CONTACT PAGE --------------------------------------------------------------------
-.contact{
-  .container{
+.contact {
+  .container {
     padding-top: 40px;
-    #cd-zoom-in, #cd-zoom-out{
+
+    #cd-zoom-in,
+    #cd-zoom-out {
       display: none;
     }
-    .maps{
+
+    .maps {
       height: 450px !important;
     }
-    .contact-add{
+
+    .contact-add {
       color: var(--darkgreen);
       font-weight: 600;
     }
-    .span-2{
+
+    .span-2 {
       margin-top: 10px !important;
     }
+  }
+}
+
+
+//---------------------------------------------------------------- SERVICE DETAIL PAGE --------------------------------------------------------------------
+.agro-projects {
+  position: relative;
+  background: url('/website/images/img-03.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+  .content-container {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 4rem;
+    z-index: 2;
+    position: relative;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+
+    .text-left,
+    .text-right {
+      flex: 1;
+    }
+
+    .text-right {
+      text-align: left;
+    }
+
+    h3 {
+      font-family: 'Lato', sans-serif;
+      color: var(--black);
+      font-size: 25px;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+    }
+
+    p,
+    li {
+      font-family: 'Lato', sans-serif;
+      color: var(--jetgray);
+      font-size: 14px;
+    }
+
+    li {
+      line-height: 1;
+    }
+
+    .l-p {
+      margin-bottom: 0px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .tourist-image {
+    background: url('/website/images/tourists.png') no-repeat bottom right;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 60%;
+    pointer-events: none;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 60%);
+    z-index: 0;
   }
 }
