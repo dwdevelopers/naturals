@@ -8,7 +8,7 @@
     <div class="container-fluid">
 
         <!-- start page title -->
-         @include('admin.layouts.partials.top', ['pageTitle' => 'Welcome Mydopa !!!!!!'])
+         @include('admin.layouts.partials.top', ['pageTitle' => 'Welcome Naturals !!!!!!'])
         <!-- end page title -->
 
         <div class="row">

@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ProjectActivitiesController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductDetailsController;
+use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ServicesController;
@@ -37,6 +38,7 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('testimonials', TestimonialController::class);
         Route::resource('projects', ProjectController::class);
         Route::resource('activities', ProjectActivitiesController::class);
+        Route::resource('services', ServiceController::class);
     });
 
 

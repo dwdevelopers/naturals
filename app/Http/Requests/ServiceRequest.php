@@ -11,7 +11,7 @@ class ServiceRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -21,8 +21,13 @@ class ServiceRequest extends FormRequest
      */
     public function rules(): array
     {
+
         return [
-            //
+            'title'             => 'required|string|max:255',
+            // 'slug'              => 'nullable|string|max:255|unique:services,slug,' . $this->id,
+            'short_description' => 'nullable|string|max:500',
+            'description'       => 'required|string',
+            'is_active'         => 'boolean'
         ];
     }
 }

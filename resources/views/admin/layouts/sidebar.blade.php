@@ -66,7 +66,7 @@
                         <li>
                             <a href="{{route('products.index')}}">Product List</a>
                         </li>
-                         <li>
+                        <li>
                             <a href="{{route('product-details.index')}}">Details List</a>
                         </li>
 
@@ -74,7 +74,26 @@
                     </ul>
                 </div>
             </li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#serviceForms" aria-expanded="false" aria-controls="serviceForms" class="side-nav-link">
+                    <i class="ri-survey-line"></i>
+                    <span> Service </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="serviceForms">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            {{-- <a href="{{route('categories.index')}}">Category List</a> --}}
+                        </li>
+                        <li>
+                            <a href="{{route('services.index')}}">Service List</a>
+                        </li>
 
+
+
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth" class="side-nav-link">
                     <i class="ri-group-2-line"></i>
