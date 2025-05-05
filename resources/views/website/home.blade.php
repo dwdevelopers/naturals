@@ -74,7 +74,7 @@
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-tachometer"></i></div>
                             <div class="body">
-                                <div class="icon1">
+                                <div class="icon1 icon3">
                                 <img src="{{ asset('website/images/icons-04.svg') }}" alt="Icon">
                                 </div>
                                 <div class="content">
@@ -217,7 +217,7 @@
         </div>
     </div>
     <div class="read-more">
-    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+    <a href="product" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
     </div>
     </div>
 </section>
