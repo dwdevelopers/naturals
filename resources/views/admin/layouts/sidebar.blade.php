@@ -112,6 +112,28 @@
                     </ul>
                 </div>
             </li>
+             <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#galleryForms" aria-expanded="false" aria-controls="galleryForms" class="side-nav-link">
+                    <i class="ri-survey-line"></i>
+                    <span> Gallery </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="galleryForms">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            {{-- <a href="{{route('categories.index')}}">Category List</a> --}}
+                        </li>
+                        <li>
+                            <a href="{{route('gallery-categories.index')}}">Category List</a>
+                        </li>
+                        <li>
+                            <a href="{{route('galleries.index')}}">Gallery List</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>

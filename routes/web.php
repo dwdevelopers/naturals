@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\HomeController as AdminHome;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\ContactUsController;
+use App\Http\Controllers\Admin\GalleryCategoryController;
+use App\Http\Controllers\Admin\GalleryController;
 
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ProjectActivitiesController;
@@ -13,7 +15,7 @@ use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ServicesController;
-use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\GalleryController as WebsiteGallery;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\ContactUsController as WebsiteContactUs;
 use App\Http\Controllers\ProductController as WebsiteProduct;
@@ -39,6 +41,9 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('projects', ProjectController::class);
         Route::resource('activities', ProjectActivitiesController::class);
         Route::resource('services', ServiceController::class);
+        Route::resource('services', ServiceController::class);
+        Route::resource('gallery-categories', GalleryCategoryController::class);
+        Route::resource('galleries', GalleryController::class);
     });
 
 
@@ -49,7 +54,7 @@ Route::name('website.')->group(function(){
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
     Route::get('/about-us', [AboutUsController::class, 'index'])->name('aboutus');
     Route::get('/service', [ServicesController::class, 'index'])->name('service');
-    Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+    Route::get('/gallery', [WebsiteGallery::class, 'index'])->name('gallery');
     Route::get('/downlaod', [DownloadController::class, 'index'])->name('downloads');
     Route::get('/contact-us', [WebsiteContactUs::class, 'index'])->name('contactUs');
     Route::get('/product', [WebsiteProduct::class, 'index'])->name('product');
