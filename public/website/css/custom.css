@@ -543,7 +543,7 @@ h3 {
 }
 @media (max-width: 600px) {
   .gallery .container h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 .gallery .container p {
@@ -710,7 +710,7 @@ h3 {
 }
 @media (max-width: 600px) {
   .download h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 .download p {

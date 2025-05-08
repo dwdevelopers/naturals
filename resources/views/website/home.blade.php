@@ -7,7 +7,7 @@
 <!--===================================== BANNER START =============================================-->
 <div id="slides" class="section banner">
     <section class="hero-banner">
-    <video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop playsinline class="bg-video"></video>
+        <video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop playsinline class="bg-video"></video>
         <div class="overlay"></div>
         <div class="content">
             <h2>Sow growth, Reap success</h2>
@@ -40,14 +40,14 @@
                             <div class="icon"><i class="fa fa-line-chart"></i></div>
                             <div class="body">
                                 <div class="icon1">
-                                <img src="{{ asset('website/images/icons-02.svg') }}" alt="Icon">
+                                    <img src="{{ asset('website/images/icons-02.svg') }}" alt="Icon">
                                 </div>
                                 <div class="content">
-                                    <a href="services-detail.html" class="title">Gold Loan  </a>
+                                    <a href="services-detail.html" class="title">Gold Loan </a>
                                     <p>We offer secure and hassle-free
                                         gold loan services, exclusively for
                                         our registered members. </p>
-                                    <a href="#" class="read-more rm-1">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                                    <!-- <a href="#" class="read-more rm-1">Read More <span><i class="fa fa-angle-right"></i></span></a> -->
                                 </div>
                             </div>
                         </div>
@@ -58,13 +58,13 @@
                             <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
                             <div class="body">
                                 <div class="icon1">
-                                <img src="{{ asset('website/images/icons-03.svg') }}" alt="Icon">
+                                    <img src="{{ asset('website/images/icons-03.svg') }}" alt="Icon">
                                 </div>
                                 <div class="content">
                                     <a href="services-detail.html" class="title">Merchant loan</a>
                                     <p>Introducing Merchant Loan – a
-                                    flexible, short-term financing solution designed for our members. </p>
-                                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                                        flexible, short-term financing solution designed for our members. </p>
+                                    <!-- <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a> -->
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                             <div class="icon"><i class="fa fa-tachometer"></i></div>
                             <div class="body">
                                 <div class="icon1 icon3">
-                                <img src="{{ asset('website/images/icons-04.svg') }}" alt="Icon">
+                                    <img src="{{ asset('website/images/icons-04.svg') }}" alt="Icon">
                                 </div>
                                 <div class="content">
                                     <a href="services-detail.html" class="title">Group Loan</a>
@@ -83,7 +83,7 @@
                                         for members, provides accessible
                                         credit to individuals engaged in
                                         similar economic activities. </p>
-                                        <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                                    <!-- <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a> -->
                                 </div>
                             </div>
                         </div>
@@ -98,14 +98,14 @@
 <!--===================================== AGRI DHAN VIKAS START ==================================-->
 <section class="agri-dhan-vikas">
     <div class="container">
-    <h2 class="section-title">Agri Dhan Vikas</h2>
+        <h2 class="section-title">Agri Dhan Vikas</h2>
         <div class="cards-grid">
             <!-- CARD 1 -->
             <div class="card" style="background-image: url('/website/images/img-01.jpg');">
                 <div class="card-content">
                     <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
                     <p>Recurring Contribution & Fixed Contribution (RC & FC) schemes to provide secure
-                         and growth-oriented financial solutions for our members.</p>
+                        and growth-oriented financial solutions for our members.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
             </div>
@@ -121,7 +121,7 @@
             <div class="card" style="background-image: url('/website/images/img-03.jpg');">
                 <div class="card-content">
                     <h3>Agro Tourism Project – Bridging Tradition with Sustainable Growth</h3>
-                    <p>The Agro Tourism Project integrates traditional farming with sustainable tourism, empowering 
+                    <p>The Agro Tourism Project integrates traditional farming with sustainable tourism, empowering
                         farmers and boosting rural economies.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
@@ -130,7 +130,7 @@
             <div class="card" style="background-image: url('/website/images/img-04.jpg');">
                 <div class="card-content">
                     <h3>Karshaka Mithra – Empowering Farmers, Enriching Communities</h3>
-                    <p>Karshaka Mithra ensures a seamless farm-to-market supply chain, directly collecting organic 
+                    <p>Karshaka Mithra ensures a seamless farm-to-market supply chain, directly collecting organic
                         produce from farmers and delivering it to consumers at fair prices.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
@@ -139,8 +139,8 @@
             <div class="card" style="background-image: url('/website/images/img-05.jpg');">
                 <div class="card-content">
                     <h3>Sakthiroopa Yojana - for Sustainable Growth</h3>
-                    <p>The society empowers women through financial support, skill development, and direct market 
-                        access, enabling them to build successful ventures in food production, agriculture, and 
+                    <p>The society empowers women through financial support, skill development, and direct market
+                        access, enabling them to build successful ventures in food production, agriculture, and
                         eco-friendly products.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
@@ -149,8 +149,8 @@
             <div class="card" style="background-image: url('/website/images/img-06.jpg');">
                 <div class="card-content">
                     <h3>FMCG Range - Pure, Natural, and Sustainable</h3>
-                    <p>Our range, which includes a wide variety of fast-moving consumer goods, reflects our 
-                        commitment to sustainability, community empowerment, and the promotion of natural 
+                    <p>Our range, which includes a wide variety of fast-moving consumer goods, reflects our
+                        commitment to sustainability, community empowerment, and the promotion of natural
                         and organic products.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
@@ -167,68 +167,76 @@
         <div class="membership-text">
             <h2>Membership</h2>
             <p>
-            Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
+                Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
             </p>
         </div>
     </div>
     <div class="membership-right">
-      <h4>Get in Touch</h4>
-      <h2>Contact with us</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="tel" placeholder="Phone" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
+        <h4>Get in Touch</h4>
+        <h2>Contact with us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone" />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
-  </section>
-<!--===================================== MEMBERSHIP END ======================================-->  
+</section>
+<!--===================================== MEMBERSHIP END ======================================-->
 
 <!--===================================== PRODUCT START =======================================-->
 <section class="product-section">
     <div class="container">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-        <div class="product-card">
-        <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-            <h3>Curry Leaves <br> Powder 250 gm</h3>
-            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-            <button>Add to cart</button>
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+                <h3>Curry Leaves <br> Powder 250 gm</h3>
+                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                    <button>Contact on WhatsApp</button>
+                </a>
+            </div>
+            <!-- Repeat this card for each product -->
+            <div class="product-card">
+                <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+                <h3>Curry Leaves <br> Powder 250 gm</h3>
+                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                    <button>Contact on WhatsApp</button>
+                </a>
+            </div>
+            <div class="product-card">
+                <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+                <h3>Curry Leaves <br> Powder 250 gm</h3>
+                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                    <button>Contact on WhatsApp</button>
+                </a>
+            </div>
+            <div class="product-card">
+                <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+                <h3>Curry Leaves <br> Powder 250 gm</h3>
+                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                    <button>Contact on WhatsApp</button>
+                </a>
+            </div>
         </div>
-      <!-- Repeat this card for each product -->
-        <div class="product-card">
-            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-            <h3>Curry Leaves <br> Powder 250 gm</h3>
-            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-            <button>Add to cart</button>
+        <div class="read-more">
+            <a href="product" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
         </div>
-        <div class="product-card">
-            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-            <h3>Curry Leaves <br> Powder 250 gm</h3>
-            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-            <button>Add to cart</button>
-        </div>
-        <div class="product-card">
-            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-            <h3>Curry Leaves <br> Powder 250 gm</h3>
-            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-            <button>Add to cart</button>
-        </div>
-    </div>
-    <div class="read-more">
-    <a href="product" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
-    </div>
     </div>
 </section>
-<!--===================================== PRODUCT END =======================================-->  
+<!--===================================== PRODUCT END =======================================-->
 
-<!--===================================== TESTIMONIAL START ==================================--> 
+<!--===================================== TESTIMONIAL START ==================================-->
 <div class="section testimony" style="padding-top: 0;">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-md-offset-2">
-              <div id="owl-testimony">
+                <div id="owl-testimony">
                     <div class="item">
                         <div class="testimonial-1">
                             <div class="media">
@@ -244,7 +252,7 @@
                     <div class="item">
                         <div class="testimonial-1">
                             <div class="media">
-                            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+                                <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
                             </div>
                             <div class="body">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
@@ -256,7 +264,7 @@
                     <div class="item">
                         <div class="testimonial-1">
                             <div class="media">
-                            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+                                <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
                             </div>
                             <div class="body">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
@@ -268,7 +276,7 @@
                     <div class="item">
                         <div class="testimonial-1">
                             <div class="media">
-                            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+                                <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
                             </div>
                             <div class="body">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
@@ -283,7 +291,7 @@
         </div>
     </div>
 </div>
-<!--===================================== TESTIMONIAL END ==================================--> 
+<!--===================================== TESTIMONIAL END ==================================-->
 
 <!-- BLOG -->
 <div class="section blog bg-grey">
