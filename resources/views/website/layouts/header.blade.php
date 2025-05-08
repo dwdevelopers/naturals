@@ -24,7 +24,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{{route('website.home')}}">
                             <img src="{{ asset('website/images/naturals-logo.png') }}" alt="" />
                         </a>
                     </div>
@@ -34,7 +34,7 @@
                             <li><a href="{{route('website.home')}}" class="active">Home</a></li>
                             <li><a href="{{route('website.aboutus')}}">About</a></li>
                             <li class="dropdown">
-                                <a href="{{route('website.service')}}"  role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                                <a href="{{route('website.service')}}"  role="button" aria-haspopup="true" aria-expanded="false">Our Projects</a>
                                 {{-- <ul class="dropdown-menu">
                                     <li><a href="news-grid.html">Agro Tourism Project </a></li>
                                     <li><a href="news-sidebar.html">Karshaka Mithra</a></li>

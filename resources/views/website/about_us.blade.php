@@ -16,23 +16,9 @@
                     ABOUT US
                 </h2> -->
                 <h1 class="jumbolead reset-section-heading">Empowering Sustainable Agriculture and Rural Development</h1>
-                <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society
-                    Ltd, registered under the Ministry of Co-operation, Government of
-                    India, is committed to transforming the agricultural sector through
-                    innovation, sustainability, and farmer empowerment. We provide
-                    farmers with essential training, financial assistance, and access to
-                    modern agricultural resources while promoting eco-friendly farming
-                    practices that enhance productivity and long-term food security. Our
-                    initiatives also focus on women empowerment by supporting female
-                    farmers and entrepreneurs through skill development, financial aid,
-                    and leadership opportunities, fostering their active participation in
-                    agriculture and agribusiness. By facilitating market access, financial
-                    aid, and profitable opportunities, we support economic stability and
-                    inclusive rural development. Our mission is to integrate traditional
-                    agricultural wisdom with modern advancements, creating a resilient,
-                    self-sustaining ecosystem that drives national growth while ensuring
-                    environmental sustainability.</p>
-
+                <p>Natural Agro & Tourism Marketing Multi-State Cooperative Society Ltd is a legally registered multi-state cooperative society operating under the Ministry of Cooperation, Government of India. Our mission is to drive the holistic development of the agricultural sector by providing farmers with essential support through training, marketing, and access to modern agricultural inputs.</p>
+                <p>We are committed to empowering farmers and agricultural workers by offering financial assistance, modern resources, and sustainable farming solutions. Our focus is on promoting environmentally responsible agricultural practices that enhance productivity, ensure economic stability, and contribute to long-term food security. Through strategic initiatives, we aim to foster inclusive rural development, create employment opportunities, and help the agricultural community overcome industry challenges.
+                By integrating traditional wisdom with modern advancements, we strive to build a resilient, self-sustaining agricultural ecosystem that supports national economic growth while upholding environmental sustainability.</p>
             </div>
             <div class="col-sm-6 col-md-6">
                 <div class="vidimg">
@@ -50,35 +36,34 @@
         <div class="section pad vision-mission">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-6">
+                    <div class="col-sm-12 col-md-12">
                         <div class="box-icon-1">
                             <div class="icon">
                                 <i class="fa fa-lightbulb-o"></i>
                             </div>
                             <div class="body-content">
                                 <h4 class="title">Our Vision</h4>
-                                <div class="text">To position agriculture as a pillar of economic stability and national
-                                    progress by empowering farmers with essential resources, financial
-                                    support, and growth opportunities. Through sustainable practices and
-                                    innovative solutions, we aim to strengthen rural communities, bridge
-                                    economic gaps, and build a resilient agricultural sector where farmers
-                                    drive food security, environmental sustainability, and national prosperity.</div>
+                                <div class="text">We envision a future where agriculture is not only a source of livelihood but also a driving force for economic stability and national progress. Our goal is to foster financial security and empowerment for farmers and agricultural workers by providing them with the necessary resources, support, and opportunities to thrive.</div>
+                                <div class="text">Through sustainable farming practices, innovative agricultural solutions, and fair financial systems, we aim to uplift rural communities, reduce economic disparities, and create a resilient and self-sufficient agricultural sector. We strive to build a society where farmers are recognized as the backbone of the economy, contributing significantly to food security, environmental conservation, and national prosperity.</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6">
+                    <div class="col-sm-12 col-md-12">
                         <div class="box-icon-1">
                             <div class="icon">
                                 <i class="fa fa-send-o"></i>
                             </div>
                             <div class="body-content">
                                 <h4 class="title">Our Mission</h4>
-                                <div class="text">We empower farmers with financial support, skill development, and
-                                    sustainable innovations to enhance productivity and economic
-                                    stability. By integrating modern eco-friendly technologies with
-                                    traditional farming, we create employment, reduce carbon footprints,
-                                    and promote responsible resource management. Our goal is a resilient, self-sustaining agricultural sector that uplifts communities and
-                                    drives a greener, prosperous future.</div>
+                                <div class="text">Natural Agro & Tourism Marketing Multi-State Cooperative Society Ltd is dedicated to fostering sustainable growth and economic resilience in the agricultural sector by empowering farmers and agricultural workers. Our mission includes:
+                                    <ul>
+                                        <li>Providing financial assistance to farmers and laborers to enhance productivity, achieve economic stability, and secure long-term growth.</li>
+                                        <li>Creating employment opportunities within the agricultural ecosystem through skill development and innovation.</li>
+                                        <li>Revitalizing traditional agricultural practices by integrating modern, eco-friendly technologies that enhance efficiency and promote sustainability.</li>
+                                        <li>Implementing strategic sustainability initiatives to reduce carbon footprints, promote responsible resource management, and contribute to global environmental conservation.</li>
+                                    </ul>
+                                </div>
+                                <div class="text">Through these efforts, we aim to build a resilient, self-sustaining agricultural landscape that uplifts communities and ensures a greener, more prosperous future.</div>
                             </div>
                         </div>
                     </div>

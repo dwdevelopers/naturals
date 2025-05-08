@@ -57,11 +57,14 @@
   border-color: #81c55d;
 }
 
-.vidimg .play-vid:hover, .section-heading, .box-icon-1:hover .icon .fa {
+.vidimg .play-vid:hover,
+.section-heading,
+.box-icon-1:hover .icon .fa {
   background-color: #81c55d;
 }
 
-.font__color-2, .counter-1 .counter-title {
+.font__color-2,
+.counter-1 .counter-title {
   color: #ddf6d0;
 }
 
@@ -78,11 +81,13 @@
   padding-right: unset;
 }
 
-.bg-overlay-2:before, .footer {
+.bg-overlay-2:before,
+.footer {
   background-color: #0d8d47 !important;
 }
 
-.feature-box-7:hover .icon-holder, .feature-box-7:hover {
+.feature-box-7:hover .icon-holder,
+.feature-box-7:hover {
   background-color: #81c55d;
 }
 
@@ -95,7 +100,9 @@
   border-color: #81c55d;
 }
 
-#caro-project .owl-controls .owl-nav [class*=owl-]:hover, #caro-project-2 .owl-controls .owl-nav [class*=owl-]:hover, #owl-testimony .owl-controls .owl-nav [class*=owl-]:hover {
+#caro-project .owl-controls .owl-nav [class*=owl-]:hover,
+#caro-project-2 .owl-controls .owl-nav [class*=owl-]:hover,
+#owl-testimony .owl-controls .owl-nav [class*=owl-]:hover {
   background: #0d8d47;
   color: #ffffff;
   border-color: #0d8d47;
@@ -305,9 +312,18 @@ Global Transfers Area CSS
   }
 }
 
-.agri-dhan-vikas .section-title, .product-section .container h2, .gallery .container h2 {
+.agri-dhan-vikas .section-title,
+.product-section .container h2,
+.gallery .container h2 {
   color: #7fc55d !important;
   font-size: 54px !important;
+}
+@media (max-width: 600px) {
+  .agri-dhan-vikas .section-title,
+  .product-section .container h2,
+  .gallery .container h2 {
+    font-size: 36px !important;
+  }
 }
 
 .agri-dhan-vikas .cards-grid .card .card-content .read-more span {
@@ -380,7 +396,8 @@ Global Transfers Area CSS
   gap: 3rem !important;
   padding-top: 40px;
 }
-.gallery .media-grid .media-item img, .gallery .media-grid .media-item video {
+.gallery .media-grid .media-item img,
+.gallery .media-grid .media-item video {
   transition: transform 0.3s ease;
 }
 .gallery .media-grid .media-item:hover {
@@ -493,7 +510,8 @@ Global Transfers Area CSS
   padding-top: 40px;
 }
 
-.download, .agri-dhan-vikas {
+.download,
+.agri-dhan-vikas {
   background-color: #fff !important;
 }
 
@@ -536,4 +554,66 @@ Global Transfers Area CSS
   .service .pro_description {
     max-width: 70%;
   }
+}
+
+.header-1 .stiky .navbar-nav > li:last-child a {
+  padding-left: 10px !important;
+}
+
+.service-details {
+  padding: 70px 0px;
+}
+@media (max-width: 767px) {
+  .service-details {
+    padding: 70px 20px;
+  }
+}
+.service-details .content-sec h2 {
+  font-size: 38px;
+  max-width: 60%;
+}
+@media (max-width: 575px) {
+  .service-details .content-sec h2 {
+    font-size: 26px;
+    max-width: 100%;
+  }
+}
+.service-details .content-sec .description {
+  font-size: 16px;
+  text-align: justify;
+}
+.service-details .content-sec .subsec .subtitle {
+  color: #343030;
+  font-size: 26px;
+}
+@media (max-width: 575px) {
+  .service-details .content-sec .subsec .subtitle {
+    font-size: 22px;
+  }
+}
+.service-details .content-sec .subsec li {
+  font-size: 15px;
+}
+.service-details .content-sec .subsec li strong {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.service-details .content-sec .submaintitle {
+  font-size: 25px;
+}
+.service-details .content-sec h5 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+}
+.service-details .content-sec h6 {
+  padding: 20px 0px;
+  font-size: 16px;
+  color: #096f37;
+}
+.service-details .content-sec .table-sec {
+  padding-top: 10px;
+}
+.service-details .content-sec th, .service-details .content-sec td {
+  padding: 14px 20px;
 }/*# sourceMappingURL=ss-custom.css.map */
