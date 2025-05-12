@@ -7,7 +7,7 @@
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title') |{{ config('app.name') }}</title>
-    <meta name="description" content="Finanzi template exclusively build for finance, accounting, financial and business planning. It is built using bootstrap 3.3.2 framework, works totally responsive, easy to customise, well commented codes and seo friendly.">
+    <meta name="description" content="Natural Agro & Tourism Marketing Multi-State Cooperative Society Ltd is a legally registered multi-state cooperative society operating under the Ministry of Cooperation, Government of India.">
     <meta name="keywords" content="accountant, finance, advisory, business, company, consulting, financial, money, corporate, invest, attorney, broker, office">
     <meta name="author" content="rudhisasmito.com">
 

@@ -128,7 +128,7 @@ h3 {
       .navbar-brand {
         img {
           @media (max-width: 770px) {
-            margin-left: 100px;
+            // margin-left: 100px;
             width: 130px;
           }
         }
@@ -142,9 +142,9 @@ h3 {
         li {
           margin-right: 0;
 
-          @media (max-width: 1200px) {
-            display: none;
-          }
+          // @media (min-width: 767px) {
+          //   display: none;
+          // }
 
           a {
             color: var(--gray) !important;
@@ -165,7 +165,7 @@ h3 {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  max-width: 90%;
+  // max-width: 90%;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
