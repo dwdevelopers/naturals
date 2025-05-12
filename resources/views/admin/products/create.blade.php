@@ -35,7 +35,10 @@
                                         <textarea id="description" name="description" class="form-control" rows="3"></textarea>
                                     </div>
 
-
+                                    <div class="mb-3">
+                                        <label for="image" class="form-label"> Image</label>
+                                        <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                                    </div>
 
                                     <div class="mb-3">
                                         <label class="form-label">Status</label>

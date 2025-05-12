@@ -17,13 +17,13 @@ class ProjectController extends Controller
     use ImageUploadTrait;
 
     protected $projectService;
-    
+
     public function __construct(ProjectService $projectService)
     {
         $this->middleware('auth');
 
         $this->projectService = $projectService;
-       
+
     }
     public function index(Request $request)
     {
@@ -39,9 +39,13 @@ class ProjectController extends Controller
 
             return DataTables::of($projects)
                 ->addIndexColumn()
+                ->addColumn('image', function ($row) {
+                    $imageUrl = asset('storage/'.$row->image); // Adjust path based on storage
+                    return '<img src="'.$imageUrl.'" alt="Testimonial Image" width="50" height="50" />';
+                })
                 ->addColumn('status', function ($row) {
-                    return $row->status === 'active' 
-                    ? '<span class="badge bg-success">Active</span>' 
+                    return $row->status === 'active'
+                    ? '<span class="badge bg-success">Active</span>'
                     : '<span class="badge bg-danger">Inactive</span>';
                 })
                 ->addColumn('action', function ($row) {
@@ -79,15 +83,21 @@ class ProjectController extends Controller
      */
     public function store(ProjectRequest $request)
     {
-       
         $data = $request->validated();
         DB::beginTransaction();
         try {
             $data = $request->validated();
             $data['slug'] = Project::generateUniqueSlug($data['name']);
+
+            if ($request->hasFile('image')) {
+                if ($request->hasFile('image')) {
+                    $data['image'] = $this->uploadImage($request->file('image'), 'projects');
+                }
+            }
+
             $product = $this->projectService->createProject($data);
-           
-          
+
+
 
             DB::commit();
             return redirect()->route('projects.index')->with('success', 'Project created successfully!');
@@ -116,16 +126,24 @@ class ProjectController extends Controller
             ['name' => 'Projects', 'url' => route('projects.index')],
             ['name' => 'Edit', 'url' => null] // Current page
         ];
-        
+
         return view('admin.project.edit', compact('project', 'breadcrumbs'));
     }
 
     public function update(ProjectRequest $request, Project $project)
     {
+
+
         DB::beginTransaction();
         try {
             $data = $request->validated();
-           
+            if ($request->hasFile('image')) {
+                if ($project->image) {
+                    Storage::disk('public')->delete($project->image);
+                }
+                $data['image'] = $this->uploadImage($request->file('image'), 'projects');
+            }
+
             $this->projectService->updateProject($project->id, $data);
             DB::commit();
             return redirect()->route('projects.index')->with('success', 'Project updated successfully!');

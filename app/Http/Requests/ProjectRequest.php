@@ -21,12 +21,12 @@ class ProjectRequest extends FormRequest
      */
     public function rules(): array
     {
-       
         return [
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'additional_info' => 'nullable|string',
             'status' => 'required|in:active,inactive',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ];
     }
 }

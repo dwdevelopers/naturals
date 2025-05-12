@@ -58,10 +58,11 @@ Route::name('website.')->group(function(){
     Route::get('/downlaod', [DownloadController::class, 'index'])->name('downloads');
     Route::get('/contact-us', [WebsiteContactUs::class, 'index'])->name('contactUs');
     Route::get('/product', [WebsiteProduct::class, 'index'])->name('product');
-    Route::get('/service/slug', [ServicesController::class, 'show'])->name('service.detail');
+    Route::get('/service/{slug}', [ServicesController::class, 'show'])->name('service.detail');
     Route::get('/product/slug', [WebsiteProduct::class, 'show'])->name('product.detail');
 
 });
 Auth::routes();
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+

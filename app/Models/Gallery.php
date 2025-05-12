@@ -9,7 +9,6 @@ class Gallery extends Model
     protected $fillable = [
         'gallery_category_id',
         'title',
-        'image_path',
         'is_active',
     ];
 
@@ -17,4 +16,8 @@ class Gallery extends Model
     {
         return $this->belongsTo(GalleryCategory::class, 'gallery_category_id');
     }
+    public function images()
+{
+    return $this->hasMany(GalleryImage::class);
+}
 }

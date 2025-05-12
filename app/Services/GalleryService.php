@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Services;
 
 use App\Repositories\GalleryRepositoryInterface;
@@ -25,27 +24,12 @@ class GalleryService
 
     public function createGallery(array $data, array $imagePaths)
     {
-        foreach ($imagePaths as $path) {
-            $this->galleryRepository->create([
-                'gallery_category_id' => $data['gallery_category_id'],
-                'title'               => $data['title'],
-                'image_path'          => $path,
-                'is_active'           => $data['is_active'] === 'active',
-            ]);
-        }
+        return $this->galleryRepository->createWithImages($data, $imagePaths);
     }
 
     public function updateGallery(int $id, array $data, array $imagePaths)
     {
-        // 1) Find the record to get its category
-        $gallery = $this->galleryRepository->find($id);
-        $categoryId = $gallery->gallery_category_id;
-
-        // 2) Delete all images in that category
-        $this->galleryRepository->deleteByCategory($categoryId);
-
-        // 3) Re-create every uploaded image
-        $this->createGallery($data, $imagePaths);
+        return $this->galleryRepository->updateWithImages($id, $data, $imagePaths);
     }
 
     public function deleteGallery($id)
@@ -53,3 +37,4 @@ class GalleryService
         return $this->galleryRepository->delete($id);
     }
 }
+

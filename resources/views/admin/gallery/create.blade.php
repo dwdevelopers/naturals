@@ -38,7 +38,8 @@
 
                             <div class="mb-3">
                                 <label for="image" class="form-label">Upload Images</label>
-                                <input type="file" id="image_path" name="image_path[]" class="form-control" multiple accept="image/*">
+                                <input type="file" id="image_path" name="image_path[]" class="form-control" multiple accept="image/*" required>
+
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Status</label>

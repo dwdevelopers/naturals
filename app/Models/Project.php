@@ -15,6 +15,7 @@ class Project extends Model
         'description',
         'additional_info',
         'status',
+        'image',
     ];
     public static function generateUniqueSlug($name)
     {

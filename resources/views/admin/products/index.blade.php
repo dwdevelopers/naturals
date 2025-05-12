@@ -41,6 +41,7 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
+                                    <th>Image</th>
                                     <th>Product</th>
                                     <th>Description</th>
                                     <th>Status</th>

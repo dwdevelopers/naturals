@@ -25,13 +25,8 @@ class GalleryRequest extends FormRequest
         return [
             'gallery_category_id' => 'required|exists:gallery_categories,id',
             'title'               => 'required|string|max:255',
-
-            // This must be an array of files, and each file must be a valid image
-            'image_path'   => $this->isMethod('post')
-                                ? 'required|array'
-                                : 'nullable|array',
-            'image_path.*' => 'image|mimes:jpg,jpeg,png,gif,webp|max:2048',
-
+            'image_path'          => 'required|array|min:1',
+            'image_path.*'        => 'image|mimes:jpg,jpeg,png,gif,webp|max:2048',
             'is_active'           => 'required|in:active,inactive',
         ];
     }
