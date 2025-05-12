@@ -616,4 +616,8 @@ Global Transfers Area CSS
 }
 .service-details .content-sec th, .service-details .content-sec td {
   padding: 14px 20px;
+}
+
+.footer .box-info .box-info-body {
+  border-left-color: transparent !important;
 }/*# sourceMappingURL=ss-custom.css.map */
