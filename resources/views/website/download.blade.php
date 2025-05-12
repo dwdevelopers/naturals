@@ -17,9 +17,10 @@
       <button class="tab" data-filter="Category 1">Category 1</button>
       <button class="tab" data-filter="Category 2">Category 2</button>
     </div>
+  <img src="{{ asset('website/images/nodata.gif')}}" alt="logo" height="300" width="300">
 
 
-    <div class="media-grid brochure-grid">
+    {{-- <div class="media-grid brochure-grid">
       <div class="brochure-card" data-category="Category 1">
         <h3>Ecoharvest Brochure</h3>
         <a href="#" class="btn">CLICK HERE</a>
@@ -52,7 +53,7 @@
         <h3>Sustainable Tips</h3>
         <a href="#" class="btn">CLICK HERE</a>
       </div>
-    </div>
+    </div> --}}
 
   </div>
 </section>
