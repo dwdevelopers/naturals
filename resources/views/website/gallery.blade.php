@@ -18,7 +18,7 @@
 			<button class="tab" data-filter="photo">Photo</button>
 			<button class="tab" data-filter="video">Video</button>
 		</div>
-  <img src="{{ asset('website/images/nodata.gif')}}" alt="logo" height="300" width="300">
+  <img src="{{ asset('website/images/nodata.gif')}}" alt="logo"  style="width: 100px;">
 		{{-- <div class="media-grid">
 			<div class="media-item photo"><img src="{{ asset('/website/images/img-01.jpg') }}" alt=""></div>
 			<div class="media-item photo"><img src="{{ asset('/website/images/img-02.jpg') }}" alt=""></div>

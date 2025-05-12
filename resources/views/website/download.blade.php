@@ -17,7 +17,7 @@
       <button class="tab" data-filter="Category 1">Category 1</button>
       <button class="tab" data-filter="Category 2">Category 2</button>
     </div>
-  <img src="{{ asset('website/images/nodata.gif')}}" alt="logo" height="300" width="300">
+  <img src="{{ asset('website/images/nodata.gif')}}" alt="logo" height="300" style="width: 100px;">
 
 
     {{-- <div class="media-grid brochure-grid">
