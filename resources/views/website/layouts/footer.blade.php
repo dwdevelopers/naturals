@@ -103,11 +103,13 @@
                          Subscribe
                      </div>
                      <p>Lit sed The Best in dolor sit amet consectetur adipisicing elit sedconsectetur adipisicing</p>
-                     <form action="#" class="footer-subscribe">
-                         <input type="email" name="EMAIL" class="form-control" placeholder="enter your email">
+                     <form action="{{ route('website.subscription.submit') }}" method="POST" class="footer-subscribe">
+                         @csrf
+                         <!-- CSRF protection for form submission -->
+                         <input type="email" name="email" class="form-control" placeholder="enter your email" required>
                          <input id="p_submit" type="submit" value="send">
                          <label for="p_submit"><i class="fa fa-envelope"></i></label>
-                         <p>Get latest updates and offers.</p>
+                         <p>Get the latest updates and offers.</p>
                      </form>
                  </div>
              </div>

@@ -69,8 +69,8 @@
 
 	document.querySelectorAll(".media-item").forEach(item => {
 		item.addEventListener("click", () => {
-			if (window.innerWidth <= 990) return; 
-			
+			if (window.innerWidth <= 990) return;
+
 			const isVideo = item.classList.contains("video");
 			const media = item.querySelector(isVideo ? "video" : "img");
 			const src = media.getAttribute("src");
@@ -108,7 +108,7 @@
 
 				<div class="col-sm-12 col-md-12">
 					<div class="row">
-						
+
 						<div class="col-sm-4 col-md-4">
 							<div class="box-icon-1">
 				                <div class="icon">
@@ -121,7 +121,7 @@
 				              	</div>
 				            </div>
 						</div>
-						
+
 						<div class="col-sm-4 col-md-4">
 							<div class="box-icon-1">
 				                <div class="icon">
@@ -134,7 +134,7 @@
 				              	</div>
 				            </div>
 						</div>
-						
+
 						<div class="col-sm-4 col-md-4">
 							<div class="box-icon-1">
 				                <div class="icon">
@@ -147,7 +147,7 @@
 				              	</div>
 				            </div>
 						</div>
-						
+
 						<div class="col-sm-4 col-md-4">
 							<div class="box-icon-1">
 								<div class="icon">
@@ -156,11 +156,11 @@
 				                <div class="body-content">
 				                	<h4 class="title">Online Consulting</h4>
 				                	<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. </div>
-				                	<a href="{{route('website.service.detail')}}" class="readmore">read more <i class="fa fa-angle-right"></i></a>
+				                	{{-- <a href="{{route('website.service.detail')}}" class="readmore">read more <i class="fa fa-angle-right"></i></a> --}}
 				              	</div>
 				            </div>
 						</div>
-						
+
 						<div class="col-sm-4 col-md-4">
 							<div class="box-icon-1">
 				                <div class="icon">
@@ -173,7 +173,7 @@
 				              	</div>
 				            </div>
 						</div>
-						
+
 						<div class="col-sm-4 col-md-4">
 							<div class="box-icon-1">
 				                <div class="icon">

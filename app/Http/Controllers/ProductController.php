@@ -3,15 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\ProductService;
 
 class ProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    protected $productService;
+
+    public function __construct(ProductService $productService)
+    {
+
+
+        $this->productService = $productService;
+
+    }
     public function index()
     {
-        return view('website.product');
+        $products = $this->productService->getAllProducts();
+        return view('website.product',compact('products'));
     }
 
     /**

@@ -12,8 +12,10 @@ $(document).ready(function() {
             ajax: productsDataUrl,
             columns: [
                 { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },
+                { data: 'image', name: 'image'},
                 { data: 'name', name: 'name'},
                 { data: 'description', name: 'description'},
+                { data: 'price', name: 'price'},
                 { data: 'status', name: 'status'},
                 { data: 'action', name: 'action'},
             ],

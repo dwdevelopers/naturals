@@ -22,7 +22,7 @@
                                 </div>
                                 @endif
 
-                                <form action="{{ route('projects.store') }}" method="POST">
+                                <form action="{{ route('projects.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
 
                                     <div class="mb-3">
@@ -39,7 +39,10 @@
                                         <label for="additional_info" class="form-label">Additional Info</label>
                                         <textarea id="additional_info" name="additional_info" class="form-control" rows="3"></textarea>
                                     </div>
-
+                                    <div class="mb-3">
+                                        <label for="image" class="form-label"> Image</label>
+                                        <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                                    </div>
                                     <div class="mb-3 error-placeholder">
                                         <label class="form-label">Status</label>
                                         <label class="form-check">

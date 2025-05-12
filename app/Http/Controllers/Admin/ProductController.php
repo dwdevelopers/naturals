@@ -41,7 +41,10 @@ class ProductController extends Controller
             return DataTables::of($products)
                 ->addIndexColumn()
 
-
+                ->addColumn('image', function ($row) {
+                    $imageUrl = asset('storage/'.$row->image); // Adjust path based on storage
+                    return '<img src="'.$imageUrl.'" alt="Testimonial Image" width="50" height="50" />';
+                })
                 ->addColumn('status', function ($row) {
                     return $row->status
                         ? '<span class="badge bg-success">Active</span>'
@@ -81,6 +84,11 @@ class ProductController extends Controller
         try {
             $data = $request->validated();
             $data['slug'] = Product::generateUniqueSlug($data['name']);
+            if ($request->hasFile('image')) {
+                if ($request->hasFile('image')) {
+                    $data['image'] = $this->uploadImage($request->file('image'), 'products');
+                }
+            }
             $product = $this->productService->createProduct($data);
             DB::commit();
             return redirect()->route('products.index')->with('success', 'Product created successfully!');
@@ -108,7 +116,12 @@ class ProductController extends Controller
         try {
             $data = $request->validated();
             $data['category_id'] = $request->category_id;
-
+            if ($request->hasFile('image')) {
+                if ($product->image) {
+                    Storage::disk('public')->delete($product->image);
+                }
+                $data['image'] = $this->uploadImage($request->file('image'), 'products');
+            }
             // Update Product
             $this->productService->updateProduct($product->id, $data);
 

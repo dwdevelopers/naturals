@@ -4,18 +4,24 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\HomeController as AdminHome;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\ContactUsController;
+use App\Http\Controllers\Admin\GalleryCategoryController;
+use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\AdminSubscriptionController;
 
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ProjectActivitiesController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductDetailsController;
+use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ServicesController;
-use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\GalleryController as WebsiteGallery;
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\ContactUsController as WebsiteContactUs;
 use App\Http\Controllers\ProductController as WebsiteProduct;
+
 use App\Http\Controllers\Auth\LoginController;
 use App\Models\Category;
 
@@ -37,6 +43,11 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('testimonials', TestimonialController::class);
         Route::resource('projects', ProjectController::class);
         Route::resource('activities', ProjectActivitiesController::class);
+        Route::resource('services', ServiceController::class);
+        Route::resource('services', ServiceController::class);
+        Route::resource('gallery-categories', GalleryCategoryController::class);
+        Route::resource('galleries', GalleryController::class);
+        Route::resource('subscriptions', AdminSubscriptionController::class);
     });
 
 
@@ -47,14 +58,18 @@ Route::name('website.')->group(function(){
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
     Route::get('/about-us', [AboutUsController::class, 'index'])->name('aboutus');
     Route::get('/service', [ServicesController::class, 'index'])->name('service');
-    Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery');
+    Route::get('/gallery', [WebsiteGallery::class, 'index'])->name('gallery');
     Route::get('/downlaod', [DownloadController::class, 'index'])->name('downloads');
     Route::get('/contact-us', [WebsiteContactUs::class, 'index'])->name('contactUs');
     Route::get('/product', [WebsiteProduct::class, 'index'])->name('product');
-    Route::get('/service/slug', [ServicesController::class, 'show'])->name('service.detail');
+    Route::get('/service/{slug}', [ServicesController::class, 'show'])->name('service.detail');
     Route::get('/product/slug', [WebsiteProduct::class, 'show'])->name('product.detail');
+    Route::post('/contact', [WebsiteContactUs::class, 'store'])->name('contact.submit');
+    Route::post('/subscription', [SubscriptionController::class, 'store'])->name('subscription.submit');
+
 
 });
 Auth::routes();
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+

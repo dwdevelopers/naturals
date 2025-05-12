@@ -25,6 +25,7 @@
                                     <th>#</th>
                                     <th>Name</th>
                                     <th>Email</th>
+                                    <th>Phone</th>
                                     <th>Title</th>
                                     <th>Message</th>
                                     <th>Action</th>

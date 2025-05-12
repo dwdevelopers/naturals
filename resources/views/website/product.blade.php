@@ -9,44 +9,51 @@
     <h3>Our products</h3>
 </div>
 <section class="product-section">
-	<div class="container">
-		<div class="product-grid">
-			<div class="product-card">
-				<img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-				<h3>Curry Leaves <br> Powder 250 gm</h3>
-				<p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-				<a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+    <div class="container">
+        <div class="product-grid">
+            @foreach ($products as $product )
+            <div class="product-card">
+                <!-- Dynamically display product image -->
+                <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                <h3>{{ $product->name }}</h3>
+                <p class="price">
+                    ₹<strong>{{ number_format($product->price, 2) }}</strong>
+                    <span> excl. GST</span>
+                </p>
+                <a href="https://wa.me/{{ $product->whatsapp_number }}?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
                     <button>Contact on WhatsApp</button>
                 </a>
-			</div>
-			<!-- Repeat this card for each product -->
-			<div class="product-card">
+            </div>
+            @endforeach
+
+            <!-- Repeat this card for each product -->
+            {{-- <div class="product-card">
 				<img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-				<h3>Curry Leaves <br> Powder 250 gm</h3>
-				<p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-				<a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
-                    <button>Contact on WhatsApp</button>
-                </a>
-			</div>
-			<div class="product-card">
-				<img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-				<h3>Curry Leaves <br> Powder 250 gm</h3>
-				<p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-				<a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
-                    <button>Contact on WhatsApp</button>
-                </a>
-			</div>
-			<div class="product-card">
-				<img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-				<h3>Curry Leaves <br> Powder 250 gm</h3>
-				<p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-				<a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
-                    <button>Contact on WhatsApp</button>
-                </a>
-			</div>
-	
-		</div>
-	</div>
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <button>Contact on WhatsApp</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <button>Contact on WhatsApp</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <button>Contact on WhatsApp</button>
+            </a>
+        </div> --}}
+
+    </div>
+    </div>
 </section>
 <!--===================================== PRODUCT END =======================================-->
 @endsection

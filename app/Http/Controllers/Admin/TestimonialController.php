@@ -17,7 +17,7 @@ use App\Traits\ImageUploadTrait;
 class TestimonialController extends Controller
 {
     protected $testimonialService;
-    use ImageUploadTrait; 
+    use ImageUploadTrait;
     public function __construct(TestimonialService $testimonialService)
     {
         $this->middleware('auth');
@@ -35,7 +35,7 @@ class TestimonialController extends Controller
             ];
             if ($request->ajax()) {
                 $testimonials = $this->testimonialService->getAllTestimonials();
-                
+
                 return DataTables::of($testimonials)
                     ->addIndexColumn() // Adds an index column if needed
                     ->addColumn('image', function ($row) {
@@ -83,9 +83,9 @@ class TestimonialController extends Controller
      */
     public function store(TestimonialRequest $request)
     {
-       
+
         $data = $request->validated(); // First, validate input
-       
+
         DB::beginTransaction(); // Start transaction
 
         try {
@@ -94,9 +94,9 @@ class TestimonialController extends Controller
                     $data['image'] = $this->uploadImage($request->file('image'), 'testimonial');
                 }
             }
-          
-           $dd= $this->testimonialService->createTestimonial($data);
-          
+
+           $this->testimonialService->createTestimonial($data);
+
             DB::commit(); // Commit transaction
 
             return redirect()->route('testimonials.index')->with('success', 'Your testimonial has been submitted!');
@@ -124,7 +124,7 @@ class TestimonialController extends Controller
             ['name' => 'Testimonial', 'url' => route('testimonials.index')],
             ['name' => 'Edit', 'url' => null] // Null for the current page
         ];
-      
+
         return view('admin.testimonial.edit', compact('testimonial','breadcrumbs'));
     }
 
@@ -134,7 +134,7 @@ class TestimonialController extends Controller
     public function update(TestimonialRequest $request, Testimonial $testimonial)
     {
         $data = $request->validated(); // Validate input
-       
+
         DB::beginTransaction(); // Start transaction
 
         try {
@@ -146,7 +146,7 @@ class TestimonialController extends Controller
             }
             $this->testimonialService->updateTestimonial($testimonial->id, $data);
 
-            DB::commit(); 
+            DB::commit();
             return redirect()->route('testimonials.index')->with('success', 'Testimonial updated successfully!');
         } catch (\Exception $e) {
             DB::rollBack(); // Rollback transaction on error

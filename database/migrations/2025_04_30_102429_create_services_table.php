@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('slug')->unique(); // For URLs like /services/gold-loan
+            $table->text('short_description')->nullable(); // Short summary
+            $table->longText('description');               // Detailed content
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

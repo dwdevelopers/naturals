@@ -7,12 +7,14 @@ use Illuminate\Support\Str;
 
 class Product extends Model
 {
-   
+
     protected $fillable = [
         'name',
         'slug',
         'description',
         'status',
+        'image',
+        'price',
     ];
     public static function generateUniqueSlug($name)
     {

@@ -27,6 +27,8 @@ class ProductRequest extends FormRequest
         'name' => 'required|string|max:255|unique:products,name,' . $id,
         'description' => 'nullable|string',
         'status' => 'required|in:active,inactive',
+        'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        'price' => 'nullable|numeric|min:0.01|max:10000|regex:/^\d+(\.\d{1,2})?$/',  // Price validation
         ];
     }
 }

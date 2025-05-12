@@ -17,14 +17,18 @@
             self-reliant and prosperous agricultural ecosystem. </p>
         <div class="cards-grid">
             <!-- CARD 1 -->
-            <div class="card" style="background-image: url('/website/images/img-01.jpg');">
+            @foreach ($projects as $project)
+            <div class="card" style="background-image: url('{{ asset('storage/' . $project->image) }}');">
                 <div class="card-content">
-                    <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
-                    <p>Recurring Contribution & Fixed Contribution (RC & FC) schemes to provide secure
-                        and growth-oriented financial solutions for our members.</p>
-                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                    <h3>{{ $project->name }}</h3>
+                    <p>{{ $project->description }}</p>
+            <a href="{{ route('website.service.detail', $project->slug) }}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+
                 </div>
             </div>
+            @endforeach
+
+            {{--
             <!-- CARD 2 -->
             <div class="card" style="background-image: url('/website/images/img-02.jpg');">
                 <div class="card-content">
@@ -70,7 +74,7 @@
                         and organic products.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

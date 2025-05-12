@@ -36,7 +36,8 @@ table th, table td {
                         <table id="datatables-projects" class="table table-striped dt-responsive nowrap w-100" data-url="{{ route('projects.index') }}">
                             <thead>
                                 <tr>
-                                   <th>#</th>                                   
+                                   <th>#</th>
+                                   <th>Image</th>
                                     <th>Project Name</th>
                                     <th>Description</th>
                                     <th>Additional Info</th>
@@ -63,5 +64,5 @@ table th, table td {
 @push('scripts')
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-<script src="{{ asset('js/project.js') }}"></script> 
+<script src="{{ asset('js/project.js') }}"></script>
 @endpush

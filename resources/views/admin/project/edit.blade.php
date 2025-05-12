@@ -22,7 +22,7 @@
                                 </div>
                                 @endif
 
-                                <form action="{{ route('projects.update', $project->id) }}" method="POST">
+                                <form action="{{ route('projects.update', $project->id) }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     @method('PUT')
 
@@ -40,7 +40,15 @@
                                         <label for="additional_info" class="form-label">Additional Info</label>
                                         <textarea id="additional_info" name="additional_info" class="form-control" rows="3">{{ old('additional_info', $project->additional_info) }}</textarea>
                                     </div>
-
+                                    <div class="mb-3">
+                                        <label for="image" class="form-label"> Image</label>
+                                        <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                                        @if($project->image)
+                                        <div class="mt-2">
+                                            <img src="{{ asset('storage/' . $project->image) }}" alt="Image" width="150">
+                                        </div>
+                                        @endif
+                                    </div>
                                     <div class="mb-3 error-placeholder">
                                         <label class="form-label">Status</label>
                                         <label class="form-check">

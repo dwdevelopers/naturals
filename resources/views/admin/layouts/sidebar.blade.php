@@ -66,7 +66,7 @@
                         <li>
                             <a href="{{route('products.index')}}">Product List</a>
                         </li>
-                         <li>
+                        <li>
                             <a href="{{route('product-details.index')}}">Details List</a>
                         </li>
 
@@ -74,7 +74,26 @@
                     </ul>
                 </div>
             </li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#serviceForms" aria-expanded="false" aria-controls="serviceForms" class="side-nav-link">
+                    <i class="ri-survey-line"></i>
+                    <span> Service </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="serviceForms">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            {{-- <a href="{{route('categories.index')}}">Category List</a> --}}
+                        </li>
+                        <li>
+                            <a href="{{route('services.index')}}">Service List</a>
+                        </li>
 
+
+
+                    </ul>
+                </div>
+            </li>
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarPagesAuth" aria-expanded="false" aria-controls="sidebarPagesAuth" class="side-nav-link">
                     <i class="ri-group-2-line"></i>
@@ -89,6 +108,28 @@
                             {{-- --}}
                             <a href="{{route('contactuses.index')}}">List</a>
                         </li>
+
+                    </ul>
+                </div>
+            </li>
+             <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#galleryForms" aria-expanded="false" aria-controls="galleryForms" class="side-nav-link">
+                    <i class="ri-survey-line"></i>
+                    <span> Gallery </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="galleryForms">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            {{-- <a href="{{route('categories.index')}}">Category List</a> --}}
+                        </li>
+                        <li>
+                            <a href="{{route('gallery-categories.index')}}">Category List</a>
+                        </li>
+                        <li>
+                            <a href="{{route('galleries.index')}}">Gallery List</a>
+                        </li>
+
 
                     </ul>
                 </div>
@@ -111,7 +152,21 @@
                     </ul>
                 </div>
             </li>
+       <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#subscriptionLayouts" aria-expanded="false" aria-controls="subscriptionLayouts" class="side-nav-link">
+                    <i class="ri-layout-line"></i>
+                    <span> Subscriptions </span>
+                </a>
+                <div class="collapse" id="subscriptionLayouts">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('subscriptions.index')}}">List</a>
+                        </li>
 
+
+                    </ul>
+                </div>
+            </li>
         </ul>
         <!--- End Sidemenu -->
 

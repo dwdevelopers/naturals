@@ -11,18 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('product_details', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('product_id'); // Foreign key
-            $table->string('name', 255);
-            $table->string('slug', 255)->nullable();
-            $table->text('description')->nullable();
-            $table->enum('status', ['active', 'inactive'])->default('active');
+        if (!Schema::hasTable('product_details')) {
+            Schema::create('product_details', function (Blueprint $table) {
+                $table->id();
+                $table->unsignedBigInteger('product_id'); // Foreign key
+                $table->string('name', 255);
+                $table->string('slug', 255)->nullable();
+                $table->text('description')->nullable();
+                $table->enum('status', ['active', 'inactive'])->default('active');
 
-            // Foreign key constraint (Reference to products table)
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->timestamps();
-        });
+                // Foreign key constraint (Reference to products table)
+                $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+                $table->timestamps();
+            });
+         }
     }
 
     /**

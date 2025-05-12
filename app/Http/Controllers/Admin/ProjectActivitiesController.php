@@ -30,17 +30,21 @@ class ProjectActivitiesController extends Controller
                 return DataTables::of($projects)
                     ->addIndexColumn()
                     ->addColumn('status', function ($row) {
-                        return $row->status === 'active' 
-                            ? '<span class="badge bg-success">Active</span>' 
+                        return $row->status === 'active'
+                            ? '<span class="badge bg-success">Active</span>'
                             : '<span class="badge bg-danger">Inactive</span>';
                     })
                     ->addColumn('name', function ($row) {
-                        return $row->activity_name; 
-                           
+                        return $row->activity_name;
+
+                    })
+                    ->addColumn('description', function ($row) {
+                        return $row->description;
+
                     })
                     ->addColumn('project_name', function ($row) {
-                        return $row->project->name; 
-                           
+                        return $row->project->name;
+
                     })
                     ->addColumn('action', function ($row) {
                         return '<a href="'.route('activities.edit', $row->id).'" class="btn btn-primary btn-sm">Edit</a>
@@ -50,7 +54,7 @@ class ProjectActivitiesController extends Controller
                                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                 </form>';
                     })
-                    ->rawColumns(['action', 'status'])
+                    ->rawColumns(['action', 'status','description'])
                     ->make(true);
             } catch (\Exception $e) {
                 return response()->json(['error' => 'Something went wrong: ' . $e->getMessage()], 500);

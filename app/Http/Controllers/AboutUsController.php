@@ -3,15 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\TestimonialService;
 
 class AboutUsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    protected $testimonialService;
+    public function __construct(TestimonialService $testimonialService)
+    {
+
+        $this->testimonialService = $testimonialService;
+    }
     public function index()
     {
-       return view('website.about_us');
+        $testimonials = $this->testimonialService->getAllTestimonials()->where('status', 'approved');
+       return view('website.about_us',compact('testimonials'));
     }
 
     /**
