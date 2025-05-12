@@ -3,23 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\TestimonialService;
+use App\Models\Subscription;
 
-class AboutUsController extends Controller
+class SubscriptionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    protected $testimonialService;
-    public function __construct(TestimonialService $testimonialService)
-    {
-
-        $this->testimonialService = $testimonialService;
-    }
     public function index()
     {
-        $testimonials = $this->testimonialService->getAllTestimonials()->where('status', 'approved');
-       return view('website.about_us',compact('testimonials'));
+        //
     }
 
     /**
@@ -35,7 +28,20 @@ class AboutUsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $validated = $request->validate([
+            'email' => 'required|email|unique:subscriptions,email',
+        ]);
+
+        // Store the subscription (if using the database)
+        Subscription::create([
+            'email' => $validated['email'],
+        ]);
+
+        // Optionally, send a thank-you email or confirmation email
+        // Mail::to($validated['email'])->send(new ThankYouMail());
+
+        return redirect()->back()->with('success', 'Thank you for subscribing!');
     }
 
     /**

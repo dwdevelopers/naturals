@@ -40,6 +40,11 @@
                                         </div>
                                         @endif
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="price" class="form-label">Price</label>
+                                        <input type="number" id="price" name="price" class="form-control" step="0.01" min="0.01" placeholder="Enter price" value="{{ old('price', $product->price) }}" required>
+                                    </div>
+
                                     <!-- Description -->
                                     <div class="mb-3">
                                         <label for="description" class="form-label">Description</label>

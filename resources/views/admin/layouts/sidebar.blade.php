@@ -152,7 +152,21 @@
                     </ul>
                 </div>
             </li>
+       <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#subscriptionLayouts" aria-expanded="false" aria-controls="subscriptionLayouts" class="side-nav-link">
+                    <i class="ri-layout-line"></i>
+                    <span> Subscriptions </span>
+                </a>
+                <div class="collapse" id="subscriptionLayouts">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('subscriptions.index')}}">List</a>
+                        </li>
 
+
+                    </ul>
+                </div>
+            </li>
         </ul>
         <!--- End Sidemenu -->
 

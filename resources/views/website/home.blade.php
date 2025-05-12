@@ -100,7 +100,17 @@
     <div class="container">
         <h2 class="section-title">Agri Dhan Vikas</h2>
         <div class="cards-grid">
-            <!-- CARD 1 -->
+            @foreach ($projects as $project)
+            <div class="card" style="background-image: url('{{ asset('storage/' . $project->image) }}');">
+                <div class="card-content">
+                    <h3>{{ $project->name }}</h3>
+                    <p>{{ $project->description }}</p>
+                    <a href="{{ route('website.service.detail', $project->slug) }}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+
+                </div>
+            </div>
+            @endforeach
+            {{-- <!-- CARD 1 -->
             <div class="card" style="background-image: url('/website/images/img-01.jpg');">
                 <div class="card-content">
                     <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
@@ -154,7 +164,7 @@
                         and organic products.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -174,11 +184,28 @@
     <div class="membership-right">
         <h4>Get in Touch</h4>
         <h2>Contact with us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="tel" placeholder="Phone" />
-            <textarea placeholder="Message"></textarea>
+        <form action="{{ route('website.contact.submit') }}" method="POST" class="contact-form">
+            @csrf
+            <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required />
+            @error('name')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required />
+            @error('email')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <input type="tel" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
+            @error('phone')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
+            @error('message')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -190,49 +217,64 @@
     <div class="container">
         <h2>Our Products</h2>
         <div class="product-grid">
+            @foreach ($products as $product )
             <div class="product-card">
-                <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-                <h3>Curry Leaves <br> Powder 250 gm</h3>
-                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <!-- Dynamically display product image -->
+                <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                <h3>{{ $product->name }}</h3>
+                <p class="price">
+                    ₹<strong>{{ number_format($product->price, 2) }}</strong>
+                    <span> excl. GST</span>
+                </p>
+                <a href="https://wa.me/{{ $product->whatsapp_number }}?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
                     <button>Contact on WhatsApp</button>
                 </a>
             </div>
-            <!-- Repeat this card for each product -->
-            <div class="product-card">
+            @endforeach
+            {{-- <div class="product-card">
                 <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-                <h3>Curry Leaves <br> Powder 250 gm</h3>
-                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
-                    <button>Contact on WhatsApp</button>
-                </a>
-            </div>
-            <div class="product-card">
-                <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-                <h3>Curry Leaves <br> Powder 250 gm</h3>
-                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
-                    <button>Contact on WhatsApp</button>
-                </a>
-            </div>
-            <div class="product-card">
-                <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
-                <h3>Curry Leaves <br> Powder 250 gm</h3>
-                <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-                <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
-                    <button>Contact on WhatsApp</button>
-                </a>
-            </div>
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <button>Contact on WhatsApp</button>
+            </a>
         </div>
-        <div class="read-more">
-            <a href="product" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+        <!-- Repeat this card for each product -->
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <button>Contact on WhatsApp</button>
+            </a>
         </div>
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <button>Contact on WhatsApp</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
+            <h3>Curry Leaves <br> Powder 250 gm</h3>
+            <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
+            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+                <button>Contact on WhatsApp</button>
+            </a>
+        </div> --}}
+    </div>
+    <div class="read-more">
+        <a href="{{route('website.product')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+    </div>
     </div>
 </section>
 <!--===================================== PRODUCT END =======================================-->
 
 <!--===================================== TESTIMONIAL START ==================================-->
-<div class="section testimony" style="padding-top: 0;">
+@include('website.testimonial')
+{{-- <div class="section testimony" style="padding-top: 0;">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-md-offset-2">
@@ -290,7 +332,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!--===================================== TESTIMONIAL END ==================================-->
 
 <!-- BLOG -->

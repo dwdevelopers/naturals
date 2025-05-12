@@ -29,28 +29,28 @@ class GalleryController extends Controller
         if ($request->ajax()) {
 
             $galleries = $this->galleryService->getAllGalleries(); // Ensure this returns a collection of Gallery models with relationships
-
+            // dd($galleries);
             return DataTables::of($galleries)
                 ->addIndexColumn()
-                // ->addColumn('image_path', function ($row) {
-                //     $html = '';
-                //     // if (!empty($row->images) && is_array($row->images)) {
-                //         // foreach ($row->images as $path) {
-                //             $imageUrl = asset($row->image_path);
-                //             $html .= '<img src="' . $imageUrl . '" width="50" height="50" style="margin-right:5px;" />';
-                //         // }
-                //     // }
-                //     return $html ?: '-';
-                // })
                 ->addColumn('image_path', function ($row) {
-                    $images = \App\Models\Gallery::where('title', $row->title)->pluck('image_path');
+
                     $html = '';
-                    foreach ($images as $path) {
-                        $imageUrl = asset($path);
-                        $html .= '<img src="' . $imageUrl . '" width="50" height="50" style="margin-right:5px;" />';
-                    }
+                        foreach ($row->images as $path) {
+                            $imageUrl = asset($path->image_path);
+                            $html .= '<img src="' . $imageUrl . '" width="50" height="50" style="margin-right:5px;" />';
+                        }
+
                     return $html ?: '-';
                 })
+                // ->addColumn('image_path', function ($row) {
+                //     $images = \App\Models\Gallery::where('title', $row->title)->pluck('image_path');
+                //     $html = '';
+                //     foreach ($images as $path) {
+                //         $imageUrl = asset($path);
+                //         $html .= '<img src="' . $imageUrl . '" width="50" height="50" style="margin-right:5px;" />';
+                //     }
+                //     return $html ?: '-';
+                // })
                 ->addColumn('category', function ($row) {
                     return optional($row->category)->name ?? '-';
                 })
@@ -58,7 +58,7 @@ class GalleryController extends Controller
                     return e($row->title ?? '-');
                 })
                 ->addColumn('status', function ($row) {
-                    return $row->status
+                    return $row->is_active
                         ? '<span class="badge bg-success">Active</span>'
                         : '<span class="badge bg-secondary">Inactive</span>';
                 })
@@ -99,7 +99,7 @@ class GalleryController extends Controller
     {
         $breadcrumbs = $this->getBreadcrumbs('Edit');
         $galleryCategories = GalleryCategory::all();
-        // $gallery->load('images');
+        $gallery->load('images');
 
         return view('admin.gallery.edit', compact('gallery', 'galleryCategories', 'breadcrumbs'));
     }

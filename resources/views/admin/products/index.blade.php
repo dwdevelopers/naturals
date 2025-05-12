@@ -44,6 +44,7 @@
                                     <th>Image</th>
                                     <th>Product</th>
                                     <th>Description</th>
+                                    <th>Price</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>

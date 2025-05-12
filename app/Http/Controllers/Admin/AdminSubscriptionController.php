@@ -1,23 +1,18 @@
 <?php
 
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests\ContactUsRequest;
-use App\Models\ContactUs;
-use App\Services\ContactUsService;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\DB;
+use App\Models\Subscription;
+use Carbon\Carbon;
 
-class ContactUsController extends Controller
+
+class AdminSubscriptionController extends Controller
 {
-    protected $contactUsService;
-
-    public function __construct(ContactUsService $contactUsService)
-    {
-        $this->contactUsService = $contactUsService;
-    }
     /**
      * Display a listing of the resource.
      */
@@ -28,17 +23,20 @@ class ContactUsController extends Controller
             ['name' => 'Contact Us', 'url' => route('contactuses.index')],
             ['name' => 'Lists', 'url' => null] // Null for the current page
             ];
-            $teams = $this->contactUsService->getAllContactuses();
+            $teams =Subscription::get();
             if ($request->ajax()) {
 
 
                 return DataTables::of($teams)
                     ->addIndexColumn()
-
+                    ->addColumn('created_at', function($row) {
+                        // Format the date to something more readable
+                        return Carbon::parse($row->created_at)->format('d M Y, h:i A');
+                    })
                     ->addColumn('action', function ($row) {
 
                         return '
-                                <form action="'.route('contactuses.destroy', $row->id).'" method="POST" style="display:inline;">
+                                <form action="'.route('subscriptions.destroy', $row->id).'" method="POST" style="display:inline;">
                                     '.csrf_field().'
                                     '.method_field("DELETE").'
                                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>
@@ -47,7 +45,7 @@ class ContactUsController extends Controller
                     ->rawColumns(['action']) // Allows HTML rendering in the action column
                     ->make(true);
             }
-        return view('admin.contactus.index',compact('breadcrumbs'));
+        return view('admin.subscription.index',compact('breadcrumbs'));
     }
 
     /**
@@ -61,22 +59,9 @@ class ContactUsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(ContactUsRequest $request)
+    public function store(Request $request)
     {
-        DB::beginTransaction();
-        try {
-            $data = $request->validated();
-
-            $this->contactUsService->createContact($data);
-
-            DB::commit();
-            return redirect()->back()->with('success', 'Your message has been sent successfully!');
-
-        } catch (\Exception $e) {
-            DB::rollBack();
-            dd($e->getMessage());
-            return redirect()->back()->withErrors('Error creating Message sending. Please try again.');
-        }
+        //
     }
 
     /**
@@ -108,16 +93,9 @@ class ContactUsController extends Controller
      */
     public function destroy($id)
     {
-        DB::beginTransaction();
-        try {
-            $contactUs = ContactUs::findOrFail($id);
+        $subscription = Subscription::findOrFail($id);
+        $subscription->delete();
 
-            $this->contactUsService->deleteContact($contactUs->id);
-            DB::commit();
-            return redirect()->route('contactuses.index')->with('success', 'Contact Us deleted successfully!');
-        } catch (\Exception $e) {
-            DB::rollBack();
-            return redirect()->back()->withErrors('Error deleting Contact Us. Please try again.');
-        }
+        return redirect()->back()->with('success', 'Subscription successfully deleted!');
     }
 }

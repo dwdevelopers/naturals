@@ -13,7 +13,8 @@ class Product extends Model
         'slug',
         'description',
         'status',
-        'image'
+        'image',
+        'price',
     ];
     public static function generateUniqueSlug($name)
     {

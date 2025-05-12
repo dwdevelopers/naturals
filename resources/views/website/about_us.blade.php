@@ -78,7 +78,8 @@
 
 
     <!--===================================== TESTIMONIAL START ==================================-->
-    <div class="section testimony" style="padding-top: 0;">
+   @include('website.testimonial')
+    {{-- <div class="section testimony" style="padding-top: 0;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
@@ -136,7 +137,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--===================================== TESTIMONIAL END ==================================-->
 
 </div>

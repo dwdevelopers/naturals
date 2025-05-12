@@ -15,6 +15,7 @@ $(document).ready(function() {
                 { data: 'image', name: 'image'},
                 { data: 'name', name: 'name'},
                 { data: 'description', name: 'description'},
+                { data: 'price', name: 'price'},
                 { data: 'status', name: 'status'},
                 { data: 'action', name: 'action'},
             ],

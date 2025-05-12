@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\ProductService;
+use App\Models\ProjectActivity;
+use App\Services\ProjectService;
+use App\Services\ProjectActivityService;
+use App\Services\TestimonialService;
 
 class HomeController extends Controller
 {
@@ -11,9 +16,19 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    protected $projectService;
+    protected $projectActivityService;
+    protected $productService;
+    protected $testimonialService;
+
+
+    public function __construct(ProjectService $projectService,ProjectActivityService $projectActivityService,ProductService $productService,TestimonialService $testimonialService)
     {
-        // $this->middleware('auth');
+        $this->projectActivityService = $projectActivityService;
+        $this->projectService = $projectService;
+        $this->productService = $productService;
+        $this->testimonialService = $testimonialService;
+
     }
 
     /**
@@ -23,12 +38,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('website.home');
+        $projects = $this->projectService->getAllProjects()->where('status', 'active');
+        $products = $this->productService->getAllProducts();
+        $testimonials = $this->testimonialService->getAllTestimonials()->where('status', 'approved');
+        return view('website.home', compact('projects', 'products','testimonials'));
     }
     public function about(Request $request)
     {
-       
-        return view('website.about_us');
+        $testimonials = $this->testimonialService->getAllTestimonials()->where('status', 'approved');
+        return view('website.about_us',compact('testimonials'));
     }
     public function shop(Request $request)
     {

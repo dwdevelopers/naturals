@@ -28,6 +28,7 @@ class ProductRequest extends FormRequest
         'description' => 'nullable|string',
         'status' => 'required|in:active,inactive',
         'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        'price' => 'nullable|numeric|min:0.01|max:10000|regex:/^\d+(\.\d{1,2})?$/',  // Price validation
         ];
     }
 }

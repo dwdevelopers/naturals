@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\GalleryCategoryController;
 use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\AdminSubscriptionController;
 
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ProjectActivitiesController;
@@ -17,8 +18,10 @@ use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\GalleryController as WebsiteGallery;
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\ContactUsController as WebsiteContactUs;
 use App\Http\Controllers\ProductController as WebsiteProduct;
+
 use App\Http\Controllers\Auth\LoginController;
 use App\Models\Category;
 
@@ -44,6 +47,7 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('services', ServiceController::class);
         Route::resource('gallery-categories', GalleryCategoryController::class);
         Route::resource('galleries', GalleryController::class);
+        Route::resource('subscriptions', AdminSubscriptionController::class);
     });
 
 
@@ -60,6 +64,9 @@ Route::name('website.')->group(function(){
     Route::get('/product', [WebsiteProduct::class, 'index'])->name('product');
     Route::get('/service/{slug}', [ServicesController::class, 'show'])->name('service.detail');
     Route::get('/product/slug', [WebsiteProduct::class, 'show'])->name('product.detail');
+    Route::post('/contact', [WebsiteContactUs::class, 'store'])->name('contact.submit');
+    Route::post('/subscription', [SubscriptionController::class, 'store'])->name('subscription.submit');
+
 
 });
 Auth::routes();

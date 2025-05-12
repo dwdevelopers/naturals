@@ -31,9 +31,10 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="description" class="form-label">Description</label>
-                                        <textarea id="description" name="description" class="form-control" rows="3"></textarea>
+                                        <label for="price" class="form-label">Price</label>
+                                        <input type="number" id="price" name="price" class="form-control" step="0.01" min="0.01" placeholder="Enter price" required>
                                     </div>
+
 
                                     <div class="mb-3">
                                         <label for="image" class="form-label"> Image</label>
