@@ -27,7 +27,7 @@
                     <div class="card overflow-hidden">
                         <div class="row g-0">
                             <div class="col-lg-6 d-none d-lg-block p-2">
-                                <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo" height="300" width="300">
+                                <img src="{{ asset('website/assets/images/login_img.png')}}" alt="logo" height="300" width="300">
 
                             </div>
                             <div class="col-lg-6">
@@ -70,13 +70,13 @@
                                             </span>
                                             @enderror
                                         </div>
-                                        <div class="mb-3">
+                                        {{-- <div class="mb-3">
                                             <div class="form-check">
                                                 <input type="checkbox" class="form-check-input" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                                 <label class="form-check-label" for="checkbox-signin">Remember
                                                     me</label>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="mb-0 text-start">
                                             <button class="btn btn-soft-primary w-100" type="submit"><i class="ri-login-circle-fill me-1"></i> <span class="fw-bold">Log
                                                     In</span> </button>

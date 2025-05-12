@@ -13,7 +13,6 @@ class ContactUsController extends Controller
 
     public function __construct(ContactUsService $contactusService)
     {
-        $this->middleware('auth');
 
         $this->contactusService = $contactusService;
     }
