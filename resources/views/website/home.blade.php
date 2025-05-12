@@ -213,6 +213,7 @@
 <!--===================================== MEMBERSHIP END ======================================-->
 
 <!--===================================== PRODUCT START =======================================-->
+@if($products->count()>0)
 <section class="product-section">
     <div class="container">
         <h2>Our Products</h2>
@@ -270,10 +271,13 @@
     </div>
     </div>
 </section>
+@endif
 <!--===================================== PRODUCT END =======================================-->
 
 <!--===================================== TESTIMONIAL START ==================================-->
+{{-- @if($testimonials && $testimonials->isNotEmpty()) --}}
 @include('website.testimonial')
+{{-- @endif --}}
 {{-- <div class="section testimony" style="padding-top: 0;">
     <div class="container">
         <div class="row">

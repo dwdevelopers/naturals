@@ -19,7 +19,7 @@
 			<button class="tab" data-filter="video">Video</button>
 		</div>
 
-		<div class="media-grid">
+		{{-- <div class="media-grid">
 			<div class="media-item photo"><img src="{{ asset('/website/images/img-01.jpg') }}" alt=""></div>
 			<div class="media-item photo"><img src="{{ asset('/website/images/img-02.jpg') }}" alt=""></div>
 			<div class="media-item video span-2"><video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop controls></video></div>
@@ -31,7 +31,7 @@
 			<div class="media-item photo"><img src="{{ asset('/website/images/img-01.jpg') }}" alt=""></div>
 			<div class="media-item photo span-2"><img src="{{ asset('/website/images/img-05.jpg') }}" alt=""></div>
 			<div class="media-item photo span-2"><img src="{{ asset('/website/images/img-04.jpg') }}" alt=""></div>
-		</div>
+		</div> --}}
 	</div>
 </section>
 <div class="modal" id="mediaModal">

@@ -1,6 +1,16 @@
 @extends('admin.layouts.app')
 @section('title', 'Testimonials')
+<style>
+table th, table td {
+    display: table-cell !important;
+    white-space: normal !important; /* Allow text wrapping */
+    word-wrap: break-word; /* Ensures long words break */
+    overflow-wrap: break-word; /* Ensures text wraps in all cases */
+    max-width: 200px; /* Adjust as needed to prevent excessive width */
+}
 
+
+</style>
 @section('content')
 <div class="content">
 

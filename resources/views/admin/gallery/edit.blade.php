@@ -65,7 +65,6 @@
                                     Inactive
                                 </label>
                             </div>
-
                             <button type="submit" class="btn btn-primary">Update</button>
                             <a href="{{ route('galleries.index') }}" class="btn btn-secondary">Back</a>
                         </form>
