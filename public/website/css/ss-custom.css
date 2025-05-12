@@ -646,4 +646,8 @@ Global Transfers Area CSS
 
 .footer .box-info .box-info-body {
   border-left-color: transparent !important;
+}
+
+.blog {
+  display: none !important;
 }/*# sourceMappingURL=ss-custom.css.map */

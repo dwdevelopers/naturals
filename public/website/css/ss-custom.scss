@@ -31,6 +31,7 @@
     display: none !important;
 }
 }
+// 
 
 :root {
     --main-font-family: "Roboto", sans-serif;
@@ -729,4 +730,8 @@ max-width: 100%;
 
 .footer .box-info .box-info-body {
         border-left-color: transparent !important;
+}
+
+.blog{
+    display: none !important;
 }

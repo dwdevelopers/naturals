@@ -340,7 +340,7 @@
 <!--===================================== TESTIMONIAL END ==================================-->
 
 <!-- BLOG -->
-<div class="section blog bg-grey">
+<div class="section blog bg-grey d-none">
     <div class="container">
         <div class="row">
 
