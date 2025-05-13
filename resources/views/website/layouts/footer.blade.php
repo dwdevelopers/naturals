@@ -20,7 +20,8 @@
                          </div>
                          <div class="box-info-body">
                              <p>We are open on</p>
-                             <h4>Mon - Fri 08:00 - 20:00</h4>
+                             <h4>Mon - Fri 9.30 to 5.30</h4>
+                             <h4 class="holiay">Second Saturday & Sunday Holiday</h4>
                          </div>
                      </div>
                  </div>

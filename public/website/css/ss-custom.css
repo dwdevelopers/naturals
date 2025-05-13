@@ -646,8 +646,14 @@ Global Transfers Area CSS
 
 .footer .box-info .box-info-body {
   border-left-color: transparent !important;
+  min-height: 115px;
 }
 
 .blog {
   display: none !important;
+}
+
+.holiay {
+  font-size: 13px;
+  font-weight: 400;
 }/*# sourceMappingURL=ss-custom.css.map */
