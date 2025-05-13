@@ -97,7 +97,6 @@
                     </form>
 
                     <div class="margin-bottom-50"></div>
-                    <p><em>Note: Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12">
