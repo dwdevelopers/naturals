@@ -227,7 +227,8 @@
                     ₹<strong>{{ number_format($product->price, 2) }}</strong>
                     <span> excl. GST</span>
                 </p>
-                <a href="https://wa.me/{{ $product->whatsapp_number }}?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
+
+                <a href="https://wa.me/917012829663?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
                     <button>Contact on WhatsApp</button>
                 </a>
             </div>
@@ -236,7 +237,7 @@
                 <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
             <h3>Curry Leaves <br> Powder 250 gm</h3>
             <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+            <a href="https://wa.me/+917012829663?text=I'm%20interested%20in%20this%20product" target="_blank">
                 <button>Contact on WhatsApp</button>
             </a>
         </div>
@@ -245,7 +246,7 @@
             <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
             <h3>Curry Leaves <br> Powder 250 gm</h3>
             <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+            <a href="https://wa.me/+917012829663?text=I'm%20interested%20in%20this%20product" target="_blank">
                 <button>Contact on WhatsApp</button>
             </a>
         </div>
@@ -253,7 +254,7 @@
             <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
             <h3>Curry Leaves <br> Powder 250 gm</h3>
             <p class="price">₹<strong>218.10</strong><span> excl. GST</span></p>
-            <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20this%20product" target="_blank">
+            <a href="https://wa.me/+917012829663?text=I'm%20interested%20in%20this%20product" target="_blank">
                 <button>Contact on WhatsApp</button>
             </a>
         </div>
@@ -287,55 +288,55 @@
                         <div class="testimonial-1">
                             <div class="media">
                                 <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                            </div>
-                            <div class="body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                <div class="title">Gael story</div>
-                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-1">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                            </div>
-                            <div class="body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                <div class="title">Dedo</div>
-                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-1">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                            </div>
-                            <div class="body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                <div class="title">Maggy</div>
-                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-1">
-                            <div class="media">
-                                <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                            </div>
-                            <div class="body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                <div class="company">Gaspol ltd</div>
-                                <div class="title">Robert Lav</div>
-                                <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</div>
+<div class="body">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+    <div class="title">Gael story</div>
+    <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+</div>
+</div>
+</div>
+<div class="item">
+    <div class="testimonial-1">
+        <div class="media">
+            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+        </div>
+        <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+            <div class="title">Dedo</div>
+            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
         </div>
     </div>
+</div>
+<div class="item">
+    <div class="testimonial-1">
+        <div class="media">
+            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+        </div>
+        <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+            <div class="title">Maggy</div>
+            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="testimonial-1">
+        <div class="media">
+            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+        </div>
+        <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+            <div class="company">Gaspol ltd</div>
+            <div class="title">Robert Lav</div>
+            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div> --}}
 <!--===================================== TESTIMONIAL END ==================================-->
 
