@@ -24,14 +24,15 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-8 col-lg-10">
-                    <div class="card overflow-hidden">
+                    <div class="card overflow-hidden" style="    padding: 40px;">
                         <div class="row g-0">
                             <div class="col-lg-6 d-none d-lg-block p-2">
-                                <img src="{{ asset('website/assets/images/login_img.png')}}" alt="logo" height="300" width="300">
+                                <img src="{{ asset('website/assets/images/login_img.png')}}" alt="logo" height="300" width="300" style="    object-fit: cover;">
 
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column h-100">
+                                    <h2>Welcome to Naturals!</h2>
                                     {{-- <div class="auth-brand p-2">
 
                                         <a href="index.html" class="logo-dark">
