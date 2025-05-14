@@ -1,8 +1,10 @@
 <div class="leftside-menu">
     <!-- Brand Logo Light -->
     <a href="index.html" class="logo logo-light">
-        <span class="logo-lg">
-            <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo">
+        <span class="logo-lg" style="text-align: left;">
+            <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo" style="    width: 110px;
+    height: 60px;
+    object-fit: contain;">
         </span>
         <span class="logo-sm">
             <img src="{{ asset('website/assets/images/logo.png')}}" alt="small logo">

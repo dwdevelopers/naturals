@@ -20,7 +20,8 @@
                          </div>
                          <div class="box-info-body">
                              <p>We are open on</p>
-                             <h4>Mon - Fri 08:00 - 20:00</h4>
+                             <h4>Mon - Sat 9.30 to 5.30</h4>
+                             <h4 class="holiay">Second Saturday & Sunday Holiday</h4>
                          </div>
                      </div>
                  </div>
@@ -58,26 +59,26 @@
                          Thrissur - 680306
                      </p>
                      <div class="footer-sosmed">
-                         <a href="#" title="">
+                         <a target="_blank" href="https://www.facebook.com/naturalmscs" title="">
                              <div class="item">
                                  <i class="fa fa-facebook"></i>
                              </div>
                          </a>
-                         <a href="#" title="">
+                         <!-- <a href="#" title="">
                              <div class="item">
                                  <i class="fa fa-twitter"></i>
                              </div>
-                         </a>
-                         <a href="#" title="">
+                         </a> -->
+                         <a target="_blank" href="https://www.instagram.com/naturalmscs/?fbclid=IwZXh0bgNhZW0CMTEAYnJpZBExSHl6cnBHZkxCUGxDZDNsSwEeeOXfbaWMo_4Kk8VXQLpXMGklr8htsxotVAZdfI_2y4jKyCpjQMBG2qMgn_A_aem_M7Kfvn8s6xKXsBqh5gLDQA" title="">
                              <div class="item">
                                  <i class="fa fa-instagram"></i>
                              </div>
                          </a>
-                         <a href="#" title="">
+                         <!-- <a href="#" title="">
                              <div class="item">
                                  <i class="fa fa-pinterest"></i>
                              </div>
-                         </a>
+                         </a> -->
                      </div>
                  </div>
              </div>
@@ -102,14 +103,13 @@
                      <div class="footer-title">
                          Subscribe
                      </div>
-                     <p>Lit sed The Best in dolor sit amet consectetur adipisicing elit sedconsectetur adipisicing</p>
+                     <p>Get the best in wellness – sign up to stay informed with our latest updates and offers.</p>
                      <form action="{{ route('website.subscription.submit') }}" method="POST" class="footer-subscribe">
                          @csrf
                          <!-- CSRF protection for form submission -->
                          <input type="email" name="email" class="form-control" placeholder="enter your email" required>
                          <input id="p_submit" type="submit" value="send">
                          <label for="p_submit"><i class="fa fa-envelope"></i></label>
-                         <p>Get the latest updates and offers.</p>
                      </form>
                  </div>
              </div>
@@ -119,8 +119,11 @@
      <div class="fcopy">
          <div class="container">
              <div class="row">
-                 <div class="col-sm-12 col-md-12">
-                     <p class="ftex">&copy; 2025 NATURAL - All Rights Reserved</p>
+                 <div class="col-sm-12 col-md-6">
+                     <p class="ftex left">&copy; 2025 NATURAL - All Rights Reserved</p>
+                 </div>
+                 <div class="col-sm-12 col-md-6">
+                     <p class="ftex right">Designed & Developed by <a href="https://dawsonwalsh.com/" target="_blank" >DW</a></p>
                  </div>
              </div>
          </div>

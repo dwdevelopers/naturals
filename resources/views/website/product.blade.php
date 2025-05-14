@@ -20,7 +20,7 @@
                     ₹<strong>{{ number_format($product->price, 2) }}</strong>
                     <span> excl. GST</span>
                 </p>
-                <a href="https://wa.me/{{ $product->whatsapp_number }}?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
+              <a href="https://wa.me/917012829663?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
                     <button>Contact on WhatsApp</button>
                 </a>
             </div>
