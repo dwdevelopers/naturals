@@ -640,7 +640,8 @@ Global Transfers Area CSS
 .service-details .content-sec .table-sec {
   padding-top: 10px;
 }
-.service-details .content-sec th, .service-details .content-sec td {
+.service-details .content-sec th,
+.service-details .content-sec td {
   padding: 14px 20px;
 }
 
@@ -656,4 +657,33 @@ Global Transfers Area CSS
 .holiay {
   font-size: 13px;
   font-weight: 400;
+}
+
+@media (min-width: 767px) {
+  .fcopy .left {
+    text-align: left !important;
+  }
+  .fcopy .right {
+    text-align: right !important;
+  }
+}
+@media (max-width: 766px) {
+  .fcopy {
+    padding: 20px 0 10px 0 !important;
+  }
+  .fcopy .ftex {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer .box-info .box-info-body {
+    padding: 20px 0 20px 0px !important;
+  }
+  .footer .box-info .box-info-icon {
+    padding: 20px 20px !important;
+  }
+}
+.product-card .price {
+  display: none;
 }/*# sourceMappingURL=ss-custom.css.map */

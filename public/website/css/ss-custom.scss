@@ -1,36 +1,40 @@
-@media(min-width:767px){
-.df-center {
-    display: flex;
-    align-items: center;
-}
-}
-@media(min-width:576px) and (max-width:991px){
- #owl-testimony .owl-nav .owl-next {
-    right: 0;
-}
- #owl-testimony .owl-nav .owl-prev{
-    left: 0;
- }
+@media(min-width:767px) {
+    .df-center {
+        display: flex;
+        align-items: center;
+    }
 }
 
-@media(min-width:767px) and (max-width:991px){
-    .navbar-nav > li > a{
-                padding-left: 10px;
+@media(min-width:576px) and (max-width:991px) {
+    #owl-testimony .owl-nav .owl-next {
+        right: 0;
+    }
+
+    #owl-testimony .owl-nav .owl-prev {
+        left: 0;
+    }
+}
+
+@media(min-width:767px) and (max-width:991px) {
+    .navbar-nav>li>a {
+        padding-left: 10px;
         padding-right: 10px;
     }
 }
+
 @media (max-width: 768px) {
-    .header-1 .navbar-nav > li:last-child a {
+    .header-1 .navbar-nav>li:last-child a {
         padding-left: 25px;
         padding-right: 25px !important;
     }
 }
 
-@media(min-width:767px){
-.navbar-toggle{
-    display: none !important;
+@media(min-width:767px) {
+    .navbar-toggle {
+        display: none !important;
+    }
 }
-}
+
 // 
 
 :root {
@@ -401,9 +405,10 @@ Global Transfers Area CSS
 .gallery .container h2 {
     color: #7fc55d !important;
     font-size: 54px !important;
+
     @media (max-width: 600px) {
         font-size: 36px !important;
-      }
+    }
 }
 
 .agri-dhan-vikas .cards-grid .card .card-content .read-more span {
@@ -670,7 +675,8 @@ Global Transfers Area CSS
 
 .service-details {
     padding: 70px 0px;
-    @media(max-width:767px){
+
+    @media(max-width:767px) {
         padding: 70px 20px;
     }
 
@@ -678,9 +684,10 @@ Global Transfers Area CSS
         h2 {
             font-size: 38px;
             max-width: 60%;
-            @media(max-width:575px){
-font-size: 26px;
-max-width: 100%;
+
+            @media(max-width:575px) {
+                font-size: 26px;
+                max-width: 100%;
             }
         }
 
@@ -693,51 +700,96 @@ max-width: 100%;
             .subtitle {
                 color: #343030;
                 font-size: 26px;
-                @media(max-width:575px){
+
+                @media(max-width:575px) {
                     font-size: 22px;
                 }
             }
-            li{
+
+            li {
                 font-size: 15px;
-                strong{
+
+                strong {
                     margin-right: 5px;
                     font-size: 16px;
                 }
             }
         }
-        .submaintitle{
+
+        .submaintitle {
             font-size: 25px;
 
         }
-        h5{
+
+        h5 {
             font-size: 20px;
             margin-bottom: 0px;
             padding-top: 30px;
         }
-        h6{
+
+        h6 {
             padding: 20px 0px;
             font-size: 16px;
             color: #096f37;
         }
-        .table-sec{
+
+        .table-sec {
             padding-top: 10px;
         }
-        th, td {
+
+        th,
+        td {
             padding: 14px 20px;
         }
     }
 }
 
 .footer .box-info .box-info-body {
-        border-left-color: transparent !important;
-            min-height: 115px;
+    border-left-color: transparent !important;
+    min-height: 115px;
 }
 
-.blog{
+.blog {
     display: none !important;
 }
-.holiay{
-        font-size: 13px;
+
+.holiay {
+    font-size: 13px;
     font-weight: 400;
 
+}
+
+.fcopy {
+    @media(min-width:767px) {
+        .left {
+            text-align: left !important;
+        }
+
+        .right {
+            text-align: right !important;
+        }
+    }
+
+    @media(max-width:766px) {
+        padding: 20px 0 10px 0 !important;
+
+        .ftex {
+            margin-bottom: 10px !important;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .footer .box-info .box-info-body {
+        padding: 20px 0 20px 0px !important;
+    }
+    .footer .box-info .box-info-icon {
+    padding: 20px 20px !important;
+    }
+}
+
+.product-card{
+    .price{
+        display: none;
+    }
 }

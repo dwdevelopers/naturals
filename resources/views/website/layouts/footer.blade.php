@@ -119,8 +119,11 @@
      <div class="fcopy">
          <div class="container">
              <div class="row">
-                 <div class="col-sm-12 col-md-12">
-                     <p class="ftex">&copy; 2025 NATURAL - All Rights Reserved</p>
+                 <div class="col-sm-12 col-md-6">
+                     <p class="ftex left">&copy; 2025 NATURAL - All Rights Reserved</p>
+                 </div>
+                 <div class="col-sm-12 col-md-6">
+                     <p class="ftex right">Designed & Developed by <a href="https://dawsonwalsh.com/" target="_blank" >DW</a></p>
                  </div>
              </div>
          </div>
