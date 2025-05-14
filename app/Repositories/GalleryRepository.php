@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Repositories;
 
 use App\Models\Gallery;
@@ -27,12 +26,14 @@ class GalleryRepository implements GalleryRepositoryInterface
     {
         $gallery = $this->create([
             'gallery_category_id' => $data['gallery_category_id'],
-            'title' => $data['title'],
-            'is_active' => $data['is_active'] === 'active',
+            'title'               => $data['title'],
+            'is_active'           => $data['is_active'], // Now directly pass 'active' or 'inactive'
         ]);
 
-        foreach ($imagePaths as $path) {
-            $gallery->images()->create(['image_path' => $path]);
+        if (! empty($imagePaths)) {
+            foreach ($imagePaths as $path) {
+                $gallery->images()->create(['image_path' => $path]);
+            }
         }
 
         return $gallery;
@@ -51,14 +52,13 @@ class GalleryRepository implements GalleryRepositoryInterface
 
         $gallery->update([
             'gallery_category_id' => $data['gallery_category_id'],
-            'title' => $data['title'],
-            'status' => $data['is_active'] === 'active',
+            'title'               => $data['title'],
+            'is_active'           => $data['is_active'], // Now directly pass 'active' or 'inactive'
         ]);
 
         // Delete old images
         $gallery->images()->delete();
 
-        // Add new images
         foreach ($imagePaths as $path) {
             $gallery->images()->create(['image_path' => $path]);
         }

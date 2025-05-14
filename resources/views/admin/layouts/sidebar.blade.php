@@ -161,6 +161,24 @@
                     </ul>
                 </div>
             </li>
+              <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#downloadLayouts" aria-expanded="false" aria-controls="downloadLayouts" class="side-nav-link">
+                    <i class="ri-layout-line"></i>
+                    <span> Downloads </span>
+                </a>
+                <div class="collapse" id="downloadLayouts">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('download-categories.index')}}">Category List</a>
+                        </li>
+                         <li>
+                            <a href="{{route('downloads.index')}}">Download List</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
         </ul>
         <!--- End Sidemenu -->
 

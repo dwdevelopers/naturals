@@ -1,17 +1,29 @@
 <?php
-
 namespace App\Http\Controllers;
 
+use App\Services\DownloadCategoryService;
+use App\Services\DownloadService;
 use Illuminate\Http\Request;
+use App\Models\DownloadCategory;
 
 class DownloadController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    protected $downloadService;
+    protected $downloadCategoryService;
+
+    public function __construct(DownloadService $downloadService, DownloadCategoryService $downloadCategoryService)
+    {
+
+        $this->downloadService         = $downloadService;
+        $this->downloadCategoryService = $downloadCategoryService;
+
+    }
     public function index()
     {
-        return view('website.download');
+        $downloads  = $this->downloadService->getAllDownloads();
+        $categories = DownloadCategory::all();
+
+        return view('website.download', compact('downloads', 'categories'));
     }
 
     /**

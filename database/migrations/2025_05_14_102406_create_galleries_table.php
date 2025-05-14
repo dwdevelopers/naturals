@@ -11,16 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('gallery_categories', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
-        });
         Schema::create('galleries', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->foreignId('gallery_category_id')->constrained()->onDelete('cascade');
-            $table->string('title')->nullable();
-            $table->boolean('is_active')->default(true);
+            $table->enum('is_active', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });
     }
@@ -31,6 +26,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('galleries');
-        Schema::dropIfExists('gallery_categories');
     }
 };

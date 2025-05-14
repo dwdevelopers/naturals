@@ -42,7 +42,7 @@
                             <div class="mb-3">
                                 <label class="form-label">Current Image</label><br>
                                 @foreach($gallery->images as $path)
-                                <img src="{{ asset($path->image_path) }}" width="150" alt="Current Image">
+                                <img src="{{ asset('storage/'.$path->image_path) }}" width="150" alt="Current Image">
                                 @endforeach
                             </div>
 
@@ -54,17 +54,17 @@
                                 </small>
                             </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">Status</label><br>
-                                <label class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="is_active" value="active" {{ $gallery->is_active ? 'checked' : '' }}>
-                                    Active
-                                </label>
-                                <label class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="is_active" value="inactive" {{ ! $gallery->is_active ? 'checked' : '' }}>
-                                    Inactive
-                                </label>
-                            </div>
+
+                            <label class="form-label">Status</label><br>
+                            <label class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="is_active" value="active" {{ $gallery->is_active === 'active' ? 'checked' : '' }}>
+                                Active
+                            </label>
+                            <label class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="is_active" value="inactive" {{ $gallery->is_active === 'inactive' ? 'checked' : '' }}>
+                                Inactive
+                            </label>
+
                             <button type="submit" class="btn btn-primary">Update</button>
                             <a href="{{ route('galleries.index') }}" class="btn btn-secondary">Back</a>
                         </form>

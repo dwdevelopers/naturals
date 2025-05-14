@@ -275,9 +275,11 @@
 <!--===================================== PRODUCT END =======================================-->
 
 <!--===================================== TESTIMONIAL START ==================================-->
-@if($testimonials && $testimonials->count())
-@include('website.testimonial')
-@endif
+{{-- @if($testimonials->count() > 0) --}}
+
+    @include('website.testimonial')
+{{-- @endif --}}
+
 {{-- <div class="section testimony" style="padding-top: 0;">
     <div class="container">
         <div class="row">

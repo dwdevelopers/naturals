@@ -10,7 +10,7 @@
 
     <!-- App favicon -->
     {{-- <link rel="shortcut icon" href="{assets/images/favicon.ico}"> --}}
-    <link href="{{ asset('website/assets/img/favicon.png')}}" rel="icon">
+    <link rel="shortcut icon" href="{{ asset('website/images/natural-favicon.png')}}">
     <!-- Fullcalendar css -->
     {{-- <link href="assets/vendor/fullcalendar/main.min.css" rel="stylesheet" type="text/css" /> --}}
     <link href="{{asset('theme/dist/assets/vendor/fullcalendar/main.min.css')}}" rel="stylesheet" type="text/css" />

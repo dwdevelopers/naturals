@@ -1,29 +1,28 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\HomeController as AdminHome;
-use App\Http\Controllers\Admin\TestimonialController;
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\Admin\AdminDownloadController;
+use App\Http\Controllers\Admin\AdminSubscriptionController;
 use App\Http\Controllers\Admin\ContactUsController;
+use App\Http\Controllers\Admin\DownloadCategoryController;
 use App\Http\Controllers\Admin\GalleryCategoryController;
 use App\Http\Controllers\Admin\GalleryController;
-use App\Http\Controllers\Admin\AdminSubscriptionController;
-
-use App\Http\Controllers\Admin\ProjectController;
-use App\Http\Controllers\Admin\ProjectActivitiesController;
+use App\Http\Controllers\Admin\HomeController as AdminHome;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductDetailsController;
+use App\Http\Controllers\Admin\ProjectActivitiesController;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ServiceController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AboutUsController;
-use App\Http\Controllers\ServicesController;
-use App\Http\Controllers\GalleryController as WebsiteGallery;
-use App\Http\Controllers\DownloadController;
-use App\Http\Controllers\SubscriptionController;
-use App\Http\Controllers\ContactUsController as WebsiteContactUs;
-use App\Http\Controllers\ProductController as WebsiteProduct;
-
+use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Auth\LoginController;
-use App\Models\Category;
+use App\Http\Controllers\ContactUsController as WebsiteContactUs;
+use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\GalleryController as WebsiteGallery;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController as WebsiteProduct;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\SubscriptionController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('login', [\App\Http\Controllers\Auth\LoginController::class, 'showUserLoginForm'])
     ->name('login');
@@ -48,10 +47,11 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('gallery-categories', GalleryCategoryController::class);
         Route::resource('galleries', GalleryController::class);
         Route::resource('subscriptions', AdminSubscriptionController::class);
+        Route::resource('downloads', AdminDownloadController::class);
+        Route::resource('download-categories', DownloadCategoryController::class);
     });
 
-
-Route::name('website.')->group(function(){
+Route::name('website.')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
@@ -67,9 +67,7 @@ Route::name('website.')->group(function(){
     Route::post('/contact', [WebsiteContactUs::class, 'store'])->name('contact.submit');
     Route::post('/subscription', [SubscriptionController::class, 'store'])->name('subscription.submit');
 
-
 });
 Auth::routes();
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-

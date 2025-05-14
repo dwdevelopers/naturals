@@ -21,6 +21,11 @@ use App\Repositories\GalleryCategoryRepositoryInterface;
 use App\Repositories\GalleryCategoryRepository;
 use App\Repositories\GalleryRepository;
 use App\Repositories\GalleryRepositoryInterface;
+use App\Repositories\DownloadRepository;
+use App\Repositories\DownloadRepositoryInterface;
+use App\Repositories\DownloadCategoryRepository;
+use App\Repositories\DownloadCategoryRepositoryInterface;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -38,6 +43,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(ServiceRepositoryInterface::class, ServiceRepository::class);
         $this->app->bind(GalleryCategoryRepositoryInterface::class, GalleryCategoryRepository::class);
         $this->app->bind(GalleryRepositoryInterface::class, GalleryRepository::class);
+        $this->app->bind(DownloadRepositoryInterface::class, DownloadRepository::class);
+        $this->app->bind(DownloadCategoryRepositoryInterface::class, DownloadCategoryRepository::class);
 
     }
 
