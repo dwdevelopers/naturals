@@ -10,19 +10,18 @@
 </div>
 <section class="download">
     <div class="container">
-        <h2></h2>
+        <h2>Downloads</h2>
 
+        @if ($downloads->isNotEmpty())
+        {{-- Tabs --}}
         <div class="tabs">
             <button class="tab active" data-filter="all">All</button>
-            {{-- <button class="tab" data-filter="Category 1">Category 1</button>
-            <button class="tab" data-filter="Category 2">Category 2</button> --}}
             @foreach ($categories as $category)
             <button class="tab" data-filter="{{ $category->name . $category->id }}">{{ $category->name }}</button>
             @endforeach
         </div>
-        {{-- <img src="{{ asset('website/images/nodata.gif')}}" alt="logo" height="300" width="300"> --}}
 
-
+        {{-- Download Items --}}
         <div class="media-grid brochure-grid">
             @foreach ($downloads as $download)
             <div class="brochure-card" data-category="{{ $download->category->name . $download->category->id }}">
@@ -32,43 +31,14 @@
                 </a>
             </div>
             @endforeach
-
         </div>
-        {{-- <div class="media-grid brochure-grid">
-            <div class="brochure-card" data-category="Category 1">
-                <h3>Ecoharvest Brochure</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-            <div class="brochure-card" data-category="Category 2">
-                <h3>Urban Farming Guide</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-            <div class="brochure-card" data-category="Category 1">
-                <h3>Organic Crop Report</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-            <div class="brochure-card" data-category="Category 2">
-                <h3>Sustainable Tips</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-            <div class="brochure-card" data-category="Category 1">
-                <h3>Sustainable Tips</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-            <div class="brochure-card" data-category="Category 2">
-                <h3>Sustainable Tips</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-            <div class="brochure-card" data-category="Category 1">
-                <h3>Sustainable Tips</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-            <div class="brochure-card" data-category="Category 2">
-                <h3>Sustainable Tips</h3>
-                <a href="#" class="btn">CLICK HERE</a>
-            </div>
-        </div> --}}
-
+        @else
+        {{-- No Downloads Available --}}
+        <div class="text-center mt-5">
+            <img src="{{ asset('website/images/nodata.gif') }}" alt="No Downloads" height="300" width="300">
+            {{-- <p class="mt-3">No downloads available at the moment.</p> --}}
+        </div>
+        @endif
     </div>
 </section>
 

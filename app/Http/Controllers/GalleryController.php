@@ -1,17 +1,26 @@
 <?php
-
 namespace App\Http\Controllers;
 
+use App\Services\GalleryCategoryService;
+use App\Services\GalleryService;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    protected $galleryService;
+    protected $galleryCategoryService;
+
+    public function __construct(GalleryService $galleryService, GalleryCategoryService $galleryCategoryService)
+    {
+        $this->galleryCategoryService = $galleryCategoryService;
+        $this->galleryService         = $galleryService;
+    }
     public function index()
     {
-        return view('website.gallery');
+        $galleries  = $this->galleryService->getAllGalleries()->where('is_active', 'active');
+        $categories = $this->galleryCategoryService->getAllCategories();
+
+        return view('website.gallery', compact('galleries', 'categories'));
     }
 
     /**

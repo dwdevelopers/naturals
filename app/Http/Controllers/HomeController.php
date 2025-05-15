@@ -41,6 +41,7 @@ class HomeController extends Controller
         $projects = $this->projectService->getAllProjects()->where('status', 'active');
         $products = $this->productService->getAllProducts();
         $testimonials = $this->testimonialService->getAllTestimonials()->where('status', 'approved');
+
         return view('website.home', compact('projects', 'products','testimonials'));
     }
     public function about(Request $request)

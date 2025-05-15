@@ -34,10 +34,9 @@ class GalleryRequest extends FormRequest
         }
 
         if ($this->isMethod('put') || $this->isMethod('patch')) {
-            $rules['image_path']   = 'nullable|array';
-            $rules['image_path.*'] = 'mimes:jpeg,jpg,png,gif,svg,webp|max:51200';
+            $rules['image_path']   = 'nullable';                                       // Optional, not required
+            $rules['image_path.*'] = 'file|mimes:jpeg,jpg,png,gif,svg,webp|max:51200'; // Only applies if files exist
         }
-
         return $rules;
 
     }

@@ -49,7 +49,7 @@ class GalleryController extends Controller
                     return e($row->title ?? '-');
                 })
                 ->addColumn('status', function ($row) {
-                    return $row->is_active=='active'
+                    return $row->is_active == 'active'
                     ? '<span class="badge bg-success">Active</span>'
                     : '<span class="badge bg-secondary">Inactive</span>';
                 })
@@ -98,6 +98,7 @@ class GalleryController extends Controller
 
     public function update(GalleryRequest $request, Gallery $gallery)
     {
+
         return $this->persistGallery($request, 'update', $gallery->id);
     }
 
@@ -127,14 +128,15 @@ class GalleryController extends Controller
 
     private function persistGallery(GalleryRequest $request, string $action, int $id = null)
     {
+
         DB::beginTransaction();
 
         try {
             $files = $request->file('image_path');
 
-            if (! $files || count($files) === 0) {
-                return redirect()->back()->withErrors('Please upload at least one image.');
-            }
+            // if (! $files || count($files) === 0) {
+            //     return redirect()->back()->withErrors('Please upload at least one image.');
+            // }
 
             $dest = public_path('storage/gallery');
             if (! is_dir($dest)) {
@@ -142,16 +144,17 @@ class GalleryController extends Controller
             }
 
             $imagePaths = [];
+            if (! empty($files)) {
+                foreach ($files as $key => $file) {
 
-            foreach ($files as $key => $file) {
+                    if ($file->getSize() > 10240 * 1024) {
+                        return redirect()->back()->withErrors('Each image must not exceed 10MB.');
+                    }
 
-                if ($file->getSize() > 10240 * 1024) {
-                    return redirect()->back()->withErrors('Each image must not exceed 10MB.');
+                    $filename = time() . '_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                    $file->move($dest, $filename);
+                    $imagePaths[] = 'gallery/' . $filename;
                 }
-
-                $filename = time() . '_' . uniqid() . '.' . $file->getClientOriginalExtension();
-                $file->move($dest, $filename);
-                $imagePaths[] = 'gallery/' . $filename;
             }
 
             $galleryData              = $request->validated();

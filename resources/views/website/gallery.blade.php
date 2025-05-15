@@ -8,33 +8,75 @@
     <div class="overlay"></div>
     <h3>Gallery</h3>
 </div>
+@php
+$hasMedia = false;
+
+if (!empty($galleries)) {
+foreach ($galleries as $gallery) {
+if (!empty($gallery->images) && count($gallery->images)) {
+$hasMedia = true;
+break;
+}
+}
+}
+@endphp
+
+
 <section class="gallery">
     <div class="container">
         <h2>The top photos, chosen by you</h2>
         <p>Discover what's trending according to photographers around the world.</p>
-
+        @if ($hasMedia)
+        {{-- Filter Tabs --}}
         <div class="tabs">
             <button class="tab active" data-filter="all">All</button>
-            <button class="tab" data-filter="photo">Photo</button>
-            <button class="tab" data-filter="video">Video</button>
+            @isset($categories)
+            @foreach ($categories as $category)
+            <button class="tab" data-filter="cat{{ $category->id }}">{{ $category->name }}</button>
+            @endforeach
+            @endisset
         </div>
-        <img src="{{ asset('website/images/nodata.gif')}}" alt="logo" height="300" width="300">
-        {{-- <div class="media-grid">
-			<div class="media-item photo"><img src="{{ asset('/website/images/img-01.jpg') }}" alt="">
-    </div>
-    <div class="media-item photo"><img src="{{ asset('/website/images/img-02.jpg') }}" alt=""></div>
-    <div class="media-item video span-2"><video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop controls></video></div>
-    <div class="media-item photo span-2"><img src="{{ asset('/website/images/img-04.jpg') }}" alt=""></div>
-    <div class="media-item photo"><img src="{{ asset('/website/images/img-05.jpg') }}" alt=""></div>
-    <div class="media-item photo"><img src="{{ asset('/website/images/img-06.jpg') }}" alt=""></div>
-    <div class="media-item photo"><img src="{{ asset('/website/images/img-06.jpg') }}" alt=""></div>
-    <div class="media-item video span-2"><video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop controls></video></div>
-    <div class="media-item photo"><img src="{{ asset('/website/images/img-01.jpg') }}" alt=""></div>
-    <div class="media-item photo span-2"><img src="{{ asset('/website/images/img-05.jpg') }}" alt=""></div>
-    <div class="media-item photo span-2"><img src="{{ asset('/website/images/img-04.jpg') }}" alt=""></div>
-    </div> --}}
+
+        {{-- Media Grid --}}
+        <div class="media-grid">
+            @foreach ($galleries as $gallery)
+            @php
+            $categoryClass = 'cat' . $gallery->gallery_category_id;
+            @endphp
+
+            @if (!empty($gallery->images))
+            @foreach ($gallery->images as $image)
+            @php
+            $mediaType = $image->type ?? 'photo';
+            $mediaPath = !empty($image->image_path) ? asset('storage/' . $image->image_path) : null;
+            @endphp
+
+            @if ($mediaPath)
+            <div class="media-item {{ $mediaType }} {{ $categoryClass }}">
+                @if ($mediaType === 'video')
+                <video src="{{ $mediaPath }}" autoplay muted loop controls></video>
+                @else
+                <img src="{{ $mediaPath }}" alt="Gallery Image">
+                @endif
+            </div>
+            @endif
+            @endforeach
+            @endif
+            @endforeach
+        </div>
+        @endif
+        @unless($hasMedia)
+        <div class="text-center mt-5">
+            <img src="{{ asset('website/images/nodata.gif')}}" alt="No Data" height="300" width="300">
+            {{-- <p class="mt-3">No media found.</p> --}}
+        </div>
+        @endunless
     </div>
 </section>
+
+
+
+
 <div class="modal" id="mediaModal">
     <div class="modal-content" id="modalContent">
         <span class="close-btn">&times;</span>
