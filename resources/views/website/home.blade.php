@@ -214,13 +214,12 @@
 
 <!--===================================== PRODUCT START =======================================-->
 @if($products->count()>0)
-<section class="product-section">
+<!-- <section class="product-section">
     <div class="container">
         <h2>Our Products</h2>
         <div class="product-grid">
             @foreach ($products as $product )
             <div class="product-card">
-                <!-- Dynamically display product image -->
                 <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
                 <h3>{{ $product->name }}</h3>
                 <p class="price">
@@ -241,7 +240,6 @@
                 <button>Contact on WhatsApp</button>
             </a>
         </div>
-        <!-- Repeat this card for each product -->
         <div class="product-card">
             <img src="{{ asset('website/images/product-img.png') }}" alt="product-image">
             <h3>Curry Leaves <br> Powder 250 gm</h3>
@@ -271,7 +269,7 @@
         <a href="{{route('website.product')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
     </div>
     </div>
-</section>
+</section> -->
 @endif
 <!--===================================== PRODUCT END =======================================-->
 

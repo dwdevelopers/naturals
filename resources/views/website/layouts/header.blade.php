@@ -43,15 +43,15 @@
                                 </ul> --}}
                             </li>
                             <li class="dropdown">
-                                <a href="{{route('website.product')}}"  role="button" aria-haspopup="true" aria-expanded="false">Product</a>
+                                <!-- <a href="{{route('website.product')}}"  role="button" aria-haspopup="true" aria-expanded="false">Product</a> -->
                                 {{-- <ul class="dropdown-menu">
                                     <li><a href="faq.html">Faq</a></li>
                                     <li><a href="pricing-table.html">Pricing Table</a></li>
                                     <li><a href="404page.html">404 Page</a></li>
                                 </ul> --}}
                             </li>
-                            <li><a href="{{route('website.gallery')}}">Gallery</a></li>
-                            <li><a href="{{route('website.downloads')}}">Downloads</a></li>
+                            <!-- <li><a href="{{route('website.gallery')}}">Gallery</a></li>
+                            <li><a href="{{route('website.downloads')}}">Downloads</a></li> -->
                             <li><a href="{{route('website.contactUs')}}">Contact</a></li>
                         </ul>
                     </nav>
