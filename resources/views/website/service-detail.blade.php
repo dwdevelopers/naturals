@@ -5,7 +5,7 @@
 @section('content')
 <div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
     <div class="overlay"></div>
-    <h3>Our Services</h3>
+    <h3>Our Projects</h3>
 </div>
 <section class="service-details ">
     <div class="container">

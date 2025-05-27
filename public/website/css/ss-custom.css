@@ -686,4 +686,14 @@ Global Transfers Area CSS
 }
 .product-card .price {
   display: none;
+}
+
+.vidimg img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service-details strong {
+  font-size: 17px;
 }/*# sourceMappingURL=ss-custom.css.map */

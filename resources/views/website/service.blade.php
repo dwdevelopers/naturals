@@ -6,11 +6,11 @@
 <!--===================================== SERVICE START =====================================-->
 <div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
     <div class="overlay"></div>
-    <h3>Our Services</h3>
+    <h3>Our Projects</h3>
 </div>
 <section class="agri-dhan-vikas service">
     <div class="container">
-        <h2 class="section-title">Agri Dhan Vikas</h2>
+        <!-- <h2 class="section-title">Agri Dhan Vikas</h2> -->
         <p class="pro_description">We promote sustainable agriculture, financial empowerment, and rural development by supporting
             farmers, advancing eco-friendly practices, and providing financial assistance. Our initiatives equip
             communities with the resources and opportunities needed for long-term growth, fostering a

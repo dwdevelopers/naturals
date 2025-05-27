@@ -29,13 +29,12 @@
 <!--===================================== BANNER END =============================================-->
 
 <!--===================================== WHY CHOOSE US START =====================================-->
-<div class="section feature bg-why">
+<!-- <div class="section feature bg-why">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12">
                 <div class="row col-0 overlap">
                     <div class="col-sm-4 col-md-4 border-right">
-                        <!-- BOX 1 -->
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-line-chart"></i></div>
                             <div class="body">
@@ -47,13 +46,11 @@
                                     <p>We offer secure and hassle-free
                                         gold loan services, exclusively for
                                         our registered members. </p>
-                                    <!-- <a href="#" class="read-more rm-1">Read More <span><i class="fa fa-angle-right"></i></span></a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4 border-right">
-                        <!-- BOX 2 -->
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-thumbs-o-up"></i></div>
                             <div class="body">
@@ -64,13 +61,11 @@
                                     <a href="services-detail.html" class="title">Merchant loan</a>
                                     <p>Introducing Merchant Loan – a
                                         flexible, short-term financing solution designed for our members. </p>
-                                    <!-- <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-4">
-                        <!-- BOX 3 -->
                         <div class="feature-box-8 style-2">
                             <div class="icon"><i class="fa fa-tachometer"></i></div>
                             <div class="body">
@@ -83,7 +78,6 @@
                                         for members, provides accessible
                                         credit to individuals engaged in
                                         similar economic activities. </p>
-                                    <!-- <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a> -->
                                 </div>
                             </div>
                         </div>
@@ -92,13 +86,13 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--===================================== WHY CHOOSE US END =====================================-->
 
 <!--===================================== AGRI DHAN VIKAS START ==================================-->
 <section class="agri-dhan-vikas">
     <div class="container">
-        <h2 class="section-title">Agri Dhan Vikas</h2>
+        <!-- <h2 class="section-title">Agri Dhan Vikas</h2> -->
         <div class="cards-grid">
             @foreach ($projects as $project)
             <div class="card" style="background-image: url('{{ asset('storage/' . $project->image) }}');">
@@ -171,7 +165,7 @@
 <!--===================================== AGRI DHAN VIKAS END ====================================-->
 
 <!--===================================== MEMBERSHIP START ======================================-->
-<section class="membership-section">
+<section class="membership-section" id="memberForm">
     <div class="membership-left">
         <img src="{{ asset('website/images/icons-01.svg') }}" alt="Icon">
         <div class="membership-text">

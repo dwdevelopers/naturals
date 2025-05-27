@@ -70,7 +70,7 @@
 
             </div>
             <div class="col-sm-6 col-md-6">
-                <div class="content">
+                <div class="content" id="contactForm">
                <form action="{{ route('website.contact.submit') }}" method="POST">
 
                         @csrf
