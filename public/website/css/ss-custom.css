@@ -575,6 +575,7 @@ Global Transfers Area CSS
 .service .pro_description {
   padding-top: 20px;
   padding-bottom: 30px;
+  margin-bottom: -80px;
 }
 @media (min-width: 992px) {
   .service .pro_description {
