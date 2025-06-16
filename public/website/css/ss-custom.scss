@@ -238,8 +238,9 @@ Global Transfers Area CSS
         align-items: center;
         border-left: none;
         padding-right: 30px;
+
         @media(min-width:767px) {
-        justify-content: space-between;
+            justify-content: space-between;
         }
 
         .box-info-body {
@@ -677,11 +678,17 @@ Global Transfers Area CSS
 .agri-dhan-vikas {
     padding: 60px 0px 100px 0px;
     background-color: #f7f8f9 !important;
+      @media(max-width:575px) {
+                padding-bottom: 50px;
+         }
 
     .section-title {
         color: #222222 !important;
         margin-bottom: 10px;
         font-size: 46px;
+         @media(max-width:575px) {
+                font-size: 34px;
+         }
     }
 
     .subtitle {
@@ -932,6 +939,9 @@ Global Transfers Area CSS
         font-size: 46px;
         font-weight: 500;
         color: #222222;
+          @media(max-width:575px) {
+                font-size: 34px;
+         }
     }
 
     .vidimg {
@@ -940,13 +950,20 @@ Global Transfers Area CSS
         img {
             height: 340px;
             width: 80%;
+
+            @media(max-width:575px) {
+                height: 220px;
+                width: 100%;
+            }
         }
     }
+
     @media(max-width:766px) {
         .dv-center {
             flex-direction: column;
         }
-        .reset-section-heading{
+
+        .reset-section-heading {
             padding-top: 60px;
         }
     }
@@ -978,8 +995,9 @@ Global Transfers Area CSS
             font-family: "Zooja Light Pro" !important;
             font-size: 40px;
             font-weight: 100;
+
             @media(max-width:766px) {
-                    font-size: 30px;
+                font-size: 30px;
             }
         }
     }
@@ -1011,6 +1029,9 @@ Global Transfers Area CSS
         color: #222222 !important;
         font-weight: 500;
         font-size: 46px;
+          @media(max-width:575px) {
+                font-size: 34px;
+         }
     }
 }
 

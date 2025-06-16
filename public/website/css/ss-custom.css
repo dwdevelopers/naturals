@@ -587,10 +587,20 @@ Global Transfers Area CSS
   padding: 60px 0px 100px 0px;
   background-color: #f7f8f9 !important;
 }
+@media (max-width: 575px) {
+  .agri-dhan-vikas {
+    padding-bottom: 50px;
+  }
+}
 .agri-dhan-vikas .section-title {
   color: #222222 !important;
   margin-bottom: 10px;
   font-size: 46px;
+}
+@media (max-width: 575px) {
+  .agri-dhan-vikas .section-title {
+    font-size: 34px;
+  }
 }
 .agri-dhan-vikas .subtitle {
   text-align: center;
@@ -815,12 +825,23 @@ Global Transfers Area CSS
   font-weight: 500;
   color: #222222;
 }
+@media (max-width: 575px) {
+  .home-about h1 {
+    font-size: 34px;
+  }
+}
 .home-about .vidimg {
   border-radius: 0;
 }
 .home-about .vidimg img {
   height: 340px;
   width: 80%;
+}
+@media (max-width: 575px) {
+  .home-about .vidimg img {
+    height: 220px;
+    width: 100%;
+  }
 }
 @media (max-width: 766px) {
   .home-about .dv-center {
@@ -886,6 +907,11 @@ Global Transfers Area CSS
   color: #222222 !important;
   font-weight: 500;
   font-size: 46px;
+}
+@media (max-width: 575px) {
+  .home-expore .section-title {
+    font-size: 34px;
+  }
 }
 
 .pt-40 {
