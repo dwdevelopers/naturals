@@ -8,17 +8,18 @@
     <div class="overlay"></div>
     <h3>Our Projects</h3>
 </div>
-<section class="agri-dhan-vikas service">
+<section class="agri-dhan-vikas service" style="margin-top: -50px;">
     <div class="container">
         <!-- <h2 class="section-title">Agri Dhan Vikas</h2> -->
         <p class="pro_description">We promote sustainable agriculture, financial empowerment, and rural development by supporting
             farmers, advancing eco-friendly practices, and providing financial assistance. Our initiatives equip
             communities with the resources and opportunities needed for long-term growth, fostering a
             self-reliant and prosperous agricultural ecosystem. </p>
-        <div class="cards-grid">
+        <div class="cards-grid" style="    padding-top: 120px;">
             <!-- CARD 1 -->
             @foreach ($projects as $project)
             <div class="card" style="background-image: url('{{ asset('storage/' . $project->image) }}');">
+                  <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>{{ $project->name }}</h3>
                     <p>{{ $project->description }}</p>
