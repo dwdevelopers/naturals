@@ -212,8 +212,12 @@ Global Transfers Area CSS
   display: flex;
   align-items: center;
   border-left: none;
-  justify-content: space-between;
   padding-right: 30px;
+}
+@media (min-width: 767px) {
+  .footer .box-info {
+    justify-content: space-between;
+  }
 }
 .footer .box-info .box-info-body {
   padding: 6px 0 6px 8px;
@@ -818,6 +822,14 @@ Global Transfers Area CSS
   height: 340px;
   width: 80%;
 }
+@media (max-width: 766px) {
+  .home-about .dv-center {
+    flex-direction: column;
+  }
+  .home-about .reset-section-heading {
+    padding-top: 60px;
+  }
+}
 
 .dv-center {
   display: flex;
@@ -844,6 +856,11 @@ Global Transfers Area CSS
   font-family: "Zooja Light Pro" !important;
   font-size: 40px;
   font-weight: 100;
+}
+@media (max-width: 766px) {
+  .home-expore .carousel-caption h3 {
+    font-size: 30px;
+  }
 }
 .home-expore .carousel-control {
   width: 30px;
@@ -908,4 +925,18 @@ Global Transfers Area CSS
 .membership-left-img {
   position: absolute;
   top: -149px;
+}
+
+@media (max-width: 766px) {
+  .membership-section .membership-left-img {
+    display: none;
+  }
+  .membership-section .dv-center {
+    flex-direction: column;
+  }
+  .membership-section .mob-100 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=ss-custom.css.map */

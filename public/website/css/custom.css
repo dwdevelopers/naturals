@@ -155,6 +155,12 @@ h3 {
   font-weight: 400;
   font-size: 60px;
 }
+@media (max-width: 766px) {
+  .banner .caption-heading {
+    max-width: 330px;
+    font-size: 40px;
+  }
+}
 .banner .wrap-caption {
   padding-top: 0 !important;
   display: flex;
@@ -238,7 +244,7 @@ h3 {
 }
 .agri-dhan-vikas .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding-top: 30px;
 }
@@ -247,9 +253,13 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   .agri-dhan-vikas .cards-grid {
     grid-template-columns: 1fr;
+  }
+  .agri-dhan-vikas .cards-grid .card-content {
+    margin-top: 320px;
+    padding-bottom: 20px;
   }
 }
 .agri-dhan-vikas .cards-grid .card {
@@ -289,6 +299,10 @@ h3 {
   line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 0;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
 }
 .agri-dhan-vikas .cards-grid .card .card-content .read-more {
   color: var(--black);

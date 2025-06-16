@@ -435,7 +435,7 @@
             </p>
         </div>
         </div>
-        <div class="col-sm-4 col-md-4">
+        <div class="col-sm-4 col-md-4 mob-100">
               <div class="membership-right">
         <h4>Get in Touch</h4>
         <h2>Contact with us</h2>

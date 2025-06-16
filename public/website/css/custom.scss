@@ -217,7 +217,8 @@ h3 {
 .banner {
   // height: calc(100vh - 140px) !important;
   position: relative;
-    .overlay {
+
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -233,6 +234,11 @@ h3 {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 60px;
+
+    @media(max-width:766px) {
+      max-width: 330px;
+      font-size: 40px;
+    }
   }
 
 
@@ -243,7 +249,8 @@ h3 {
     align-items: center;
     height: calc(100vh - 140px) !important;
   }
-  .banner-img{
+
+  .banner-img {
     object-position: center;
   }
 }
@@ -345,7 +352,7 @@ h3 {
 
   .cards-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     padding-top: 30px;
 
@@ -353,8 +360,13 @@ h3 {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 575px) {
       grid-template-columns: 1fr;
+
+      .card-content {
+        margin-top: 320px;
+        padding-bottom: 20px;
+      }
     }
 
     .card {
@@ -363,9 +375,9 @@ h3 {
       justify-content: space-between;
       background-repeat: no-repeat;
       background-size: cover;
-       background-position: top;
-    padding: 30px 25px;
-    min-height: 460px;
+      background-position: top;
+      padding: 30px 25px;
+      min-height: 460px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -396,6 +408,10 @@ h3 {
           line-height: 1.6;
           margin-bottom: 20px;
           flex-grow: 0;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+          overflow: hidden;
         }
 
         .read-more {

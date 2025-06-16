@@ -237,8 +237,10 @@ Global Transfers Area CSS
         display: flex;
         align-items: center;
         border-left: none;
-        justify-content: space-between;
         padding-right: 30px;
+        @media(min-width:767px) {
+        justify-content: space-between;
+        }
 
         .box-info-body {
             padding: 6px 0 6px 8px;
@@ -940,6 +942,14 @@ Global Transfers Area CSS
             width: 80%;
         }
     }
+    @media(max-width:766px) {
+        .dv-center {
+            flex-direction: column;
+        }
+        .reset-section-heading{
+            padding-top: 60px;
+        }
+    }
 }
 
 .dv-center {
@@ -968,6 +978,9 @@ Global Transfers Area CSS
             font-family: "Zooja Light Pro" !important;
             font-size: 40px;
             font-weight: 100;
+            @media(max-width:766px) {
+                    font-size: 30px;
+            }
         }
     }
 
@@ -1008,32 +1021,54 @@ Global Transfers Area CSS
 .footer .footer-item .footer-sosmed a .item {
     color: #fffefe;
 }
+
 .footer .footer-item .footer-subscribe input[type=email] {
     background-color: #abd8b0;
     padding-left: 50px;
     border-radius: 20px;
 
 }
-.footer .footer-item .footer-subscribe label{
+
+.footer .footer-item .footer-subscribe label {
     background-color: #abd8b0;
     left: 0;
-        background-color: #abd8b0;
-        top: 1px;
+    background-color: #abd8b0;
+    top: 1px;
     left: 0;
-  width: 36px;
+    width: 36px;
     height: 36px;
     border: 1px solid #fff;
     border-radius: 50px;
-    img{
+
+    img {
         width: 20px;
         height: 20px;
     }
 }
-.footer .footer-item .footer-subscribe input[type=email]:focus  {
+
+.footer .footer-item .footer-subscribe input[type=email]:focus {
     border-radius: 20px !important;
 }
 
-.membership-left-img{
+.membership-left-img {
     position: absolute;
-        top: -149px;
+    top: -149px;
+}
+
+@media(max-width:766px) {
+    .membership-section {
+        .membership-left-img {
+            display: none;
+        }
+
+        .dv-center {
+            flex-direction: column;
+        }
+
+        .mob-100 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
