@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -35,11 +36,11 @@
 	=============================================== -->
     <link rel="stylesheet" type="text/css" href="{{ asset('website/css/style.css')}}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('website/css/custom.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('website/css/ss-custom.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('website/css/custom.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('website/css/ss-custom.css')}}" />
 
     <script type="text/javascript" src="{{ asset('website/js/vendor/modernizr.min.js')}}"></script>
-
+<link href="https://db.onlinewebfonts.com/c/0a4a5e68b7929fb9a01c2b5533f79641?family=Zooja+Light+Pro" rel="stylesheet">
 </head>
 
 <body>
@@ -78,6 +79,26 @@
 
     <script type="text/javascript" src="{{ asset('website/js/script.js')}}"></script>
 
+    <script>
+        const dots = document.querySelectorAll('.dot');
+        const slides = document.querySelectorAll('.slides-container li');
 
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const slideIndex = dot.getAttribute('data-slide');
+
+                // Hide all slides
+                slides.forEach(slide => slide.style.display = 'none');
+
+                // Show the selected slide
+                slides[slideIndex].style.display = 'block';
+
+                // Update active class on dots
+                dots.forEach(d => d.classList.remove('active'));
+                dot.classList.add('active');
+            });
+        });
+    </script>
 </body>
+
 </html>

@@ -5,7 +5,7 @@
 @section('content')
 
 <!--===================================== BANNER START =============================================-->
-<div id="slides" class="section banner">
+<!-- <div id="slides" class="section banner">
     <section class="hero-banner">
         <video src="{{ asset('website/videos/naturals-banner.mp4') }}" autoplay muted loop playsinline class="bg-video"></video>
         <div class="overlay"></div>
@@ -25,8 +25,156 @@
             </a>
         </div>
     </nav>
+</div> -->
+
+<div id="slides" class="section banner">
+    <ul class="slides-container">
+        <li>
+            <img src="{{ asset('website/images/banner-01.jpg') }} " class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+                    <h2 class="caption-heading">
+                        Rooted in Nature. Growing with Purpose.
+                    </h2>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/banner-02.jpg') }}" alt="" class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+                    <h2 class="caption-heading">
+                        From Our Fields to Your Family.
+                    </h2>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/banner-03.jpg') }}" alt="" class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+
+                    <h2 class="caption-heading">
+                        Nourish the Soil. Nurture the Future.
+                    </h2>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/banner-04.jpg') }}" alt="" class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+
+                    <h2 class="caption-heading">
+                        Together, We Cultivate Prosperity.
+                    </h2>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/banner-05.jpg') }}" alt="" class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+
+                    <h2 class="caption-heading">
+                        Where Women Lead, Growth Follows.
+                    </h2>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/banner-06.jpg') }}" alt="" class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+
+                    <h2 class="caption-heading">
+                        Travel Rooted in Culture. Stay Close to Nature.
+                    </h2>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/banner-07.jpg') }}" alt="" class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+
+                    <h2 class="caption-heading">
+                        Learn. Lead. Thrive.
+                    </h2>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ asset('website/images/banner-08.jpg') }}" alt="" class="banner-img">
+            <div class="overlay-bg"></div>
+            <div class="container">
+                <div class="wrap-caption ">
+
+                    <h2 class="caption-heading">
+                        Finance That Grows With You.
+                    </h2>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+    <!-- <nav class="slides-navigation">
+        <div class="container">
+            <a href="#" class="next">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+            <a href="#" class="prev">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+        </div>
+    </nav> -->
+
+    <div class="slides-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <!-- Add as many as needed based on number of <li> slides -->
+    </div>
+
 </div>
 <!--===================================== BANNER END =============================================-->
+<!--===================================== About Start =============================================-->
+<div class="container pt-80 home-about">
+    <div class="row dv-center">
+        <div class="col-sm-6 col-md-6">
+            <div class="vidimg">
+
+                <img src="{{ asset('website/images/about.jpg') }}" alt="Icon" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+
+            <!-- <h2 class="section-heading">
+                    ABOUT US
+                </h2> -->
+            <h1 class="jumbolead reset-section-heading">About us</h1>
+            <p>Natural Agro & Tourism Marketing Multi-State Co-operative Society Ltd, registered
+                under the Ministry of Co-operation, Government of India, is committed to
+                transforming the agricultural sector through innovation, sustainability, and farmer
+                empowerment. We provide farmers with essential training, financial assistance,
+                and access to modern agricultural resources while promoting eco-friendly farming
+                practices that enhance productivity and long-term food security.</p>
+            <a href="{{route('website.aboutus')}}" class="btn know-more-btn"> Know More</a>
+
+        </div>
+
+
+    </div>
+</div>
+<!--===================================== About END =============================================-->
 
 <!--===================================== WHY CHOOSE US START =====================================-->
 <!-- <div class="section feature bg-why">
@@ -92,10 +240,12 @@
 <!--===================================== AGRI DHAN VIKAS START ==================================-->
 <section class="agri-dhan-vikas">
     <div class="container">
-        <!-- <h2 class="section-title">Agri Dhan Vikas</h2> -->
+        <h2 class="section-title">Products & Services</h2>
+        <p class="subtitle">Empowering Agriculture. Enriching Lives.</p>
         <div class="cards-grid">
             @foreach ($projects as $project)
             <div class="card" style="background-image: url('{{ asset('storage/' . $project->image) }}');">
+                <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>{{ $project->name }}</h3>
                     <p>{{ $project->description }}</p>
@@ -163,11 +313,73 @@
     </div>
 </section>
 <!--===================================== AGRI DHAN VIKAS END ====================================-->
+<!--=====================================Bharat Darshan Starts ====================================-->
+
+<div class="container pt-40 home-expore">
+    <div class="row ">
+        <h2 class="section-title">Bharat Darshan</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators / Pagination Dots -->
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="{{ asset('website/images/tour -01.jpg') }}" alt="Slide 1">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption">
+                        <h3>Explore India. Connect with Its Roots.</h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="{{ asset('website/images/tour -02.jpg') }}" alt="Slide 2">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption">
+                        <h3>Explore India. Connect with Its Roots.</h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="{{ asset('website/images/tour -03.jpg') }}" alt="Slide 3">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption">
+                        <h3>Explore India. Connect with Its Roots.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('website/images/tour -04.jpg') }}" alt="Slide 3">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption">
+                        <h3>Explore India. Connect with Its Roots.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls (Arrows) -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--===================================== Bharat Darshan END ====================================-->
 
 <!--===================================== MEMBERSHIP START ======================================-->
-<section class="membership-section" id="memberForm">
+<!-- <section class="membership-section" id="memberForm">
     <div class="membership-left">
-        <img src="{{ asset('website/images/icons-01.svg') }}" alt="Icon">
+        <img src="{{ asset('website/images/card.png') }}" alt="Icon">
         <div class="membership-text">
             <h2>Membership</h2>
             <p>
@@ -203,6 +415,59 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+</section> -->
+
+
+
+<section class="membership-section" id="memberForm">
+    <div class="container">
+    <div class="row dv-center">
+        <div class="col-sm-4 col-md-4">
+            <div class="membership-left-img">
+                <img src="{{ asset('website/images/card.png') }}" alt="Icon">
+                </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+              <div class="membership-text">
+            <h2>Membership</h2>
+            <p>
+                Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
+            </p>
+        </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+              <div class="membership-right">
+        <h4>Get in Touch</h4>
+        <h2>Contact with us</h2>
+        <form action="{{ route('website.contact.submit') }}" method="POST" class="contact-form">
+            @csrf
+            <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required />
+            @error('name')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required />
+            @error('email')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <input type="tel" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
+            @error('phone')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
+            @error('message')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+        </div>
+    </div>
+
+   </div>
 </section>
 <!--===================================== MEMBERSHIP END ======================================-->
 
@@ -270,7 +535,7 @@
 <!--===================================== TESTIMONIAL START ==================================-->
 {{-- @if($testimonials->count() > 0) --}}
 
-    @include('website.testimonial')
+@include('website.testimonial')
 {{-- @endif --}}
 
 
@@ -369,14 +634,14 @@
 <script src="{{ asset('website/js/vendor/jquery.min.js') }}"></script>
 
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         const testimonialCount = $('#owl-testimony .item').length;
         $('#owl-testimony').owlCarousel({
             items: 1,
-            loop: testimonialCount > 1,   // ✅ Prevent error if only one
+            loop: testimonialCount > 1, // ✅ Prevent error if only one
             autoplay: testimonialCount > 1,
-             nav: false,            // ❌ Hide arrows
-    dots: testimonialCount > 1,
+            nav: false, // ❌ Hide arrows
+            dots: testimonialCount > 1,
             margin: 10
         });
     });

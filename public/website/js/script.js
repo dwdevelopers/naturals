@@ -34,6 +34,7 @@ $(document).ready(function(){
 		pagination: true,
 		hashchange: false,
 		scrollable: true,
+		  dots: true,
 		
 	});
 

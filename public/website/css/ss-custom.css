@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/0a4a5e68b7929fb9a01c2b5533f79641?family=Zooja+Light+Pro);
 @media (min-width: 767px) {
   .df-center {
     display: flex;
@@ -202,13 +203,44 @@ Global Transfers Area CSS
 }
 
 .footer {
-  background-color: #096f37 !important;
+  background-color: #092e39 !important;
 }
 .footer .box-info {
-  border-bottom: 3px solid #81c55d;
+  border-bottom: 1px solid #81c55d;
+  border: 1px solid #81c55d;
+  border-radius: 70px;
+  display: flex;
+  align-items: center;
+  border-left: none;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.footer .box-info .box-info-body {
+  padding: 6px 0 6px 8px;
+}
+.footer .box-info .box-info-body h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer .box-info .box-info-body .holiay {
+  font-size: 10px;
 }
 .footer .box-info .box-info-icon {
+  padding: 0px 0px;
+}
+.footer .box-info .box-info-icon img {
+  width: 30px;
+  height: 30px;
+}
+.footer .box-info .icon-wrapper {
   color: #81c55d;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #81c55d;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer .box-info:hover {
   background-color: transparent !important;
@@ -223,20 +255,28 @@ Global Transfers Area CSS
   color: #ffffff;
 }
 .footer .fcopy {
-  background-color: #81c55d;
+  background-color: #0b8c47;
   color: #000;
   text-align: center;
+}
+.footer .fcopy p {
+  color: #78c157;
 }
 .footer .footer-item .logo-bottom {
   width: 140px;
 }
 .footer .footer-item h6 {
-  color: #c3efab;
+  color: #7cc55d;
   padding-bottom: 5px;
   font-size: 18px;
 }
 .footer .footer-item .footer-sosmed {
   margin-top: 30px;
+}
+
+.footer .footer-item .footer-title {
+  color: #7cc55d;
+  text-transform: capitalize;
 }
 
 .bg-grey {
@@ -338,14 +378,12 @@ Global Transfers Area CSS
   }
 }
 
-.agri-dhan-vikas .section-title,
 .product-section .container h2,
 .gallery .container h2 {
   color: #7fc55d !important;
   font-size: 54px !important;
 }
 @media (max-width: 600px) {
-  .agri-dhan-vikas .section-title,
   .product-section .container h2,
   .gallery .container h2 {
     font-size: 36px !important;
@@ -542,7 +580,18 @@ Global Transfers Area CSS
 }
 
 .agri-dhan-vikas {
-  padding: 0px 0px 100px 0px;
+  padding: 60px 0px 100px 0px;
+  background-color: #f7f8f9 !important;
+}
+.agri-dhan-vikas .section-title {
+  color: #222222 !important;
+  margin-bottom: 10px;
+  font-size: 46px;
+}
+.agri-dhan-vikas .subtitle {
+  text-align: center;
+  color: #757678;
+  font-size: 16px;
 }
 
 .product-section {
@@ -648,7 +697,6 @@ Global Transfers Area CSS
 
 .footer .box-info .box-info-body {
   border-left-color: transparent !important;
-  min-height: 115px;
 }
 
 .blog {
@@ -697,4 +745,167 @@ Global Transfers Area CSS
 
 .service-details strong {
   font-size: 17px;
+}
+
+.slides-pagination {
+  position: absolute;
+  bottom: 30px;
+  z-index: 9;
+  width: 100%;
+  text-align: center;
+}
+
+.slides-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slides-dots .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slides-dots .dot.active {
+  background: #333;
+}
+
+.slides-pagination a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  /* Makes it a circle */
+  text-indent: -9999px;
+  /* Hides the number */
+  overflow: hidden;
+}
+
+.slides-pagination a.current {
+  background-color: #009144;
+  /* Active dot color */
+}
+
+.pt-80 {
+  padding-top: 80px !important;
+}
+
+.know-more-btn {
+  color: #2c7f3c;
+  border: 1px solid #2c7f3c;
+  padding: 3px 14px;
+  border-radius: 5px;
+}
+
+.home-about {
+  padding-bottom: 80px;
+}
+.home-about h1 {
+  font-size: 46px;
+  font-weight: 500;
+  color: #222222;
+}
+.home-about .vidimg {
+  border-radius: 0;
+}
+.home-about .vidimg img {
+  height: 340px;
+  width: 80%;
+}
+
+.dv-center {
+  display: flex;
+  align-items: center;
+}
+
+.home-expore {
+  padding-bottom: 80px;
+  position: relative;
+}
+.home-expore .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.37);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-expore .carousel-caption {
+  top: 50%;
+  margin-top: -55px;
+}
+.home-expore .carousel-caption h3 {
+  font-family: "Zooja Light Pro" !important;
+  font-size: 40px;
+  font-weight: 100;
+}
+.home-expore .carousel-control {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-image: none;
+  top: 50%;
+  margin-top: -15px;
+}
+.home-expore .right {
+  right: 30px;
+}
+.home-expore .left {
+  left: 30px;
+}
+.home-expore .section-title {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #222222 !important;
+  font-weight: 500;
+  font-size: 46px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.footer .footer-item .footer-sosmed a .item {
+  color: #fffefe;
+}
+
+.footer .footer-item .footer-subscribe input[type=email] {
+  background-color: #abd8b0;
+  padding-left: 50px;
+  border-radius: 20px;
+}
+
+.footer .footer-item .footer-subscribe label {
+  background-color: #abd8b0;
+  left: 0;
+  background-color: #abd8b0;
+  top: 1px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+.footer .footer-item .footer-subscribe label img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .footer-item .footer-subscribe input[type=email]:focus {
+  border-radius: 20px !important;
+}
+
+.membership-left-img {
+  position: absolute;
+  top: -149px;
 }/*# sourceMappingURL=ss-custom.css.map */

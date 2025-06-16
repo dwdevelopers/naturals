@@ -214,9 +214,43 @@ h3 {
   }
 }
 
-.slides-navigation {
-  display: none;
+.banner {
+  // height: calc(100vh - 140px) !important;
+  position: relative;
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); // Optional: for slight dark overlay
+    z-index: 1;
+  }
+
+  .caption-heading {
+    color: #fff;
+    max-width: 440px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+  }
+
+
+  .wrap-caption {
+    padding-top: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px) !important;
+  }
+  .banner-img{
+    object-position: center;
+  }
 }
+
+// .slides-navigation {
+//   display: none;
+// }
 
 //========================== BANNER END =====================================
 
@@ -313,7 +347,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding-top: 100px;
+    padding-top: 30px;
 
     @media (max-width: 992px) {
       grid-template-columns: repeat(2, 1fr);
@@ -329,9 +363,9 @@ h3 {
       justify-content: space-between;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: bottom center;
-      padding: 30px 25px;
-      min-height: 570px;
+       background-position: top;
+    padding: 30px 25px;
+    min-height: 460px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -401,7 +435,7 @@ h3 {
   flex-wrap: wrap;
   background-color: var(--green);
   color: var(--white);
-  padding: 60px 20px;
+  padding: 40px 20px;
   gap: 40px;
   justify-content: center;
   align-items: flex-start;

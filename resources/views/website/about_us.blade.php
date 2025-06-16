@@ -18,8 +18,8 @@
                 <h1 class="jumbolead reset-section-heading">Empowering Agriculture. Enriching Lives.</h1>
                 <p>Natural Agro & Tourism Marketing Multi-State Cooperative Society Ltd is a legally registered entity under the Ministry of Cooperation, Government of India, dedicated to revolutionizing India’s agricultural landscape. We envision a future where farming is not just sustainable but also economically viable, socially empowering, and environmentally responsible.</p>
                 <p>Our core mission is to transform rural communities by building a self-sustaining agricultural ecosystem. We provide farmers with comprehensive support—ranging from advanced training and modern agricultural inputs to innovative marketing solutions and financial assistance. By fostering knowledge and equipping agricultural workers with the right tools and resources, we aim to elevate both productivity and profitability across the sector.</p>
-           <p>At Natural, we go beyond traditional cooperative models. We integrate time-honored farming wisdom with cutting-edge practices to promote eco-conscious agriculture, ensuring long-term food security and climate resilience. Our initiatives also span across allied sectors, including organic FMCG production, agri-tourism, micro-enterprise development, and women-led entrepreneurship, thereby stimulating inclusive rural development and job creation.</p>
-           <p>We stand for innovation with purpose, sustainability with scale, and growth with equity. Natural is more than an organization—it is a movement towards a thriving, empowered rural India rooted in cooperation, community, and care for the environment.</p>
+                <p>At Natural, we go beyond traditional cooperative models. We integrate time-honored farming wisdom with cutting-edge practices to promote eco-conscious agriculture, ensuring long-term food security and climate resilience. Our initiatives also span across allied sectors, including organic FMCG production, agri-tourism, micro-enterprise development, and women-led entrepreneurship, thereby stimulating inclusive rural development and job creation.</p>
+                <p>We stand for innovation with purpose, sustainability with scale, and growth with equity. Natural is more than an organization—it is a movement towards a thriving, empowered rural India rooted in cooperation, community, and care for the environment.</p>
             </div>
             <div class="col-sm-6 col-md-6">
                 <div class="vidimg">
@@ -81,8 +81,8 @@
     <!--===================================== TESTIMONIAL START ==================================-->
     @if($testimonials && $testimonials->count())
 
-   @include('website.testimonial')
-   @endif
+    @include('website.testimonial')
+    @endif
     {{-- <div class="section testimony" style="padding-top: 0;">
         <div class="container">
             <div class="row">
@@ -92,57 +92,57 @@
                             <div class="testimonial-1">
                                 <div class="media">
                                     <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                                </div>
-                                <div class="body">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                    <div class="title">Gael story</div>
-                                    <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-1">
-                                <div class="media">
-                                    <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                                </div>
-                                <div class="body">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                    <div class="title">Dedo</div>
-                                    <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-1">
-                                <div class="media">
-                                    <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                                </div>
-                                <div class="body">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                    <div class="title">Maggy</div>
-                                    <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-1">
-                                <div class="media">
-                                    <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-                                </div>
-                                <div class="body">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-                                    <div class="company">Gaspol ltd</div>
-                                    <div class="title">Robert Lav</div>
-                                    <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</div>
+<div class="body">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+    <div class="title">Gael story</div>
+    <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+</div>
+</div>
+</div>
+<div class="item">
+    <div class="testimonial-1">
+        <div class="media">
+            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
         </div>
-    </div> --}}
-    <!--===================================== TESTIMONIAL END ==================================-->
+        <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+            <div class="title">Dedo</div>
+            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="testimonial-1">
+        <div class="media">
+            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+        </div>
+        <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+            <div class="title">Maggy</div>
+            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="testimonial-1">
+        <div class="media">
+            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
+        </div>
+        <div class="body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
+            <div class="company">Gaspol ltd</div>
+            <div class="title">Robert Lav</div>
+            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> --}}
+<!--===================================== TESTIMONIAL END ==================================-->
 
 </div>
 
