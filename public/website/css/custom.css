@@ -262,6 +262,15 @@ h3 {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 400px) {
+  .agri-dhan-vikas .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .agri-dhan-vikas .cards-grid .card-content {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+}
 .agri-dhan-vikas .cards-grid .card {
   display: flex;
   flex-direction: column;
