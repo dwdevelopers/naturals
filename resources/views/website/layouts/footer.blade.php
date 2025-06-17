@@ -5,10 +5,10 @@
                  <div class="col-sm-4 col-md-4">
                      <div class="box-info">
                          <div class="box-info-icon">
-                            <div class="icon-wrapper">
-                            <img src="{{ asset('website/images/profile.svg') }}" alt="logo bottom" class="logo-bottom" />
-                        </div>
-                        </div>
+                             <div class="icon-wrapper">
+                                 <img src="{{ asset('website/images/profile.svg') }}" alt="logo bottom" class="logo-bottom" />
+                             </div>
+                         </div>
                          <div class="box-info-body">
                              <p>Have a question? call us now</p>
                              <h4>+91 70128 29663</h4>
@@ -19,9 +19,9 @@
                      <div class="box-info">
                          <div class="box-info-icon">
                              <div class="icon-wrapper">
-                            <img src="{{ asset('website/images/calendar.svg') }}" alt="logo bottom" class="logo-bottom" />
+                                 <img src="{{ asset('website/images/calendar.svg') }}" alt="logo bottom" class="logo-bottom" />
                              </div>
-                        </div>
+                         </div>
                          <div class="box-info-body">
                              <p style="    line-height: 14px;">We are open on</p>
                              <h4>Mon - Sat 9.30 to 5.30</h4>
@@ -33,9 +33,9 @@
                      <div class="box-info">
                          <div class="box-info-icon">
                              <div class="icon-wrapper">
-                           <img src="{{ asset('website/images/mail.svg') }}" alt="logo bottom" class="logo-bottom" />
+                                 <img src="{{ asset('website/images/mail.svg') }}" alt="logo bottom" class="logo-bottom" />
                              </div>
-                        </div>
+                         </div>
                          <div class="box-info-body">
                              <p>Need support? Drop us an email</p>
                              <h4><a href="mailto:info@naturalmscs.com" title="">info@naturalmscs.com</a></h4>
@@ -64,7 +64,7 @@
                          Marathakkara,<br>
                          Thrissur - 680306
                      </p>
-                 
+
                  </div>
              </div>
 
@@ -83,29 +83,41 @@
              </div>
              <div class="col-sm-5 col-md-5">
                  <div class="footer-item">
-                     <div class="footer-title">
-                         Subscribe
-                     </div>
-                     <p>Get the best in wellness – sign up to stay informed with our latest updates and offers.</p>
-                     <form action="{{ route('website.subscription.submit') }}" method="POST" class="footer-subscribe">
-                         @csrf
-                         <label for="p_submit"><img src="{{ asset('website/images/mail.svg') }}" alt="logo bottom" class="logo-bottom" /></label>
+                     <!-- <div class="subscribeSec">
+                         <div class="footer-title">
+                             Subscribe
+                         </div>
+                         <p>Get the best in wellness – sign up to stay informed with our latest updates and offers.</p>
+                         <form action="{{ route('website.subscription.submit') }}" method="POST" class="footer-subscribe">
+                             @csrf
+                             <label for="p_submit"><img src="{{ asset('website/images/mail.svg') }}" alt="logo bottom" class="logo-bottom" /></label>
 
-                         <!-- CSRF protection for form submission -->
-                         <input type="email" name="email" class="form-control" placeholder="enter your email" required>
-                         <input id="p_submit" type="submit" value="send">
-                     </form>
-                         <div class="footer-sosmed">
+                             <input type="email" name="email" class="form-control" placeholder="enter your email" required>
+                             <input id="p_submit" type="submit" value="send">
+                         </form>
+                     </div> -->
+                     <div class="footerAddress">
+                         <div class="footer-title">
+                             OUR BRANCHES
+                         </div>
+                         <p style="margin-top:-10px">Thrissur | Vadakkancheri | Ottappalam | Manjeri | Kozhikode | Kannur | Ernakulam | Kottayam | Idukki
+                         </p>
+                         <div class="footer-title">
+                            UPCOMING BRANCHES
+
+                         </div>
+                         <p style="margin-top:-10px">Palakkad | Perinthalmanna | Mannarkkad | Malappuram | Ottappalam | Chavakkad | Thriprayar | Irinjalakuda | Kodungallur | Chalakudy | Kollam | Thiruvananthapuram
+
+                         </p>
+                     </div>
+
+                     <div class="footer-sosmed">
                          <a target="_blank" href="https://www.facebook.com/naturalmscs" title="">
                              <div class="item">
                                  <i class="fa fa-facebook"></i>
                              </div>
                          </a>
-                         <!-- <a href="#" title="">
-                             <div class="item">
-                                 <i class="fa fa-twitter"></i>
-                             </div>
-                         </a> -->
+
                          <a target="_blank" href="https://www.instagram.com/naturalmscs/?fbclid=IwZXh0bgNhZW0CMTEAYnJpZBExSHl6cnBHZkxCUGxDZDNsSwEeeOXfbaWMo_4Kk8VXQLpXMGklr8htsxotVAZdfI_2y4jKyCpjQMBG2qMgn_A_aem_M7Kfvn8s6xKXsBqh5gLDQA" title="">
                              <div class="item">
                                  <i class="fa fa-instagram"></i>
@@ -129,7 +141,7 @@
                      <p class="ftex left">&copy; 2025 NATURAL - All Rights Reserved</p>
                  </div>
                  <div class="col-sm-12 col-md-6">
-                     <p class="ftex right">Designed & Developed by <a href="https://dawsonwalsh.com/" target="_blank" >DW</a></p>
+                     <p class="ftex right">Designed & Developed by <a href="https://dawsonwalsh.com/" target="_blank">DW</a></p>
                  </div>
              </div>
          </div>

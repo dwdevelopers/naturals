@@ -34,7 +34,7 @@
             <div class="overlay-bg"></div>
             <div class="container">
                 <div class="wrap-caption ">
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         Rooted in Nature. Growing with Purpose.
                     </h2>
                 </div>
@@ -45,7 +45,7 @@
             <div class="overlay-bg"></div>
             <div class="container">
                 <div class="wrap-caption ">
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         From Our Fields to Your Family.
                     </h2>
                 </div>
@@ -57,7 +57,7 @@
             <div class="container">
                 <div class="wrap-caption ">
 
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         Nourish the Soil. Nurture the Future.
                     </h2>
                 </div>
@@ -69,7 +69,7 @@
             <div class="container">
                 <div class="wrap-caption ">
 
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         Together, We Cultivate Prosperity.
                     </h2>
                 </div>
@@ -81,7 +81,7 @@
             <div class="container">
                 <div class="wrap-caption ">
 
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         Where Women Lead, Growth Follows.
                     </h2>
                 </div>
@@ -93,7 +93,7 @@
             <div class="container">
                 <div class="wrap-caption ">
 
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         Travel Rooted in Culture. Stay Close to Nature.
                     </h2>
                 </div>
@@ -105,7 +105,7 @@
             <div class="container">
                 <div class="wrap-caption ">
 
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         Learn. Lead. Thrive.
                     </h2>
                 </div>
@@ -117,7 +117,7 @@
             <div class="container">
                 <div class="wrap-caption ">
 
-                    <h2 class="caption-heading">
+                    <h2 class="caption-heading fadeInUp-animation">
                         Finance That Grows With You.
                     </h2>
                 </div>
@@ -155,7 +155,8 @@
                 <img src="{{ asset('website/images/about.jpg') }}" alt="Icon" class="img-responsive">
             </div>
         </div>
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6 col-md-6 " data-aos="fade-up"
+            data-aos-duration="500">
 
             <!-- <h2 class="section-heading">
                     ABOUT US
@@ -240,10 +241,13 @@
 <!--===================================== AGRI DHAN VIKAS START ==================================-->
 <section class="agri-dhan-vikas">
     <div class="container">
-        <h2 class="section-title">Products & Services</h2>
-        <p class="subtitle">Empowering Agriculture. Enriching Lives.</p>
+        <div class="" data-aos="fade-up"
+            data-aos-duration="500">
+            <h2 class="section-title">Products & Services</h2>
+            <p class="subtitle">Empowering Agriculture. Enriching Lives.</p>
+        </div>
         <div class="cards-grid">
-            @foreach ($projects as $project)
+            <!-- @foreach ($projects as $project)
             <div class="card" style="background-image: url('{{ asset('storage/' . $project->image) }}');">
                 <div class="projectImg"></div>
                 <div class="card-content">
@@ -253,9 +257,10 @@
 
                 </div>
             </div>
-            @endforeach
-            {{-- <!-- CARD 1 -->
+            @endforeach -->
+             <!-- CARD 1 -->
             <div class="card" style="background-image: url('/website/images/img-01.jpg');">
+                  <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
                     <p>Recurring Contribution & Fixed Contribution (RC & FC) schemes to provide secure
@@ -265,6 +270,7 @@
             </div>
             <!-- CARD 2 -->
             <div class="card" style="background-image: url('/website/images/img-02.jpg');">
+                  <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>Gold Loan, Merchant loan and Group Loan</h3>
                     <p>We offer secure and hassle-free loan services, exclusively for our registered members.</p>
@@ -273,6 +279,7 @@
             </div>
             <!-- CARD 3 -->
             <div class="card" style="background-image: url('/website/images/img-03.jpg');">
+                  <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>Agro Tourism Project – Bridging Tradition with Sustainable Growth</h3>
                     <p>The Agro Tourism Project integrates traditional farming with sustainable tourism, empowering
@@ -282,6 +289,7 @@
             </div>
             <!-- CARD 4 -->
             <div class="card" style="background-image: url('/website/images/img-04.jpg');">
+                  <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>Karshaka Mithra – Empowering Farmers, Enriching Communities</h3>
                     <p>Karshaka Mithra ensures a seamless farm-to-market supply chain, directly collecting organic
@@ -291,6 +299,7 @@
             </div>
             <!-- CARD 5 -->
             <div class="card" style="background-image: url('/website/images/img-05.jpg');">
+                  <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>Sakthiroopa Yojana - for Sustainable Growth</h3>
                     <p>The society empowers women through financial support, skill development, and direct market
@@ -301,6 +310,7 @@
             </div>
             <!-- CARD 6 -->
             <div class="card" style="background-image: url('/website/images/img-06.jpg');">
+                  <div class="projectImg"></div>
                 <div class="card-content">
                     <h3>FMCG Range - Pure, Natural, and Sustainable</h3>
                     <p>Our range, which includes a wide variety of fast-moving consumer goods, reflects our
@@ -308,7 +318,7 @@
                         and organic products.</p>
                     <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
-            </div> --}}
+            </div> 
         </div>
     </div>
 </section>
@@ -317,7 +327,8 @@
 
 <div class="container pt-40 home-expore">
     <div class="row ">
-        <h2 class="section-title">Bharat Darshan</h2>
+        <h2 class="section-title" data-aos="fade-up"
+            data-aos-duration="500">Bharat Darshan</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
             <!-- Indicators / Pagination Dots -->
@@ -328,7 +339,8 @@
                 <div class="item active">
                     <img src="{{ asset('website/images/tour -01.jpg') }}" alt="Slide 1">
                     <div class="overlay"></div>
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" data-aos="fade-up"
+                        data-aos-duration="500">
                         <h3>Explore India. Connect with Its Roots.</h3>
                     </div>
                 </div>
@@ -336,7 +348,7 @@
                 <div class="item">
                     <img src="{{ asset('website/images/tour -02.jpg') }}" alt="Slide 2">
                     <div class="overlay"></div>
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" data-aos="fade-up">
                         <h3>Explore India. Connect with Its Roots.</h3>
                     </div>
                 </div>
@@ -344,14 +356,14 @@
                 <div class="item">
                     <img src="{{ asset('website/images/tour -03.jpg') }}" alt="Slide 3">
                     <div class="overlay"></div>
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" data-aos="fade-up">
                         <h3>Explore India. Connect with Its Roots.</h3>
                     </div>
                 </div>
                 <div class="item">
                     <img src="{{ asset('website/images/tour -04.jpg') }}" alt="Slide 3">
                     <div class="overlay"></div>
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" data-aos="fade-up">
                         <h3>Explore India. Connect with Its Roots.</h3>
                     </div>
                 </div>
@@ -421,53 +433,55 @@
 
 <section class="membership-section" id="memberForm">
     <div class="container">
-    <div class="row dv-center">
-        <div class="col-sm-4 col-md-4">
-            <div class="membership-left-img">
-                <img src="{{ asset('website/images/card.png') }}" alt="Icon">
+        <div class="row dv-center">
+            <div class="col-sm-4 col-md-4">
+                <div class="membership-left-img" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <img src="{{ asset('website/images/card.png') }}" alt="Icon">
                 </div>
+            </div>
+            <div class="col-sm-4 col-md-4" data-aos="fade-up">
+                <div class="membership-text">
+                    <h2>Membership</h2>
+                    <p>
+                        Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 mob-100">
+                <div class="membership-right">
+                    <h4>Get in Touch</h4>
+                    <h2>Contact with us</h2>
+                    <form action="{{ route('website.contact.submit') }}" method="POST" class="contact-form">
+                        @csrf
+                        <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required />
+                        @error('name')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required />
+                        @error('email')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <input type="tel" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
+                        @error('phone')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
+                        @error('message')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-              <div class="membership-text">
-            <h2>Membership</h2>
-            <p>
-                Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
-            </p>
-        </div>
-        </div>
-        <div class="col-sm-4 col-md-4 mob-100">
-              <div class="membership-right">
-        <h4>Get in Touch</h4>
-        <h2>Contact with us</h2>
-        <form action="{{ route('website.contact.submit') }}" method="POST" class="contact-form">
-            @csrf
-            <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required />
-            @error('name')
-            <div class="text-danger">{{ $message }}</div>
-            @enderror
 
-            <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required />
-            @error('email')
-            <div class="text-danger">{{ $message }}</div>
-            @enderror
-
-            <input type="tel" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
-            @error('phone')
-            <div class="text-danger">{{ $message }}</div>
-            @enderror
-
-            <textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
-            @error('message')
-            <div class="text-danger">{{ $message }}</div>
-            @enderror
-
-            <button type="submit">Submit</button>
-        </form>
     </div>
-        </div>
-    </div>
-
-   </div>
 </section>
 <!--===================================== MEMBERSHIP END ======================================-->
 
@@ -546,7 +560,8 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-12 col-md-12">
+            <div class="col-sm-12 col-md-12" data-aos="fade-up"
+                data-aos-duration="500">
                 <h2 class="section-heading center">
                     RECENT NEWS
                 </h2>
@@ -622,8 +637,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 @endsection

@@ -42,8 +42,11 @@ h3 {
 }
 .header .topbar .info p {
   color: var(--darkgreen);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
+}
+.header .topbar .info p .regNo {
+  font-size: 13px;
 }
 .header .topbar .info .info-item .fa {
   color: var(--black);
@@ -932,4 +935,63 @@ h3 {
   inset: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 60%);
   z-index: 0;
+}
+
+.addressSec {
+  display: flex;
+  margin: 50px 0px 60px 0px;
+}
+.addressSec .officeAddress {
+  padding: 40px 60px;
+  background-color: #e2eecc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 767px) {
+  .addressSec .officeAddress {
+    min-height: 271px;
+  }
+}
+@media (max-width: 767px) {
+  .addressSec .officeAddress {
+    padding: 40px 20px;
+  }
+}
+.addressSec .officeAddress p {
+  font-size: 14px;
+}
+.addressSec .officeAddress h3 {
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .addressSec {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.contact .pline {
+  padding-top: 20px;
+  margin-top: 0px;
+}
+
+.abtPage .banner-sec h3 {
+  font-size: 46px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
 }/*# sourceMappingURL=custom.css.map */

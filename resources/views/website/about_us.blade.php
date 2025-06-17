@@ -3,9 +3,12 @@
 @section('title', 'About Us')
 
 @section('content')
+<div class="abtPage">
 <div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
     <div class="overlay"></div>
-    <h3>About Us</h3>
+    <h3>Together, We Grow Stronger
+</h3>
+</div>
 </div>
 <div class="section about-page">
     <div class="container pt-120">

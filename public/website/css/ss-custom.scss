@@ -317,7 +317,7 @@ Global Transfers Area CSS
     }
 
     .footer-item .footer-sosmed {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -1092,4 +1092,12 @@ Global Transfers Area CSS
             justify-content: center;
         }
     }
+}
+
+.footer .footer-item .footer-title{
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
+}
+.footerAddress{
+    max-width:98%
 }

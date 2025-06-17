@@ -61,17 +61,18 @@
                     </div>
 
                     <div class="col-sm-10 col-md-10">
-                        <p class="pline">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.
-                            <br>
-                            <br> We are open from Mon - Fri 08.00 - 20.00 week days.
+                        <p class="pline">
+                            We are open from Mon - Sat 9.30 to 5.30
+                            <br>Second Saturday & Sunday Holiday
                         </p>
                     </div>
                 </div>
 
+
             </div>
             <div class="col-sm-6 col-md-6">
                 <div class="content" id="contactForm">
-               <form action="{{ route('website.contact.submit') }}" method="POST">
+                    <form action="{{ route('website.contact.submit') }}" method="POST">
 
                         @csrf
                         <div class="form-group">
@@ -99,8 +100,34 @@
                     <div class="margin-bottom-50"></div>
                 </div>
             </div>
+
+
             <div class="col-sm-12 col-md-12">
-                <div class="spacer-90"></div>
+              
+                    <div class=" addressSec">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="officeAddress">
+                                <div class="iconWrapper">
+                                     <img src="{{ asset('website/images/cd-icon-location.png') }}" alt="" />
+                                </div>
+                                <h3>OUR BRANCHES</h3>
+                                <p>Thrissur | Vadakkancheri | Ottappalam | Manjeri | Kozhikode | Kannur | Ernakulam | Kottayam | Idukki
+</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="officeAddress">
+                                   <div class="iconWrapper">
+                                     <img src="{{ asset('website/images/cd-icon-location.png') }}" alt="" />
+                                </div>
+                                <h3>UPCOMING BRANCHES</h3>
+                                <p> Palakkad | Perinthalmanna | Mannarkkad | Malappuram | Ottappalam | Chavakkad | Thriprayar | Irinjalakuda | Kodungallur | Chalakudy | Kollam | Thiruvananthapuram
+</p>
+                            </div>
+                        </div>
+                    </div>
+
+                
                 <!-- MAPS -->
                 <div class="maps-wraper">
                     <div id="cd-zoom-in"></div>

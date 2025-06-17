@@ -29,7 +29,7 @@ $(document).ready(function(){
 	=================================== */
 	$('#slides').superslides({
 		//animation: "fade",
-		play: 5000,
+		play: 3000,
 		slide_speed: 800,
 		pagination: true,
 		hashchange: false,

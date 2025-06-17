@@ -4,8 +4,8 @@
     <div class="topbar">
         <div class="info">
             <div class="topbar-content">
-                <p style="text-align: center;">REG NO. MSCS/CR/1592/2025</p>
-                <p>Registered Under MINISTRY OF CO-OPERATION, GOVT.OF INDIA</p>
+                <p style="text-align: center;">REG NO. <span class="regNo"> MSCS/CR/1592/2025</span></p>
+                <p>Registered Under the MINISTRY OF CO-OPERATION, GOVT.OF INDIA</p>
             </div>
             <div class="info-item">
                 <i class="fa fa-mobile" aria-hidden="true"></i>

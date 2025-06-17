@@ -40,7 +40,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('website/css/ss-custom.css')}}" />
 
     <script type="text/javascript" src="{{ asset('website/js/vendor/modernizr.min.js')}}"></script>
-<link href="https://db.onlinewebfonts.com/c/0a4a5e68b7929fb9a01c2b5533f79641?family=Zooja+Light+Pro" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/0a4a5e68b7929fb9a01c2b5533f79641?family=Zooja+Light+Pro" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -78,7 +80,11 @@
     <script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5'></script>
 
     <script type="text/javascript" src="{{ asset('website/js/script.js')}}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
     <script>
         const dots = document.querySelectorAll('.dot');
         const slides = document.querySelectorAll('.slides-container li');
