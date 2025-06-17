@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\FmcgController;
 use App\Http\Controllers\Admin\AdminDownloadController;
 use App\Http\Controllers\Admin\AdminSubscriptionController;
 use App\Http\Controllers\Admin\ContactUsController;
@@ -57,6 +58,7 @@ Route::name('website.')->group(function () {
     Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
     Route::get('/about-us', [AboutUsController::class, 'index'])->name('aboutus');
+    Route::get('/fmcg-range', [FmcgController::class, 'index'])->name('fmcgrange');
     Route::get('/service', [ServicesController::class, 'index'])->name('service');
     Route::get('/gallery', [WebsiteGallery::class, 'index'])->name('gallery');
     Route::get('/downlaod', [DownloadController::class, 'index'])->name('downloads');

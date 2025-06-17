@@ -265,7 +265,7 @@
                     <h3>Recurring Contribution & Fixed Contribution (RC & FC)</h3>
                     <p>Recurring Contribution & Fixed Contribution (RC & FC) schemes to provide secure
                         and growth-oriented financial solutions for our members.</p>
-                    <a href="#" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                    <a href="{{route('website.fmcgrange')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
                 </div>
             </div>
             <!-- CARD 2 -->

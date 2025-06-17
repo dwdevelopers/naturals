@@ -973,4 +973,57 @@ Global Transfers Area CSS
 
 .footerAddress {
   max-width: 98%;
+}
+
+.projectInnerPage .dark_bg {
+  background-color: #e2eecc;
+  padding: 40px 0px;
+}
+.projectInnerPage .hrline {
+  background-color: #55c06a;
+  margin: 40px 0px;
+  margin-bottom: 70px;
+}
+.projectInnerPage .visionMissionImg img {
+  height: 250px;
+}
+.projectInnerPage .top_left_img img {
+  height: 390px;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projectInnerPage h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.projectInnerPage .reduce_width {
+  max-width: 90%;
+}
+.projectInnerPage .green_bg {
+  background-color: #27b14b;
+  padding: 30px 0px;
+  text-align: center;
+}
+.projectInnerPage .green_bg p {
+  color: #fff;
+  font-size: 16px;
+}
+.projectInnerPage .green_bg .grid_sec {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.projectInnerPage .green_bg .grid_sec .singlegrid {
+  text-align: center;
+}
+.projectInnerPage .green_bg .grid_sec .singlegrid .iconwrapper img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.projectInnerPage .green_bg .grid_sec .singlegrid p {
+  padding-top: 10px;
+  margin: 0 auto;
+  line-height: 20px;
 }/*# sourceMappingURL=ss-custom.css.map */
