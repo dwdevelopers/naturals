@@ -2,6 +2,15 @@
 
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\FmcgController;
+use App\Http\Controllers\KejonController;
+use App\Http\Controllers\KarshakaController;
+use App\Http\Controllers\SakthiroopaController;
+use App\Http\Controllers\EcotourismController;
+use App\Http\Controllers\AgriController;
+use App\Http\Controllers\NaturalController;
+use App\Http\Controllers\MarketingController;
+use App\Http\Controllers\BharatdarshanController;
+use App\Http\Controllers\RecurringController;
 use App\Http\Controllers\Admin\AdminDownloadController;
 use App\Http\Controllers\Admin\AdminSubscriptionController;
 use App\Http\Controllers\Admin\ContactUsController;
@@ -58,7 +67,16 @@ Route::name('website.')->group(function () {
     Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
     Route::get('/about-us', [AboutUsController::class, 'index'])->name('aboutus');
+    Route::get('/sakthiroopa-yojana', [SakthiroopaController::class, 'index'])->name('sakthiyojana');
+    Route::get('/organic-manure-kejon', [KejonController::class, 'index'])->name('kejon');
     Route::get('/fmcg-range', [FmcgController::class, 'index'])->name('fmcgrange');
+    Route::get('/karshaka-mithra', [KarshakaController::class, 'index'])->name('karshakamithra');
+    Route::get('/ecotourism', [EcotourismController::class, 'index'])->name('ecotourism');
+    Route::get('/agri-dhan-vikas', [AgriController::class, 'index'])->name('agrivikas');
+    Route::get('/natural-marginal-supermarket', [NaturalController::class, 'index'])->name('natural');
+    Route::get('/marketing-agri-training-support', [MarketingController::class, 'index'])->name('marketing');
+    Route::get('/bharat-darshan', [BharatdarshanController::class, 'index'])->name('bharatdarshan');
+    Route::get('/recurring-contribution-fixed-contribution', [RecurringController::class, 'index'])->name('rdfd');
     Route::get('/service', [ServicesController::class, 'index'])->name('service');
     Route::get('/gallery', [WebsiteGallery::class, 'index'])->name('gallery');
     Route::get('/downlaod', [DownloadController::class, 'index'])->name('downloads');

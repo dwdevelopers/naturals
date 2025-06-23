@@ -629,6 +629,7 @@ Global Transfers Area CSS
 .agri-dhan-vikas .cards-grid .card .card-content h3 {
   font-size: 18px !important;
   line-height: 24px;
+  min-height: 48px;
 }
 
 .service .section-title {
@@ -647,7 +648,7 @@ Global Transfers Area CSS
 }
 
 .header-1 .stiky .navbar-nav > li:last-child a {
-  padding-left: 10px !important;
+  padding-left: 0px !important;
 }
 
 .service-details {
@@ -975,6 +976,9 @@ Global Transfers Area CSS
   max-width: 98%;
 }
 
+.projectInnerPage {
+  overflow: hidden;
+}
 .projectInnerPage .dark_bg {
   background-color: #e2eecc;
   padding: 40px 0px;
@@ -986,12 +990,20 @@ Global Transfers Area CSS
 }
 .projectInnerPage .visionMissionImg img {
   height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .projectInnerPage .top_left_img img {
   height: 390px;
   width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 767px) {
+  .projectInnerPage .top_left_img img {
+    height: 250px;
+    width: 100%;
+  }
 }
 .projectInnerPage h1 {
   font-size: 36px;
@@ -1014,6 +1026,12 @@ Global Transfers Area CSS
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+@media (max-width: 767px) {
+  .projectInnerPage .green_bg .grid_sec {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
 .projectInnerPage .green_bg .grid_sec .singlegrid {
   text-align: center;
 }
@@ -1026,4 +1044,247 @@ Global Transfers Area CSS
   padding-top: 10px;
   margin: 0 auto;
   line-height: 20px;
+}
+
+.proInnerBanner .banner-sec {
+  height: 300px;
+}
+@media (max-width: 767px) {
+  .proInnerBanner .banner-sec {
+    padding: 0px 20px;
+  }
+}
+
+.fmcgInner h1 {
+  font-size: 28px;
+}
+.fmcgInner .top_left_img img {
+  height: 260px;
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 766px) {
+  .fmcgInner .top_left_img img {
+    width: 100%;
+  }
+}
+.fmcgInner .pt-60 {
+  padding: 60px;
+}
+.fmcgInner .alternate_bg {
+  background-color: #eee;
+}
+
+.upcoming_project .dark_bg h3 {
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  .upcoming_project .upcoming_grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ecotourism .grid_sec {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  .ecotourism .grid_sec {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mob-column {
+    flex-direction: column;
+  }
+  .mob-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .abtPage .banner-sec h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .agri-sec h1 {
+    padding-top: 0px !important;
+  }
+}
+.rec_table .bg_green_head {
+  background-color: #81c55d;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  .rec_table .bg_green_head {
+    font-size: 18px;
+  }
+}
+.rec_table .subhead {
+  background-color: #e6e7e9;
+}
+.rec_table td {
+  background-color: #f2f3f4;
+}
+.rec_table .green_row td {
+  background-color: #e7f1d4;
+}
+.rec_table td,
+.rec_table th {
+  padding: 10px;
+  border-color: #fff;
+}
+
+.rcfc_sec h5 {
+  font-size: 20px !important;
+  padding-top: 30px;
+}
+
+.condition {
+  font-size: 12px;
+  color: green;
+  margin-top: -20px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.barat-darshan-sec {
+  color: #0e2f3b;
+}
+.barat-darshan-sec .description {
+  padding: 40px 20px 0px 20px;
+  color: #0e2f3b;
+}
+.barat-darshan-sec h5 {
+  font-size: 22px;
+  color: #27b14e;
+  font-weight: 400;
+}
+.barat-darshan-sec .right-div {
+  border: 1px solid #27b14e;
+  padding: 13px 20px;
+  border-radius: 20px;
+  line-height: 22px;
+}
+.barat-darshan-sec .specials {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.tourism_bg .grid_sec {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-bottom: 20px;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  .tourism_bg .grid_sec {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+.tourism_bg .grid_sec .singlegrid {
+  text-align: center;
+}
+.tourism_bg .grid_sec .singlegrid .iconwrapper img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.tourism_bg .grid_sec .singlegrid p {
+  padding-top: 10px;
+  margin: 0 auto;
+  line-height: 20px;
+}
+
+.kejon-inner .green_bg {
+  color: #fff;
+  padding: 90px 0px;
+  text-align: left !important;
+}
+.kejon-inner .green_bg .grid_sec {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.kejon-inner .green_bg .grid_sec .singlegrid {
+  text-align: left !important;
+}
+.kejon-inner .green_bg .grid_sec .singlegrid h5 {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .kejon-inner .green_bg .grid_sec {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .kejon-inner .green_bg .grid_sec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .kejon-inner .green_bg .grid_sec h5 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.green_text {
+  color: #27b14e;
+}
+
+.shaktipoorna .top_left_img img {
+  width: 100% !important;
+  height: 360px !important;
+}
+.shaktipoorna .fmcgInner {
+  background-color: #27b14e;
+}
+.shaktipoorna .fmcgInner p {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .shaktipoorna .fmcgInner p {
+    padding-top: 30px;
+  }
+}
+.shaktipoorna .fmcgInner li,
+.shaktipoorna .fmcgInner h1 {
+  color: #fff;
+}
+.shaktipoorna .fmcgInner h1 {
+  font-size: 36px;
+}
+
+@media (max-width: 767px) {
+  .mb-top {
+    padding-top: 70px;
+  }
+  .mb-top-30 {
+    padding-top: 30px;
+  }
+  .mb-column {
+    flex-direction: column;
+  }
+  .mb-margin-minus {
+    margin-top: -30px;
+  }
+  .rcfc_sec .dv-center {
+    flex-direction: column;
+  }
+  .rcfc_sec .rec_table {
+    padding: 0px 10px;
+  }
+}
+.marketing-agri .grid_sec {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 767px) {
+  .marketing-agri .grid_sec {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=ss-custom.css.map */

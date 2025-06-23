@@ -3,10 +3,12 @@
 @section('title', 'FMCG Range')
 
 @section('content')
-<div class="abtPage">
-    <div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
+<div class="abtPage proInnerBanner">
+    <div class="banner-sec" style="background-image: url('{{ asset('website/images/fmcg-banner.png') }}');">
         <div class="overlay"></div>
-        <h3>Together, We Grow Stronger
+        <h3 data-aos="fade-up"
+            data-aos-duration="500">From Our Farmers
+            to Your Family
         </h3>
     </div>
 </div>
@@ -18,132 +20,179 @@
         <div class="container pt-80 home-about">
             <div class="row dv-center">
                 <div class="col-sm-6 col-md-6">
-                    <div class="top_left_img">
-                        <img src="{{ asset('website/images/karshakamitra1.png') }}" alt="Icon" class="img-responsive">
+                    <div class="top_left_img" data-aos="fade-right">
+                        <img src="{{ asset('website/images/fmcg_left.png') }}" alt="Icon" class="img-responsive">
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 " data-aos="fade-up"
                     data-aos-duration="500">
 
-                    <h1 class="jumbolead reset-section-heading">Karshaka Mithra</h1>
-                    <p>Karshaka Mithra, a visionary initiative by Natural Agro & Tourism Multi-State
-                        Cooperative Society Ltd, is committed to uplifting India's agricultural backbone—
-                        our farmers. At its core, Karshaka Mithra champions a fair, transparent,
-                        and sustainable farm-to-market ecosystem. We directly procure organic
-                        vegetables and other agricultural produce from farmers and deliver them to
-                        consumers, eliminating middlemen, reducing exploitation, and ensuring fair
-                        prices for both producers and buyers.</p>
-                    <p>Our efforts begin at the grassroots with strategically located collection centres
-                        that allow farmers to deposit their harvest in hygienic, well-managed facilities.
-                        These centres are equipped to handle grading, sorting, and marketing—
-                        ensuring maximum value for every crop. Each step in this process is designed
-                        to maintain product integrity while strengthening market access for
-                        small-scale and marginal farmers.</p>
+                    <h1 class="jumbolead reset-section-heading">FMCG Range</h1>
+                    <p>At Natural Agro & Tourism Multi-State Cooperative Society Ltd, our FMCG division is a proud reflection of our values—purity, sustainability, and empowerment. Our product range includes a variety of daily essentials such as rice powder, authentic Indian spices, flavourful masalas, crunchy chips, wholesome jams, and nutrient-rich pulses. Each item is sourced responsibly and processed with minimal intervention to retain its natural goodness and nutritional integrity. What makes our FMCG products truly distinctive is their origin—directly from the hands of farmers we support and train. By integrating rural producers into the value chain, we ensure fair pricing, better livelihoods, and long-term socio-economic development in agricultural communities.</p>
+                    <p>Our products are designed not just to meet the growing demand for natural and organic household essentials but to introduce conscious choices into everyday living. With a focus on quality, traceability, and environmental responsibility, Natural’s FMCG range connects your kitchen to the fields of India, ensuring that every bite and every ingredient contributes to a healthier family and a stronger rural economy.</p>
                 </div>
             </div>
         </div>
 
         <div class="dark_bg">
             <div class="container  ">
-                <div class="row dv-center">
+                <div class="row dv-center mob-column">
                     <div class="col-sm-6 col-md-6">
-                        <div class="reduce_width">
+                        <div class="reduce_width" data-aos="fade-up"
+                            data-aos-duration="500">
                             <h3>Mission</h3>
-                            <p>To empower farmers by bridging the gap between farm and
-                                market through ethical procurement, collective farming
-                                models, and sustainable agricultural practices that ensure
-                                fair income, enhanced productivity, and rural prosperity.</p>
+                            <p>To deliver natural, sustainable, and high-quality FMCG products that nourish families, empower local farmers, and promote healthier lifestyles through eco-conscious and community-driven practices.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6">
-                        <div class="reduce_width">
+                        <div class="reduce_width" data-aos="fade-up"
+                            data-aos-duration="500">
                             <h3>Vision</h3>
-                            <p>To become a national model in farm-to-market integration by
-                                creating a transparent, community-driven agricultural ecosystem
-                                where every farmer thrives with dignity, innovation,
-                                and opportunity.</p>
+                            <p>To become a trusted household name in the FMCG sector by bridging the gap between rural agricultural communities and modern consumers, ensuring that every product reflects purity, sustainability, and social responsibility.</p>
                         </div>
                     </div>
                 </div>
                 <hr class="hrline">
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
-                        <div class="reduce_width">
-                            <h5><i>Key Initiatives:</i></h5>
-                            <h3>Collection Centres</h3>
-                            <p>Strategically located collection points allow farmers to deposit
-                                their produce in clean, designated spaces. Our centres
+                        <div class="reduce_width" data-aos="fade-up"
+                            data-aos-duration="500">
+                            <h5><i>Key Initiatives:
+                                </i></h5>
+                            <h3>Ongoods</h3>
+                            <p>Strategically located collection points allow farmers to deposit their produce in clean, designated spaces. Our centres
                                 handle grading, sorting, and marketing to ensure farmers
-                                get the best value.</p>
+                                get the best value.
+                            </p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6">
-                        <div class="visionMissionImg">
-                            <img src="{{ asset('website/images/karshakamitra.png') }}" alt="Icon" class="img-responsive">
+                        <div class="visionMissionImg" data-aos="fade-left"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
+                            <img src="{{ asset('website/images/ongood_logo.png') }}" alt="Icon" class="img-responsive">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container pt-80 home-about">
-            <div class="row dv-center">
+        <div class="container pt-80 home-about fmcgInner">
+            <div class="row  " style="padding-bottom: 50px;">
 
                 <div class="col-sm-6 col-md-6 " data-aos="fade-up"
                     data-aos-duration="500">
                     <div class="reduce_width">
-                        <h1 class="jumbolead reset-section-heading">Group Farming</h1>
-                        <p>This collaborative approach significantly reduces individual
-                            costs, boosts collective yield, and fosters a sense of unity
-                            and ownership among farmers. In addition, we are in the
-                            process of deploying branded logistics trucks under the
-                            “Natural” banner to ensure efficient and timely delivery of
-                            fresh produce from farms to households.</p>
-                        <p>Karshaka Mithra isn't just a service—it's a movement. A
-                            movement to revive trust in traditional agriculture, to modernize
-                            with care, and to build resilient rural economies
-                            where prosperity begins at the roots. </p>
+                        <h1 class="jumbolead reset-section-heading">Grains & Staples(Rice, Atta, Rava, Flour)</h1>
+                        <p>Our staples are the heart of every household. We offer a premium range of grains, including aromatic rice, whole wheat atta, semolina (rava), and various flours, all processed with minimal intervention to retain their natural taste and texture. These essentials form the foundation of nutritious daily meals across Indian kitchens.
+                            Spices & Masalas(Turmeric, Chilli, Coriander, Garam Masala)</p>
+                        <p>Authentic flavor begins with purity. Our spices are carefully selected, sun-dried, and ground under strict quality controls to ensure high potency and unmatched aroma. From vibrant turmeric and spicy chilli to earthy coriander and aromatic garam masala, each product reflects the richness of India’s spice heritage.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6">
-                    <div class="top_left_img">
+                    <div class="top_left_img" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
                     </div>
                 </div>
             </div>
+            <div class="row dv-center pt-60 alternate_bg">
+
+                <div class="col-sm-6 col-md-6">
+                    <div class="top_left_img" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 " data-aos="fade-up"
+                    data-aos-duration="500">
+                    <div class="reduce_width">
+                        <h1 class="jumbolead reset-section-heading">Pulses & Legumes</h1>
+                        <p>Our assortment of pulses and legumes offers protein-rich, fiber-packed ingredients essential for a balanced diet. Cleaned and sorted using modern technology, they are free from chemicals and additives, making them a wholesome addition to vegetarian and non-vegetarian recipes alike. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row dv-center pt-60">
+
+                <div class="col-sm-6 col-md-6 " data-aos="fade-up"
+                    data-aos-duration="500">
+                    <div class="reduce_width">
+                        <h1 class="jumbolead reset-section-heading">Chips & Savories</h1>
+                        <p>Our snack range combines tradition and health. Prepared using time-honored recipes and quality ingredients, our chips and savories are a perfect blend of taste and nutrition. Ideal for every age group, these snacks are made without preservatives, ensuring a safe and crunchy delight in every bite.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="top_left_img" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="row dv-center pt-60 alternate_bg">
+
+                <div class="col-sm-6 col-md-6">
+                    <div class="top_left_img" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 " data-aos="fade-up"
+                    data-aos-duration="500">
+                    <div class="reduce_width">
+                        <h1 class="jumbolead reset-section-heading">Sugar, Salt & Jams</h1>
+                        <p>Complete your pantry with our selection of natural sweeteners, mineral-rich salts, and handcrafted fruit jams. Carefully curated and processed under stringent standards, these products bring both balance and flavor to your table — perfect for daily use as well as festive occasions.
+                            Members enjoy an exclusive 10% discount on all FMCG products. </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
 
-        <div class="green_bg">
+ <div class="green_bg">
             <div class="container">
                 <p>We facilitate group farming by leasing agricultural land and equipping farmers with:</p>
                 <div class="grid_sec">
-                    <div class="singlegrid">
+                    <div class="singlegrid" data-aos="fade-up"
+                    data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/pro-icon-01.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Quality <br>
                             seeds</p>
                     </div>
-                    <div class="singlegrid">
+                    <div class="singlegrid" data-aos="fade-up"
+                    data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/pro-icon-02.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Organic <br>
                             fertilizers</p>
                     </div>
-                    <div class="singlegrid">
+                    <div class="singlegrid" data-aos="fade-up"
+                    data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/pro-icon-03.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Agricultural <br>
                             training</p>
                     </div>
-                    <div class="singlegrid">
+                    <div class="singlegrid" data-aos="fade-up"
+                    data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/pro-icon-04.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Ongoing expert <br>

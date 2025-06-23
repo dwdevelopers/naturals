@@ -723,6 +723,8 @@ Global Transfers Area CSS
 .agri-dhan-vikas .cards-grid .card .card-content h3 {
     font-size: 18px !important;
     line-height: 24px;
+    min-height: 48px;
+
 }
 
 .service {
@@ -743,7 +745,7 @@ Global Transfers Area CSS
 }
 
 .header-1 .stiky .navbar-nav>li:last-child a {
-    padding-left: 10px !important;
+    padding-left: 0px !important;
 }
 
 .service-details {
@@ -1108,6 +1110,8 @@ Global Transfers Area CSS
 }
 
 .projectInnerPage {
+    overflow: hidden;
+
     .dark_bg {
         background-color: #e2eecc;
         padding: 40px 0px;
@@ -1124,6 +1128,7 @@ Global Transfers Area CSS
     .visionMissionImg {
         img {
             height: 250px;
+            object-fit: contain;
         }
     }
 
@@ -1132,6 +1137,11 @@ Global Transfers Area CSS
             height: 390px;
             width: 90%;
             object-fit: cover;
+
+            @media(max-width:767px) {
+                height: 250px;
+                width: 100%;
+            }
         }
     }
 
@@ -1159,6 +1169,12 @@ Global Transfers Area CSS
             display: grid;
             grid-template-columns: repeat(4, 1fr);
 
+            @media(max-width:767px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+
+            }
+
             .singlegrid {
                 text-align: center;
 
@@ -1176,6 +1192,308 @@ Global Transfers Area CSS
                     line-height: 20px;
                 }
             }
+        }
+    }
+}
+
+.proInnerBanner {
+    .banner-sec {
+        height: 300px;
+
+        @media(max-width:767px) {
+            padding: 0px 20px;
+        }
+    }
+}
+
+.fmcgInner {
+    h1 {
+        font-size: 28px;
+    }
+
+    .top_left_img img {
+        height: 260px;
+        width: 60%;
+        margin: 0 auto;
+
+        @media(max-width:766px) {
+            width: 100%;
+        }
+    }
+
+    .pt-60 {
+        padding: 60px;
+    }
+
+    .alternate_bg {
+        background-color: #eee;
+
+    }
+}
+
+.upcoming_project {
+    .dark_bg {
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .upcoming_grid {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
+
+.ecotourism {
+    .grid_sec {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 50px;
+
+        @media(max-width:767px) {
+            grid-template-columns: repeat(2, 1fr) !important;
+
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .mob-column {
+        flex-direction: column;
+    }
+
+    .mob-column-reverse {
+        flex-direction: column-reverse !important;
+    }
+
+    .abtPage .banner-sec h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .agri-sec h1 {
+        padding-top: 0px !important;
+    }
+}
+
+.rec_table {
+    .bg_green_head {
+        background-color: #81c55d;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+
+        @media(max-width:575px) {
+            font-size: 18px;
+        }
+    }
+
+    .subhead {
+        background-color: #e6e7e9;
+    }
+
+    td {
+        background-color: #f2f3f4;
+    }
+
+    .green_row {
+        td {
+            background-color: #e7f1d4;
+        }
+    }
+
+    td,
+    th {
+        padding: 10px;
+        border-color: #fff;
+    }
+}
+
+.rcfc_sec h5 {
+    font-size: 20px !important;
+    padding-top: 30px;
+}
+
+.condition {
+    font-size: 12px;
+    color: green;
+    margin-top: -20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.barat-darshan-sec {
+    color: #0e2f3b;
+
+    .description {
+        padding: 40px 20px 0px 20px;
+        color: #0e2f3b;
+    }
+
+    h5 {
+        font-size: 22px;
+        color: #27b14e;
+        font-weight: 400;
+    }
+
+    .right-div {
+        border: 1px solid #27b14e;
+        padding: 13px 20px;
+        border-radius: 20px;
+        line-height: 22px;
+    }
+
+    .specials {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.tourism_bg {
+
+    .grid_sec {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding-bottom: 20px;
+        gap: 50px;
+
+        @media(max-width:767px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+
+        }
+
+        .singlegrid {
+            text-align: center;
+
+            .iconwrapper {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 auto;
+                }
+            }
+
+            p {
+                padding-top: 10px;
+                margin: 0 auto;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.kejon-inner .green_bg {
+    color: #fff;
+    padding: 90px 0px;
+    text-align: left !important;
+
+    .grid_sec {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+
+        .singlegrid {
+            text-align: left !important;
+
+            h5 {
+                font-size: 18px !important;
+                font-weight: 400 !important;
+            }
+        }
+
+        @media(min-width:576px) and (max-width:991px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media(max-width:575px) {
+            grid-template-columns: repeat(1, 1fr);
+
+            h5 {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+.green_text {
+    color: #27b14e;
+    ;
+}
+
+.shaktipoorna {
+    .top_left_img img {
+        width: 100% !important;
+        height: 360px !important;
+    }
+
+    .fmcgInner {
+        background-color: #27b14e;
+        ;
+
+        p {
+            color: #fff;
+
+            @media(max-width:767px) {
+                padding-top: 30px;
+            }
+        }
+
+        li,
+        h1 {
+            color: #fff;
+
+        }
+
+        h1 {
+            font-size: 36px;
+
+        }
+
+    }
+}
+
+@media(max-width:767px) {
+    .mb-top {
+        padding-top: 70px;
+    }
+
+    .mb-top-30 {
+        padding-top: 30px;
+    }
+
+    .mb-column {
+        flex-direction: column;
+    }
+
+    .mb-margin-minus {
+        margin-top: -30px;
+    }
+
+    .rcfc_sec {
+        .dv-center {
+            flex-direction: column;
+        }
+        .rec_table{
+            padding: 0px 10px;
+        }
+    }
+
+}
+
+.marketing-agri {
+    .grid_sec {
+        grid-template-columns: repeat(4, 1fr);
+
+        @media(max-width:767px) {
+            grid-template-columns: repeat(2, 1fr);
+
         }
     }
 }
