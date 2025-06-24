@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\ProductService;
 use App\Services\TestimonialService;
 
 class KejonController extends Controller
@@ -11,15 +12,20 @@ class KejonController extends Controller
      * Display a listing of the resource.
      */
     protected $testimonialService;
-    public function __construct(TestimonialService $testimonialService)
+         protected $productService;
+    public function __construct(TestimonialService $testimonialService, ProductService $productService)
     {
 
         $this->testimonialService = $testimonialService;
+           $this->productService = $productService;
+
     }
     public function index()
     {
+          $products = $this->productService->getAllProducts();
+
         $testimonials = $this->testimonialService->getAllTestimonials()->where('status', 'approved');
-       return view('website.organic-manure-kejon',compact('testimonials'));
+       return view('website.organic-manure-kejon',compact('testimonials', 'products'));
     }
 
     /**

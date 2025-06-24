@@ -89,24 +89,6 @@
                         <p>Authentic flavor begins with purity. Our spices are carefully selected, sun-dried, and ground under strict quality controls to ensure high potency and unmatched aroma. From vibrant turmeric and spicy chilli to earthy coriander and aromatic garam masala, each product reflects the richness of India’s spice heritage.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="top_left_img" data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                        <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-            <div class="row dv-center pt-60 alternate_bg">
-
-                <div class="col-sm-6 col-md-6">
-                    <div class="top_left_img" data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                        <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
-                    </div>
-                </div>
-
                 <div class="col-sm-6 col-md-6 " data-aos="fade-up"
                     data-aos-duration="500">
                     <div class="reduce_width">
@@ -115,34 +97,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row dv-center pt-60">
+            <div class="row dv-center pt-60 alternate_bg">
 
-                <div class="col-sm-6 col-md-6 " data-aos="fade-up"
+                 <div class="col-sm-6 col-md-6 " data-aos="fade-up"
                     data-aos-duration="500">
                     <div class="reduce_width">
                         <h1 class="jumbolead reset-section-heading">Chips & Savories</h1>
                         <p>Our snack range combines tradition and health. Prepared using time-honored recipes and quality ingredients, our chips and savories are a perfect blend of taste and nutrition. Ideal for every age group, these snacks are made without preservatives, ensuring a safe and crunchy delight in every bite.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="top_left_img" data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                        <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-            <div class="row dv-center pt-60 alternate_bg">
 
-                <div class="col-sm-6 col-md-6">
-                    <div class="top_left_img" data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                        <img src="{{ asset('website/images/karshakamitra2.png') }}" alt="Icon" class="img-responsive">
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 " data-aos="fade-up"
+                  <div class="col-sm-6 col-md-6 " data-aos="fade-up"
                     data-aos-duration="500">
                     <div class="reduce_width">
                         <h1 class="jumbolead reset-section-heading">Sugar, Salt & Jams</h1>
@@ -151,19 +116,16 @@
                     </div>
                 </div>
             </div>
-
-
-
-
+           
 
         </div>
 
- <div class="green_bg">
+        <div class="green_bg">
             <div class="container">
                 <p>We facilitate group farming by leasing agricultural land and equipping farmers with:</p>
                 <div class="grid_sec">
                     <div class="singlegrid" data-aos="fade-up"
-                    data-aos-duration="500">
+                        data-aos-duration="500">
                         <div class="iconwrapper">
                             <img src="{{ asset('website/images/pro-icon-01.svg') }}" alt="Icon" class="img-responsive">
 
@@ -172,7 +134,7 @@
                             seeds</p>
                     </div>
                     <div class="singlegrid" data-aos="fade-up"
-                    data-aos-duration="500">
+                        data-aos-duration="500">
                         <div class="iconwrapper">
                             <img src="{{ asset('website/images/pro-icon-02.svg') }}" alt="Icon" class="img-responsive">
 
@@ -181,7 +143,7 @@
                             fertilizers</p>
                     </div>
                     <div class="singlegrid" data-aos="fade-up"
-                    data-aos-duration="500">
+                        data-aos-duration="500">
                         <div class="iconwrapper">
                             <img src="{{ asset('website/images/pro-icon-03.svg') }}" alt="Icon" class="img-responsive">
 
@@ -190,7 +152,7 @@
                             training</p>
                     </div>
                     <div class="singlegrid" data-aos="fade-up"
-                    data-aos-duration="500">
+                        data-aos-duration="500">
                         <div class="iconwrapper">
                             <img src="{{ asset('website/images/pro-icon-04.svg') }}" alt="Icon" class="img-responsive">
 
@@ -204,14 +166,42 @@
 
     </div>
 
+    <!--===================================== PRODUCT START =======================================-->
+ @if($products->count() > 0)
+<section class="product-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Our Products</h2>
+        <div class="product-grid">
+            @foreach ($products->take(4) as $product)
+            <div class="product-card">
+                <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                <h3>{{ $product->name }}</h3>
+                <p class="price">
+                    ₹<strong>{{ number_format($product->price, 2) }}</strong>
+                    <span> excl. GST</span>
+                </p>
+                <a href="https://wa.me/917012829663?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
+                    <button>Contact on WhatsApp</button>
+                </a>
+            </div>
+            @endforeach
+        </div>
+        <div class="read-more">
+            <a href="{{ route('website.product') }}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+        </div>
+    </div>
+</section>
+@endif
+
+<!--===================================== PRODUCT END =======================================-->
 
 
-    <!--===================================== TESTIMONIAL START ==================================-->
-    @if($testimonials && $testimonials->count())
+<!--===================================== TESTIMONIAL START ==================================-->
+@if($testimonials && $testimonials->count())
 
-    @include('website.testimonial')
-    @endif
-    {{-- <div class="section testimony" style="    margin-top: 0 !important;">
+@include('website.testimonial')
+@endif
+{{-- <div class="section testimony" style="    margin-top: 0 !important;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-md-offset-2">

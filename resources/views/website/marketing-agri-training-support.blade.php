@@ -60,7 +60,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/mark-icon-01.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Training in advanced <br>
@@ -70,7 +70,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/mark-icon-02.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Equipment & Seed <br>
@@ -79,7 +79,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/mark-icon-03.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Farming <br>
@@ -88,7 +88,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/mark-icon-04.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Sales & Marketing <br>
@@ -97,7 +97,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/mark-icon-05.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Ongoing Mentorship & <br>
@@ -106,7 +106,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/mark-icon-06.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Cost effective <br>

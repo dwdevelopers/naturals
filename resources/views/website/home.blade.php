@@ -540,13 +540,15 @@
 
 <!--===================================== PRODUCT START =======================================-->
 @if($products->count()>0)
-<!-- <section class="product-section">
+<section class="product-section">
     <div class="container">
-        <h2>Our Products</h2>
+        <h2 class="section-title" data-aos="fade-up"
+            data-aos-duration="500">Our Products</h2>
         <div class="product-grid">
             @foreach ($products as $product )
             <div class="product-card">
                 <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                
                 <h3>{{ $product->name }}</h3>
                 <p class="price">
                     ₹<strong>{{ number_format($product->price, 2) }}</strong>
@@ -595,7 +597,7 @@
         <a href="{{route('website.product')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
     </div>
     </div>
-</section> -->
+</section>
 @endif
 <!--===================================== PRODUCT END =======================================-->
 

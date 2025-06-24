@@ -59,7 +59,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/tourism-icons-01.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Trekking & <br>
@@ -68,7 +68,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/tourism-icons-02.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Farm Study <br>
@@ -77,7 +77,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/tourism-icons-03.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Organic Food & <br>
@@ -86,7 +86,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/tourism-icons-04.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Beach, Cultural & <br>
@@ -95,7 +95,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/tourism-icons-05.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Educational & <br>Volunteer Tours</p>
@@ -103,7 +103,7 @@
                     <div class="singlegrid" data-aos="fade-up"
                         data-aos-duration="500">
                         <div class="iconwrapper">
-                            <img src="{{ asset('website/images/icons-04.png') }}" alt="Icon" class="img-responsive">
+                            <img src="{{ asset('website/images/tourism-icons-06.svg') }}" alt="Icon" class="img-responsive">
 
                         </div>
                         <p>Adventure <br> Packages</p>

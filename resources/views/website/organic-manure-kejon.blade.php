@@ -113,7 +113,34 @@
 
     </div>
 
+ <!--===================================== PRODUCT START =======================================-->
+@if($products->count() > 0)
+<section class="product-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Our Products</h2>
+        <div class="product-grid">
+            @foreach ($products->take(4) as $product)
+            <div class="product-card">
+                <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                <h3>{{ $product->name }}</h3>
+                <p class="price">
+                    ₹<strong>{{ number_format($product->price, 2) }}</strong>
+                    <span> excl. GST</span>
+                </p>
+                <a href="https://wa.me/917012829663?text=I'm%20interested%20in%20{{ urlencode($product->name) }}" target="_blank">
+                    <button>Contact on WhatsApp</button>
+                </a>
+            </div>
+            @endforeach
+        </div>
+        <div class="read-more">
+            <a href="{{ route('website.product') }}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+        </div>
+    </div>
+</section>
+@endif
 
+<!--===================================== PRODUCT END =======================================-->
 
     <!--===================================== TESTIMONIAL START ==================================-->
     @if($testimonials && $testimonials->count())
