@@ -27,27 +27,28 @@ class ContactUsController extends Controller
             ['name' => 'Dashboard', 'url' => route('admin.home')],
             ['name' => 'Contact Us', 'url' => route('contactuses.index')],
             ['name' => 'Lists', 'url' => null] // Null for the current page
-            ];
-            $teams = $this->contactUsService->getAllContactuses();
-            if ($request->ajax()) {
+        ];
+        $teams = $this->contactUsService->getAllContactuses();
+        if ($request->ajax()) {
 
 
-                return DataTables::of($teams)
-                    ->addIndexColumn()
-
-                    ->addColumn('action', function ($row) {
-
-                        return '
-                                <form action="'.route('contactuses.destroy', $row->id).'" method="POST" style="display:inline;">
-                                    '.csrf_field().'
-                                    '.method_field("DELETE").'
-                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                                </form>';
-                    })
-                    ->rawColumns(['action']) // Allows HTML rendering in the action column
-                    ->make(true);
-            }
-        return view('admin.contactus.index',compact('breadcrumbs'));
+            return DataTables::of($teams)
+                ->addIndexColumn()
+                ->addColumn('message', function ($row) {
+                    return $row->message ?? '';
+                })
+                ->addColumn('action', function ($row) {
+                    return '
+            <form action="' . route('contactuses.destroy', $row->id) . '" method="POST" style="display:inline;">
+                ' . csrf_field() . '
+                ' . method_field("DELETE") . '
+                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+            </form>';
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
+        return view('admin.contactus.index', compact('breadcrumbs'));
     }
 
     /**
@@ -71,7 +72,6 @@ class ContactUsController extends Controller
 
             DB::commit();
             return redirect()->back()->with('success', 'Your message has been sent successfully!');
-
         } catch (\Exception $e) {
             DB::rollBack();
             dd($e->getMessage());

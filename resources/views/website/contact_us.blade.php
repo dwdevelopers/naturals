@@ -72,24 +72,34 @@
             </div>
             <div class="col-sm-6 col-md-6">
                 <div class="content" id="contactForm">
-                    <form action="{{ route('website.contact.submit') }}" method="POST">
+                    <form action="{{ route('website.contact.submit') }}" method="POST" class="contact-form">
 
                         @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name..." required>
-                            <div class="help-block with-errors"></div>
+                            <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="Full Name..." required>
+                            @error('name')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Address..." required>
-                            <div class="help-block with-errors"></div>
+                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="Enter Address..." required>
+                            @error('email')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
+
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject...">
-                            <div class="help-block with-errors"></div>
+                            <input type="tel" class="form-control" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
+                            @error('phone')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
-                            <textarea id="p_message" class="form-control" name="message" rows="6" placeholder="Write message"></textarea>
-                            <div class="help-block with-errors"></div>
+
+                            <textarea class="form-control" name="message" rows="6" placeholder="Write message">{{ old('message') }}</textarea>
+                            @error('message')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <div id="success"></div>
@@ -103,31 +113,31 @@
 
 
             <div class="col-sm-12 col-md-12">
-              
-                    <div class=" addressSec">
-                        <div class="col-sm-6 col-md-6">
-                            <div class="officeAddress">
-                                <div class="iconWrapper">
-                                     <img src="{{ asset('website/images/cd-icon-location.png') }}" alt="" />
-                                </div>
-                                <h3>OUR BRANCHES</h3>
-                                <p>Thrissur | Vadakkancheri | Ottappalam | Manjeri | Kozhikode | Kannur | Ernakulam | Kottayam | Idukki
-</p>
+
+                <div class=" addressSec">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="officeAddress">
+                            <div class="iconWrapper">
+                                <img src="{{ asset('website/images/cd-icon-location.png') }}" alt="" />
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6">
-                            <div class="officeAddress">
-                                   <div class="iconWrapper">
-                                     <img src="{{ asset('website/images/cd-icon-location.png') }}" alt="" />
-                                </div>
-                                <h3>UPCOMING BRANCHES</h3>
-                                <p> Palakkad | Perinthalmanna | Mannarkkad | Malappuram | Ottappalam | Chavakkad | Thriprayar | Irinjalakuda | Kodungallur | Chalakudy | Kollam | Thiruvananthapuram
-</p>
-                            </div>
+                            <h3>OUR BRANCHES</h3>
+                            <p>Thrissur | Vadakkancheri | Ottappalam | Manjeri | Kozhikode | Kannur | Ernakulam | Kottayam | Idukki
+                            </p>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="officeAddress">
+                            <div class="iconWrapper">
+                                <img src="{{ asset('website/images/cd-icon-location.png') }}" alt="" />
+                            </div>
+                            <h3>UPCOMING BRANCHES</h3>
+                            <p> Palakkad | Perinthalmanna | Mannarkkad | Malappuram | Ottappalam | Chavakkad | Thriprayar | Irinjalakuda | Kodungallur | Chalakudy | Kollam | Thiruvananthapuram
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                
+
                 <!-- MAPS -->
                 <div class="maps-wraper">
                     <div id="cd-zoom-in"></div>
