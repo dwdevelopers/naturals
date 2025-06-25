@@ -452,6 +452,9 @@ h3 {
           }
         }
       }
+      &:focus{
+        text-decoration: none;
+      }
     }
   }
 }

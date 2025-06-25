@@ -1075,6 +1075,11 @@ Global Transfers Area CSS
 .fmcgInner .alternate_bg {
   background-color: #eee;
 }
+@media (max-width: 767px) {
+  .fmcgInner .alternate_bg {
+    padding: 20px !important;
+  }
+}
 
 .upcoming_project .dark_bg h3 {
   font-size: 20px;
@@ -1106,6 +1111,7 @@ Global Transfers Area CSS
   .abtPage .banner-sec h3 {
     font-size: 30px;
     text-align: center;
+    padding: 20px;
   }
   .agri-sec h1 {
     padding-top: 0px !important;
@@ -1287,5 +1293,11 @@ Global Transfers Area CSS
 @media (max-width: 767px) {
   .marketing-agri .grid_sec {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 767px) {
+  .mob-padding-sp {
+    padding-top: 80px !important;
   }
 }/*# sourceMappingURL=ss-custom.css.map */

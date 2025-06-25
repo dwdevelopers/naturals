@@ -1228,6 +1228,9 @@ Global Transfers Area CSS
 
     .alternate_bg {
         background-color: #eee;
+           @media(max-width:767px) {
+            padding: 20px !important;
+           }
 
     }
 }
@@ -1272,6 +1275,7 @@ Global Transfers Area CSS
     .abtPage .banner-sec h3 {
         font-size: 30px;
         text-align: center;
+        padding: 20px;
     }
 
     .agri-sec h1 {
@@ -1497,4 +1501,9 @@ Global Transfers Area CSS
 
         }
     }
+}
+@media(min-width:767px) {
+.mob-padding-sp{
+    padding-top: 80px !important;
+}
 }

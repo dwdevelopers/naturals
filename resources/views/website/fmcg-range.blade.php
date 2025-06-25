@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row dv-center pt-60 alternate_bg">
+            <div class="row dv-center pt-60 alternate_bg mob-padding-sp">
 
                  <div class="col-sm-6 col-md-6 " data-aos="fade-up"
                     data-aos-duration="500">
@@ -197,71 +197,17 @@
 
 
 <!--===================================== TESTIMONIAL START ==================================-->
-@if($testimonials && $testimonials->count())
+{{-- @if($testimonials->count() > 0) --}}
 
 @include('website.testimonial')
-@endif
-{{-- <div class="section testimony" style="    margin-top: 0 !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <div id="owl-testimony">
-                        <div class="item">
-                            <div class="testimonial-1">
-                                <div class="media">
-                                    <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-</div>
-<div class="body">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-    <div class="title">Gael story</div>
-    <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-</div>
-</div>
-</div>
-<div class="item">
-    <div class="testimonial-1">
-        <div class="media">
-            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-        </div>
-        <div class="body">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-            <div class="title">Dedo</div>
-            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-        </div>
-    </div>
-</div>
-<div class="item">
-    <div class="testimonial-1">
-        <div class="media">
-            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-        </div>
-        <div class="body">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-            <div class="title">Maggy</div>
-            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-        </div>
-    </div>
-</div>
-<div class="item">
-    <div class="testimonial-1">
-        <div class="media">
-            <img src="{{ asset('website/images/b3.jpg') }}" alt="" class="img-circle">
-        </div>
-        <div class="body">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nulla interdum dapibus erat nec elementum. Simply dummy text of the printing and typesetting industry orem Ipsum has been. Mauris ornare tortor.</p>
-            <div class="company">Gaspol ltd</div>
-            <div class="title">Robert Lav</div>
-            <div class="subtitle">Designer @ Buka Kreasi & co.</div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div> --}}
+{{-- @endif --}}
+
+
 <!--===================================== TESTIMONIAL END ==================================-->
 
 </div>
+<!-- jQuery (must come BEFORE Owl Carousel) -->
+<script src="{{ asset('website/js/vendor/jquery.min.js') }}"></script>
+
 
 @endsection

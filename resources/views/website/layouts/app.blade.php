@@ -71,7 +71,7 @@
     <script type="text/javascript" src="{{ asset('website/js/vendor/jquery.magnific-popup.min.js')}}"></script>
     <script type="text/javascript" src="{{ asset('website/js/vendor/isotope.pkgd.min.js')}}"></script>
     <script type="text/javascript" src="{{ asset('website/js/vendor/imagesloaded.pkgd.min.js')}}"></script>
-
+    <script type="text/javascript" src="{{ asset('website/js/vendor/testimonial.js')}}"></script>
 
     <!-- SENDMAIL -->
     <script type="text/javascript" src="{{ asset('website/js/vendor/validator.min.js')}}"></script>
@@ -105,6 +105,8 @@
             });
         });
     </script>
+
+    
 </body>
 
 </html>

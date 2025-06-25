@@ -3,7 +3,7 @@
 @section('title', 'Service Detail')
 
 @section('content')
-<div class="banner-sec" style="background-image: url('{{ asset('website/images/b2.jpg') }}');">
+<div class="banner-sec" style="background-image: url('{{ asset('website/images/tourism-banner.jpg') }}');">
     <div class="overlay"></div>
     <h3>Our Projects</h3>
 </div>

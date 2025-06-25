@@ -338,6 +338,9 @@ h3 {
 .agri-dhan-vikas .cards-grid .card .card-content .read-more:hover span {
   transform: translateX(5px);
 }
+.agri-dhan-vikas .cards-grid .card:focus {
+  text-decoration: none;
+}
 
 .membership-section {
   display: flex;

@@ -123,11 +123,11 @@
                                  <i class="fa fa-instagram"></i>
                              </div>
                          </a>
-                         <a href="#" title="">
+                         <!-- <a href="#" title="">
                              <div class="item">
                                  <i class="fa fa-youtube"></i>
                              </div>
-                         </a>
+                         </a> -->
                      </div>
                  </div>
              </div>
