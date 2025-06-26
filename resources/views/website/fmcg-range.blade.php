@@ -120,49 +120,6 @@
 
         </div>
 
-        <div class="green_bg">
-            <div class="container">
-                <p>We facilitate group farming by leasing agricultural land and equipping farmers with:</p>
-                <div class="grid_sec">
-                    <div class="singlegrid" data-aos="fade-up"
-                        data-aos-duration="500">
-                        <div class="iconwrapper">
-                            <img src="{{ asset('website/images/pro-icon-01.svg') }}" alt="Icon" class="img-responsive">
-
-                        </div>
-                        <p>Quality <br>
-                            seeds</p>
-                    </div>
-                    <div class="singlegrid" data-aos="fade-up"
-                        data-aos-duration="500">
-                        <div class="iconwrapper">
-                            <img src="{{ asset('website/images/pro-icon-02.svg') }}" alt="Icon" class="img-responsive">
-
-                        </div>
-                        <p>Organic <br>
-                            fertilizers</p>
-                    </div>
-                    <div class="singlegrid" data-aos="fade-up"
-                        data-aos-duration="500">
-                        <div class="iconwrapper">
-                            <img src="{{ asset('website/images/pro-icon-03.svg') }}" alt="Icon" class="img-responsive">
-
-                        </div>
-                        <p>Agricultural <br>
-                            training</p>
-                    </div>
-                    <div class="singlegrid" data-aos="fade-up"
-                        data-aos-duration="500">
-                        <div class="iconwrapper">
-                            <img src="{{ asset('website/images/pro-icon-04.svg') }}" alt="Icon" class="img-responsive">
-
-                        </div>
-                        <p>Ongoing expert <br>
-                            guidance</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 
@@ -195,7 +152,102 @@
 
 <!--===================================== PRODUCT END =======================================-->
 
+<!--===================================== MEMBERSHIP START ======================================-->
+<!-- <section class="membership-section" id="memberForm">
+    <div class="membership-left">
+        <img src="{{ asset('website/images/card.png') }}" alt="Icon">
+        <div class="membership-text">
+            <h2>Membership</h2>
+            <p>
+                Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
+            </p>
+        </div>
+    </div>
+    <div class="membership-right">
+        <h4>Get in Touch</h4>
+        <h2>Contact with us</h2>
+        <form action="{{ route('website.contact.submit') }}" method="POST" class="contact-form">
+            @csrf
+            <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required />
+            @error('name')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
 
+            <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required />
+            @error('email')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <input type="tel" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
+            @error('phone')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
+            @error('message')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section> -->
+
+
+
+<section class="membership-section" id="memberForm">
+    <div class="container">
+        <div class="row dv-center">
+            <div class="col-sm-4 col-md-4">
+                <div class="membership-left-img" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <img src="{{ asset('website/images/card.png') }}" alt="Icon">
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4" data-aos="fade-up">
+                <div class="membership-text">
+                    <h2>Membership</h2>
+                    <p>
+                        Membership is an affiliation granted to members who are well involved in agricultural activities within a particular society or community. The membership recognizes one’s significant commitment, dedication, and contribution to the agricultural society.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 mob-100">
+                <div class="membership-right">
+                    <h4>Get in Touch</h4>
+                    <h2>Contact with us</h2>
+                    <form action="{{ route('website.contact.submit') }}" method="POST" class="contact-form">
+                        @csrf
+                        <input type="text" name="name" placeholder="Your Name" value="{{ old('name') }}" required />
+                        @error('name')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required />
+                        @error('email')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <input type="tel" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
+                        @error('phone')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
+                        @error('message')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--===================================== MEMBERSHIP END ======================================-->
 <!--===================================== TESTIMONIAL START ==================================-->
 {{-- @if($testimonials->count() > 0) --}}
 
