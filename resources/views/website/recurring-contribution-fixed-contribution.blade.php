@@ -12,7 +12,7 @@ Fixed Contribution (RC & FC)')
         </h3>
     </div>
 </div>
-<div class="section ">
+<div class="section  pro_inner_wrapper">
 
     <div class="projectInnerPage">
 

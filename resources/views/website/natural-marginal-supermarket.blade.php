@@ -10,7 +10,7 @@
             data-aos-duration="500">Driving Tomorrow’s Rural Transformation </h3>
     </div>
 </div>
-<div class="section ">
+<div class="section  pro_inner_wrapper">
 
     <div class="projectInnerPage upcoming_project">
 

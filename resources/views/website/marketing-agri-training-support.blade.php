@@ -10,7 +10,7 @@
             data-aos-duration="500">Train. Equip. Succeed.</h3>
     </div>
 </div>
-<div class="section ">
+<div class="section  pro_inner_wrapper">
 
     <div class="projectInnerPage shaktipoorna marketing-agri">
 
