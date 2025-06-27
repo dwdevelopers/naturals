@@ -1304,4 +1304,42 @@ Global Transfers Area CSS
 .pro_inner_wrapper .membership-section {
   background-color: #dfe0df;
   color: #000;
+}
+
+.certificate-sec {
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #e4eae2;
+}
+.certificate-sec .item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  gap: 40px;
+}
+@media (max-width: 575px) {
+  .certificate-sec .item-wrapper {
+    flex-direction: column;
+  }
+}
+.certificate-sec .item-wrapper .item img {
+  height: 300px;
+  border: 1px solid #bca9a9;
+}
+
+.coming-soon {
+  position: relative;
+}
+.coming-soon .soon-text {
+  position: absolute;
+  bottom: 0;
+  background-color: #7cc55d;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }/*# sourceMappingURL=ss-custom.css.map */

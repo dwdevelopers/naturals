@@ -1514,3 +1514,42 @@ Global Transfers Area CSS
             color: #000;
     }
 }
+
+.certificate-sec{
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #e4eae2;
+ .item-wrapper{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    gap: 40px;
+    @media(max-width:575px){
+        flex-direction: column;
+    }
+    .item{
+        img{
+
+            height: 300px;
+            border: 1px solid #bca9a9;
+        }
+    }
+ }   
+}
+
+.coming-soon{
+    position: relative;
+    .soon-text{
+           position: absolute;
+    bottom: 0;
+   background-color: #7cc55d;
+    color: #fff;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    }
+}

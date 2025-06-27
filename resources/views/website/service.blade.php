@@ -159,18 +159,82 @@
             </div>
             <div class="card" style="background-image: url('/website/images/icons-09.png');">
                 <a href="{{route('website.rdfd')}}">
-                <div class="projectImg"></div>
-                <div class="card-content">
-                    <h3>Recurring Contribution &
-                        Fixed Contribution (RC & FC)
-                    </h3>
-                    <p>Recurring Contribution & Fixed Contribution (RC
-                        & FC) schemes to provide secure and growth
-                        oriented financial solutions for our members</p>
-                    <a href="{{route('website.rdfd')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
-                </div>
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Recurring Contribution &
+                            Fixed Contribution (RC & FC)
+                        </h3>
+                        <p>Recurring Contribution & Fixed Contribution (RC
+                            & FC) schemes to provide secure and growth
+                            oriented financial solutions for our members</p>
+                        <a href="{{route('website.rdfd')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                    </div>
                 </a>
             </div>
+
+
+            <div class="card coming-soon" style="background-image: url('/website/images/icons-10.png');">
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Dairy Farm
+                        </h3>
+                        <p style="height: 85px;">Under Development</p>
+                        <a class="read-more" style="height: 35px;"></a>
+                    </div>
+             <div class="soon-text">Upcoming Project</div>
+            </div>
+
+            <div class="card coming-soon" style="background-image: url('/website/images/icons-11.png');">
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Fisheries
+                        </h3>
+                        <p style="height: 85px;">New model aquaculture support
+                             Coming Soon</p>
+                        <a class="read-more" style="height: 35px;"></a>
+                    </div>
+              <div class="soon-text">Upcoming Project</div>
+            </div>
+
+            <div class="card coming-soon" style="background-image: url('/website/images/icons-12.png');">
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Spices extract production
+                            factory
+                        </h3>
+                        <p style="height: 85px;">
+                            Coming Soon</p>
+                        <a class="read-more" style="height: 35px;"></a>
+                    </div>
+               <div class="soon-text">Upcoming Project</div>
+            </div>
+
+            <div class="card coming-soon" style="background-image: url('/website/images/icons-13.png');">
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Mineral water production
+                            factory
+                        </h3>
+                        <p style="height: 85px;">
+                            Coming Soon</p>
+                        <a class="read-more" style="height: 35px;"></a>
+                    </div>
+                <div class="soon-text">Upcoming Project</div>
+            </div>
+
+            <div class="card coming-soon" style="background-image: url('/website/images/icons-14.png');">
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Spices division
+                        </h3>
+                        <p style="height: 85px;">
+                            Coming Soon</p>
+                        <a class="read-more" style="height: 35px;"></a>
+                    </div>
+              <div class="soon-text">Upcoming Project</div>
+            </div>
+
+
         </div>
     </div>
 </section>
