@@ -62,11 +62,11 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
     });
 
 Route::name('website.')->group(function () {
-    // Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/', [HomeController::class, 'index'])->name('home');
 
-    Route::get('/', function () {
-    return view('website.under-construction');
-});
+//     Route::get('/', function () {
+//     return view('website.under-construction');
+// });
 
     Route::get('/shop', [HomeController::class, 'shop'])->name('shop');
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
