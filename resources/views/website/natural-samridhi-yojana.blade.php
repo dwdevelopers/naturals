@@ -22,6 +22,7 @@
             <div class="row dv-center">
                 <div class="col-md-6 ">
                     <div class="rec_table " style="overflow-x:auto;">
+                        <div class="table-responsive">
                         <table>
                             <tr>
                                 <th colspan="4" class="bg_green_head">KISSAN SAMRIDHI YOJANA (A)</th>
@@ -169,10 +170,12 @@
 
 
                         </table>
+                        </div>
                     </div>
+                    <p class="condition pb-30">*SCHEME ONLY FOR MEMBERS</p>
                 </div>
                 <div class="col-md-6 ">
-                    <div class="rec_table " style="overflow-x:auto;">
+                    <div class="rec_table " style="overflow-x:auto; margin-top: -50px;">
                         <table>
                             <tr>
                                 <th colspan="4" class="bg_green_head">KISSAN SAMRIDHI YOJANA (B)</th>
@@ -322,10 +325,11 @@
                         </table>
                     </div>
                 </div>
+                
             </div>
             <div class="row dv-center">
                 <div class="col-md-6 ">
-                    <div class="rec_table " style="overflow-x:auto;">
+                    <div class="rec_table " style="overflow-x:auto; ">
                         <table>
                             <tr>
                                 <th colspan="4" class="bg_green_head">KISSAN SAMRIDHI YOJANA (A)</th>
@@ -474,9 +478,10 @@
 
                         </table>
                     </div>
+                    <p class="condition pb-30">*SCHEME ONLY FOR MEMBERS</p>
                 </div>
                 <div class="col-md-6 ">
-                    <div class="rec_table " style="overflow-x:auto;">
+                    <div class="rec_table " style="overflow-x:auto; margin-top: -50px;"  >
                         <table>
                             <tr>
                                 <th colspan="4" class="bg_green_head">KISSAN SAMRIDHI YOJANA (B)</th>
@@ -778,9 +783,11 @@
 
                         </table>
                     </div>
+                    <p class="condition pb-30">*SCHEME ONLY FOR MEMBERS</p>
                 </div>
+                
                 <div class="col-md-6 ">
-                    <div class="rec_table " style="overflow-x:auto;">
+                    <div class="rec_table " style="overflow-x:auto; margin-top: -50px;"  >
                         <table>
                             <tr>
                                 <th colspan="4" class="bg_green_head">KISSAN SAMRIDHI YOJANA (B)</th>
@@ -1082,9 +1089,10 @@
 
                         </table>
                     </div>
+                    <p class="condition pb-30">*SCHEME ONLY FOR MEMBERS</p>
                 </div>
                 <div class="col-md-6 ">
-                    <div class="rec_table " style="overflow-x:auto;">
+                    <div class="rec_table " style="overflow-x:auto; margin-top: -50px;"  >
                         <table>
                             <tr>
                                 <th colspan="4" class="bg_green_head">KISSAN SAMRIDHI YOJANA (B)</th>
@@ -1386,9 +1394,10 @@
 
                         </table>
                     </div>
+                    <p class="condition pb-30">*SCHEME ONLY FOR MEMBERS</p>
                 </div>
                 <div class="col-md-6 ">
-                    <div class="rec_table " style="overflow-x:auto;">
+                    <div class="rec_table " style="overflow-x:auto; margin-top: -50px;"  >
                         <table>
                             <tr>
                                 <th colspan="4" class="bg_green_head">KISSAN SAMRIDHI YOJANA (B)</th>

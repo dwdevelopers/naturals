@@ -1135,8 +1135,18 @@ Global Transfers Area CSS
 .rec_table .subhead {
   background-color: #e6e7e9;
 }
+@media (max-width: 575px) {
+  .rec_table .subhead {
+    font-size: 11px !important;
+  }
+}
 .rec_table td {
   background-color: #f2f3f4;
+}
+@media (max-width: 575px) {
+  .rec_table td {
+    font-size: 12px !important;
+  }
 }
 .rec_table .green_row td {
   background-color: #e7f1d4;
@@ -1350,4 +1360,9 @@ Global Transfers Area CSS
 
 .nsy td, .nsy th {
   text-align: center;
+}
+@media (max-width: 575px) {
+  .nsy .condition {
+    margin-bottom: 50px !important;
+  }
 }/*# sourceMappingURL=ss-custom.css.map */
