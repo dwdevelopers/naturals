@@ -67,7 +67,7 @@ break;
         @endif
         @unless($hasMedia)
         <div class="text-center mt-5">
-            <img src="{{ asset('website/images/nodata.gif')}}" alt="No Data" height="300" width="300">
+            <img src="{{ asset('website/images/nodata.gif')}}" alt="No Data" height="100" width="100" style="margin: 50px 0px;">
             {{-- <p class="mt-3">No media found.</p> --}}
         </div>
         @endunless
@@ -240,6 +240,5 @@ break;
             modalContent.innerHTML = "";
         }
     });
-
 </script>
 @endpush

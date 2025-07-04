@@ -34,24 +34,42 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="{{route('website.home')}}" class="active">Home</a></li>
                             <li><a href="{{route('website.aboutus')}}">About</a></li>
-                            <li class="dropdown">
-                                <a href="{{route('website.service')}}"  role="button" aria-haspopup="true" aria-expanded="false">Our Projects</a>
-                                {{-- <ul class="dropdown-menu">
-                                    <li><a href="news-grid.html">Agro Tourism Project </a></li>
-                                    <li><a href="news-sidebar.html">Karshaka Mithra</a></li>
-                                    <li><a href="news-detail.html">Sakthiroopa Yojana</a></li>
-                                </ul> --}}
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Product <span class="downarrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                        </svg></span> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{route('website.fmcgrange')}}">FMCG Range</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.kejon')}}">Organic Manure -
+                                            Kejon</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.karshakamithra')}}">Karshaka Mithra</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.sakthiyojana')}}">Sakthiroopa Yojana</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.ecotourism')}}">Tourism</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.agrivikas')}}">Agri Dhan Vikas</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.rdfd')}}">Recurring Contribution &
+                                            Fixed Contribution (RC & FC)</a></li>
+                                </ul>
                             </li>
-                            <li class="dropdown">
-                                <!-- <a href="{{route('website.product')}}"  role="button" aria-haspopup="true" aria-expanded="false">Product</a> -->
-                                {{-- <ul class="dropdown-menu">
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="pricing-table.html">Pricing Table</a></li>
-                                    <li><a href="404page.html">404 Page</a></li>
-                                </ul> --}}
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Our Projects <span class="downarrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                        </svg></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{route('website.natural')}}">Natural Marginal
+                                            Supermarket</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.marketing')}}">Marketing &
+                                            Agri Training Support</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.nsy')}}">Natural Samridhi Yojana</a></li>
+                                    <li><a class="dropdown-item" href="{{route('website.nmps')}}">Natural Monthly Profit Share Scheme</a></li>
+                                </ul>
                             </li>
-                            <!-- <li><a href="{{route('website.gallery')}}">Gallery</a></li>
-                            <li><a href="{{route('website.downloads')}}">Downloads</a></li> -->
+
+                            <li><a href="{{route('website.gallery')}}">Gallery</a></li>
+                            <li><a href="{{route('website.downloads')}}">Downloads</a></li>
+                            <li><a href="{{route('website.career')}}">Careers</a></li>
                             <li><a href="{{route('website.contactUs')}}">Contact</a></li>
                         </ul>
                     </nav>

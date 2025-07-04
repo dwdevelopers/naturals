@@ -80,11 +80,9 @@ h3 {
   padding-left: 0;
   padding-right: 0;
 }
-.header .navbar .container .navbar-collapse .navbar-right,
 .header .navbar .container .navbar-collapse li {
   margin-right: 0;
 }
-.header .navbar .container .navbar-collapse .navbar-right a,
 .header .navbar .container .navbar-collapse li a {
   color: var(--gray) !important;
 }
@@ -997,4 +995,85 @@ h3 {
 }
 .fadeInUp-animation {
   animation: 1.5s fadeInUp;
+}
+
+.header-1 .navbar-main .dropdown-menu > li a:hover {
+  background-color: #26b24b;
+  color: #ffffff !important;
+}
+
+.career-page .top-sec {
+  padding: 100px 0px;
+  background-color: rgba(9, 46, 57, 0.0509803922);
+}
+.career-page .career-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+@media (max-width: 575px) {
+  .career-page .career-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.career-page .career-grid .single-grid {
+  border: 1px solid #81c45c;
+  padding: 20px;
+  border-radius: 10px;
+}
+.career-page .career-grid .single-grid .icon-wrapper {
+  width: 50px;
+  height: 50px;
+}
+.career-page .career-grid .single-grid h3,
+.career-page .career-grid .single-grid p {
+  margin: 0;
+}
+.career-page .career-grid .single-grid h3 {
+  padding: 10px 0px;
+}
+.career-page .career-grid .single-grid p {
+  font-size: 16px;
+}
+.career-page .career-grid .single-grid .btn-apply {
+  background-color: #092e39;
+  padding: 8px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.career-page .career-grid .single-grid .btn-apply:hover {
+  color: #e2eecc;
+}
+.career-page .career_form {
+  padding-top: 60px;
+}
+.career-page .career_form .w-60 {
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 575px) {
+  .career-page .career_form .w-60 {
+    width: 100%;
+  }
+}
+.career-page .career_form h2 {
+  padding-bottom: 30px;
+}
+.career-page .career_form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px 30px;
+}
+.career-page .career_form .form-grid .btn-primary {
+  background-color: #092e39 !important;
+}
+.career-page .career_form .form-control {
+  height: 50px;
+}
+.career-page .career_form .form-control:focus {
+  box-shadow: none;
+}
+
+#careerForm {
+  scroll-margin-top: 300px; /* smooth spacing after scroll */
 }/*# sourceMappingURL=custom.css.map */

@@ -17,7 +17,7 @@
 
         <div class="container rcfc_sec nsy">
 
-            <h5>NATURAL SAMRIDHI YOJANA (NSY)</h5>
+            <h1>NATURAL SAMRIDHI YOJANA (NSY)</h1>
             <p>Natural Samridhi Yojana is a savings-based financial scheme designed to promote disciplined investment habits and long-term financial growth among individuals and families.</p>
             <div class="row dv-center">
                 <div class="col-md-6 ">

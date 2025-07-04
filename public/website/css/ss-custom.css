@@ -1358,7 +1358,8 @@ Global Transfers Area CSS
   border-top-right-radius: 5px;
 }
 
-.nsy td, .nsy th {
+.nsy td,
+.nsy th {
   text-align: center;
 }
 @media (max-width: 575px) {
@@ -1366,4 +1367,56 @@ Global Transfers Area CSS
     margin-bottom: 50px !important;
     margin-top: -10px !important;
   }
+}
+
+.header .navbar-main .dropdown .dropdown-menu {
+  position: absolute;
+}
+.header .navbar-main .dropdown .dropdown-menu:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #092e39;
+  top: -8px;
+  right: 0px;
+}
+.header .navbar-main .dropdown .dropdown-menu li a {
+  background-color: #092e39;
+  color: #fff9f9 !important;
+}
+.header .navbar-main .dropdown .dropdown-menu li a:hover {
+  color: #fff !important;
+  background-color: #009144;
+}
+
+/* Smooth fade and slide effect */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-slide {
+  animation: fadeSlideDown 0.2s ease-out;
+}
+
+.dropdown-toggle {
+  position: relative;
+}
+.dropdown-toggle .downarrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: -3px;
+}
+.dropdown-toggle .downarrow svg {
+  width: 14px;
+  height: 14px;
 }/*# sourceMappingURL=ss-custom.css.map */

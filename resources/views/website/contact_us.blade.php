@@ -78,20 +78,20 @@
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="Full Name..." required>
                             @error('name')
-                            <div class="text-danger">{{ $message }}</div>
+                            <div class="text-danger">{{ $name }}</div>
                             @enderror
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="Enter Address..." required>
                             @error('email')
-                            <div class="text-danger">{{ $message }}</div>
+                            <div class="text-danger">{{ $email }}</div>
                             @enderror
 
                         </div>
                         <div class="form-group">
                             <input type="tel" class="form-control" name="phone" placeholder="Phone" value="{{ old('phone') }}" />
                             @error('phone')
-                            <div class="text-danger">{{ $message }}</div>
+                            <div class="text-danger">{{ $phone }}</div>
                             @enderror
                         </div>
                         <div class="form-group">

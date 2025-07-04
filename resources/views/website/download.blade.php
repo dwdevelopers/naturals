@@ -35,7 +35,7 @@
         @else
         {{-- No Downloads Available --}}
         <div class="text-center mt-5">
-            <img src="{{ asset('website/images/nodata.gif') }}" alt="No Downloads" height="300" width="300">
+            <img src="{{ asset('website/images/nodata.gif') }}" alt="No Downloads" height="100" width="100" style="margin: 50px 0px;">
             {{-- <p class="mt-3">No downloads available at the moment.</p> --}}
         </div>
         @endif

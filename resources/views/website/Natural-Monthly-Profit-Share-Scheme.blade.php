@@ -18,7 +18,7 @@
         <div class="container rcfc_sec nsy" style="padding-top: 50px;">
 
 
-            <h5>NATURAL MONTHLY PROFIT SHARE SCHEME</h5>
+            <h1>NATURAL MONTHLY PROFIT SHARE SCHEME</h1>
             <p>Natural Monthly Profit Share Scheme offers participants a stable and consistent return on investment through a profit-sharing model, ensuring monthly income and financial security.
 
 </p>
