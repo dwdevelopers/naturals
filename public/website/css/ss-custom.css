@@ -1364,5 +1364,6 @@ Global Transfers Area CSS
 @media (max-width: 575px) {
   .nsy .condition {
     margin-bottom: 50px !important;
+    margin-top: -10px !important;
   }
 }/*# sourceMappingURL=ss-custom.css.map */
