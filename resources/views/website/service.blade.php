@@ -171,6 +171,30 @@
                     </div>
                 </a>
             </div>
+            <div class="card" style="background-image: url('/website/images/icons-15.png');">
+                <a href="{{route('website.nsy')}}">
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Natural Samridhi Yojana
+                        </h3>
+                        <p>Natural Samridhi Yojana is a savings-based financial scheme designed to promote disciplined investment habits and long-term financial growth among individuals and families</p>
+                        <a href="{{route('website.nsy')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                    </div>
+                </a>
+            </div>
+            <div class="card" style="background-image: url('/website/images/icons-16.png');">
+                <a href="{{route('website.nmps')}}">
+                    <div class="projectImg"></div>
+                    <div class="card-content">
+                        <h3>Natural Monthly Profit Share Scheme
+                        </h3>
+                        <p>Natural Monthly Profit Share Scheme offers participants a stable and consistent return on investment through a profit-sharing model, ensuring monthly income and financial security.
+
+</p>
+                        <a href="{{route('website.nmps')}}" class="read-more">Read More <span><i class="fa fa-angle-right"></i></span></a>
+                    </div>
+                </a>
+            </div>
 
 
             <div class="card coming-soon" style="background-image: url('/website/images/icons-10.png');">

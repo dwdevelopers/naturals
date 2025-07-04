@@ -586,7 +586,7 @@ Global Transfers Area CSS
 
 .agri-dhan-vikas {
   padding: 60px 0px 100px 0px;
-  background-color: #f7f8f9 !important;
+  background-color: rgba(20, 105, 53, 0.05) !important;
 }
 @media (max-width: 575px) {
   .agri-dhan-vikas {
@@ -817,6 +817,10 @@ Global Transfers Area CSS
   border: 1px solid #2c7f3c;
   padding: 3px 14px;
   border-radius: 5px;
+}
+
+.bg-green {
+  background-color: rgb(190, 230, 194);
 }
 
 .home-about {
@@ -1342,4 +1346,8 @@ Global Transfers Area CSS
   padding: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.nsy td, .nsy th {
+  text-align: center;
 }/*# sourceMappingURL=ss-custom.css.map */

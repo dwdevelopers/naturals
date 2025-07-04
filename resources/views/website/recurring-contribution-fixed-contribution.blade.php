@@ -40,86 +40,8 @@ Fixed Contribution (RC & FC)')
 
 
         <div class="container rcfc_sec">
-            <div class="row dv-center">
-                <div class="rec_table" style="overflow-x:auto;">
-                    <table>
-                        <tr>
-                            <th colspan="4" class="bg_green_head">ONE TIME CONTRIBUTION SCHEME FOR MEMBERS</th>
-                        </tr>
-                        <tr>
-                            <th rowspan="2" class="subhead">SL NO</th>
-                            <th rowspan="2" class="subhead">PERIOD</th>
-                            <th colspan="2" class="subhead">RATE OF RETURN % (P.A)</th>
-
-                        </tr>
-                        <tr>
-                            <th class="subhead">NORMAL</th>
-                            <th class="subhead">SENIOR CITIZEN</th>
-                        </tr>
-                        <tr>
-                            <td>01</td>
-                            <td>1 YEAR</td>
-                            <td>10.0%</td>
-                            <td>10.5%</td>
-                        </tr>
-                        <tr class="green_row">
-                            <td>02</td>
-                            <td>2 YEAR</td>
-                            <td>10.5%</td>
-                            <td>11.0%</td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>3 YEAR</td>
-                            <td>11.0%</td>
-                            <td>11.5%</td>
-                        </tr>
-                        <tr class="green_row">
-                            <td>04</td>
-                            <td>5 YEAR</td>
-                            <td>12.0%</td>
-                            <td>12.5%</td>
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
-
-            <div class="row dv-center">
-                <div class="rec_table " style="overflow-x:auto;">
-                    <table>
-                        <tr>
-                            <th colspan="3" class="bg_green_head">RECURRING CONTRIBUTION SCHEME FOR MEMBERS</th>
-                        </tr>
-                        <tr>
-                            <th class="subhead">SL NO</th>
-                            <th class="subhead">PERIOD</th>
-                            <th class="subhead">RATE OF RETURN % (P.A)</th>
-
-                        </tr>
-
-                        <tr>
-                            <td>01</td>
-                            <td>1 YEAR</td>
-                            <td>10.00%</td>
-                        </tr>
-                        <tr class="green_row">
-                            <td>02</td>
-                            <td>2 YEAR</td>
-                            <td>10.50%</td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>3 YEAR</td>
-                            <td>11.00%</td>
-                        </tr>
-
-                    </table>
-                </div>
-
-            </div>
-
-            <h5>NATURAL FIXED CONTRIBUTION (NFC)</h5>
+        
+                      <h5>NATURAL FIXED CONTRIBUTION (NFC)</h5>
             <div class="row dv-center">
                 <div class="col-md-6 ">
                     <div class="rec_table " style="overflow-x:auto;">

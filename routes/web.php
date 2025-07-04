@@ -11,6 +11,8 @@ use App\Http\Controllers\NaturalController;
 use App\Http\Controllers\MarketingController;
 use App\Http\Controllers\BharatdarshanController;
 use App\Http\Controllers\RecurringController;
+use App\Http\Controllers\NsyController;
+use App\Http\Controllers\NmpsController;
 use App\Http\Controllers\Admin\AdminDownloadController;
 use App\Http\Controllers\Admin\AdminSubscriptionController;
 use App\Http\Controllers\Admin\ContactUsController;
@@ -78,6 +80,8 @@ Route::name('website.')->group(function () {
     Route::get('/ecotourism', [EcotourismController::class, 'index'])->name('ecotourism');
     Route::get('/agri-dhan-vikas', [AgriController::class, 'index'])->name('agrivikas');
     Route::get('/natural-marginal-supermarket', [NaturalController::class, 'index'])->name('natural');
+    Route::get('/natural-samridhi-yojana', [NsyController::class, 'index'])->name('nsy');
+    Route::get('/Natural-Monthly-Profit-Share-Scheme', [NmpsController::class, 'index'])->name('nmps');
     Route::get('/marketing-agri-training-support', [MarketingController::class, 'index'])->name('marketing');
     Route::get('/bharat-darshan', [BharatdarshanController::class, 'index'])->name('bharatdarshan');
     Route::get('/recurring-contribution-fixed-contribution', [RecurringController::class, 'index'])->name('rdfd');

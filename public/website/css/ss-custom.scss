@@ -1,5 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/0a4a5e68b7929fb9a01c2b5533f79641?family=Zooja+Light+Pro);
 
+
+
 @media(min-width:767px) {
     .df-center {
         display: flex;
@@ -678,7 +680,7 @@ Global Transfers Area CSS
 
 .agri-dhan-vikas {
     padding: 60px 0px 100px 0px;
-    background-color: #f7f8f9 !important;
+     background-color: rgb(20 105 53 / 5%) !important;
 
     @media(max-width:575px) {
         padding-bottom: 50px;
@@ -937,8 +939,12 @@ Global Transfers Area CSS
     border-radius: 5px;
 }
 
+.bg-green{
+    background-color: rgb(190 230 194);
+}
 .home-about {
     padding-bottom: 80px;
+    
 
     h1 {
         font-size: 46px;
@@ -1551,5 +1557,11 @@ Global Transfers Area CSS
     padding: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    }
+}
+
+.nsy{
+    td, th{
+        text-align: center;
     }
 }
